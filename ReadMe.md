@@ -2,24 +2,7 @@
 
 ---
 
-## [VISUAL — full width, top of page]
-
-**ILLUSTRATIVE TYPICAL RUN — actual results vary by task**
-
-```text
-+----------------------+      +--------------------------------+      +--------------------------------+
-| Trello task          |      | DigitalWorker                  |      | GitHub pull request            |
-|                      |      |                                |      |                                |
-| "Add PDF export      | ---> | research -> draft plan/design  | ---> | tests pass                     |
-|  for invoices"       |      | human spot-review -> correction|      | review/fix workflow complete   |
-|                      |      | test-first implementation      |      | design package included        |
-| Written in seconds   |      | Clean Architecture + OOP/RDM   |      | ready for a quick final        |
-|                      |      | 23-step AI + smell reviews     |      | hands-on check                 |
-|                      |      | refactor -> fix -> open PR     |      |                                |
-+----------------------+      +--------------------------------+      +--------------------------------+
-```
-
-*For the real sell sheet, replace this with a sanitized screenshot from a real run: the actual Trello card, workflow progress, test output, review/fix evidence, design documents, and resulting GitHub PR. If typical example numbers such as "14 tests added," "0 remaining code smells," or "5-minute human review" are shown, label them as an illustrative typical run rather than a guarantee for every task.*
+![ILLUSTRATIVE TYPICAL RUN — actual results vary by task](./Sells-Sheet-Images/Sells-Sheet-top-image-Trello-with-popups.png)
 
 ---
 

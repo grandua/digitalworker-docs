@@ -42,8 +42,10 @@ DigitalWorker is a fully autonomous AI coding agent with optional, high-leverage
 2. **Add one bounded task** with clear acceptance criteria.
 3. **Receive the tested, reviewed PR and design package**, then perform your final behavior and architecture check.
 
-**Use the included $15 credit to evaluate one real task before paying.** 
-Reply to the message that included this sheet or message me directly on LinkedIn: https://www.linkedin.com/in/grand/.
+**Use the included $15 credit to evaluate one real task before paying.**  
+**Reply to the message that included this sheet or**
+* 💬 Message me directly on [LinkedIn](https://www.linkedin.com/in/grand)
+* ✉️ Email me at: [info@agiledigitalworker.com](mailto:info@agiledigitalworker.com)
 
 [Read the User Guide](user-guide.md)
 

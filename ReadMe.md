@@ -44,6 +44,9 @@ DigitalWorker is a fully autonomous AI coding agent with optional, high-leverage
 
 **Use the included $15 credit to evaluate one real task before paying.** Reply to the message that included this sheet or contact **grand.ua@gmail.com**.
 
+[Read the User Guide](user-guide.md)
+
+
 Agile Design LLC · New York, NY  
 © 2026 Agile Design LLC. DigitalWorker and its workflow materials are proprietary.
 

@@ -36,7 +36,7 @@ DigitalWorker is a fully autonomous AI coding agent with optional, high-leverage
 
 **Best fit:** Teams already using AI coding tools that want autonomous implementation without surrendering pivotal product and design decisions. DigitalWorker is strongest today on C#/.NET; other languages use the same test-first and review discipline while language-specific coverage automation expands.
 
-## Try it on one real task
+## Try it on your real task
 
 1. **Send a Trello board name** and connect your repository.
 2. **Add one bounded task** with clear acceptance criteria.

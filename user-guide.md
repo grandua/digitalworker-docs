@@ -45,7 +45,7 @@ If your board has a "To Plan" list, placing a card there causes Digital Worker t
 
 Before implementation, spot-review and correct the decision-heavy sections that require your judgment, especially:
 
-- Proposed new classes and responsibilities.
+- Proposed new classes and responsibilities — Digital Worker searches for existing host classes, but your judgment on whether a new class is truly needed is the final check.
 - Duplicate classes or behavior that belongs in an existing class.
 - State-and-behavior alignment for an OOP/Rich Domain Model.
 - Architecture trade-offs, assumptions, pivotal methods and properties, and novel decisions.
@@ -115,6 +115,7 @@ When Digital Worker finishes a card:
 - **Research, plan, architect, and design** — create an AI-drafted document package covering research, planning, architecture, class design, and UX design for you to spot-review and correct before implementation.
 - **Implement features with enforced test-first TDD** — start each feature with a failing test, add the minimum implementation needed to pass, and run the relevant test suite. Digital Worker targets strong conventional test coverage; it does not guarantee complete mutation coverage.
 - **Apply Clean Architecture, SOLID, and OOP/Rich Domain Model discipline** — drive behavior and state into appropriate Domain objects, protect layer direction, and avoid anemic or procedural designs.
+- **Prevent duplicate and anemic classes** — before proposing any new class, search the codebase for existing classes that could host the planned behavior. This significantly reduces the code and class duplication that every other AI coding tool produces.
 - **Fix bugs** — diagnose defects through evidence from code, tests, builds, logs, command output, research, or an approved spike before changing implementation.
 - **Write tests** — create unit, integration, or end-to-end tests following testing best practices such as test isolation.
 - **Review code** — run a 23-step AI review covering requirements, architecture, design, code, testability, and engineering standards, followed by an 11-category code-smell review.
@@ -133,7 +134,7 @@ For feature work, Digital Worker's standard engineering pipeline is:
 1. **Research and draft the document package** — produce planning, architecture, and class-design artifacts.
 2. **Human decision checkpoint when warranted** — you spot-review and correct selected decision-heavy sections for complex or high-impact work. Routine work can run end to end without this checkpoint.
 3. **Test-first implementation** — write and run a failing test before adding the minimum implementation needed to pass.
-4. **Architecture and code discipline** — apply Clean Architecture, OOP/Rich Domain Model, and Clean Code rules during implementation.
+4. **Architecture and code discipline** — apply Clean Architecture, OOP/Rich Domain Model, and Clean Code rules during implementation. Before creating any new class, search the codebase for existing host classes, and apply a cohesion check.
 5. **Structured AI review** — run the 23-step AI review across requirements, architecture, design, code, testing, and standards, followed by the 11-category code-smell review.
 6. **Refactoring and fixes** — refactor while preserving behavior and resolve identified issues.
 7. **Pull request and final human check** — open the PR for your final behavior and architecture check.

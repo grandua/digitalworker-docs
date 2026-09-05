@@ -1,4 +1,4 @@
-# DigitalWorker
+# DigitalWorker — Sell Sheet
 
 ---
 
@@ -8,21 +8,26 @@
 
 ## **You make the decisions that matter. DigitalWorker turns a task card into a tested, reviewed, production-ready pull request — professional-developer output, not AI intern drafts.**
 
-**No iterative prompting. No babysitting. No cleaning up after the AI. The pure coder role is ending — your move is up to architect, product lead, or test lead.**
+**No iterative prompting. No babysitting. No cleaning up after the AI. An autonomous engineering governance layer that prevents almost all technical debt.**
 
 ---
 
-## The problem developers are talking about
+### The problem developers are talking about
 
-AI generates code quickly. The expensive part is still understanding it, checking it, fixing it, and making sure it fits the business and architecture.
+AI generates code quickly. The expensive part is still understanding it, checking it, fixing it, and preventing it from ruining your architecture.
 
-Sonar's 2026 survey of 1,149 professional developers found that 96% do not fully trust AI-generated code to be functionally correct, and 38% say reviewing it requires more effort than reviewing code written by human colleagues.
+Sonar's 2026 survey of 1,149 professional developers found that **96% do not fully trust AI-generated code to be functionally correct**, and **38% say reviewing it requires more effort than reviewing code written by human colleagues**.
 
-DigitalWorker is a fully autonomous AI coding agent with optional, high-leverage human decision checkpoints. It changes the division of labor: in the creator's current production use, human attention is normally limited to **spot-reviewing and correcting selected sections of the document package covering research, planning, architecture, and class design**, **a quick architectural spot-check of key Domain code**, and **a quick final hands-on check**. The creator does not review generated code line by line for correctness or review generated tests.
+Standard AI coding tools default to procedural anti-patterns, create duplicate classes, and ignore Rich Domain Models. As features scale, AI-generated code quickly plateaus into unmaintainable spaghetti.
 
-*Those are founder-observed operating practices, not an independent benchmark or a guarantee for every repository.*
+DigitalWorker is an **autonomous engineering governance layer** with high-leverage human decision checkpoints. You retain 100% strategic control:
+- You spot-review and approve key sections of the proposed plan, decisions, trade-offs, and class design (such as new classes before they are scaffolded).
+- DigitalWorker's proprietary engine executes the code, strictly enforcing Clean Architecture, test-first TDD, and automated refactoring passes.
+- You perform a quick final check before merge — without reviewing routine code line by line.
 
-## The shift that's already happening
+*Based on founder-observed production use, not an independent benchmark or a guarantee for every repository.*
+
+### The shift that's already happening
 
 AI made code generation cheap. The bottleneck was always clarity: clear requirements, sound decisions, an architecture the team can live with, and evidence that the software behaves as intended. AI's weaknesses are making that clearer every day.
 
@@ -37,48 +42,52 @@ This creates two opportunities:
 
 DigitalWorker is not a faster coding assistant. It's a new category: a digital worker that does the work of a professional developer, not an AI intern that needs supervision.
 
-## Why it's different
+---
 
-- **Steer before implementation instead of correcting code afterward.** Review and correct the plan, assumptions, architecture, and proposed class design before code is written; DigitalWorker then executes the approved direction without an iterative prompt loop.
-- **Get engineering evidence, not just generated code.** Every feature starts with a failing test. The pipeline then runs a 23-step AI review covering requirements, architecture, design, and code, an 11-category code-smell review, refactoring, and fixes before opening the PR.
-- **Scale the product without letting software complexity become the limit.** Test-first TDD, Clean Architecture, and OOP/Rich Domain Model discipline are not cosmetic preferences: they keep behavior testable, dependencies directional, and domain concepts explicit so new features do not become disproportionately harder, slower, and riskier as the product, team, and business grow.
-- **High-precision instruction execution.** AI actively resists Agile, OOP/Rich Domain Model, Clean Architecture, and Clean Code — defaulting to anti-patterns it was trained on. DigitalWorker's proprietary engine overcomes that resistance, keeping dozens of workflow steps on track. In routine use, virtually all required instructions are followed.
-- **Anti-duplication class design system.** Before proposing any new class, DigitalWorker searches the codebase for existing classes that should host the planned behavior and runs a cohesion check in an effective way that no other AI agent does.
-- **Battle-tested engineering method designed for simplicity.** The workflow package reflects more than 20 years of Agile and OOP practice and two years of iterative use with AI coding agents. It searches for existing patterns and classes before adding code, then checks for unnecessary changes and violations of KISS and YAGNI—avoiding the abstractions and features AI tends to add without a real need.
-- **A combination we have not found elsewhere.** Other agents can code, test, review, or open PRs. We are not aware of another commercial coding agent that combines high precision complex multi-step instruction enforcement with this depth of Agile, OOP/Rich Domain Model, TDD, review, and refactoring discipline — plus an anti-duplication class design system that prevents the duplicate and anemic classes that every other AI tool produces.
-- **Protected proprietary instructions.** DigitalWorker's instructions and customer-authored instructions stay behind our instruction service, with input/output screening and immediate blocking after a detected IP extraction attempt.
+### Why it's different
 
-## You also get
+* **Engineering Governance, Not a Coding Assistant:** DigitalWorker doesn't just autocomplete code. It enforces an autonomous quality-control pipeline that prevents almost all technical debt before code ever reaches a pull request.
+* **Anti-Duplication Class Design with Dry-Run Pre-verification:** Current LLMs duplicate classes and create anemic data structures. Before proposing any new class, DigitalWorker inspects existing domain classes, runs cohesion checks, and drafts proposed class designs for your sign-off.
+* **True OOP & Rich Domain Models:** Scale the product without letting software complexity become the limit. Solves the plateau where AI code collapses. The engine forces behavior and state to live together, rejecting procedural "everything-depends-on-everything" anti-patterns.
+* **Engineering Evidence via Enforced Test-First TDD:** Every single feature starts with a failing test. The engine forces minimal implementation until tests pass, targeting near-complete conventional test coverage.
+* **23-Step AI Review + 11-Category Smell Scan:** Requirements traceability, KISS, DRY, SOLID, layer direction, and code smells are audited and refactored before the PR is opened.
+* **High-Precision Instruction Engine:** Overcomes LLM instruction-dropping on complex SDLC tasks by managing server-side workflow states and delivering steps incrementally. AI actively resists Agile, Rich Domain Models, Clean Architecture, and Clean Code; DigitalWorker's proprietary engine overcomes that resistance, keeping dozens of workflow steps on track.
+* **Battle-Tested Engineering Method for Simplicity:** Reflects more than 20 years of Agile and OOP practice and two years of iterative refinement with AI coding agents. It searches for existing patterns before adding code, then prunes unnecessary abstractions and features (strictly enforcing KISS and YAGNI).
+* **A Combination Found Nowhere Else:** Other agents can code, test, review, or open PRs. We are not aware of another commercial coding agent that combines high-precision multi-step instruction enforcement with this depth of Agile, OOP, TDD, review, and anti-duplication class design.
 
-- **Keeps working without you.** Drop a card once or schedule recurring work; DigitalWorker processes it autonomously, day or night, without waiting for someone to start another prompt session.
-- **Uses the right AI model for each job.** Planning, implementation, testing, and review are routed to models selected for the best current balance of quality and cost, instead of paying premium-model prices for every step.
-- **Parallel, isolated execution.** Multiple tasks run at the same time, each in its own isolated branch and environment, and each finishes with a ready-to-review PR.
-- **Frictionless to start using.** Send a Trello board name, connect GitHub from the first card — no install, no terminal, no per-developer setup.
+---
 
-**Best fit:** Teams already using AI coding tools that want autonomous implementation without surrendering pivotal product and design decisions. DigitalWorker produces professional-developer-quality output in any high-level language. C#/.NET has the deepest tooling and MCP-server support today; all supported languages get the same rigorous Agile engineering discipline.
+### You also get
 
-## Getting Started — Three Ways In
+* **Autonomous Execution:** Drop a card and walk away, or schedule recurring work. Multiple tasks execute simultaneously in isolated branches and environments.
+* **Uses the right AI model for each job:** Planning, implementation, testing, and review are routed to models selected for the best quality/cost balance, avoiding premium-model prices for routine execution.
+* **Design Documentation with Every PR:** Architecture decisions, trade-offs, CRC cards, and assumptions accompany the deliverable.
+* **Zero-Install Onboarding:** Connect GitHub from your Trello board. No CLI configuration, no IDE extensions, and no per-developer environment setup.
 
-### 1. Verify our claims — no accounts needed
+---
 
-**100% generated by DigitalWorker from a Trello task card. Human involvement: fast spot-review only. Clone it and judge the output.**
+### Getting Started — Three Ways In
 
-A full URL shortener API — Clean Architecture, test-first TDD, passing tests, production-ready PR — generated autonomously from a single task card:
+#### 1. Verify our claims — no account needed
+**Both demo applications are 100% generated by DigitalWorker from task cards. Human involvement was limited to fast spot-reviews and pasting external review feedback into a fix card for autonomous remediation. Clone them and judge the output:**
 
-- **Public demo board with the source task card (input):** https://trello.com/invite/b/6a03d01d53cf7bb95f8325dd/ATTI3f3561b96a9f5663247cbafaa06b71b7DBE19FF1/digital-worker-demo
-- **Public demo repo with the generated implementation and PR history (output):** https://github.com/grandua/Digital-Worker-Demo
+* **Scientific Calculator (Multi-Platform Application):**  
+  Features true OOP / Rich Domain Model architecture. ~2,000 LOC across 46 files with 68 unit tests. Production domain code achieves **99.6% line coverage** and **95.4% branch coverage** (only 4 lines and 15 branches uncovered across the entire domain).  
+  *Human involvement:* Initial architecture/class-design spot-check, plus dropping 7 external PR agent defect prompts into a fix card for DigitalWorker to resolve autonomously.  
+  *Timing breakdown:* Active implementation ~3h 28m; automated defect-fix run ~2h 05m.
+* **URL Shortener API:**  
+  Clean Architecture, Domain/DataAccess/Presentation layers, Data Access with Entity Framework, test-first TDD, and full requirements traceability.
 
-No GitHub account, no Trello account, no login. Clone the repo, run the tests, and inspect the source task card on the demo board. The quality gap between this and standard AI output is the entire value proposition.
+**Inspect the full proof chain:**
+* **Public Trello board (input):** [View Demo Board](https://trello.com/invite/b/6a03d01d53cf7bb95f8325dd/ATTI3f3561b96a9f5663247cbafaa06b71b7DBE19FF1/digital-worker-demo)
+* **Public GitHub repo (output):** [Inspect Demo Repo & PRs](https://github.com/grandua/Digital-Worker-Demo)  
+  *Clone the repository, inspect the Git history, and run the tests locally.*
 
-### 2. Try it on the demo board — Trello account only
+#### 2. Try it on our demo board — Trello account only
+Submit a bounded task card on the public demo board and watch DigitalWorker autonomously deliver a tested PR to the public demo repo. No GitHub credentials or API keys needed.
 
-Want to see it run end-to-end on a real task before setting up your own board? Request access to the demo Trello board — once you're added as a member, submit a task card and watch DigitalWorker produce a PR in the public demo repo.
-
-No GitHub account, API key, install, or per-developer setup. You need only a Trello account and a request to join.
-
-### 3. Start using it on your repo — Trello + GitHub
-
-Ready to use DigitalWorker on your own projects?
+#### 3. Start using it on your repo — Trello + GitHub
+Connect your private repository via a narrowly scoped token. **Use the included $15 credit to evaluate one real task on your own codebase before paying.**
 
 1. **Send a Trello board name** and connect your repository.
 2. **Add one bounded task** with clear acceptance criteria.
@@ -86,16 +95,13 @@ Ready to use DigitalWorker on your own projects?
 
 On your private onboarding board, you need a Trello account, a GitHub account, a repository you can authorize, and a narrowly scoped personal access token. We provide the AI infrastructure and API keys. No install, terminal, or per-developer setup.
 
-**Use the included $15 credit to evaluate one real task before paying.**
-**Reply to the message that included this sheet or**
-* 💬 Message me directly on [LinkedIn](https://www.linkedin.com/in/grand)
-* ✉️ Email me at: [info@agiledigitalworker.com](mailto:info@agiledigitalworker.com)
+---
+
+**Agile Design LLC · New York, NY**  
+💬 Message directly on [LinkedIn](https://www.linkedin.com/in/grand)  
+✉️ Email: [info@agiledigitalworker.com](mailto:info@agiledigitalworker.com)  
+🌐 [agiledigitalworker.com](https://agiledigitalworker.com)
 
 [Read the User Guide](user-guide.md)
 
-
-Agile Design LLC · New York, NY  
 © 2026 Agile Design LLC. DigitalWorker and its workflow materials are proprietary.
-
----
-

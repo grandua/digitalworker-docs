@@ -8,7 +8,7 @@
 
 ## **You make the decisions that matter. DigitalWorker turns a task card into a tested, reviewed, production-ready pull request — professional-developer output, not AI intern drafts.**
 
-**No iterative prompting. No babysitting. No cleaning up of spaghetti code and bloat after the AI. An autonomous engineering governance layer that prevents almost all technical debt.**
+**No iterative prompting. Very minimal babysitting. No cleaning up of spaghetti code and bloat after the AI. An autonomous engineering governance layer that prevents almost all technical debt.**
 
 ---
 
@@ -21,7 +21,8 @@ Sonar’s 2026 survey of 1,149 professional developers found that 96% do not ful
 Standard AI coding tools default to procedural anti-patterns, create duplicate classes, and ignore Rich Domain Models. As features scale, AI-generated code quickly plateaus into unmaintainable spaghetti.
 
 DigitalWorker is an autonomous engineering governance layer that reserves pivotal product and architecture decisions for you. You retain 100% strategic control:
-- You spot-review and approve key sections of the proposed plan, decisions, trade-offs, and class design (such as new classes before they are scaffolded).
+- **Developers:** You spot-review and approve key sections of the proposed plan, decisions, trade-offs, and class design (such as new classes before they are scaffolded).
+- **Non-developers:** You review the plan and acceptance criteria. (DigitalWorker's governance engine handles class design and architecture decisions autonomously better than other AI coding agents, even though not as good as the top 10% of professional software developers). You approve the *what*, not the *how*.
 - DigitalWorker's proprietary engine executes the code, strictly enforcing Clean Architecture, test-first TDD, and automated refactoring passes.
 - You perform a quick final check before merge — without reviewing routine code line by line.
 
@@ -93,7 +94,7 @@ Connect your private repository via a narrowly scoped token. **Use the included 
 
 1. **Email us your preferred Trello board name** to [info@agiledigitalworker.com](mailto:info@agiledigitalworker.com), then connect your repository.
 2. **Add one bounded task** with clear acceptance criteria.
-3. **Receive the tested, reviewed PR and design package**, then perform your final behavior and architecture check.
+3. **Receive the tested, reviewed PR and design package**, then perform your final behavior check. For complex or large-scale projects, we recommend periodic architecture review by a skilled developer or an architect — DigitalWorker's governance engine prevents common anti-patterns but cannot replace experienced judgment on novel design decisions.
 
 On your private onboarding board, you need a Trello account, a GitHub account, a repository you can authorize, and a narrowly scoped personal access token. We provide the AI infrastructure and API keys. No install, terminal, or per-developer setup.
 

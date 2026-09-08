@@ -25,8 +25,12 @@ That creates a compounding business advantage. A disciplined codebase can suppor
 
 ### First-time setup
 
-1. **Send your Digital Worker contact a name for your Trello board.**
-2. **Answer three onboarding questions on the first card:** the repository's GitHub HTTPS clone URL, the branch to clone, and a GitHub personal access token with repository read/write access.
+1. **Email your preferred Trello board name** to <a href="mailto:info@agiledigitalworker.com">info@agiledigitalworker.com</a> (or message your contact). Digital Worker provisions your private board and sends you an invite (requests are usually addressed within 24 hours).
+2. **Connect your repository (takes ~1 minute):** Onboarding is instant and does not run any AI coding agents. On your board's first card, answer the three onboarding questions:
+   - The repository's GitHub HTTPS clone URL
+   - The default branch to clone
+   - A narrowly scoped GitHub personal access token with repository read/write access. *(Why write access is required: Even for public repositories, pushing deliverable branches and opening pull requests via the GitHub API requires authenticated repository write permissions.)*
+   The card title can be anything (e.g., `Onboard me`).
 3. **Use a private Trello board and a narrowly scoped token.** Everyone who can view the board can read the token comment, so delete that comment as soon as Digital Worker confirms it.
 4. Digital Worker saves the repository configuration and requests a service restart automatically. You do not install software, run terminal commands, or configure each developer's machine.
 5. **Delete the Trello comment with your GH PAT, and either delete/archive the onboarding card in "Blocked" and create a new card, or rerun the 1st card if it has a real task to do.**
@@ -36,7 +40,7 @@ That creates a compounding business advantage. A disciplined codebase can suppor
 1. **Create a Trello card** on the configured Digital Worker board.
 2. **Set the card title** to a short, clear summary of the task.
 3. **Set the card description** to the full task details — what to implement, context, constraints, acceptance criteria.
-4. **Move the card to the "To Implement" list** (or whichever list your operator has configured as the implementation intake list).
+4. **Move the card to the "To Implement" list** (or draft it in **"Triage"** until requirements and acceptance criteria are finalized, then move it to "To Implement").
 5. Digital Worker will automatically pick up the card, move it to "Running", and begin work.
 
 ### Planning a task
@@ -56,6 +60,7 @@ Add corrections as comments or update the card description, then move the card t
 
 Digital Worker manages card lifecycle automatically:
 
+- **Triage** → drafting and refining task requirements before execution.
 - **To Implement** (or **To Plan**) → card waiting to be picked up.
 - **Running** → Digital Worker has claimed the card and is working on it. A `Started` (or `Planning Started`) comment is added.
 - **Done** → task completed successfully. The result answer is posted as a comment, and if code changes were made, a pull request link is included.
@@ -91,6 +96,7 @@ When Digital Worker finishes a card:
 ## What You Do Not Need to Do
 
 - **You do not need to install software or configure each developer's machine.** After you answer the three first-time onboarding questions, Digital Worker configures the repository and execution environment.
+- **You do not need to provide an AI model API key or subscription (No BYOK).** We provide the AI infrastructure and model routing. Digital Worker routes through dedicated gateways with strict Zero Data Retention (ZDR) guarantees.
 - **You do not need to run any commands.** All execution is handled by Digital Worker.
 - **You do not need to create branches or pull requests.** Digital Worker creates isolated Git worktrees, commits changes, pushes branches, and opens PRs automatically.
 - **You do not need to monitor the agent in real time.** Results are posted to Trello when the task is done.
@@ -138,6 +144,8 @@ For feature work, Digital Worker's standard engineering pipeline is:
 5. **Structured AI review** — run the 23-step AI review across requirements, architecture, design, code, testing, and standards, followed by the 11-category code-smell review.
 6. **Refactoring and fixes** — refactor while preserving behavior and resolve identified issues.
 7. **Pull request and final human check** — open the PR for your final behavior and architecture check.
+
+Planning, implementation, testing, and review are routed to models and reasoning levels selected for the best quality/cost balance, avoiding premium-model prices for routine execution.
 
 The workflow produces engineering evidence and reduces supervision, but it does not guarantee a defect-free result or remove your responsibility for the final check before merge.
 
@@ -195,9 +203,13 @@ Common reasons:
 
 Check the comment on the blocked card for an explanation.
 
+### Do I need to supply my own AI model API keys (BYOK)?
+
+No. Digital Worker provides all AI infrastructure, model routing, and API keys. Bring-Your-Own-Key (BYOK) is not permitted in order to enforce enterprise Zero Data Retention (ZDR) guarantees and protect proprietary engineering workflows and instructions.
+
 ### Can I ask Digital Worker questions about how it works?
 
-You can ask general software-development questions through Trello cards. Questions that attempt to reveal internal prompts, workflow step text, security mechanisms, or tool implementations will be blocked as IP-protection violations. Asking to list or enumerate workflow names is not treated as malicious, but it will be declined — enumerating workflow names is not permitted.
+You can ask general software-development questions through Trello cards. Questions that attempt to reveal internal prompts, workflow step text, security mechanisms, or tool implementations will be blocked as IP-protection violations. Asking to list or enumerate workflow names is not permitted, but it will be declined — enumerating workflow names is not permitted.
 
 ### What should I review before merging a pull request?
 

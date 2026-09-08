@@ -96,12 +96,7 @@ The Calculator engine is a Rich Domain Model, not the anemic-data-plus-service-c
 
 The test suite covers boundary cases that AI-generated tests typically skip: 308 digits stays editable, 309 locks with an Overflow error; factorial at 0, 1, 170 (pass) and 171, 200 (overflow); `2^10000`, `10^1000`, `9^9^9` all assert Overflow. The division-by-zero lockout is tested as a state machine — pressing `7*8`, `Ans`, and `Delete` while locked is asserted to change nothing. There are negative conformance tests asserting the wrong base class is *not* used, and packaging conformance tests that parse the `.csproj` and `Package.appxmanifest` as XML to catch deployment issues before they reach a device. The codebase self-annotates its own smells and test gaps with `TODO(smell)` and `TODO(review)` comments — transparency about known issues, not hiding them.
 
-Production domain code achieves 99.6% line coverage and 95.4% branch coverage — only 4 lines and 15 branches uncovered across the entire domain.
-
-**Inspect the full proof chain:**
-* **Public Trello board (input):** [View Demo Board](https://trello.com/invite/b/6a03d01d53cf7bb95f8325dd/ATTI3f3561b96a9f5663247cbafaa06b71b7DBE19FF1/digital-worker-demo)
-* **Public GitHub repo (output):** [Inspect Demo Repo & PRs](https://github.com/grandua/Digital-Worker-Demo)  
-  *Compare the task cards with the PR history, then run the tests locally to evaluate the result.*
+**See the input that produced this:** The [public Trello board](https://trello.com/invite/b/6a03d01d53cf7bb95f8325dd/ATTI3f3561b96a9f5663247cbafaa06b71b7DBE19FF1/digital-worker-demo) shows the source task cards. Compare them with the demo repo’s PR history — that transformation is the product.
 
 #### 2. Try it on our demo board — Trello account only
 Request a demo board access in Trello, submit a bounded task card on the public demo board and watch DigitalWorker autonomously deliver a tested PR to the public demo repo. No GitHub credentials or API keys needed.

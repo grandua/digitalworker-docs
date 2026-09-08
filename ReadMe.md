@@ -51,6 +51,7 @@ DigitalWorker is not a faster coding assistant. It's a new category: a digital w
 * **Anti-Duplication Class Design with Dry-Run Pre-verification:** Current LLMs duplicate classes and create anemic data structures. Before proposing any new class, DigitalWorker inspects existing domain classes, runs cohesion checks, and drafts proposed class designs for your sign-off.
 * **True OOP & Rich Domain Models:** Scale the product without letting software complexity become the limit. Solves the plateau where AI code collapses. The engine forces behavior and state to live together, rejecting procedural "everything-depends-on-everything" anti-patterns.
 * **Engineering Evidence via Enforced Test-First TDD:** The feature workflow requires a failing test before implementation. The engine forces minimal implementation until tests pass, targeting near-complete conventional test coverage.
+* **Stop paying the AI bug tax:** Substantially fewer defects. Far less cleanup. DigitalWorker enforces test-first TDD targeting near-complete conventional coverage, then runs a dedicated 23-step correctness review and an 11-category code-smell scan. It fixes identified issues before opening the PR. Clean easy to read code also reduces defect rate. The quality work that eats your time becomes part of delivery. We don't promise defect-free code; we give you tests, review findings, and fixes you can inspect. You keep the final behavior check. [Inspect the demo and its fix history](#1-verify-our-claims--no-account-needed), then judge it on one real task.
 * **23-Step AI Review + 11-Category Smell Scan:** Requirements traceability, KISS, DRY, SOLID, layer direction, and code smells are audited and refactored before the PR is opened.
 * **High-Precision Instruction Engine:** Overcomes LLM instruction-dropping on complex SDLC tasks by managing server-side workflow states and delivering steps incrementally. AI actively resists Agile, Rich Domain Models, Clean Architecture, and Clean Code; DigitalWorker's proprietary engine overcomes that resistance, keeping dozens of workflow steps on track.
 * **Battle-Tested Engineering Method for Simplicity:** Reflects more than 20 years of Agile and OOP practice and two years of iterative refinement with AI coding agents. It searches for existing patterns before adding code, then prunes unnecessary abstractions and features (strictly enforcing KISS and YAGNI).
@@ -61,7 +62,7 @@ DigitalWorker is not a faster coding assistant. It's a new category: a digital w
 ### You also get
 
 * **Autonomous Execution:** Drop a card and walk away, or schedule recurring work. Multiple tasks execute simultaneously in isolated branches and environments.
-* **Uses the right AI model for each job:** Planning, implementation, testing, and review are routed to models selected for the best quality/cost balance, avoiding premium-model prices for routine execution.
+* **Uses the right AI model and reasoning level for each job:** Planning, implementation, testing, and review are routed to models selected for the best quality/cost balance, avoiding premium-model prices for routine execution.
 * **Design Documentation with Every PR:** Architecture decisions, trade-offs, CRC cards, and assumptions accompany the deliverable.
 * **Zero-Install Onboarding:** Connect GitHub from your Trello board. No CLI configuration, no IDE extensions, and no per-developer environment setup.
 
@@ -80,6 +81,22 @@ DigitalWorker is not a faster coding assistant. It's a new category: a digital w
 * **URL Shortener API:**  
   Clean Architecture, Domain/DataAccess/Presentation layers, Data Access with Entity Framework, test-first TDD, and full requirements traceability.  
   *Inspect and verify:* Browse the [`UrlShortener/` source and tests](https://github.com/grandua/Digital-Worker-Demo/tree/main/UrlShortener) or open the [solution](https://github.com/grandua/Digital-Worker-Demo/blob/main/UrlShortener/UrlShortener.sln).
+
+**Don't take our word for it — ask your own AI coding agent.**
+
+Ask your AI coding agent these questions:
+
+> "Clone https://github.com/grandua/Digital-Worker-Demo, then inspect the `Calculator/Domain/SciCalc.Domain/` folder. Tell me what is unusual, surprising, or different from typically generated AI code in terms of code quality, code clarity, test coverage, class design, and architecture. Ignore purely stylistic differences. Focus on what matters to a user maintaining and extending this code."
+
+Inspect and double-check its answer.
+
+When we asked these questions, our AI coding agent gave an answer that can be summarized the following way:
+
+The Calculator engine is a Rich Domain Model, not the anemic-data-plus-service-classes pattern that AI tools typically produce. The `Calculator` class is a true aggregate root — it owns the input buffer, memory bank, history, angle mode, and error state; all mutation flows through a single `Press(InputKey)` method. There are no manager classes, no static helpers, no service layer wrapping a data bag. The recursive-descent parser is a private nested class inside `MathExpression` — the implementation detail never leaks.
+
+The test suite covers boundary cases that AI-generated tests typically skip: 308 digits stays editable, 309 locks with an Overflow error; factorial at 0, 1, 170 (pass) and 171, 200 (overflow); `2^10000`, `10^1000`, `9^9^9` all assert Overflow. The division-by-zero lockout is tested as a state machine — pressing `7*8`, `Ans`, and `Delete` while locked is asserted to change nothing. There are negative conformance tests asserting the wrong base class is *not* used, and packaging conformance tests that parse the `.csproj` and `Package.appxmanifest` as XML to catch deployment issues before they reach a device. The codebase self-annotates its own smells and test gaps with `TODO(smell)` and `TODO(review)` comments — transparency about known issues, not hiding them.
+
+Production domain code achieves 99.6% line coverage and 95.4% branch coverage — only 4 lines and 15 branches uncovered across the entire domain.
 
 **Inspect the full proof chain:**
 * **Public Trello board (input):** [View Demo Board](https://trello.com/invite/b/6a03d01d53cf7bb95f8325dd/ATTI3f3561b96a9f5663247cbafaa06b71b7DBE19FF1/digital-worker-demo)

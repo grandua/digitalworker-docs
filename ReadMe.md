@@ -77,10 +77,12 @@ DigitalWorker is not a faster coding assistant. It's a new category: a digital w
   Inspect the OOP and Rich Domain Model architecture. 68 unit tests cover a demo of approximately 2,000 lines of code across 46 files. Production domain code achieves **99.6% line coverage** and **95.4% branch coverage** (only 4 lines and 15 branches uncovered across the entire domain).  
   *Human involvement:* Initial architecture/class-design spot-check, plus dropping 7 external PR agent defect prompts into a fix card for DigitalWorker to resolve autonomously.  
   *Execution time*: Initial implementation run ~3h 28m; automated defect-fix run ~2h 05m.  
-  *Inspect and verify:* Browse the [`Calculator/` source](https://github.com/grandua/Digital-Worker-Demo/tree/main/Calculator), read the [SciCalc project guide](https://github.com/grandua/Digital-Worker-Demo/blob/main/Calculator/src/SciCalc/README.md), or use the [workload-free domain and test solution](https://github.com/grandua/Digital-Worker-Demo/blob/main/Calculator/SciCalc.sln). The [full app solution](https://github.com/grandua/Digital-Worker-Demo/blob/main/Calculator/SciCalc.App.sln) additionally requires the .NET MAUI workloads.
+  *Inspect and verify:* Browse the [`Calculator/` source](https://github.com/grandua/Digital-Worker-Demo/tree/main/Calculator), read the [SciCalc project guide](https://github.com/grandua/Digital-Worker-Demo/blob/main/Calculator/Presentation/SciCalc.Maui/README.md), or use the [workload-free domain and test solution](https://github.com/grandua/Digital-Worker-Demo/blob/main/Calculator/SciCalc.slnx). The [full app solution](https://github.com/grandua/Digital-Worker-Demo/blob/main/Calculator/SciCalc.App.slnx) additionally requires the .NET MAUI workloads.
+  *Run the tests:* `dotnet run --project Calculator/Domain/SciCalc.Domain.UnitTests/SciCalc.Domain.UnitTests.csproj` — 230 tests pass, no MAUI workloads needed.
 * **URL Shortener API:**  
   Clean Architecture, Domain/DataAccess/Presentation layers, Data Access with Entity Framework, test-first TDD, and full requirements traceability.  
-  *Inspect and verify:* Browse the [`UrlShortener/` source and tests](https://github.com/grandua/Digital-Worker-Demo/tree/main/UrlShortener) or open the [solution](https://github.com/grandua/Digital-Worker-Demo/blob/main/UrlShortener/UrlShortener.sln).
+  *Inspect and verify:* Browse the [`UrlShortener/` source and tests](https://github.com/grandua/Digital-Worker-Demo/tree/main/UrlShortener) or open the [solution](https://github.com/grandua/Digital-Worker-Demo/blob/main/UrlShortener/UrlShortener.slnx).
+  *Run the tests:* `dotnet test UrlShortener/Presentation/UrlShortener.Api.UnitTests/UrlShortener.Api.UnitTests.csproj` — 40 unit tests pass.
 
 **Don't take our word for it — ask your own AI coding agent.**
 
@@ -99,7 +101,13 @@ The test suite covers boundary cases that AI-generated tests typically skip: 308
 **See the input that produced this:** The [public Trello board](https://trello.com/invite/b/6a03d01d53cf7bb95f8325dd/ATTI3f3561b96a9f5663247cbafaa06b71b7DBE19FF1/digital-worker-demo) shows the source task cards. Compare them with the demo repo’s PR history — that transformation is the product.
 
 #### 2. Try it on our demo board — Trello account only
-Request a demo board access in Trello, submit a bounded task card on the public demo board and watch DigitalWorker autonomously deliver a tested PR to the public demo repo. No GitHub credentials or API keys needed.
+Email us your Trello username to get added as a board member, then submit a bounded task card on the public demo board and watch DigitalWorker autonomously deliver a tested PR to the public demo repo. No GitHub credentials or API keys needed.
+
+Copy-paste this email:
+
+> **To:** [info@agiledigitalworker.com](mailto:info@agiledigitalworker.com)
+> **Subject:** Demo board access — DigitalWorker
+> **Body:** I'd like to try DigitalWorker on the public demo board. My Trello username is @[your-username]. Please add me as a board member.
 
 #### 3. Start using it on your repo — Trello + GitHub
 Connect your private repository via a narrowly scoped token. **Use the included $15 credit to evaluate one real task on your own codebase before paying.**

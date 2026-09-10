@@ -72,9 +72,9 @@ That is the capability to evaluate when comparing it with a custom script or a c
 
 #### Bring your own expertise beyond code
 
-The Instruction Engine's purpose extends to your own professional methods. **Developers, lawyers, marketers, and other professionals can bring their instructions into a custom workflow so the whole procedure is carried through.** Your competence defines the method; the engine supports its consistent execution.
+The Instruction Engine's purpose extends to your own professional methods. Developers, lawyers, marketers, and other professionals can bring their instructions in `.md` format so the whole procedure is carried through. Your competence defines the method; the engine supports its consistent execution.
 
-Have a multi-step process that your AI keeps only partly following? [Tell us about the workflow](mailto:info@agiledigitalworker.com). We'll identify its instructions, required tools, and acceptance checks for an evaluation. The public demonstrations below show engineering; other professional workflows need their own configuration and expert evaluation.
+Have a multi-step process that your AI keeps only partly following? Write your instructions in a Markdown file and [send them to us](mailto:info@agiledigitalworker.com). We will configure it for you for free. DigitalWorker currently uses only software design and development related built-in instructions, but adding custom instructions for any other industry and profession is trivial.
 
 ### Fits the way you want to work
 

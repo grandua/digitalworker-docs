@@ -20,19 +20,19 @@ Take pride in maintainable and **beautiful** work: clear intent, cohesive object
 
 [**Verify our claims — no account needed**](#1-verify-our-claims--no-account-needed)
 
-[**See the engineering behind the result**](https://github.com/grandua/digitalworker-docs/blob/main/Engineering-Deep-Dive.md) — the method, concrete code examples, comparison criteria, and economics. No signup required.
+[**See the engineering behind the result**](https://agiledigitalworker.com/engineering-deep-dive) — the method, concrete code examples, comparison criteria, and economics. No signup required.
 
 ---
 
 ### Why it's different
 
-**A combination found nowhere else that we know of:** high-precision instruction enforcement plus this depth of Agile, OOP, test-first TDD, review, and anti-duplication class design. Other agents can code, test, review, and open PRs; DigitalWorker carries the complete engineering method through delivery. [Inspect the difference](https://github.com/grandua/digitalworker-docs/blob/main/Engineering-Deep-Dive.md#why-this-combination-matters).
+**A combination found nowhere else that we know of:** high-precision instruction enforcement plus this depth of Agile, OOP, test-first TDD, review, and anti-duplication class design. Other agents can code, test, review, and open PRs; DigitalWorker carries the complete engineering method through delivery. [Inspect the difference](https://agiledigitalworker.com/engineering-deep-dive#why-this-combination-matters).
 
 #### Get relief from repeated review and repair
 
 Fast generation helps only when the result moves your product forward. DigitalWorker makes quality work part of delivery: enforced test-first TDD, a dedicated 23-step AI correctness-and-standards review, an 11-category code-smell scan, refactoring, and fixes before the PR. You receive the code, tests, and design decisions together.
 
-The sequence is explicit: **a failing behavior test → the minimum implementation to pass → review, refactoring, fixes, and re-checks**. [See how the workflow earns the outcome](https://github.com/grandua/digitalworker-docs/blob/main/Engineering-Deep-Dive.md#from-a-requirement-to-a-checked-implementation).
+The sequence is explicit: **a failing behavior test → the minimum implementation to pass → review, refactoring, fixes, and re-checks**. [See how the workflow earns the outcome](https://agiledigitalworker.com/engineering-deep-dive#from-a-requirement-to-a-checked-implementation).
 
 **Stop paying the AI bug tax.** We expect substantially fewer defects and far less cleanup than AI coding without this enforced pipeline. In founder production use, hands-on oversight is dramatically lower: spot-review the decisions and key domain code, then check the final behavior. Routine code does not need line-by-line review in that operating experience.
 
@@ -48,7 +48,7 @@ For non-developers, the starting point is the plan and acceptance criteria. You 
 
 Beautiful software makes its intent easy to understand. DigitalWorker searches for existing domain concepts before adding classes, checks cohesion, and brings behavior and state together in Rich Domain Models. It applies Clean Architecture, KISS, DRY, and YAGNI, pruning unnecessary abstractions and duplicate structures.
 
-In the Calculator demo, `Calculator` owns its state and behavior through `Press(InputKey)`; the parser stays inside `MathExpression`. Tests exercise overflow boundaries and the behavior of a locked error state. These are concrete examples of the clarity and care you can inspect. [Explore the code and edge-case tests](https://github.com/grandua/digitalworker-docs/blob/main/Engineering-Deep-Dive.md#what-beautiful-maintainable-code-looks-like).
+In the Calculator demo, `Calculator` owns its state and behavior through `Press(InputKey)`; the parser stays inside `MathExpression`. Tests exercise overflow boundaries and the behavior of a locked error state. These are concrete examples of the clarity and care you can inspect. [Explore the code and edge-case tests](https://agiledigitalworker.com/engineering-deep-dive#what-beautiful-maintainable-code-looks-like).
 
 This autonomous engineering governance layer **prevents almost all technical debt** in founder-observed production use. Its method reflects more than 20 years of Agile and OOP practice and two years of refinement with AI coding agents. The payoff extends beyond the next PR: a codebase you can take pride in as features, integrations, customers, and business rules multiply.
 
@@ -56,7 +56,7 @@ On well-scoped tasks, **we expect DigitalWorker to match or exceed the output of
 
 ### Put your expertise into more ambitious work
 
-**Professional-developer output at AI execution cost.** Direct your judgment toward the product while the workflow handles routine implementation and quality work. The current usage model is model cost plus approximately 20% markup; [see the economics and how to evaluate total effort](https://github.com/grandua/digitalworker-docs/blob/main/Engineering-Deep-Dive.md#economics-pay-for-execution-keep-your-judgment).
+**Professional-developer output at AI execution cost.** Direct your judgment toward the product while the workflow handles routine implementation and quality work. The current usage model is model cost plus approximately 20% markup; [see the economics and how to evaluate total effort](https://agiledigitalworker.com/engineering-deep-dive#economics-pay-for-execution-keep-your-judgment).
 
 Experienced developers can take on more architecture, product decisions, and test leadership while retaining the parts of engineering they enjoy. Non-developers can turn clear requirements into working software and bring in experienced judgment for consequential design choices. The opportunity is to build more of what matters to you, with competence visible in the result.
 
@@ -93,7 +93,7 @@ Browse the [public source](https://github.com/grandua/Digital-Worker-Demo), [sou
 - **[Scientific Calculator](https://github.com/grandua/Digital-Worker-Demo/tree/main/Calculator):** 230 domain unit tests, a Rich Domain Model, and explicit edge-case behavior. External review found issues, followed by autonomous remediation through a fix card.
 - **[URL Shortener API](https://github.com/grandua/Digital-Worker-Demo/tree/main/UrlShortener):** 40 unit tests, Clean Architecture, Entity Framework data access, and requirements traceability.
 
-[Inspect the recorded coverage, execution times, human involvement, and recovery](https://github.com/grandua/digitalworker-docs/blob/main/Engineering-Deep-Dive.md#recorded-demo-results-and-recovery). The examples demonstrate the work delivered, not a guaranteed result for every task. Initial internal review did not catch every Calculator issue; the fix history shows what happened next.
+[Inspect the recorded coverage, execution times, human involvement, and recovery](https://agiledigitalworker.com/engineering-deep-dive#recorded-demo-results-and-recovery). The examples demonstrate the work delivered, not a guaranteed result for every task. Initial internal review did not catch every Calculator issue; the fix history shows what happened next.
 
 To run the domain/API tests yourself, install the .NET 10 SDK and use:
 
@@ -106,7 +106,7 @@ dotnet test UrlShortener/UrlShortener.slnx
 
 The Calculator domain/test solution needs no MAUI workloads. The [full app solution](https://github.com/grandua/Digital-Worker-Demo/blob/main/Calculator/SciCalc.App.slnx) requires them; see the [SciCalc project guide](https://github.com/grandua/Digital-Worker-Demo/blob/main/Calculator/Presentation/SciCalc.Maui/README.md).
 
-**Use your own judgment and your own AI coding agent.** The deep dive includes a [balanced inspection prompt and evaluation method](https://github.com/grandua/digitalworker-docs/blob/main/Engineering-Deep-Dive.md#evaluate-it-against-your-own-standard). Choose your acceptance criteria first and judge the result, remaining cleanup, and hands-on time. Your existing AI-agent costs may apply.
+**Use your own judgment and your own AI coding agent.** The deep dive includes a [balanced inspection prompt and evaluation method](https://agiledigitalworker.com/engineering-deep-dive#evaluate-it-against-your-own-standard). Choose your acceptance criteria first and judge the result, remaining cleanup, and hands-on time. Your existing AI-agent costs may apply.
 
 #### 2. Try it on our demo board — Trello account only
 
@@ -119,7 +119,7 @@ The demo trial requires a Trello account; no GitHub credentials or LLM key are n
 **Use the included $15 credit to evaluate one bounded real task on your own codebase before paying.** Larger tasks should be scoped first; the credit does not guarantee every task costs $15 or less.
 
 1. [Email your preferred Trello board name](mailto:info@agiledigitalworker.com). We provision a private board and send an invite, usually within 24 hours.
-2. On the private board, follow the three-question [first-time setup](https://github.com/grandua/digitalworker-docs/blob/main/user-guide.md#first-time-setup): repository HTTPS clone URL, branch, and a narrowly scoped GitHub personal access token with the permissions needed to push branches and open PRs. Delete the token comment after confirmation. Setup does not run an AI coding task.
+2. On the private board, follow the three-question [first-time setup](https://agiledigitalworker.com/user-guide#first-time-setup): repository HTTPS clone URL, branch, and a narrowly scoped GitHub personal access token with the permissions needed to push branches and open PRs. Delete the token comment after confirmation. Setup does not run an AI coding task.
 3. Add a bounded task and acceptance criteria in `To Implement`, or draft in `Triage` and move it when ready.
 4. Review pivotal decisions as needed, receive the tested/reviewed PR and design package, and perform the final behavior check. Use experienced architecture review for complex or novel design decisions.
 
@@ -129,6 +129,6 @@ You need a Trello account, GitHub account, and a repository you can authorize. W
 
 **Agile Design LLC · New York, NY**
 
-[Message on LinkedIn](https://www.linkedin.com/in/grand) · [Email us](mailto:info@agiledigitalworker.com) · [agiledigitalworker.com](https://agiledigitalworker.com) · [User Guide](https://github.com/grandua/digitalworker-docs/blob/main/user-guide.md)
+[Message on LinkedIn](https://www.linkedin.com/in/grand) · [Email us](mailto:info@agiledigitalworker.com) · [agiledigitalworker.com](https://agiledigitalworker.com) · [User Guide](https://agiledigitalworker.com/user-guide)
 
 © 2026 Agile Design LLC. DigitalWorker and its workflow materials are proprietary.

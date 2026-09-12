@@ -11,7 +11,7 @@ Digital Worker is a fully autonomous, non-interactive AI coding agent. It reads 
 
 Execution is autonomous, but pivotal product and architecture decisions remain yours. For complex or high-impact work, use planning mode first so you can spot-review and correct selected sections of the AI-drafted research, planning, architecture, and class-design document package before implementation.
 
-Digital Worker's proprietary instruction execution engine keeps required engineering steps in the execution path. The integrated product is currently in early access; its underlying workflows and instructions have been refined through two years of daily engineering use.
+Digital Worker's proprietary instruction execution engine keeps required engineering steps in the execution path. That enforcement is what makes the result dependable: models are trained on a corpus heavy with anti-patterns and drift back to them over long multi-step tasks — even with skills, rules files, and explicit guardrails — so the engine keeps relevant instructions in the execution path rather than trusting the model to hold the whole procedure. The integrated product is currently in early access; its underlying workflows and instructions have been refined through two years of daily engineering use.
 
 ### Why rigorous engineering discipline matters
 
@@ -161,7 +161,7 @@ The workflow produces engineering evidence and reduces supervision, but it does 
 
 ## How to Add Workflows into Digital Worker and Share Them With Your Team
 
-Digital Worker's instruction execution engine delivers required steps incrementally instead of relying on the AI to remember a huge static prompt. Custom instructions use the same execution model.
+Digital Worker's instruction execution engine keeps required steps in the execution path instead of relying on the AI to remember a huge static prompt. Custom instructions use the same execution model.
 
 Here is a simple way to customize and share workflows across your teams:
 1. Create a workflow using the shared Windsurf and Antigravity format. The easiest approach is to use the built-in "Create Workflow" feature in Windsurf Cascade or Google Antigravity.

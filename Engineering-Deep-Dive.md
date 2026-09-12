@@ -24,9 +24,11 @@ When comparing your alternatives, ask for evidence of the whole delivery sequenc
 
 Skills make instructions and supporting resources reusable. The difficult part is carrying a multi-step method through a long execution chain without losing requirements or reverting to familiar anti-patterns. In founder use, models repeatedly gravitated toward procedural designs, duplicated classes, and anemic domain models even with contrary instructions.
 
-DigitalWorker's proprietary Instruction Engine maintains workflow state on the server and delivers active steps incrementally. It keeps the required design, implementation, testing, review, and repair sequence in the execution path.
+DigitalWorker's proprietary model-adaptable Instruction Engine keeps the required design, implementation, testing, review, and repair instructions in the execution path.
 
 **DigitalWorker has virtually solved instruction-following for its engineering workflows in founder-observed production use.** The claim describes practical reliability in these workflows, not infallibility for every model action or every profession. The public demos let you assess the output and recovery; they are not a complete instruction-adherence benchmark.
+
+This is not a private observation. Published work documents the same structural failures: agents degrade across iterative tasks ([SlopCodeBench](https://www.arxiv.org/pdf/2603.24755)), per-step errors compound across long horizons ([arXiv 2604.11978](https://arxiv.org/html/2604.11978v1)), tool calls get hallucinated and completions falsely declared ([AWS Builder Center](https://builder.aws.com/content/3HJsZwEzpYmgRLuRPNGZxmUtYey/agent-failure-modes-in-long-horizon-tasks)), a skill's body inherits every reliability problem of a prompt ([skills reliability gap](https://github.com/modiqo/skillspec/blob/main/docs/00-skills-reliability-gap.md)), and agents bypass mandated step workflows even under explicit "never skip steps" guardrails ([anthropics/claude-code#39851](https://github.com/anthropics/claude-code/issues/39851)).
 
 An equivalent result is a substantial engineering challenge. A custom script or skills collection should be evaluated on sustained execution, omissions, fixes, and human effort—not inferred equivalent because it can perform an individual step. Bring a bounded task with your acceptance criteria and compare what actually happens.
 

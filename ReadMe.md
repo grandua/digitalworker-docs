@@ -1,4 +1,4 @@
-# DigitalWorker — Sell Sheet
+﻿# DigitalWorker — Sell Sheet
 
 ---
 
@@ -52,11 +52,15 @@ In the Calculator demo, `Calculator` owns its state and behavior through `Press(
 
 This autonomous engineering governance layer **prevents almost all technical debt** in founder-observed production use. Its method reflects more than 20 years of Agile and OOP practice and two years of refinement with AI coding agents. The payoff extends beyond the next PR: a codebase you can take pride in as features, integrations, customers, and business rules multiply.
 
-On well-scoped tasks, **we expect DigitalWorker to match or exceed the output of the top 10% of professional developers**, based on founder production use. This is an educated expectation grounded in the enforced method and observed output, not an independently benchmarked ranking.
+On well-scoped tasks, **we expect DigitalWorker to match or exceed the output of the top 10%* of professional developers**
 
 ### Put your expertise into more ambitious work
 
-**Professional-developer output at AI execution cost.** Direct your judgment toward the product while the workflow handles routine implementation and quality work. The current usage model is model cost plus approximately 20% markup; [see the economics and how to evaluate total effort](https://agiledigitalworker.com/Engineering-Deep-Dive#economics-pay-for-execution-keep-your-judgment).
+**Top 10% professional-developer output* at AI execution cost.**
+
+*Founder-observed expectation based on 20 years of development experience and production use — not an independently benchmarked ranking.
+
+Direct your judgment toward the product while the workflow handles routine implementation and quality work. The current usage model is model cost plus approximately 20% markup; [see the economics and how to evaluate total effort](https://agiledigitalworker.com/Engineering-Deep-Dive#economics-pay-for-execution-keep-your-judgment).
 
 Experienced developers can take on more architecture, product decisions, and test leadership while retaining the parts of engineering they enjoy. Non-developers can turn clear requirements into working software and bring in experienced judgment for consequential design choices. The opportunity is to build more of what matters to you, with competence visible in the result.
 
@@ -124,6 +128,8 @@ The demo trial requires a Trello account; no GitHub credentials or LLM key are n
 4. Review pivotal decisions as needed, receive the tested/reviewed PR and design package, and perform the final behavior check. Use experienced architecture review for complex or novel design decisions.
 
 You need a Trello account, GitHub account, and a repository you can authorize. We provide the AI infrastructure. No local install, terminal, or per-developer setup is required for this path.
+
+*Founder-observed expectation grounded in the enforced method, not an independently benchmarked ranking.
 
 ---
 

@@ -124,7 +124,7 @@ When Digital Worker finishes a card:
 - **Prevent duplicate and anemic classes** — before proposing any new class, search the codebase for existing classes that could host the planned behavior. This significantly reduces the code and class duplication that every other AI coding tool produces.
 - **Fix bugs** — diagnose defects through evidence from code, tests, builds, logs, command output, research, or an approved spike before changing implementation. If you find a defect after merge, submit a focused fix card with steps to reproduce it and the expected result so Digital Worker can perform the repair work.
 - **Write tests** — create unit, integration, or end-to-end tests following testing best practices such as test isolation.
-- **Review code** — run a 23-step AI review covering requirements, architecture, design, code, testability, and engineering standards, followed by an 11-category code-smell review.
+- **Review code** — run a ~100-step checklist-driven review covering requirements, architecture, design, code, testability, engineering standards, and code smells.
 - **Refactor legacy code** — preserve behavior while moving procedural or tightly coupled code toward modular, testable design using OOP and functional techniques where appropriate.
 - **Refactor and fix review findings** — improve structure while preserving behavior, then resolve identified review and code-smell issues before opening the PR.
 - **Commit and push safely** — review the intended file set and stage only task-related changes. Exclude temporary files, build and generated output, package directories, virtual environments, local configuration and secrets, and OS/IDE files. Commit locally, then let the system push the branch and open a pull request for your final behavior and architecture check.
@@ -141,7 +141,7 @@ For feature work, Digital Worker's standard engineering pipeline is:
 2. **Human decision checkpoint when warranted** — you spot-review and correct selected decision-heavy sections for complex or high-impact work. Routine work can run end to end without this checkpoint.
 3. **Test-first implementation** — write and run a failing test before adding the minimum implementation needed to pass.
 4. **Architecture and code discipline** — apply Clean Architecture, OOP/Rich Domain Model, and Clean Code rules during implementation. Before creating any new class, search the codebase for existing host classes, and apply a cohesion check.
-5. **Structured AI review** — run the 23-step AI review across requirements, architecture, design, code, testing, and standards, followed by the 11-category code-smell review.
+5. **Structured AI review** — run the ~100-step checklist-driven review across requirements, architecture, design, code, testing, standards, and code smells.
 6. **Refactoring and fixes** — refactor while preserving behavior and resolve identified issues.
 7. **Pull request and final human check** — open the PR for your final behavior and architecture check.
 

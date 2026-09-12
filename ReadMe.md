@@ -30,7 +30,7 @@ Take pride in maintainable and **beautiful** work: clear intent, cohesive object
 
 #### Get relief from repeated review and repair
 
-Fast generation helps only when the result moves your product forward. DigitalWorker makes quality work part of delivery: enforced test-first TDD, a dedicated 23-step AI correctness-and-standards review, an 11-category code-smell scan, refactoring, and fixes before the PR. You receive the code, tests, and design decisions together.
+Fast generation helps only when the result moves your product forward. DigitalWorker makes quality work part of delivery: enforced test-first TDD, a dedicated ~100-step checklist-driven review (correctness, architecture and standards, code-smell detection, requirements audit), refactoring, and fixes before the PR. You receive the code, tests, and design decisions together.
 
 The sequence is explicit: **a failing behavior test → the minimum implementation to pass → review, refactoring, fixes, and re-checks**. [See how the workflow earns the outcome](https://agiledigitalworker.com/Engineering-Deep-Dive#from-a-requirement-to-a-checked-implementation).
 

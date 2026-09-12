@@ -6,7 +6,7 @@ You should be able to explain why the code deserves your confidence. DigitalWork
 
 ## Why this combination matters
 
-Writing code, running tests, reviewing a diff, and opening a PR are individually available in many coding tools. DigitalWorker's differentiation is the execution of the complete method: high-precision multi-step instruction enforcement, design before scaffolding, existing-code discovery, test-first TDD, a 23-step AI review, an 11-category code-smell scan, refactoring, and fixes.
+Writing code, running tests, reviewing a diff, and opening a PR are individually available in many coding tools. DigitalWorker's differentiation is the execution of the complete method: high-precision multi-step instruction enforcement, design before scaffolding, existing-code discovery, test-first TDD, a ~100-step checklist-driven review, refactoring, and fixes.
 
 We are not aware of another commercial coding agent that combines these capabilities at this depth. That is a statement about the combination and operating experience, not a claim that competing tools cannot test or review. The method reflects more than 20 years of Agile and OOP practice and two years of refinement with AI agents.
 
@@ -37,7 +37,7 @@ The feature workflow turns engineering discipline into part of delivery:
 1. **Make the intended behavior explicit.** Establish requirements, acceptance criteria, assumptions, and consequential design decisions. Search for existing domain concepts before proposing new classes; review class–responsibility–collaboration (CRC) proposals and correct responsibilities and relationships before scaffolding.
 2. **Write a failing test first.** The initial test expresses behavior the current implementation does not provide. Confirm the failure before adding the implementation.
 3. **Implement the minimum needed to pass.** Run the tests, then improve the design without changing the specified behavior. Repeat as the task requires.
-4. **Review the implementation and its fit.** The dedicated 23-step AI review covers correctness, requirements traceability, architecture, testing, KISS, DRY, SOLID, and layer direction. The 11-category smell scan examines structural problems. These are workflow-directed review passes, not 23 independent static analyzers.
+4. **Review the implementation and its fit.** The dedicated ~100-step checklist-driven review covers correctness, requirements traceability, architecture, testing, KISS, DRY, SOLID, layer direction, and structural code smells. These are workflow-directed checklist steps executed by the AI, not independent static analyzers.
 5. **Refactor and fix findings.** Re-run relevant checks after changes. The deliverable includes the design package: decisions, trade-offs, assumptions, and proposed class responsibilities.
 6. **Perform your final behavior check.** Review pivotal decisions and key domain code as needed, then verify the intended experience before merge or release. Complex or novel architecture benefits from experienced human judgment.
 

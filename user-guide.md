@@ -43,6 +43,8 @@ That creates a compounding business advantage. A disciplined codebase can suppor
 4. **Move the card to the "To Implement" list** (or draft it in **"Triage"** until requirements and acceptance criteria are finalized, then move it to "To Implement").
 5. Digital Worker will automatically pick up the card, move it to "Running", and begin work.
 
+**A good zero-risk first task:** create a card asking Digital Worker to review a slice of your codebase. It marks architecture and code-smell issues as `//TODO` comments without modifying your code — a safe way to see the review workflow in action. The issues it surfaces are the same ones that make AI-written code plateau and eat your attention.
+
 ### Planning a task
 
 If your board has a "To Plan" list, placing a card there causes Digital Worker to run in **planning mode**. It automatically selects a lighter or more detailed planning process based on the task's complexity. Instead of implementing code directly, it creates an AI-drafted document package covering research, planning, architecture, class design, integration points, implementation sequence, trade-offs, assumptions, and open questions. The planning result is published as a Trello comment; if the workflow writes documents to the repository, Digital Worker commits them and includes the resulting pull request link.

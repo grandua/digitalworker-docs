@@ -97,6 +97,8 @@ Browse the [public source](https://github.com/grandua/Digital-Worker-Demo), [sou
 - **[Scientific Calculator](https://github.com/grandua/Digital-Worker-Demo/tree/main/Calculator):** 230 domain unit tests, a Rich Domain Model, and explicit edge-case behavior. External review found issues, followed by autonomous remediation through a fix card.
 - **[URL Shortener API](https://github.com/grandua/Digital-Worker-Demo/tree/main/UrlShortener):** 40 unit tests, Clean Architecture, Entity Framework data access, and requirements traceability.
 
+Read it like a senior dev: methods are short, parameters few, state and behavior live in the same classes, Domain depends on nothing, and coverage is near-complete.
+
 [Inspect the recorded coverage, execution times, human involvement, and recovery](https://agiledigitalworker.com/Engineering-Deep-Dive#recorded-demo-results-and-recovery). The examples demonstrate the work delivered, not a guaranteed result for every task. Initial internal review did not catch every Calculator issue; the fix history shows what happened next.
 
 To run the domain/API tests yourself, install the .NET 10 SDK and use:
@@ -126,6 +128,8 @@ The demo trial requires a Trello account; no GitHub credentials or LLM key are n
 2. On the private board, follow the three-question [first-time setup](https://agiledigitalworker.com/user-guide#first-time-setup): repository HTTPS clone URL, branch, and a narrowly scoped GitHub personal access token with the permissions needed to push branches and open PRs. Delete the token comment after confirmation. Setup does not run an AI coding task.
 3. Add a bounded task and acceptance criteria in `To Implement`, or draft in `Triage` and move it when ready.
 4. Review pivotal decisions as needed, receive the tested/reviewed PR and design package, and perform the final behavior check. Use experienced architecture review for complex or novel design decisions.
+
+**Or start even smaller:** ask DigitalWorker to review a slice of your codebase. It marks architecture and code-smell issues as `//TODO` comments — without touching your code. Count how much it finds. The issues it surfaces are the same ones that make AI-written code plateau and eat your attention.
 
 You need a Trello account, GitHub account, and a repository you can authorize. We provide the AI infrastructure. No local install, terminal, or per-developer setup is required for this path.
 

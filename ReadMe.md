@@ -40,7 +40,7 @@ The sequence is explicit: **a failing behavior test → the minimum implementati
 
 #### Keep control of consequential decisions
 
-You choose what to build, the acceptance criteria, and the trade-offs you can live with. Review the proposed plan, assumptions, and pivotal architecture decisions. Before new classes are scaffolded, inspect their proposed responsibilities and relationships; correct the design where needed. DigitalWorker executes the engineering work through the proprietary workflow engine.
+You choose what to build, the acceptance criteria, and the trade-offs you can live with. You no longer review for logic — AI reviews and checklists handle that; your review is judgment, placed early, before implementation. Review the proposed plan, assumptions, and pivotal architecture decisions. Before new classes are scaffolded, inspect their proposed responsibilities and relationships; correct the design where needed. DigitalWorker executes the engineering work through the proprietary workflow engine.
 
 For non-developers, the starting point is the plan and acceptance criteria. You can delegate implementation and routine design; novel or complex architecture still benefits from an experienced developer's judgment. You keep the final behavior check before merge.
 

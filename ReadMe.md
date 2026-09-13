@@ -85,7 +85,7 @@ Have a multi-step process that your AI keeps only partly following? Write your i
 - **No iterative prompting:** Submit a task card and let the workflow execute. Review pivotal decisions when needed, without continuously driving implementation through chat.
 - **Work can continue while you focus elsewhere:** Tasks can run simultaneously in isolated branches and environments, or arrive on recurring schedules through Trello's Task Repeater.
 - **Decisions accompany the deliverable:** The design package records architecture decisions, trade-offs, class responsibilities, and assumptions.
-- **Managed AI infrastructure:** Role-specific models and reasoning levels are selected for the quality/cost balance of planning, implementation, testing, and review. We provide the model access and API keys.
+- **Managed AI infrastructure:** Each phase — planning, implementation, testing, review — runs on whichever model currently sits on the price/performance frontier for that kind of work, and the selection adapts as the frontier shifts. We provide the model access and API keys.
 - **No local setup to start using it:** Connect your Trello board and GitHub repository. No CLI configuration, IDE extension, or per-developer installation.
 
 ### Getting Started — Three Ways In

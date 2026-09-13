@@ -22,7 +22,7 @@ When comparing your alternatives, ask for evidence of the whole delivery sequenc
 
 ## Why skills alone do not establish reliable execution
 
-Skills make instructions and supporting resources reusable. The difficult part is carrying a multi-step method through a long execution chain without losing requirements or reverting to familiar anti-patterns. In founder use, models repeatedly gravitated toward procedural designs, duplicated classes, and anemic domain models even with contrary instructions.
+Skills make instructions and supporting resources reusable. The difficult part is carrying a multi-step method through a long execution chain without losing requirements or reverting to familiar anti-patterns. In founder use, models repeatedly gravitated toward procedural designs, duplicated classes, and anemic domain models even with contrary instructions. That is unsurprising: most production code is procedural or anemic — it is the corpus the models trained on. Martin Fowler called the anemic domain model "a fundamental horror... so contrary to the basic idea of object-oriented design" — yet tutorials, ORM scaffolding, and deadline pressure made it the industry default. The models did not learn a bad habit; they learned the industry's habit.
 
 DigitalWorker's proprietary model-adaptable Instruction Engine keeps the required design, implementation, testing, review, and repair instructions in the execution path.
 
@@ -93,7 +93,7 @@ Sonar's *2026 State of Code Developer Survey*, based on 1,149 responses collecte
 
 ## Economics: pay for execution, keep your judgment
 
-The aim is **professional-developer output at AI execution cost**, while you retain the judgment that defines good work. Routine implementation, tests, review, and fixes consume model inference rather than requiring you to perform each step manually. Planning, implementation, testing, and review use role-specific model configurations selected for their quality/cost balance, so routine work need not always use the most expensive model.
+The aim is **professional-developer output at AI execution cost**, while you retain the judgment that defines good work. Routine implementation, tests, review, and fixes consume model inference rather than requiring you to perform each step manually. Planning, implementation, testing, and review use role-specific model configurations selected for their quality/cost balance, so routine work need not always use the most expensive model. Model selection is not a one-time choice: each phase runs on the model currently on the price/performance frontier for that work, and the selection moves as the frontier does.
 
 The current usage model is actual model cost plus approximately **20% markup**. For illustration, $10 of model usage corresponds to about $12 under that formula. This is pricing arithmetic, not a quote for a particular task. Model selection, task scope, context, and repair work affect consumption. We provide the model access and infrastructure; customer API keys are not required.
 

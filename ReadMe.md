@@ -125,7 +125,7 @@ The demo trial requires a Trello account; no GitHub credentials or LLM key are n
 
 #### 3. Start using it on your repo — Trello + GitHub
 
-**Use the included $15 credit to evaluate one bounded real task on your own codebase before paying.** Larger tasks should be scoped first; the credit does not guarantee every task costs $15 or less.
+**Use the included $15 credit to evaluate one bounded real task on your own codebase before paying.** Larger tasks should be scoped first; the credit does not guarantee every task costs $15 or less. Billing is set up during onboarding — no checkout page yet.
 
 1. [Email your preferred Trello board name](mailto:info@agiledigitalworker.com). We provision a private board and send an invite, usually within 24 hours.
 2. On the private board, follow the three-question [first-time setup](https://agiledigitalworker.com/user-guide#first-time-setup): repository HTTPS clone URL, branch, and a narrowly scoped GitHub personal access token with the permissions needed to push branches and open PRs. Delete the token comment after confirmation. Setup does not run an AI coding task.

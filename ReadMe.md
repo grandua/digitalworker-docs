@@ -78,7 +78,7 @@ That is the capability to evaluate when comparing it with a custom script or a c
 
 The Instruction Engine's purpose extends to your own professional methods. Developers, lawyers, marketers, and other professionals can bring their instructions in `.md` format so the whole procedure is carried through. Your competence defines the method; the engine supports its consistent execution.
 
-Have a multi-step process that your AI keeps only partly following? Write your instructions in a Markdown file and [send them to us](mailto:info@agiledigitalworker.com). We will configure it for you for free. DigitalWorker currently uses only software design and development related built-in instructions, but adding custom instructions for any other industry and profession is trivial.
+Have a multi-step process that your AI keeps only partly following? Write your instructions in a Markdown file and [send them to us](mailto:info@agiledigitalworker.com). We will configure it for you for free. The built-in instructions are replaceable presets, not fixed: DigitalWorker currently ships software design and development related instructions, but swapping in custom instructions — for your own engineering method or for any other industry and profession — is trivial.
 
 ### Fits the way you want to work
 
@@ -86,6 +86,7 @@ Have a multi-step process that your AI keeps only partly following? Write your i
 - **Work can continue while you focus elsewhere:** Tasks can run simultaneously in isolated branches and environments, or arrive on recurring schedules through Trello's Task Repeater.
 - **Decisions accompany the deliverable:** The design package records architecture decisions, trade-offs, class responsibilities, and assumptions.
 - **Managed AI infrastructure:** Each phase — planning, implementation, testing, review — runs on whichever model currently sits on the price/performance frontier for that kind of work, and the selection adapts as the frontier shifts. Process depth scales with the task too: a bounded fix doesn't pay for a heavy planning pass. We provide the model access and API keys.
+- **Opinionated but replaceable:** The Agile, Clean Architecture, and OOP discipline bundle is a preset, not a cage. Bring your own engineering instructions — the same instruction engine carries them with the same precision.
 - **No local setup to start using it:** Connect your Trello board and GitHub repository. No CLI configuration, IDE extension, or per-developer installation.
 
 ### Getting Started — Three Ways In

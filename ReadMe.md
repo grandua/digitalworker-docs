@@ -1,4 +1,4 @@
-﻿# DigitalWorker — Sell Sheet
+# DigitalWorker — Sell Sheet
 
 ---
 
@@ -79,6 +79,8 @@ That is the capability to evaluate when comparing it with a custom script or a c
 The Instruction Engine's purpose extends to your own professional methods. Developers, lawyers, marketers, and other professionals can bring their instructions in `.md` format so the whole procedure is carried through. Your competence defines the method; the engine supports its consistent execution.
 
 Have a multi-step process that your AI keeps only partly following? Write your instructions in a Markdown file and [send them to us](mailto:info@agiledigitalworker.com). We will configure it for you for free. The built-in instructions are replaceable presets, not fixed: DigitalWorker currently ships software design and development related instructions, but swapping in custom instructions — for your own engineering method or for any other industry and profession — is trivial.
+
+Your instructions stay yours. They run through the same protected engine that guards our own instruction IP, and provider-side Zero Data Retention means they are never retained for model training.
 
 ### Fits the way you want to work
 

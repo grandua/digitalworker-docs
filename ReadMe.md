@@ -10,10 +10,10 @@ AI wrote the code. You're still doing the cleanup.
 ## Why Did We Build Digital Worker? These Are Our Assumptions Behind It:
 
 - Current AI without guardrails pretty much always produces sloppy, badly engineered code and architecture, since its statistical patterns come from training on human code — and most human code, public or private, ignores OOP discipline, layering, and tests
-- Guiding AI to convert its spaghetti code and broken architecture takes a lot of review and fixing/prompting work, not just additional tokens. - This is the main reason AI agents improve shipping speed only marginally — controlled research puts real-world gains at ~25% at best, not manifold[^3]
+- Guiding AI to convert its spaghetti code and broken architecture takes a lot of review and fixing/prompting work, not just additional tokens. This is the main reason AI agents improve shipping speed only marginally — controlled research puts real-world gains at ~25% at best, not manifold[^3]
 - If a software solution is built with AI by a human who never fights back the AI slop, complexity limits are reached quickly: within as little as one month the AI's pace of change plateaus and the defect count becomes unmanageable
 - Even if a team of humans fights back using AI to review AI code, gives AI code standards, some architecture and instructions how to review code, the slop still overwhelms at scale — review capacity becomes the bottleneck, new features break existing ones, and the codebase converges to a plateau where only long-frozen features are dependable.[^1]
-- Current AI has severely impaired judgment which manifests in constant confusion about real world
+- Current AI has severely impaired judgment which manifests in constant confusion about the real world
 - Current AI absolutely cannot be trusted to make important decisions
 - AI will not fix itself without competent help from human experts: Current AI is nowhere close to AGI, and no known architecture changes that anytime soon.
 

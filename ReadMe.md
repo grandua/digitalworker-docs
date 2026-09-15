@@ -1,12 +1,31 @@
-# DigitalWorker — Sell Sheet
+# Why DigitalWorker?
 
 ---
 
 ![ILLUSTRATIVE TYPICAL RUN — actual results vary by task](./Sells-Sheet-Images/Sells-Sheet-top-image-Trello-with-popups.png)
 
 ---
-
 AI wrote the code. You're still doing the cleanup.
+
+## Why Did We Build Digital Worker? These Are Our Assumptions Behind It:
+
+- Current AI is nowhere close to AGI, and no known architecture changes that anytime soon.
+- Current AI has severely impaired judgment which manifests in constant confusion about real world
+- Current AI absolutely cannot be trusted to make important decisions
+- Current AI without guardrails pretty much always produces sloppy, badly engineered code and architecture, since its statistical patterns come from training on human code — and most human code, public or private, ignores OOP discipline, layering, and tests
+- Guiding AI to convert its spaghetti code and broken architecture takes a lot of review and fixing/prompting work, not just additional tokens. - This is the main reason AI agents improve shipping speed only marginally — controlled research puts real-world gains at ~25% at best, not manifold[^3]
+- If a software solution is built with AI by a human who never fights back the AI slop, complexity limits are reached quickly: within as little as one month the AI's pace of change plateaus and the defect count becomes unmanageable
+- Even if a team of humans fights back using AI to review AI code, gives AI code standards, some architecture and instructions how to review code, the slop still overwhelms at scale — review capacity becomes the bottleneck, new features break existing ones, and the codebase converges to a plateau where only long-frozen features are dependable.[^1]
+
+[^1]: Evidence from OpenClaw (2026): maintainers had to halt feature work for 7 weeks and then integrate 16,000 PRs in one release, stating that human review, architecture and release processes had become the bottleneck; ~80% of AI-generated PRs get rejected; of what passes, more than half of subsequent commits are fixes for what was just merged; new releases routinely regress working functionality, forcing users to pin old versions; the project's own engineers publicly acknowledged AI "vibe slop" slips through because review capacity cannot scale with agent output. Asking AI to fight its own slop shifts the bottleneck from writing code to reviewing it rather than eliminating it.
+
+[^3]: The strongest controlled evidence brackets the gain narrowly: three field RCTs across 4,867 developers at Microsoft, Accenture, and a Fortune 100 company found a 26% increase in completed tasks with an AI assistant (Cui et al., Management Science, 2025) — while a 2025 METR RCT found experienced open-source developers were actually ~19% *slower* with AI tools on their own mature repositories, even though they believed they had been ~20% faster. Our founder's own measured experience before adopting AI-checklist-driven workflows matched the ~25% figure.
+
+## What we claim as possible
+- Nevertheless, the problem above has a better solution and current AI can be asked to run checklists with hundreds of steps and produce much better structured code that is actually easy to follow, easy to change, with pretty good mutation test coverage and that scales almost linearly with complexity.
+- The catch is that AI will not follow such huge checklists if they are given to it as pure text and in a generic fashion. However, checklists coupled with a smart, adjustable instruction engine can make AI follow every step.
+- Also, current AI can be asked to make most important decisions upfront in a dry-run fashion which allows humans to unconfuse AI by overriding those decisions as needed (and optionally explaining rationale)
+
 
 ## You make the decisions that matter. Build software you're proud to put your name on.
 
@@ -52,13 +71,11 @@ In the Calculator demo, `Calculator` owns its state and behavior through `Press(
 
 This autonomous engineering governance layer **prevents almost all technical debt** in founder-observed production use. Its method reflects more than 20 years of Agile and OOP practice and two years of refinement with AI coding agents. The payoff extends beyond the next PR: a codebase you can take pride in as features, integrations, customers, and business rules multiply.
 
-On well-scoped tasks, **we expect DigitalWorker to match or exceed the output of the top 10%* of professional developers**
+On well-scoped tasks, **we expect DigitalWorker to match or exceed the output of the top 10%[^2] of professional developers**
 
 ### Put your expertise into more ambitious work
 
-**Top 10% professional-developer output* at AI execution cost.**
-
-*Founder-observed expectation based on 20 years of development experience and production use — not an independently benchmarked ranking.
+**Top 10% professional-developer output[^2] at AI execution cost.**
 
 Direct your judgment toward the product while the workflow handles routine implementation and quality work. The current usage model is model cost plus approximately 20% markup; [see the economics and how to evaluate total effort](https://agiledigitalworker.com/Engineering-Deep-Dive#economics-pay-for-execution-keep-your-judgment).
 
@@ -136,7 +153,8 @@ The demo trial requires a Trello account; no GitHub credentials or LLM key are n
 
 You need a Trello account, GitHub account, and a repository you can authorize. We provide the AI infrastructure. No local install, terminal, or per-developer setup is required for this path.
 
-*Founder-observed expectation grounded in the enforced method, not an independently benchmarked ranking.
+[^2]: Founder-observed expectation based on 20 years of development experience and production use — not an independently benchmarked ranking.
+
 
 ---
 

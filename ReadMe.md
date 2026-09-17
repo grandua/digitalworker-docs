@@ -160,7 +160,7 @@ You need a Trello account, GitHub account, and a repository you can authorize. W
 
 **Agile Design LLC · New York, NY**
 
-[Message on LinkedIn](https://www.linkedin.com/in/grand) · <a href="mailto:info@agiledigitalworker.com" data-cta="email_founder" data-location="pricing">Email us</a> · [agiledigitalworker.com](https://agiledigitalworker.com) · [User Guide](https://agiledigitalworker.com/user-guide)
+<a href="https://www.linkedin.com/in/grand" data-cta="email_founder" data-location="pricing">Message on LinkedIn</a> · <a href="mailto:info@agiledigitalworker.com" data-cta="email_founder" data-location="pricing">Email us</a> · [agiledigitalworker.com](https://agiledigitalworker.com) · [User Guide](https://agiledigitalworker.com/user-guide)
 
 © 2026 Agile Design LLC. DigitalWorker and its workflow materials are proprietary.
 

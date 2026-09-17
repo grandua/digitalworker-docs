@@ -155,6 +155,11 @@ You need a Trello account, GitHub account, and a repository you can authorize. W
 
 [^2]: Founder-observed expectation based on 20 years of development experience and production use — not an independently benchmarked ranking.
 
+## Screenshots that demonstrate real life use cases working on a real prod repo
+
+![Starting by moving cards into To Implement list](https://raw.githubusercontent.com/grandua/digitalworker-docs/main/Sells-Sheet-Images/to-implement.png)
+![Running multiple similar implementations in parallel](https://raw.githubusercontent.com/grandua/digitalworker-docs/main/Sells-Sheet-Images/running-3-in-parallel.png)
+![Example from a real life plan](https://raw.githubusercontent.com/grandua/digitalworker-docs/main/Sells-Sheet-Images/plan-for-first-citizens-parsing.md.png)
 
 ---
 

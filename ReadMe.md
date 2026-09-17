@@ -35,17 +35,17 @@ Your engineering competence sets the standard. DigitalWorker carries it through 
 
 Take pride in maintainable and **beautiful** work: clear intent, cohesive objects, and code you can confidently extend.
 
-**See the task and the resulting PR:** compare the [source task cards](https://trello.com/invite/b/6a03d01d53cf7bb95f8325dd/ATTI3f3561b96a9f5663247cbafaa06b71b7DBE19FF1/digital-worker-demo) with the [generated code and PR/fix history](https://github.com/grandua/Digital-Worker-Demo/pulls?q=is%3Apr+is%3Aclosed). Two demo applications, generated from task cards, with human spot-reviews and external defect feedback disclosed.
+**See the task and the resulting PR:** compare the <a href="https://trello.com/invite/b/6a03d01d53cf7bb95f8325dd/ATTI3f3561b96a9f5663247cbafaa06b71b7DBE19FF1/digital-worker-demo" data-cta="view_example" data-location="hero">source task cards</a> with the <a href="https://github.com/grandua/Digital-Worker-Demo/pulls?q=is%3Apr+is%3Aclosed" data-cta="view_example" data-location="hero">generated code and PR/fix history</a>. Two demo applications, generated from task cards, with human spot-reviews and external defect feedback disclosed.
 
 [**Verify our claims — no account needed**](#1-verify-our-claims--no-account-needed)
 
-[**See the engineering behind the result**](https://agiledigitalworker.com/Engineering-Deep-Dive) — the method, concrete code examples, comparison criteria, and economics. No signup required.
+<a href="https://agiledigitalworker.com/Engineering-Deep-Dive" data-cta="view_example" data-location="hero"><strong>See the engineering behind the result</strong></a> — the method, concrete code examples, comparison criteria, and economics. No signup required.
 
 ---
 
 ### Why it's different
 
-**A combination found nowhere else that we know of:** high-precision instruction enforcement plus this depth of Agile, OOP, test-first TDD, review, and anti-duplication class design. Other agents can code, test, review, and open PRs; DigitalWorker carries the complete engineering method through delivery. [Inspect the difference](https://agiledigitalworker.com/Engineering-Deep-Dive#why-this-combination-matters).
+**A combination found nowhere else that we know of:** high-precision instruction enforcement plus this depth of Agile, OOP, test-first TDD, review, and anti-duplication class design. Other agents can code, test, review, and open PRs; DigitalWorker carries the complete engineering method through delivery. <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#why-this-combination-matters" data-cta="view_example" data-location="mid_page">Inspect the difference</a>.
 
 #### Get relief from repeated review and repair
 
@@ -67,7 +67,7 @@ For non-developers, the starting point is the plan and acceptance criteria. You 
 
 Beautiful software makes its intent easy to understand. DigitalWorker searches for existing domain concepts before adding classes, checks cohesion, and brings behavior and state together in Rich Domain Models. It applies Clean Architecture, KISS, DRY, and YAGNI, pruning unnecessary abstractions and duplicate structures.
 
-In the Calculator demo, `Calculator` owns its state and behavior through `Press(InputKey)`; the parser stays inside `MathExpression`. Tests exercise overflow boundaries and the behavior of a locked error state. These are concrete examples of the clarity and care you can inspect. [Explore the code and edge-case tests](https://agiledigitalworker.com/Engineering-Deep-Dive#what-beautiful-maintainable-code-looks-like).
+In the Calculator demo, `Calculator` owns its state and behavior through `Press(InputKey)`; the parser stays inside `MathExpression`. Tests exercise overflow boundaries and the behavior of a locked error state. These are concrete examples of the clarity and care you can inspect. <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#what-beautiful-maintainable-code-looks-like" data-cta="view_example" data-location="mid_page">Explore the code and edge-case tests</a>.
 
 This autonomous engineering governance layer **prevents almost all technical debt** in founder-observed production use. Its method reflects more than 20 years of Agile and OOP practice and two years of refinement with AI coding agents. The payoff extends beyond the next PR: a codebase you can take pride in as features, integrations, customers, and business rules multiply.
 
@@ -95,7 +95,7 @@ That is the capability to evaluate when comparing it with a custom script or a c
 
 The Instruction Engine's purpose extends to your own professional methods. Developers, lawyers, marketers, and other professionals can bring their instructions in `.md` format so the whole procedure is carried through. Your competence defines the method; the engine supports its consistent execution.
 
-Have a multi-step process that your AI keeps only partly following? Write your instructions in a Markdown file and [send them to us](mailto:info@agiledigitalworker.com). We will configure it for you for free. The built-in instructions are replaceable presets, not fixed: DigitalWorker currently ships software design and development related instructions, but swapping in custom instructions — for your own engineering method or for any other industry and profession — is trivial.
+Have a multi-step process that your AI keeps only partly following? Write your instructions in a Markdown file and <a href="mailto:info@agiledigitalworker.com" data-cta="email_founder" data-location="mid_page">send them to us</a>. We will configure it for you for free. The built-in instructions are replaceable presets, not fixed: DigitalWorker currently ships software design and development related instructions, but swapping in custom instructions — for your own engineering method or for any other industry and profession — is trivial.
 
 Your instructions stay yours. They run through the same protected engine that guards our own instruction IP, and provider-side Zero Data Retention means they are never retained for model training.
 
@@ -112,7 +112,7 @@ Your instructions stay yours. They run through the same protected engine that gu
 
 #### 1. Verify our claims — no account needed
 
-Browse the [public source](https://github.com/grandua/Digital-Worker-Demo), [source task cards](https://trello.com/invite/b/6a03d01d53cf7bb95f8325dd/ATTI3f3561b96a9f5663247cbafaa06b71b7DBE19FF1/digital-worker-demo), and [PR history](https://github.com/grandua/Digital-Worker-Demo/pulls?q=is%3Apr+is%3Aclosed). Both applications were 100% generated by DigitalWorker from task cards. Human involvement consisted of fast spot-reviews and, for the Calculator, passing external review feedback into a fix card for autonomous remediation.
+Browse the <a href="https://github.com/grandua/Digital-Worker-Demo" data-cta="view_example" data-location="pricing">public source</a>, <a href="https://trello.com/invite/b/6a03d01d53cf7bb95f8325dd/ATTI3f3561b96a9f5663247cbafaa06b71b7DBE19FF1/digital-worker-demo" data-cta="view_example" data-location="pricing">source task cards</a>, and <a href="https://github.com/grandua/Digital-Worker-Demo/pulls?q=is%3Apr+is%3Aclosed" data-cta="view_example" data-location="pricing">PR history</a>. Both applications were 100% generated by DigitalWorker from task cards. Human involvement consisted of fast spot-reviews and, for the Calculator, passing external review feedback into a fix card for autonomous remediation.
 
 - **[Scientific Calculator](https://github.com/grandua/Digital-Worker-Demo/tree/main/Calculator):** 230 domain unit tests, a Rich Domain Model, and explicit edge-case behavior. External review found issues, followed by autonomous remediation through a fix card.
 - **[URL Shortener API](https://github.com/grandua/Digital-Worker-Demo/tree/main/UrlShortener):** 40 unit tests, Clean Architecture, Entity Framework data access, and requirements traceability.
@@ -136,7 +136,7 @@ The Calculator domain/test solution needs no MAUI workloads. The [full app solut
 
 #### 2. Try it on our demo board — Trello account only
 
-[Join the public demo board](https://trello.com/invite/b/6a03d01d53cf7bb95f8325dd/ATTI3f3561b96a9f5663247cbafaa06b71b7DBE19FF1/digital-worker-demo), or [email your Trello username](mailto:info@agiledigitalworker.com) to request access, usually addressed within 24 hours. Create a bounded task in `To Implement`, or draft it in `Triage` and move it when ready. Watch DigitalWorker deliver a tested PR to the public demo repository.
+<a href="https://trello.com/invite/b/6a03d01d53cf7bb95f8325dd/ATTI3f3561b96a9f5663247cbafaa06b71b7DBE19FF1/digital-worker-demo" data-cta="view_example" data-location="pricing">Join the public demo board</a>, or <a href="mailto:info@agiledigitalworker.com" data-cta="request_board" data-location="pricing">email your Trello username</a> to request access, usually addressed within 24 hours. Create a bounded task in `To Implement`, or draft it in `Triage` and move it when ready. Watch DigitalWorker deliver a tested PR to the public demo repository.
 
 The demo trial requires a Trello account; no GitHub credentials or LLM key are needed. Use a public-safe task on this shared board.
 
@@ -144,7 +144,7 @@ The demo trial requires a Trello account; no GitHub credentials or LLM key are n
 
 **Use the included $15 credit to evaluate one bounded real task on your own codebase before paying.** Larger tasks should be scoped first; the credit does not guarantee every task costs $15 or less. Billing is set up during onboarding — no checkout page yet.
 
-1. [Email your preferred Trello board name](mailto:info@agiledigitalworker.com). We provision a private board and send an invite, usually within 24 hours.
+1. <a href="mailto:info@agiledigitalworker.com" data-cta="request_board" data-location="pricing">Email your preferred Trello board name</a>. We provision a private board and send an invite, usually within 24 hours.
 2. On the private board, follow the three-question [first-time setup](https://agiledigitalworker.com/user-guide#first-time-setup): repository HTTPS clone URL, branch, and a narrowly scoped GitHub personal access token with the permissions needed to push branches and open PRs. Delete the token comment after confirmation. Setup does not run an AI coding task.
 3. Add a bounded task and acceptance criteria in `To Implement`, or draft in `Triage` and move it when ready.
 4. Review pivotal decisions as needed, receive the tested/reviewed PR and design package, and perform the final behavior check. Use experienced architecture review for complex or novel design decisions.
@@ -160,6 +160,67 @@ You need a Trello account, GitHub account, and a repository you can authorize. W
 
 **Agile Design LLC · New York, NY**
 
-[Message on LinkedIn](https://www.linkedin.com/in/grand) · [Email us](mailto:info@agiledigitalworker.com) · [agiledigitalworker.com](https://agiledigitalworker.com) · [User Guide](https://agiledigitalworker.com/user-guide)
+[Message on LinkedIn](https://www.linkedin.com/in/grand) · <a href="mailto:info@agiledigitalworker.com" data-cta="email_founder" data-location="pricing">Email us</a> · [agiledigitalworker.com](https://agiledigitalworker.com) · [User Guide](https://agiledigitalworker.com/user-guide)
 
 © 2026 Agile Design LLC. DigitalWorker and its workflow materials are proprietary.
+
+<!-- Analytics: privacy-conscious PostHog instrumentation (no cookies, no autocapture, no session recording). -->
+<script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]);t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+". (stub)"},o="init capture register register_once unregister identify reset get_distinct_id alias set_config".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+window.posthog.init('phc_t38qtiviVF5hykpwcEWfMZrZiew4rfy688wjamNQ5mCt', {
+  api_host: 'https://us.i.posthog.com',
+  autocapture: false,
+  disable_session_recording: true,
+  capture_pageview: true,
+  capture_pageleave: true,
+  persistence: 'memory',
+  person_profiles: 'identified_only'
+});
+
+(function () {
+  function track(name, props) {
+    if (window.posthog && typeof window.posthog.capture === 'function') {
+      window.posthog.capture(name, props);
+    }
+  }
+
+  document.addEventListener('click', function (e) {
+    var el = e.target && e.target.closest ? e.target.closest('[data-cta]') : null;
+    if (!el) return;
+    track('cta_clicked', {
+      cta_name: el.getAttribute('data-cta'),
+      cta_location: el.getAttribute('data-location'),
+      target_url: el.href
+    });
+  }, true);
+
+  var scrollFired = false;
+  window.addEventListener('scroll', function () {
+    if (scrollFired) return;
+    var h = document.documentElement;
+    if (h.scrollHeight <= 0) return;
+    if ((h.scrollTop + window.innerHeight) / h.scrollHeight >= 0.75) {
+      scrollFired = true;
+      track('scroll_milestone', { depth: 75 });
+    }
+  }, { passive: true });
+
+  function injectUtms() {
+    var p = new URLSearchParams(window.location.search);
+    var campaign = p.get('utm_campaign');
+    var source = p.get('utm_source');
+    if (!campaign && !source) return;
+    var tag = 'body=' + encodeURIComponent('\n\n---\nRef: campaign=' + (campaign || 'none') +
+      ';source=' + (source || 'none'));
+    document.querySelectorAll('a[href^="mailto:"]').forEach(function (a) {
+      a.href += (a.href.indexOf('?') === -1 ? '?' : '&') + tag;
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectUtms);
+  } else {
+    injectUtms();
+  }
+})();
+</script>

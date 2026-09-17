@@ -1,7 +1,11 @@
 # Digital Worker User Guide
 
-**Audience:** human users who submit tasks to Digital Worker via Trello  
+**Audience:** human users who submit tasks to Digital Worker via Trello on their own connected board
 **Purpose:** explain what Digital Worker is, how to use it, what it can and cannot do, and what actions are prohibited.
+
+> **This guide covers using DigitalWorker on your own Trello board connected to your own GitHub repository.** That requires a Trello account and a GitHub repository. If you are not yet at this stage, there are two earlier ways to engage:
+> - **Verify our claims** — clone the public demo repo, run the tests, view the public Trello board. No accounts needed. See the [Sell Sheet](../../Docs/Sales/Sell-Sheet.md) § Getting Started.
+> - **Try it on the demo board** — request access to the demo Trello board, submit a task card, watch DigitalWorker produce a PR. Trello account only. See the [Sell Sheet](../../Docs/Sales/Sell-Sheet.md) § Getting Started.
 
 ---
 
@@ -120,8 +124,8 @@ When Digital Worker finishes a card:
 
 ## What Digital Worker Can Do for You
 
-- **Research, plan, architect, and design** — create an AI-drafted document package covering research, planning, architecture, class design, and UX design for you to spot-review and correct before implementation.
-- **Implement features with enforced test-first TDD** — start each feature with a failing test, add the minimum implementation needed to pass, and run the relevant test suite. Digital Worker targets strong conventional test coverage; it does not guarantee complete mutation coverage. The payoff is substantially fewer defects and less cleanup: tests establish expected behavior before implementation, and the dedicated correctness review and fix passes below address issues before the PR. For routine tasks, you perform a quick final behavior check before merge; pivotal design decisions still need your judgment. See “Engineering workflow” below for the delivery steps and why a final human check remains necessary.
+- **Research, plan, architect, and design** — create an AI-drafted document package covering research, planning, architecture, class design, and UX/design planning for you to spot-review and correct before implementation.
+- **Implement features with enforced test-first TDD** — start each feature with a failing test, add the minimum implementation needed to pass, and run the relevant test suite. Digital Worker targets strong conventional test coverage; it does not guarantee complete mutation coverage. The payoff is substantially fewer defects and less cleanup: tests establish expected behavior before implementation, and the dedicated correctness review and fix passes below address issues before the PR. For routine tasks, you perform a quick final behavior check before merge; pivotal design decisions still need your judgment. See "Engineering workflow" below for the delivery steps and why a final human check remains necessary.
 - **Apply Clean Architecture, SOLID, and OOP/Rich Domain Model discipline** — drive behavior and state into appropriate Domain objects, protect layer direction, and avoid anemic or procedural designs.
 - **Prevent duplicate and anemic classes** — before proposing any new class, search the codebase for existing classes that could host the planned behavior. This significantly reduces the code and class duplication that every other AI coding tool produces.
 - **Fix bugs** — diagnose defects through evidence from code, tests, builds, logs, command output, research, or an approved spike before changing implementation. If you find a defect after merge, submit a focused fix card with steps to reproduce it and the expected result so Digital Worker can perform the repair work.
@@ -130,6 +134,12 @@ When Digital Worker finishes a card:
 - **Refactor legacy code** — preserve behavior while moving procedural or tightly coupled code toward modular, testable design using OOP and functional techniques where appropriate.
 - **Refactor and fix review findings** — improve structure while preserving behavior, then resolve identified review and code-smell issues before opening the PR.
 - **Commit and push safely** — review the intended file set and stage only task-related changes. Exclude temporary files, build and generated output, package directories, virtual environments, local configuration and secrets, and OS/IDE files. Commit locally, then let the system push the branch and open a pull request for your final behavior and architecture check.
+
+---
+
+## Current limitations
+
+- **Visual UX improvements are not supported at this stage.** Tasks that require rendering or visually verifying a UI are not supported; the agent works from code, tests, and text, not from rendered screenshots. You can still request UX/design planning (layout, interaction copy, information architecture) and code-level UI changes, but the agent cannot visually verify the rendered result.
 
 ---
 

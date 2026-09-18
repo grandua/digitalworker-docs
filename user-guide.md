@@ -33,7 +33,12 @@ That creates a compounding business advantage. A disciplined codebase can suppor
 2. **Connect your repository (takes ~1 minute):** Onboarding is instant and does not run any AI coding agents. On your board's first card, answer the three onboarding questions:
    - The repository's GitHub HTTPS clone URL
    - The default branch to clone
-   - A narrowly scoped GitHub personal access token with repository read/write access. *(Why write access is required: Even for public repositories, pushing deliverable branches and opening pull requests via the GitHub API requires authenticated repository write permissions.)*
+   - A **fine-grained** GitHub personal access token (GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token). Scope it to the minimum:
+     - **Repository access:** "Only select repositories" → pick only the repository you connect to Digital Worker.
+     - **Repository permissions:** set **Contents: Read and write** (covers clone, pull, commit, and pushing deliverable branches — write is required even for public repositories) and **Pull requests: Read and write** (covers opening and locating PRs via the GitHub API). Leave everything else at "No access"; **Metadata: Read** is granted automatically.
+     - **Workflows caveat:** if Digital Worker tasks may modify files under `.github/workflows/`, also grant **Workflows: Read and write** — GitHub blocks pushes that change workflow files without it.
+     - **Branch limitation:** a fine-grained PAT cannot be restricted to specific branches. To limit where it can push or merge, use branch protection rules on your repository.
+     - Prefer a fine-grained PAT over a classic one — the classic `repo` scope grants access to all your repositories, far more than needed.
    The card title can be anything (e.g., `Onboard me`).
 3. **Use a private Trello board and a narrowly scoped token.** Everyone who can view the board can read the token comment, so delete that comment as soon as Digital Worker confirms it.
 4. Digital Worker saves the repository configuration and requests a service restart automatically. You do not install software, run terminal commands, or configure each developer's machine.

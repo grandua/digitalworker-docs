@@ -145,7 +145,7 @@ The demo trial requires a Trello account; no GitHub credentials or LLM key are n
 **Use the included $15 credit to evaluate one bounded real task on your own codebase before paying.** Larger tasks should be scoped first; the credit does not guarantee every task costs $15 or less. Billing is set up during onboarding — no checkout page yet.
 
 1. <a href="mailto:info@agiledigitalworker.com" data-cta="request_board" data-location="pricing">Email your preferred Trello board name</a>. We provision a private board and send an invite, usually within 24 hours.
-2. On the private board, follow the three-question [first-time setup](https://agiledigitalworker.com/user-guide#first-time-setup): repository HTTPS clone URL, branch, and a narrowly scoped GitHub personal access token with the permissions needed to push branches and open PRs. Delete the token comment after confirmation. Setup does not run an AI coding task.
+2. On the private board, follow the three-question [first-time setup](https://agiledigitalworker.com/user-guide#first-time-setup): repository HTTPS clone URL, branch, and a fine-grained GitHub personal access token scoped to that repository (exact permissions in the user guide). Delete the token comment after confirmation. Setup does not run an AI coding task.
 3. Add a bounded task and acceptance criteria in `To Implement`, or draft in `Triage` and move it when ready.
 4. Review pivotal decisions as needed, receive the tested/reviewed PR and design package, and perform the final behavior check. Use experienced architecture review for complex or novel design decisions.
 

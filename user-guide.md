@@ -90,6 +90,31 @@ When Digital Worker finishes a card:
 
 ---
 
+## GitHub PR Reviewer — read-only reviews without Trello
+
+The GitHub App PR Reviewer is a second, Trello-free way to get value from Digital Worker. Instead of picking up task cards, it reviews your pull requests and posts the result as a normal GitHub review. It is **read-only**: it never modifies your code, pushes commits, edits files, or creates pull requests.
+
+### Installing the PR Reviewer on your repository
+
+1. Your Digital Worker operator gives you an install link like `https://github.com/apps/<app-name>/installations/new`.
+2. Open it, choose your account or organization, select the repositories you want reviewed, and confirm.
+3. Done — there is no software to install, no tokens to paste, and no per-developer setup. GitHub App permissions replace the personal access token used by the Trello flow, so nothing sensitive is ever posted to a board.
+
+### Requesting a review
+
+- **Automatic:** every pull request you open (and every new commit pushed to it) is queued for review.
+- **On demand:** post a comment whose entire text is exactly `@digitalworker review` on the pull request. The command must be the whole comment — adding extra words or sentences means it is not recognized and nothing happens.
+- Reviews of the same pull request are deduplicated: pushing a new commit while a review is still queued replaces the stale request, and repeated deliveries are ignored, so you never get duplicate reviews for the same head.
+
+### What you get back
+
+A GitHub review from the app bot (state: `COMMENTED`, pinned to the commit that was reviewed) containing:
+
+- A summary with a letter-grade score (A–F), an overview, and key risks.
+- Inline comments attached to specific lines of the diff, each tagged with a severity (CRITICAL, HIGH, MEDIUM, LOW).
+
+Use it as a first-pass reviewer: it reads only the PR diff, so treat it as a strong second opinion, not a merge gate. It does not answer questions in comments — only the exact `@digitalworker review` command triggers it.
+
 ## What You Should Do
 
 - **Write clear, specific task titles and descriptions.** The title and description are the primary statement of task intent. Recent comments add context, but they do not replace clear requirements and acceptance criteria. Vague cards produce vague results.

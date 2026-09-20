@@ -108,7 +108,7 @@ Your instructions stay yours. They run through the same protected engine that gu
 - **Opinionated but replaceable:** The Agile, Clean Architecture, and OOP discipline bundle is a preset, not a cage. Bring your own engineering instructions — the same instruction engine carries them with the same precision.
 - **No local setup to start using it:** Connect your Trello board and GitHub repository. No CLI configuration, IDE extension, or per-developer installation.
 
-### Getting Started — Three Ways In
+### Getting Started — Four Ways In
 
 #### 1. Verify our claims — no account needed
 
@@ -134,18 +134,24 @@ The Calculator domain/test solution needs no MAUI workloads. The [full app solut
 
 **Use your own judgment and your own AI coding agent.** The deep dive includes a [balanced inspection prompt and evaluation method](https://agiledigitalworker.com/Engineering-Deep-Dive#evaluate-it-against-your-own-standard). Choose your acceptance criteria first and judge the result, remaining cleanup, and hands-on time. Your existing AI-agent costs may apply.
 
-#### 2. Try it on our demo board — Trello account only
+#### 2. Watch it review your real PRs — GitHub only, ~1 minute
+
+<a href="https://github.com/apps/digital-worker/installations/new" data-cta="install_app" data-location="pricing">Install the DigitalWorker PR Reviewer GitHub App</a> on a repository you choose. From then on every pull request — and every push to it — gets an automatic read-only review posted by `digital-worker[bot]`: a scored summary, key risks, and inline comments on specific lines. You can also post `@digitalworker review` on any PR to trigger it on demand.
+
+No Trello account, no personal access token, no code changes — and it uninstalls in one click from GitHub Settings > Applications. This is the same review engine the full agent uses on its own work, on your real diffs.
+
+#### 3. Try it on our demo board — Trello account only
 
 <a href="https://trello.com/invite/b/6a03d01d53cf7bb95f8325dd/ATTI3f3561b96a9f5663247cbafaa06b71b7DBE19FF1/digital-worker-demo" data-cta="view_example" data-location="pricing">Join the public demo board</a>, or <a href="mailto:info@agiledigitalworker.com" data-cta="request_board" data-location="pricing">email your Trello username</a> to request access, usually addressed within 24 hours. Create a bounded task in `To Implement`, or draft it in `Triage` and move it when ready. Watch DigitalWorker deliver a tested PR to the public demo repository.
 
 The demo trial requires a Trello account; no GitHub credentials or LLM key are needed. Use a public-safe task on this shared board.
 
-#### 3. Start using it on your repo — Trello + GitHub
+#### 4. Start using it on your repo — Trello + GitHub
 
 **Use the included $15 credit to evaluate one bounded real task on your own codebase before paying.** Larger tasks should be scoped first; the credit does not guarantee every task costs $15 or less. Billing is set up during onboarding — no checkout page yet.
 
 1. <a href="mailto:info@agiledigitalworker.com" data-cta="request_board" data-location="pricing">Email your preferred Trello board name</a>. We provision a private board and send an invite, usually within 24 hours.
-2. On the private board, follow the three-question [first-time setup](https://agiledigitalworker.com/user-guide#first-time-setup): repository HTTPS clone URL, branch, and a fine-grained GitHub personal access token scoped to that repository (exact permissions in the user guide). Delete the token comment after confirmation. Setup does not run an AI coding task.
+2. On the private board, follow the three-question [onboarding steps](https://agiledigitalworker.com/user-guide#onboarding-digitalworker): repository HTTPS clone URL, branch, and a fine-grained GitHub personal access token scoped to that repository (exact permissions in the user guide). Delete the token comment after confirmation. Setup does not run an AI coding task.
 3. Add a bounded task and acceptance criteria in `To Implement`, or draft in `Triage` and move it when ready.
 4. Review pivotal decisions as needed, receive the tested/reviewed PR and design package, and perform the final behavior check. Use experienced architecture review for complex or novel design decisions.
 

@@ -25,9 +25,54 @@ That creates a compounding business advantage. A disciplined codebase can suppor
 
 ---
 
-## How to Use Digital Worker
+## We Offer 2 Closely Related Products
 
-### First-time setup
+| | **DigitalWorker PR Reviewer** | **DigitalWorker** (full agent)                                                                                               |
+|---|---|------------------------------------------------------------------------------------------------------------------------------|
+| **What it does** | Reviews your pull requests and posts feedback as GitHub reviews | Every part of the SDLC: plans, architects, designs classes and UX, implements and tests features, reviews code, fixes issues |
+| **How you use it** | Always-on — every PR and every push is reviewed automatically; optional `@digitalworker review` comment | Create and move Trello cards on your board                                                                                   |
+| **Trello account** | Not needed | Required                                                                                                                     |
+| **GitHub PAT** | Not needed — GitHub App permissions only | Fine-grained PAT shared during onboarding                                                                                    |
+| **Onboarding effort** | Install the app on your repos (~1 minute) | Board provisioning + repository onboarding (~7 minutes)                                                                      |
+
+DigitalWorker PR Reviewer is the simplest, risk-free way to start: it is read-only and always-on, so you see review quality on real PRs immediately. DigitalWorker is the full-featured agent you graduate to when you want it doing the work, not just reviewing it.
+
+---
+## How to Use DigitalWorker PR Reviewer — read-only reviews without Trello
+
+The DigitalWorker PR Reviewer is a GitHub App, and it's Trello-free and GitHub PAT free way to get value from DigitalWorker. 
+Instead of picking up task cards, it reviews your pull requests and posts the result as a normal GitHub review. 
+It is **read-only**: it never modifies your code, pushes commits, edits files, or creates pull requests.
+DigitalWorker PR Reviewer is a great way to start simple and in a risk-free way and see if you want to progress to a full featured DigitalWorker.
+
+### Onboarding - Installing the PR Reviewer on your repository
+
+1. Open the install link: `https://github.com/apps/digital-worker/installations/new`.
+2. Choose your account or organization, select the repositories you want reviewed, and confirm.
+3. Done — there is no software to install, no tokens to paste, and no per-developer setup. GitHub App permissions replace the personal access token used by the Trello flow, so nothing sensitive is ever posted to a board.
+
+**Want out?** In GitHub: Settings > Applications > Installed GitHub Apps > Uninstall (or **Configure** to remove it from specific repositories). Reviews stop immediately - there is nothing to cancel on our side.
+
+### Requesting a review
+
+- **Automatic:** every pull request you open (and every new commit pushed to it) is queued for review.
+- **On demand:** post a comment whose entire text is exactly `@digitalworker review` on the pull request. The command must be the whole comment — adding extra words or sentences means it is not recognized and nothing happens.
+- Reviews of the same pull request are deduplicated: pushing a new commit while a review is still queued replaces the stale request, and repeated deliveries are ignored, so you never get duplicate reviews for the same head.
+
+### What you get back
+
+A GitHub review from `digital-worker[bot]` (state: `COMMENTED`, pinned to the commit that was reviewed) containing:
+
+- A summary with a letter-grade score (A–F), an overview, and key risks.
+- Inline comments attached to specific lines of the diff, each tagged with a severity (CRITICAL, HIGH, MEDIUM, LOW).
+
+Use it as a first-pass reviewer: it reads only the PR diff, so treat it as a strong second opinion, not a merge gate. It does not answer questions in comments — only the exact `@digitalworker review` command triggers it.
+
+
+---
+## How to Use DigitalWorker
+
+### Onboarding DigitalWorker
 
 1. **Email your preferred Trello board name** to <a href="mailto:info@agiledigitalworker.com">info@agiledigitalworker.com</a> (or message your contact). Digital Worker provisions your private board and sends you an invite (requests are usually addressed within 24 hours).
 2. **Connect your repository (takes ~1 minute):** Onboarding is instant and does not run any AI coding agents. On your board's first card, answer the three onboarding questions:
@@ -88,32 +133,6 @@ When Digital Worker finishes a card:
 - **You do not need to ask for the ordinary task PR.** Request PR creation or merge explicitly only when you want an additional PR-related action beyond the automatic task PR.
 - The card is moved to **Done** on success or **Blocked** on failure. When a failed run has recoverable work, its isolated worktree is preserved for several days so a later run can resume it.
 
----
-
-## GitHub PR Reviewer — read-only reviews without Trello
-
-The GitHub App PR Reviewer is a second, Trello-free way to get value from Digital Worker. Instead of picking up task cards, it reviews your pull requests and posts the result as a normal GitHub review. It is **read-only**: it never modifies your code, pushes commits, edits files, or creates pull requests.
-
-### Installing the PR Reviewer on your repository
-
-1. Your Digital Worker operator gives you an install link like `https://github.com/apps/<app-name>/installations/new`.
-2. Open it, choose your account or organization, select the repositories you want reviewed, and confirm.
-3. Done — there is no software to install, no tokens to paste, and no per-developer setup. GitHub App permissions replace the personal access token used by the Trello flow, so nothing sensitive is ever posted to a board.
-
-### Requesting a review
-
-- **Automatic:** every pull request you open (and every new commit pushed to it) is queued for review.
-- **On demand:** post a comment whose entire text is exactly `@digitalworker review` on the pull request. The command must be the whole comment — adding extra words or sentences means it is not recognized and nothing happens.
-- Reviews of the same pull request are deduplicated: pushing a new commit while a review is still queued replaces the stale request, and repeated deliveries are ignored, so you never get duplicate reviews for the same head.
-
-### What you get back
-
-A GitHub review from the app bot (state: `COMMENTED`, pinned to the commit that was reviewed) containing:
-
-- A summary with a letter-grade score (A–F), an overview, and key risks.
-- Inline comments attached to specific lines of the diff, each tagged with a severity (CRITICAL, HIGH, MEDIUM, LOW).
-
-Use it as a first-pass reviewer: it reads only the PR diff, so treat it as a strong second opinion, not a merge gate. It does not answer questions in comments — only the exact `@digitalworker review` command triggers it.
 
 ## What You Should Do
 

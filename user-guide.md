@@ -38,6 +38,17 @@ That creates a compounding business advantage. A disciplined codebase can suppor
 DigitalWorker PR Reviewer is the simplest, risk-free way to start: it is read-only and always-on, so you see review quality on real PRs immediately. DigitalWorker is the full-featured agent you graduate to when you want it doing the work, not just reviewing it.
 
 ---
+
+## Trial Credit and Paid Conversion
+
+Both products share the same trial and billing policy — one credit allowance per customer, whichever way you started:
+
+- **Every new customer gets a bounded amount of free usage credit.** It makes no difference whether you installed the PR Reviewer GitHub App or onboarded a full DigitalWorker Trello board — the same credit policy applies to you as a customer.
+- **When the credit runs out, we tell you in place.** For PR Reviewer, DigitalWorker posts a comment on the pull request explaining the trial credit is exhausted and how to continue. For full DigitalWorker, the active card is moved to **Blocked** with a comment explaining the same, and new cards are held until credit is added.
+- **Converting to paid is one message.** Contact <a href="mailto:info@agiledigitalworker.com">info@agiledigitalworker.com</a> — we'll reply with a secure payment link. Your setup is untouched — no reinstall, no new onboarding, no lost history — and service resumes as soon as credit is added.
+- **Using both products?** Tell us your GitHub account and Trello username when you contact us and we'll link them under a single credit balance.
+
+---
 ## How to Use DigitalWorker PR Reviewer — read-only reviews without Trello
 
 The DigitalWorker PR Reviewer is a GitHub App, and it's Trello-free and GitHub PAT free way to get value from DigitalWorker. 

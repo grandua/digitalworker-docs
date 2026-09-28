@@ -32,7 +32,7 @@ That creates a compounding business advantage. A disciplined codebase can suppor
 | **What it does** | Reviews your pull requests and posts feedback as GitHub reviews | Every part of the SDLC: plans, architects, designs classes and UX, implements and tests features, reviews code, fixes issues |
 | **How you use it** | Always-on — every PR and every push is reviewed automatically; optional `@digitalworker review` comment | Create and move Trello cards on your board                                                                                   |
 | **Trello account** | Not needed | Required                                                                                                                     |
-| **GitHub PAT** | Not needed — GitHub App permissions only | Fine-grained PAT shared during onboarding                                                                                    |
+| **GitHub PAT** | Not needed — GitHub App permissions only | Not needed when the operator has linked the Agent app; otherwise an explicit fine-grained PAT |
 | **Onboarding effort** | Install the app on your repos (~1 minute) | Board provisioning + repository onboarding (~7 minutes)                                                                      |
 
 DigitalWorker PR Reviewer is the simplest, risk-free way to start: it is read-only and always-on, so you see review quality on real PRs immediately. DigitalWorker is the full-featured agent you graduate to when you want it doing the work, not just reviewing it.
@@ -86,19 +86,21 @@ Use it as a first-pass reviewer: it reads only the PR diff, so treat it as a str
 ### Onboarding DigitalWorker
 
 1. **Email your preferred Trello board name** to <a href="mailto:info@agiledigitalworker.com">info@agiledigitalworker.com</a> (or message your contact). Digital Worker provisions your private board and sends you an invite (requests are usually addressed within 24 hours).
-2. **Connect your repository (takes ~1 minute):** Onboarding is instant and does not run any AI coding agents. On your board's first card, answer the three onboarding questions:
-   - The repository's GitHub HTTPS clone URL
-   - The default branch to clone
-   - A **fine-grained** GitHub personal access token (GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token). Scope it to the minimum:
-     - **Repository access:** "Only select repositories" → pick only the repository you connect to Digital Worker.
-     - **Repository permissions:** set **Contents: Read and write** (covers clone, pull, commit, and pushing deliverable branches — write is required even for public repositories) and **Pull requests: Read and write** (covers opening and locating PRs via the GitHub API). Leave everything else at "No access"; **Metadata: Read** is granted automatically.
-     - **Workflows caveat:** if Digital Worker tasks may modify files under `.github/workflows/`, also grant **Workflows: Read and write** — GitHub blocks pushes that change workflow files without it.
-     - **Branch limitation:** a fine-grained PAT cannot be restricted to specific branches. To limit where it can push or merge, use branch protection rules on your repository.
-     - Prefer a fine-grained PAT over a classic one — the classic `repo` scope grants access to all your repositories, far more than needed.
+2. **Connect your repository (takes ~1 minute):** Onboarding is instant and does not run any AI coding agents. On your board's first card, answer the clone URL and default branch. When your operator has linked the **Digital Worker Agent** GitHub App to your Trello account, repository, and board, you are **not** asked for a personal access token. If linking is still pending, the card asks you to wait for the operator — it will not request a PAT.
+
+   Install the Agent app only from the install link in your board-provisioning email (or from your operator). Installing the app alone does not grant Digital Worker access; the operator records the approved repository/customer/board binding on the host.
+
+   **PAT onboarding (explicit choice):** a customer without Agent access may still complete onboarding with a fine-grained GitHub personal access token when the operator keeps PAT mode. Scope it to the minimum:
+   - **Repository access:** "Only select repositories" → pick only the repository you connect to Digital Worker.
+   - **Repository permissions:** set **Contents: Read and write** (covers clone, pull, commit, and pushing deliverable branches — write is required even for public repositories) and **Pull requests: Read and write** (covers opening and locating PRs via the GitHub API). Leave everything else at "No access"; **Metadata: Read** is granted automatically.
+   - **Workflows caveat:** if Digital Worker tasks may modify files under `.github/workflows/`, also grant **Workflows: Read and write** — GitHub blocks pushes that change workflow files without it.
+   - **Branch limitation:** a fine-grained PAT cannot be restricted to specific branches. To limit where it can push or merge, use branch protection rules on your repository.
+   - Prefer a fine-grained PAT over a classic one — the classic `repo` scope grants access to all your repositories, far more than needed.
+
    The card title can be anything (e.g., `Onboard me`).
-3. **Use a private Trello board and a narrowly scoped token.** Everyone who can view the board can read the token comment, so delete that comment as soon as Digital Worker confirms it.
+3. **Use a private Trello board.** If you posted a PAT, everyone who can view the board can read that comment — delete it as soon as Digital Worker confirms it. Agent onboarding never asks you to post a token.
 4. Digital Worker saves the repository configuration and requests a service restart automatically. You do not install software, run terminal commands, or configure each developer's machine.
-5. **Delete the Trello comment with your GH PAT, and either delete/archive the onboarding card in "Blocked" and create a new card, or rerun the 1st card if it has a real task to do.**
+5. **If you posted a PAT, delete that Trello comment.** Either delete/archive the onboarding card in "Blocked" and create a new card, or rerun the first card if it has a real task. Agent onboarding has no token-deletion step.
 
 ### Submitting a task
 

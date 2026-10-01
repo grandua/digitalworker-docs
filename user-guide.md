@@ -90,17 +90,12 @@ Use it as a first-pass reviewer: it reads only the PR diff, so treat it as a str
 
    Install the Agent app on your repository from its public install link: `https://github.com/apps/digitalworker-agent/installations/new` — select the repository you named in your onboarding answer. Installing the app on that repository plus your board's onboarding answers is the complete authorization act — no tokens, no approval step on our side.
 
-   **PAT onboarding (explicit choice):** a customer without Agent access may still complete onboarding with a fine-grained GitHub personal access token when the operator keeps PAT mode. Scope it to the minimum:
-   - **Repository access:** "Only select repositories" → pick only the repository you connect to Digital Worker.
-   - **Repository permissions:** set **Contents: Read and write** (covers clone, pull, commit, and pushing deliverable branches — write is required even for public repositories) and **Pull requests: Read and write** (covers opening and locating PRs via the GitHub API). Leave everything else at "No access"; **Metadata: Read** is granted automatically.
-   - **Workflows caveat:** if Digital Worker tasks may modify files under `.github/workflows/`, also grant **Workflows: Read and write** — GitHub blocks pushes that change workflow files without it.
-   - **Branch limitation:** a fine-grained PAT cannot be restricted to specific branches. To limit where it can push or merge, use branch protection rules on your repository.
-   - Prefer a fine-grained PAT over a classic one — the classic `repo` scope grants access to all your repositories, far more than needed.
+   **Legacy PAT mode:** a personal-access-token flow still exists for rare cases where the Agent app cannot be installed; it is arranged directly with your operator and is never part of standard onboarding.
 
    The card title can be anything (e.g., `Onboard me`).
-3. **Use a private Trello board.** If you posted a PAT, everyone who can view the board can read that comment — delete it as soon as Digital Worker confirms it. Agent onboarding never asks you to post a token.
+3. **Use a private Trello board.** Agent onboarding never asks you to post a token (legacy PAT mode only — if a token was ever posted, delete that comment once confirmed).
 4. Digital Worker saves the repository configuration and requests a service restart automatically. You do not install software, run terminal commands, or configure each developer's machine.
-5. **If you posted a PAT, delete that Trello comment.** Either delete/archive the onboarding card in "Blocked" and create a new card, or rerun the first card if it has a real task. Agent onboarding has no token-deletion step.
+5. **Delete/archive the onboarding card in "Blocked"** and create a new card for your first task, or rerun the first card if it already has a real task. Agent onboarding has no token-deletion step — in legacy PAT mode only, also delete the comment that held the token.
 
 ### Submitting a task
 

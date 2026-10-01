@@ -114,7 +114,7 @@ Your instructions stay yours. They run through the same protected engine that gu
 
 #### 1. Watch it review your real PRs — GitHub only, ~1 minute
 
-<a href="https://github.com/apps/digital-worker/installations/new" data-cta="install_app" data-location="pricing">Install the DigitalWorker PR Reviewer GitHub App</a> on a repository you choose. From then on every pull request — and every push to it — gets an automatic read-only review posted by `digital-worker[bot]`: a scored summary, key risks, and inline comments on specific lines. You can also post `@digitalworker review` on any PR to trigger it on demand.
+<a href="https://github.com/apps/digitalworker-reviewer/installations/new" data-cta="install_app" data-location="pricing">Install the DigitalWorker PR Reviewer GitHub App</a> on a repository you choose. From then on every pull request — and every push to it — gets an automatic read-only review posted by `digitalworker-reviewer[bot]`: a scored summary, key risks, and inline comments on specific lines. You can also post `@digitalworker review` on any PR to trigger it on demand.
 
 No Trello account, no personal access token, no code changes — and it uninstalls in one click from GitHub Settings > Applications. This is the same review engine the full agent uses on its own work, on your real diffs.
 

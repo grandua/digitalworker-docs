@@ -32,7 +32,7 @@ That creates a compounding business advantage. A disciplined codebase can suppor
 | **What it does** | Reviews your pull requests and posts feedback as GitHub reviews | Every part of the SDLC: plans, architects, designs classes and UX, implements and tests features, reviews code, fixes issues |
 | **How you use it** | Always-on — every PR and every push is reviewed automatically; optional `@digitalworker review` comment | Create and move Trello cards on your board                                                                                   |
 | **Trello account** | Not needed | Required                                                                                                                     |
-| **GitHub PAT** | Not needed — GitHub App permissions only | Not needed when the operator has linked the Agent app; otherwise an explicit fine-grained PAT |
+| **GitHub PAT** | Not needed — GitHub App permissions only | Not needed — the Agent app covers it; a PAT exists only for legacy configurations |
 | **Onboarding effort** | Install the app on your repos (~1 minute) | Board provisioning + repository onboarding (~7 minutes)                                                                      |
 
 DigitalWorker PR Reviewer is the simplest, risk-free way to start: it is read-only and always-on, so you see review quality on real PRs immediately. DigitalWorker is the full-featured agent you graduate to when you want it doing the work, not just reviewing it.
@@ -58,7 +58,7 @@ DigitalWorker PR Reviewer is a great way to start simple and in a risk-free way 
 
 ### Onboarding - Installing the PR Reviewer on your repository
 
-1. Open the install link: `https://github.com/apps/digital-worker/installations/new`.
+1. Open the install link: `https://github.com/apps/digitalworker-reviewer/installations/new`.
 2. Choose your account or organization, select the repositories you want reviewed, and confirm.
 3. Done — there is no software to install, no tokens to paste, and no per-developer setup. GitHub App permissions replace the personal access token used by the Trello flow, so nothing sensitive is ever posted to a board.
 
@@ -72,7 +72,7 @@ DigitalWorker PR Reviewer is a great way to start simple and in a risk-free way 
 
 ### What you get back
 
-A GitHub review from `digital-worker[bot]` (state: `COMMENTED`, pinned to the commit that was reviewed) containing:
+A GitHub review from `digitalworker-reviewer[bot]` (state: `COMMENTED`, pinned to the commit that was reviewed) containing:
 
 - A summary with a letter-grade score (A–F), an overview, and key risks.
 - Inline comments attached to specific lines of the diff, each tagged with a severity (CRITICAL, HIGH, MEDIUM, LOW).
@@ -88,7 +88,7 @@ Use it as a first-pass reviewer: it reads only the PR diff, so treat it as a str
 1. **Email your preferred Trello board name** to <a href="mailto:info@agiledigitalworker.com">info@agiledigitalworker.com</a> (or message your contact). Digital Worker provisions your private board and sends you an invite (requests are usually addressed within 24 hours).
 2. **Connect your repository (takes ~1 minute):** Onboarding is instant and does not run any AI coding agents. On your board's first card, answer the clone URL and default branch. When your operator has linked the **Digital Worker Agent** GitHub App to your Trello account, repository, and board, you are **not** asked for a personal access token. If linking is still pending, the card asks you to wait for the operator — it will not request a PAT.
 
-   Install the Agent app only from the install link in your board-provisioning email (or from your operator). Installing the app alone does not grant Digital Worker access; the operator records the approved repository/customer/board binding on the host.
+   Install the Agent app on your repository from its public install link: `https://github.com/apps/digitalworker-agent/installations/new` — select the repository you named in your onboarding answer. Installing the app on that repository plus your board's onboarding answers is the complete authorization act — no tokens, no approval step on our side.
 
    **PAT onboarding (explicit choice):** a customer without Agent access may still complete onboarding with a fine-grained GitHub personal access token when the operator keeps PAT mode. Scope it to the minimum:
    - **Repository access:** "Only select repositories" → pick only the repository you connect to Digital Worker.

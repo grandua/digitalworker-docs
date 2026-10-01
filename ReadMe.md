@@ -1,5 +1,7 @@
 # Why DigitalWorker?
 
+**Audience:** developers, non-developer builders, and business owners evaluating DigitalWorker. <!-- audience: dev, non-dev builder, business · ceiling: T1 hero → T2 body -->
+
 ---
 
 ![ILLUSTRATIVE TYPICAL RUN — actual results vary by task](./Sells-Sheet-Images/Sells-Sheet-top-image-Trello-with-popups.png)
@@ -7,25 +9,25 @@
 ---
 AI wrote the code. You're still doing the cleanup.
 
-**You make the decisions; DigitalWorker turns a Trello card into a reviewed, tested, production-ready pull request.**
+**You make the decisions; DigitalWorker turns a task card into a reviewed, tested, production-ready pull request.**
 
 ## Why Did We Build Digital Worker? These Are Our Assumptions Behind It:
 
-- Current AI without guardrails pretty much always produces sloppy, badly engineered code and architecture, since its statistical patterns come from training on human code — and most human code, public or private, ignores OOP discipline, layering, and tests
+- Current AI without guardrails pretty much always produces sloppy, badly engineered code and architecture, since its statistical patterns come from training on human code — and most human code, public or private, ignores object-oriented design discipline, layering, and tests
 - Guiding AI to convert its spaghetti code and broken architecture takes a lot of review and fixing/prompting work, not just additional tokens. This is the main reason AI agents improve shipping speed only marginally — controlled research puts real-world gains at ~25% at best, not manifold[^3]
 - If a software solution is built with AI by a human who never fights back the AI slop, complexity limits are reached quickly: within as little as one month the AI's pace of change plateaus and the defect count becomes unmanageable
 - Even if a team of humans fights back using AI to review AI code, gives AI code standards, some architecture and instructions how to review code, the slop still overwhelms at scale — review capacity becomes the bottleneck, new features break existing ones, and the codebase converges to a plateau where only long-frozen features are dependable.[^1]
 - Current AI has severely impaired judgment which manifests in constant confusion about the real world
 - Current AI absolutely cannot be trusted to make important decisions
-- AI will not fix itself without competent help from human experts: Current AI is nowhere close to AGI, and no known architecture changes that anytime soon.
+- AI will not fix itself without competent help from human experts: Current AI is nowhere close to AGI — AI that can do any job a person can — and no known architecture changes that anytime soon.
 
 [^1]: Evidence from OpenClaw (2026): maintainers had to halt feature work for 7 weeks and then integrate 16,000 PRs in one release, stating that human review, architecture and release processes had become the bottleneck; ~80% of AI-generated PRs get rejected; of what passes, more than half of subsequent commits are fixes for what was just merged; new releases routinely regress working functionality, forcing users to pin old versions; the project's own engineers publicly acknowledged AI "vibe slop" slips through because review capacity cannot scale with agent output. Asking AI to fight its own slop shifts the bottleneck from writing code to reviewing it rather than eliminating it.
 
 [^3]: The strongest controlled evidence brackets the gain narrowly: three field RCTs across 4,867 developers at Microsoft, Accenture, and a Fortune 100 company found a 26% increase in completed tasks with an AI assistant (Cui et al., Management Science, 2025) — while a 2025 METR RCT found experienced open-source developers were actually ~19% *slower* with AI tools on their own mature repositories, even though they believed they had been ~20% faster. Our founder's own measured experience before adopting AI-checklist-driven workflows matched the ~25% figure.
 
 ## What we claim as possible
-- Nevertheless, the problem above has a better solution and current AI can be asked to run checklists with hundreds of steps and produce much better structured code that is actually easy to follow, easy to change, with pretty good mutation test coverage and that scales almost linearly with complexity.
-- The catch is that AI will not follow such huge checklists if they are given to it as pure text and in a generic fashion. However, checklists coupled with a smart, adjustable instruction engine can make AI follow every step.
+- Nevertheless, the problem above has a better solution and current AI can be asked to run checklists with hundreds of steps and produce much better structured code that is actually easy to follow, easy to change, with pretty good mutation test coverage — meaning the tests catch any defect introduced into the covered code — and that scales almost linearly with complexity.
+- The catch is that AI will not follow such huge checklists if they are given to it as pure text and in a generic fashion. However, checklists coupled with a smart, adjustable instruction engine can make AI follow every instruction.
 - Also, current AI can be asked to make most important decisions upfront in a dry-run fashion which allows humans to unconfuse AI by overriding those decisions as needed (and optionally explaining rationale)
 
 
@@ -37,7 +39,7 @@ Your engineering competence sets the standard. DigitalWorker carries it through 
 
 Take pride in maintainable and **beautiful** work: clear intent, cohesive objects, and code you can confidently extend.
 
-**See the task and the resulting PR:** compare the <a href="https://trello.com/b/6a03d01d53cf7bb95f8325dd/digital-worker-demo" data-cta="view_example" data-location="hero">source task cards</a> with the <a href="https://github.com/grandua/Digital-Worker-Demo/pulls?q=is%3Apr+is%3Aclosed" data-cta="view_example" data-location="hero">generated code and PR/fix history</a>. Two demo applications, generated from task cards, with human spot-reviews and external defect feedback disclosed.
+**See the task and the resulting pull request:** compare the <a href="https://trello.com/b/6a03d01d53cf7bb95f8325dd/digital-worker-demo" data-cta="view_example" data-location="hero">source task cards</a> with the <a href="https://github.com/grandua/Digital-Worker-Demo/pulls?q=is%3Apr+is%3Aclosed" data-cta="view_example" data-location="hero">generated code and pull-request/fix history</a>. Two demo applications, generated from task cards, with human spot-reviews and external defect feedback disclosed.
 
 [**Verify our claims — no account needed**](#2-verify-our-claims--no-account-needed)
 
@@ -61,13 +63,13 @@ The sequence is explicit: **a failing behavior test → the minimum implementati
 
 #### Keep control of consequential decisions
 
-You choose what to build, the acceptance criteria, and the trade-offs you can live with. You no longer review for logic — AI reviews and checklists handle that; your review is judgment, placed early, before implementation. Review the proposed plan, assumptions, and pivotal architecture decisions. Before new classes are scaffolded, inspect their proposed responsibilities and relationships; correct the design where needed. DigitalWorker executes the engineering work through the proprietary workflow engine.
+You choose what to build, the acceptance criteria, and the trade-offs you can live with. You no longer review for logic — AI reviews and checklists handle that; your review is judgment, placed early, before implementation. Review the proposed plan, assumptions, and pivotal architecture decisions. Before new classes are scaffolded, inspect their proposed responsibilities and relationships; correct the design where needed. DigitalWorker executes the engineering work through the proprietary Instruction Engine.
 
 For non-developers, the starting point is the plan and acceptance criteria. You can delegate implementation and routine design; novel or complex architecture still benefits from an experienced developer's judgment. You keep the final behavior check before merge.
 
 #### Build something beautiful that stays maintainable
 
-Beautiful software makes its intent easy to understand. DigitalWorker searches for existing domain concepts before adding classes, checks cohesion, and brings behavior and state together in Rich Domain Models. It applies Clean Architecture, KISS, DRY, and YAGNI, pruning unnecessary abstractions and duplicate structures.
+Beautiful software makes its intent easy to understand. DigitalWorker searches for existing domain concepts before adding classes, checks cohesion, and brings behavior and state together in Rich Domain Models. It applies Clean Architecture — business rules separated from frameworks, UI, and databases for easy testing and reuse — KISS, DRY, and YAGNI, pruning unnecessary abstractions and duplicate structures.
 
 In the Calculator demo, `Calculator` owns its state and behavior through `Press(InputKey)`; the parser stays inside `MathExpression`. Tests exercise overflow boundaries and the behavior of a locked error state. These are concrete examples of the clarity and care you can inspect. <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#what-beautiful-maintainable-code-looks-like" data-cta="view_example" data-location="mid_page">Explore the code and edge-case tests</a>.
 
@@ -85,7 +87,7 @@ Experienced developers can take on more architecture, product decisions, and tes
 
 ### The breakthrough behind the workflow: the Instruction Engine
 
-AI learns from code that includes anti-patterns. In our production work, models repeatedly gravitate back to procedural designs, duplicated classes, and anemic domain models even when explicitly instructed otherwise. A well-written instruction does not ensure it will survive the whole execution chain.
+AI learns from code that includes anti-patterns. In our production work, models repeatedly gravitate back to procedural designs, duplicated classes, and anemic domain models — objects that hold data but contain no behavior, violating object-oriented programming — even when explicitly instructed otherwise. A well-written instruction does not ensure it will survive the whole execution chain.
 
 Agentic skills help by packaging instructions, examples, and tools. Yet even top-tier models can struggle with long, multi-step instructions: losing context, dropping requirements, compounding earlier mistakes, or hallucinating tool calls. These failure modes are documented industry-wide — [research on iterative coding tasks](https://www.arxiv.org/pdf/2603.24755) shows agents erode code quality over long horizons, and agents have been observed [bypassing mandatory workflow steps even under explicit "never skip" guardrails](https://github.com/anthropics/claude-code/issues/39851). Keeping the entire procedure on track is a substantial engineering problem.
 

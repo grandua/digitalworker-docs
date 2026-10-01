@@ -1,5 +1,7 @@
 # DigitalWorker — See the engineering behind the result
 
+**Audience:** developers and technical evaluators — the engineering evidence behind the claims. <!-- audience: dev/evaluator · ceiling: T2 main → T3 deep sections -->
+
 You should be able to explain why the code deserves your confidence. DigitalWorker combines a high-precision Instruction Engine with an engineering method that carries a task through design, test-first implementation, review, and repair. The result is work you can inspect, understand, and extend—and less of the repeated prompting and cleanup that consumes your attention.
 
 [Back to the product overview](https://github.com/grandua/digitalworker-docs/blob/main/ReadMe.md) · [Inspect the public demo](https://github.com/grandua/Digital-Worker-Demo) · [User Guide](https://github.com/grandua/digitalworker-docs/blob/main/user-guide.md)
@@ -22,7 +24,7 @@ When comparing your alternatives, ask for evidence of the whole delivery sequenc
 
 ## Why skills alone do not establish reliable execution
 
-Skills make instructions and supporting resources reusable. The difficult part is carrying a multi-step method through a long execution chain without losing requirements or reverting to familiar anti-patterns. In founder use, models repeatedly gravitated toward procedural designs, duplicated classes, and anemic domain models even with contrary instructions. That is unsurprising: most production code is procedural or anemic — it is the corpus the models trained on. Martin Fowler called the anemic domain model "a fundamental horror... so contrary to the basic idea of object-oriented design" — yet tutorials, ORM scaffolding, and deadline pressure made it the industry default. The models did not learn a bad habit; they learned the industry's habit.
+Skills make instructions and supporting resources reusable. The difficult part is carrying a multi-step method through a long execution chain without losing requirements or reverting to familiar anti-patterns. In founder use, models repeatedly gravitated toward procedural designs, duplicated classes, and anemic domain models — objects that hold data but contain no behavior — even with contrary instructions. That is unsurprising: most production code is procedural or anemic — it is the corpus the models trained on. Martin Fowler called the anemic domain model "a fundamental horror... so contrary to the basic idea of object-oriented design" — yet tutorials, ORM scaffolding, and deadline pressure made it the industry default. The models did not learn a bad habit; they learned the industry's habit.
 
 DigitalWorker's proprietary model-adaptable Instruction Engine keeps the required design, implementation, testing, review, and repair instructions in the execution path.
 
@@ -53,7 +55,7 @@ The documented [Calculator domain](https://github.com/grandua/Digital-Worker-Dem
 
 - **An aggregate with behavior:** `Calculator` owns the input buffer, memory bank, history, angle mode, and error state. Mutation flows through `Press(InputKey)`, making the behavioral boundary easy to find.
 - **Encapsulated parsing:** The recursive-descent parser is a private nested class within `MathExpression`. The parsing implementation stays inside the concept that needs it.
-- **Cohesive domain modeling:** The original inspection recorded a Rich Domain Model without manager classes, static helpers, or a service layer wrapping a data bag. Examine whether the responsibilities make sense for this domain and for the changes you would make next.
+- **Cohesive domain modeling:** The original inspection recorded a Rich Domain Model — objects carrying both data and the rules that act on it as per OOP definition — without manager classes, static helpers, or a service layer wrapping a data bag. Examine whether the responsibilities make sense for this domain and for the changes you would make next.
 
 These examples show what the quality claim means in code. They do not require you to believe one architecture style is the only valid choice for every system. DigitalWorker applies a deliberate method—Clean Architecture, OOP/Rich Domain Models, cohesion, KISS, DRY, and YAGNI—and lets you inspect the result.
 

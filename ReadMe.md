@@ -15,7 +15,7 @@ No iterative prompting. No babysitting. No cleaning up after the AI.
 
 ## Why Did We Build Digital Worker? These Are Our Assumptions Behind It:
 
-- Current AI without working guardrails pretty much always produces sloppy, badly engineered code and architecture, since its statistical patterns come from training on human code — and most human code, public or private, ignores object-oriented design discipline, layering, and automated test coverage
+- Current AI without working guardrails pretty much always produces sloppy, badly engineered code and architecture, since its statistical patterns come from training on human code — and most human code, public or private, ignores <abbr title="a design discipline where each part of the code carries its data and the rules that act on it together">object-oriented design</abbr> discipline, layering, and automated test coverage
 - We know of no working guardrails that stop AI from producing bloated spaghetti code — reliably enforcing an engineering process on AI is a difficult, unsolved problem
 - Guiding AI to convert its spaghetti code and broken architecture takes a lot of hard manual labor, technical knowledge, and skill — reviewing, fixing, re-prompting — not just more AI usage. This is the main reason AI agents improve shipping speed only marginally — controlled research puts real-world gains at ~25% at best, not manifold[^3]
 - If a software solution is built with AI by a human who never fights back the AI slop, complexity limits are reached quickly: within as little as one month the AI's pace of change plateaus and the defect count becomes unmanageable
@@ -29,7 +29,7 @@ No iterative prompting. No babysitting. No cleaning up after the AI.
 [^3]: The strongest controlled evidence brackets the gain narrowly: three field RCTs across 4,867 developers at Microsoft, Accenture, and a Fortune 100 company found a 26% increase in completed tasks with an AI assistant (Cui et al., Management Science, 2025) — while a 2025 METR RCT found experienced open-source developers were actually ~19% *slower* with AI tools on their own mature repositories, even though they believed they had been ~20% faster. Our founder's own measured experience before adopting AI-checklist-driven workflows matched the ~25% figure.
 
 ## What we claim as possible
-- Nevertheless, the problem above has a better solution and current AI can be asked to run checklists with hundreds of items and produce much better structured code that is actually easy to follow, easy to change, with pretty good mutation test coverage — meaning the tests catch any defect introduced into the covered code — and that scales almost linearly with complexity.
+- Nevertheless, the problem above has a better solution and current AI can be asked to run checklists with hundreds of items and produce much better structured code that is actually easy to follow, easy to change, with pretty good <abbr title="the tests catch any defect introduced into the covered code">mutation test coverage</abbr>, and that scales almost linearly with complexity.
 - The catch is that AI will not follow such huge checklists if they are given to it as pure text and in a generic fashion. However, checklists coupled with a smart, adjustable Instruction Engine can make AI follow every instruction.
 - Also, current AI can be asked to make most important decisions upfront in a <abbr title="practice-run">dry-run</abbr> fashion which allows humans to unconfuse AI by overriding those decisions as needed (and optionally explaining rationale)
 
@@ -142,7 +142,7 @@ Experienced developers can take on more architecture, product decisions, and tes
 
 Reusable packages of instructions, examples, and tools help. Yet even top-tier models can struggle with long sequences of instructions: losing track partway through, dropping requirements, piling mistakes on earlier mistakes, or claiming actions they never took. These failure modes are documented industry-wide — [research on iterative coding tasks](https://www.arxiv.org/pdf/2603.24755) shows agents erode code quality over long tasks, and agents have been observed [bypassing mandatory process requirements even under explicit "never skip" guardrails](https://github.com/anthropics/claude-code/issues/39851). Keeping the entire procedure on track is a substantial engineering problem.
 
-**DigitalWorker has virtually solved instruction-following for its engineering process in founder-observed production use.** Its proprietary Instruction Engine keeps every required instruction in force through the whole task — design, implementation, testing, review, and repair — with two years of refined engineering rules behind them.
+**DigitalWorker has virtually solved instruction-following for its engineering process in founder-observed production use.** Its proprietary <abbr title="makes the AI follow your process precisely instead of improvising or skipping instructions">Instruction Engine</abbr> keeps every required instruction in force through the whole task — design, implementation, testing, review, and repair — with two years of refined engineering rules behind them.
 
 That is the capability to evaluate when comparing it with a custom script or a collection of reusable instructions: sustained execution of the whole method. Inspect the delivered work and its fix history, then judge it on a bounded task of your own. “Virtually solved” describes practical reliability in our engineering process; it does not promise that every model action is infallible.
 
@@ -166,7 +166,7 @@ That is the capability to evaluate when comparing it with a custom script or a c
 
 #### Bring your own expertise beyond code
 
-The same engine can carry *your* professional instructions — of any length — and make AI execute them almost as if they were code. Write your process in a Markdown file and send it to us; we configure it for you for free.
+The same engine can carry *your* professional instructions — of any length — and make AI execute them almost as if they were code. Write your process in a <abbr title="a plain-text file with light formatting">Markdown</abbr> file and send it to us; we configure it for you for free.
 
 <details markdown="1"><summary>The full pitch</summary>
 
@@ -218,7 +218,7 @@ No repeated prompting, parallel tasks while you focus elsewhere, decisions shipp
 
 From a one-minute read-only review of your real code, to a shared demo board, to running it on your own repo.
 
-#### 1. Watch it review your real PRs — GitHub only, ~1 minute
+#### 1. Watch it review your real <abbr title="PRs — proposed changes, packaged for review">pull requests</abbr> — GitHub only, ~1 minute
 
 <details markdown="1"><summary>Show how</summary>
 

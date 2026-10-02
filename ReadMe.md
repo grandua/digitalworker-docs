@@ -9,7 +9,8 @@
 ---
 AI wrote the code. You're still doing the cleanup.
 
-**You make the decisions; DigitalWorker turns a task card into a reviewed, tested, production-ready <abbr title="a proposed change, packaged for review">pull request</abbr>.**
+**You make the decisions that matter. DigitalWorker turns a task card into a tested, reviewed, production-ready <abbr title="a proposed change, packaged for review">pull request</abbr> — professional-developer output, not AI intern drafts. It's like assigning a top-10% developer to a well-scoped task — at AI cost.** 
+No iterative prompting. No babysitting. No cleaning up after the AI. 
 
 ## Why Did We Build Digital Worker? These Are Our Assumptions Behind It:
 
@@ -28,7 +29,7 @@ AI wrote the code. You're still doing the cleanup.
 ## What we claim as possible
 - Nevertheless, the problem above has a better solution and current AI can be asked to run checklists with hundreds of items and produce much better structured code that is actually easy to follow, easy to change, with pretty good mutation test coverage — meaning the tests catch any defect introduced into the covered code — and that scales almost linearly with complexity.
 - The catch is that AI will not follow such huge checklists if they are given to it as pure text and in a generic fashion. However, checklists coupled with a smart, adjustable Instruction Engine can make AI follow every instruction.
-- Also, current AI can be asked to make most important decisions upfront in a dry-run (practice-run) fashion which allows humans to unconfuse AI by overriding those decisions as needed (and optionally explaining rationale)
+- Also, current AI can be asked to make most important decisions upfront in a <abbr title="dry-run">practice-run</abbr> fashion which allows humans to unconfuse AI by overriding those decisions as needed (and optionally explaining rationale)
 
 
 ## You make the decisions that matter. Build software you're proud to put your name on.
@@ -37,9 +38,9 @@ AI wrote the code. You're still doing the cleanup.
 
 Your engineering competence sets the standard. DigitalWorker carries it through the work: turning a task card into a tested, reviewed, production-ready pull request. You shape the pivotal decisions and perform the final behavior check; DigitalWorker handles implementation, testing, review, and fixes.
 
-Take pride in maintainable and **beautiful** work: clear intent, well-organized parts (cohesive objects), and code you can confidently extend.
+Take pride in maintainable and **beautiful** work: clear intent, well-organized <abbr title="cohesive objects">parts</abbr>, and code you can confidently extend.
 
-**See the task and the resulting pull request:** compare the <a href="https://trello.com/b/6a03d01d53cf7bb95f8325dd/digital-worker-demo" data-cta="view_example" data-location="hero">source task cards</a> with the <a href="https://github.com/grandua/Digital-Worker-Demo/pulls?q=is%3Apr+is%3Aclosed" data-cta="view_example" data-location="hero">generated code and pull-request/fix history</a>. Two demo applications, generated from task cards, with spot-reviews (light human review) and external defect feedback disclosed.
+**See the task and the resulting pull request:** compare the <a href="https://trello.com/b/6a03d01d53cf7bb95f8325dd/digital-worker-demo" data-cta="view_example" data-location="hero">source task cards</a> with the <a href="https://github.com/grandua/Digital-Worker-Demo/pulls?q=is%3Apr+is%3Aclosed" data-cta="view_example" data-location="hero">generated code and pull-request/fix history</a>. Two demo applications, generated from task cards, with <abbr title="light human review">spot-reviews</abbr> and external defect feedback disclosed.
 
 [**Verify our claims — no account needed**](#2-verify-our-claims--no-account-needed)
 
@@ -233,7 +234,7 @@ The Calculator domain/test solution needs no MAUI workloads. The [full app solut
 
 <a href="https://trello.com/invite/b/6a03d01d53cf7bb95f8325dd/ATTI3f3561b96a9f5663247cbafaa06b71b7DBE19FF1/digital-worker-demo" data-cta="view_example" data-location="pricing">Join the public demo board</a>, or <a href="mailto:info@agiledigitalworker.com" data-cta="request_board" data-location="pricing">email your Trello username</a> to request access, usually addressed within 24 hours. Create a bounded task in `To Implement`, or draft it in `Triage` and move it when ready. Watch DigitalWorker deliver a tested PR to the public demo repository.
 
-The demo trial requires a Trello account; no GitHub credentials or LLM key are needed. Use a public-safe task on this shared board — no special card format, write it like any task (the cards already on the board are real examples). Want privacy instead? Option 4 below gives you a private board on your own repo.
+The demo trial requires a Trello account; no GitHub credentials or LLM key are needed. Use a public-safe task on this shared board — no special card format, write it like any <abbr title="the cards already on the board are real examples">task</abbr>. Want privacy instead? Option 4 below gives you a private board on your own repo.
 
 #### 4. Start using it on your repo — Trello + GitHub
 

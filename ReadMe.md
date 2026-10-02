@@ -44,11 +44,11 @@ Take pride in maintainable and **beautiful** work: clear intent, <abbr title="co
 
 **See the task and the resulting pull request:** compare the <a href="https://trello.com/b/6a03d01d53cf7bb95f8325dd/digital-worker-demo" data-cta="view_example" data-location="hero">source task cards</a> with the <a href="https://github.com/grandua/Digital-Worker-Demo/pulls?q=is%3Apr+is%3Aclosed" data-cta="view_example" data-location="hero">generated code and pull-request/fix history</a>. Two demo applications, generated from task cards, with <abbr title="light human review for a few selected parts">spot-reviews</abbr> and external defect feedback disclosed.
 
-[**Verify our claims — no account needed**](#2-verify-our-claims--no-account-needed)
+[**Verify our claims — no account or setup needed**](#2-verify-our-claims--no-account-or-setup-needed)
 
 <a href="https://agiledigitalworker.com/Engineering-Deep-Dive" data-cta="view_example" data-location="hero"><strong>See the engineering behind the result</strong></a> — the method, concrete code examples, comparison criteria, and economics. No signup required.
 
-*Developers: jump straight to the [recorded evidence](#2-verify-our-claims--no-account-needed) or the [engineering deep dive](https://agiledigitalworker.com/Engineering-Deep-Dive). For the engineering details, open the technical blocks below.*
+*Developers: jump straight to the [recorded evidence](#2-verify-our-claims--no-account-or-setup-needed) or the [engineering deep dive](https://agiledigitalworker.com/Engineering-Deep-Dive). For the engineering details, open the technical blocks below.*
 
 ---
 
@@ -233,7 +233,7 @@ No Trello account, no personal access token, no code changes — and it uninstal
 
 </details>
 
-#### 2. Verify our claims — no account needed
+#### 2. Verify our claims — no account or setup needed
 
 <details markdown="1"><summary>Show how</summary>
 

@@ -165,7 +165,7 @@ That is the capability to evaluate when comparing it with a custom script or a c
 
 #### Bring your own expertise beyond code
 
-The same engine can carry your own professional instructions — write your process in a Markdown file and send it to us; we configure it for you for free.
+The same engine can carry *your* professional instructions — of any length — and make AI execute them almost as if they were code. Write your process in a Markdown file and send it to us; we configure it for you for free.
 
 <details markdown="1"><summary>The full pitch</summary>
 

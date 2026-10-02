@@ -15,7 +15,7 @@ No iterative prompting. No babysitting. No cleaning up after the AI.
 
 ## Why Did We Build Digital Worker? These Are Our Assumptions Behind It:
 
-- Current AI without working guardrails pretty much always produces sloppy, badly engineered code and architecture, since its statistical patterns come from training on human code — and most human code, public or private, ignores object-oriented design discipline, layering, and tests
+- Current AI without working guardrails pretty much always produces sloppy, badly engineered code and architecture, since its statistical patterns come from training on human code — and most human code, public or private, ignores object-oriented design discipline, layering, and automated test coverage
 - We know of no working guardrails that stop AI from producing bloated spaghetti code — reliably enforcing an engineering process on AI is a difficult, unsolved problem
 - Guiding AI to convert its spaghetti code and broken architecture takes a lot of hard manual labor, technical knowledge, and skill — reviewing, fixing, re-prompting — not just more AI usage. This is the main reason AI agents improve shipping speed only marginally — controlled research puts real-world gains at ~25% at best, not manifold[^3]
 - If a software solution is built with AI by a human who never fights back the AI slop, complexity limits are reached quickly: within as little as one month the AI's pace of change plateaus and the defect count becomes unmanageable
@@ -31,7 +31,7 @@ No iterative prompting. No babysitting. No cleaning up after the AI.
 ## What we claim as possible
 - Nevertheless, the problem above has a better solution and current AI can be asked to run checklists with hundreds of items and produce much better structured code that is actually easy to follow, easy to change, with pretty good mutation test coverage — meaning the tests catch any defect introduced into the covered code — and that scales almost linearly with complexity.
 - The catch is that AI will not follow such huge checklists if they are given to it as pure text and in a generic fashion. However, checklists coupled with a smart, adjustable Instruction Engine can make AI follow every instruction.
-- Also, current AI can be asked to make most important decisions upfront in a <abbr title="dry-run">practice-run</abbr> fashion which allows humans to unconfuse AI by overriding those decisions as needed (and optionally explaining rationale)
+- Also, current AI can be asked to make most important decisions upfront in a <abbr title="practice-run">dry-run</abbr> fashion which allows humans to unconfuse AI by overriding those decisions as needed (and optionally explaining rationale)
 
 
 ## You make the decisions that matter. Build software you're proud to put your name on.

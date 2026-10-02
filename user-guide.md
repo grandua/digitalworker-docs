@@ -1,25 +1,27 @@
 # Digital Worker User Guide
 
-**Audience:** human users who submit tasks to Digital Worker via Trello on their own connected board
+**Audience:** human users who submit tasks to Digital Worker via Trello on their own connected board <!-- ceiling: T1 intro → T2 operations -->
 **Purpose:** explain what Digital Worker is, how to use it, what it can and cannot do, and what actions are prohibited.
+
+**TL;DR:** DigitalWorker turns a task card on your Trello board into a tested, reviewed pull request on your GitHub repository. You decide what matters; it does the engineering work — implementation, tests, review, and fixes.
 
 > **This guide covers using DigitalWorker on your own Trello board connected to your own GitHub repository.** That requires a Trello account and a GitHub repository. If you are not yet at this stage, there are two earlier ways to engage:
 > - **Verify our claims** — clone the public demo repo, run the tests, view the public Trello board. No accounts needed. See the [Sell Sheet](../../Docs/Sales/Sell-Sheet.md) § Getting Started.
-> - **Try it on the demo board** — request access to the demo Trello board, submit a task card, watch DigitalWorker produce a PR. Trello account only. See the [Sell Sheet](../../Docs/Sales/Sell-Sheet.md) § Getting Started.
+> - **Try it on the demo board** — request access to the demo Trello board, submit a task card, watch DigitalWorker produce a pull request. Trello account only. See the [Sell Sheet](../../Docs/Sales/Sell-Sheet.md) § Getting Started.
 
 ---
 
 ## What Is Digital Worker?
 
-Digital Worker is a fully autonomous, non-interactive AI coding agent. It reads software-development tasks from Trello cards, executes them using an AI coding agent, and publishes results back to Trello. You never interact with it directly in a chat or terminal — all communication happens through Trello cards.
+Digital Worker is a fully autonomous, non-interactive AI coding agent. It reads software-development tasks from task cards on your Trello board, executes them using an AI coding agent, and publishes results back to Trello. You never interact with it directly in a chat or terminal — all communication happens through Trello cards.
 
 Execution is autonomous, but pivotal product and architecture decisions remain yours. You no longer review its work for logic — AI reviews and checklists handle that. Your review is judgment: connection to the physical world, prioritization, architecture decisions, new classes and their relationships, and important trade-offs — placed early, before implementation. For complex or high-impact work, use planning mode first so you can spot-review and correct selected sections of the AI-drafted research, planning, architecture, and class-design document package before implementation.
 
-Digital Worker's proprietary instruction execution engine keeps required engineering steps in the execution path. That enforcement is what makes the result dependable: models are trained on a corpus heavy with anti-patterns and drift back to them over long multi-step tasks — even with skills, rules files, and explicit guardrails — so the engine keeps relevant instructions in the execution path rather than trusting the model to hold the whole procedure. The integrated product is currently in early access; its underlying workflows and instructions have been refined through two years of daily engineering use.
+Digital Worker's proprietary Instruction Engine keeps required engineering instructions in the execution path. That enforcement is what makes the result dependable: models are trained on a corpus heavy with anti-patterns and drift back to them over long, multi-part tasks — even with skills, rules files, and explicit guardrails — so the engine keeps relevant instructions in the execution path rather than trusting the model to hold the whole procedure. The integrated product is currently in early access; its underlying checklists and instructions have been refined through two years of daily engineering use.
 
 ### Why rigorous engineering discipline matters
 
-The benefits of test-first TDD, Clean Architecture, and OOP/Rich Domain Models are much larger than many teams realize. These disciplines are not cosmetic preferences: they keep behavior testable, dependencies directional, and domain concepts explicit as features, integrations, teams, customers, and business rules multiply.
+The benefits of test-first TDD, Clean Architecture (business rules separated from frameworks, UI, and databases), and OOP/Rich Domain Models — objects carrying both data and the rules that act on them — are much larger than many teams realize. These disciplines are not cosmetic preferences: they keep behavior testable, dependencies directional, and domain concepts explicit as features, integrations, teams, customers, and business rules multiply.
 
 That creates a compounding business advantage. A disciplined codebase can support a larger product and business without every new feature becoming disproportionately harder, slower, and riskier. Most businesses want to grow; rigorous engineering helps prevent software complexity from becoming the limit on that growth.
 
@@ -29,10 +31,10 @@ That creates a compounding business advantage. A disciplined codebase can suppor
 
 | | **DigitalWorker PR Reviewer** | **DigitalWorker** (full agent)                                                                                               |
 |---|---|------------------------------------------------------------------------------------------------------------------------------|
-| **What it does** | Reviews your pull requests and posts feedback as GitHub reviews | Every part of the SDLC: plans, architects, designs classes and UX, implements and tests features, reviews code, fixes issues |
+| **What it does** | Reviews your pull requests and posts feedback as GitHub reviews | Every part of the software development lifecycle (SDLC): plans, architects, designs classes and UX, implements and tests features, reviews code, fixes issues |
 | **How you use it** | Always-on — every PR and every push is reviewed automatically; optional `@digitalworker review` comment | Create and move Trello cards on your board                                                                                   |
 | **Trello account** | Not needed | Required                                                                                                                     |
-| **GitHub PAT** | Not needed — GitHub App permissions only | Not needed — the Agent app covers it; a PAT exists only for legacy configurations |
+| **GitHub access token (PAT)** | Not needed — GitHub App permissions only | Not needed — the Agent app covers it; a PAT exists only for legacy configurations |
 | **Onboarding effort** | Install the app on your repos (~1 minute) | Board provisioning + repository onboarding (~7 minutes)                                                                      |
 
 DigitalWorker PR Reviewer is the simplest, risk-free way to start: it is read-only and always-on, so you see review quality on real PRs immediately. DigitalWorker is the full-featured agent you graduate to when you want it doing the work, not just reviewing it.
@@ -51,7 +53,7 @@ Both products share the same trial and billing policy — one credit allowance p
 ---
 ## How to Use DigitalWorker PR Reviewer — read-only reviews without Trello
 
-The DigitalWorker PR Reviewer is a GitHub App, and it's Trello-free and GitHub PAT free way to get value from DigitalWorker. 
+The DigitalWorker PR Reviewer is a GitHub App, and it needs no Trello account and no GitHub personal access token (PAT) — a scoped credential that lets a tool act on your repo. 
 Instead of picking up task cards, it reviews your pull requests and posts the result as a normal GitHub review. 
 It is **read-only**: it never modifies your code, pushes commits, edits files, or creates pull requests.
 DigitalWorker PR Reviewer is a great way to start simple and in a risk-free way and see if you want to progress to a full featured DigitalWorker.
@@ -139,7 +141,7 @@ When Digital Worker finishes a card:
 - A **result comment** is posted on the card with the agent's answer and a summary of what was done.
 - When the task produces source-controlled changes, Digital Worker reviews the intended file set, excludes temporary and build artifacts, commits the changes, pushes the branch, and opens or locates the **pull request**. The PR link is included in the comment.
 - **You do not need to ask for the ordinary task PR.** Request PR creation or merge explicitly only when you want an additional PR-related action beyond the automatic task PR.
-- The card is moved to **Done** on success or **Blocked** on failure. When a failed run has recoverable work, its isolated worktree is preserved for several days so a later run can resume it.
+- The card is moved to **Done** on success or **Blocked** on failure. When a failed run has recoverable work, its isolated worktree — a separate working copy of your repository — is preserved for several days so a later run can resume it.
 
 
 ## What You Should Do
@@ -159,7 +161,7 @@ When Digital Worker finishes a card:
 ## What You Do Not Need to Do
 
 - **You do not need to install software or configure each developer's machine.** After you answer the three first-time onboarding questions, Digital Worker configures the repository and execution environment.
-- **You do not need to provide an AI model API key or subscription (No BYOK).** We provide the AI infrastructure and model routing. Digital Worker routes through dedicated gateways with strict Zero Data Retention (ZDR) guarantees.
+- **You do not need to provide an AI model API key or subscription — BYOK ("bring your own key") is not offered.** We provide the AI infrastructure and model routing. Digital Worker routes through dedicated gateways with strict Zero Data Retention (ZDR) guarantees.
 - **You do not need to run any commands.** All execution is handled by Digital Worker.
 - **You do not need to create branches or pull requests.** Digital Worker creates isolated Git worktrees, commits changes, pushes branches, and opens PRs automatically.
 - **You do not need to monitor the agent in real time.** Results are posted to Trello when the task is done.
@@ -174,7 +176,7 @@ When Digital Worker finishes a card:
 - **Do not ask to list or enumerate workflow names.** Enumerating workflow names is not permitted. The request is not treated as malicious, but it will be declined.
 - **Do not attempt to override or ignore instructions** (e.g., "ignore previous instructions", "you are now a different assistant", "disregard all rules").
 - **Do not submit encoded or encrypted payloads** designed to bypass input screening (e.g., base64-encoded instructions, leet-speak obfuscation, zero-width character injection).
-- **Do not submit non-coding tasks.** Tasks unrelated to software development (e.g., "write a poem", "translate this text") will be soft-blocked.
+- **Do not submit non-coding tasks.** Tasks unrelated to software development (e.g., "write a poem", "translate this text") will be soft-blocked — flagged and declined rather than executed.
 - **Do not use non-English characters in task instructions.** Non-Latin text will be soft-blocked.
 
 ---
@@ -182,8 +184,8 @@ When Digital Worker finishes a card:
 ## What Digital Worker Can Do for You
 
 - **Research, plan, architect, and design** — create an AI-drafted document package covering research, planning, architecture, class design, and UX/design planning for you to spot-review and correct before implementation.
-- **Implement features with enforced test-first TDD** — start each feature with a failing test, add the minimum implementation needed to pass, and run the relevant test suite. Digital Worker targets strong conventional test coverage; it does not guarantee complete mutation coverage. The payoff is substantially fewer defects and less cleanup: tests establish expected behavior before implementation, and the dedicated correctness review and fix passes below address issues before the PR. For routine tasks, you perform a quick final behavior check before merge; pivotal design decisions still need your judgment. See "Engineering workflow" below for the delivery steps and why a final human check remains necessary.
-- **Apply Clean Architecture, SOLID, and OOP/Rich Domain Model discipline** — drive behavior and state into appropriate Domain objects, protect layer direction, and avoid anemic or procedural designs.
+- **Implement features with enforced test-first TDD** — start each feature with a failing test, add the minimum implementation needed to pass, and run the relevant test suite. Digital Worker targets strong conventional test coverage; it does not guarantee complete mutation coverage — the level at which the tests catch any defect introduced into the covered code. The payoff is substantially fewer defects and less cleanup: tests establish expected behavior before implementation, and the dedicated correctness review and fix passes below address issues before the PR. For routine tasks, you perform a quick final behavior check before merge; pivotal design decisions still need your judgment. See "Engineering workflow" below for the delivery steps and why a final human check remains necessary.
+- **Apply Clean Architecture, SOLID, and OOP/Rich Domain Model discipline** — drive behavior and state into appropriate Domain objects, protect layer direction, and avoid anemic — data-holding objects with no behavior of their own — or procedural designs.
 - **Prevent duplicate and anemic classes** — before proposing any new class, search the codebase for existing classes that could host the planned behavior. This significantly reduces the code and class duplication that every other AI coding tool produces.
 - **Fix bugs** — diagnose defects through evidence from code, tests, builds, logs, command output, research, or an approved spike before changing implementation. If you find a defect after merge, submit a focused fix card with steps to reproduce it and the expected result so Digital Worker can perform the repair work.
 - **Write tests** — create unit, integration, or end-to-end tests following testing best practices such as test isolation.
@@ -218,6 +220,8 @@ Planning, implementation, testing, and review are routed to models and reasoning
 
 The workflow produces engineering evidence and reduces supervision, but it does not guarantee a defect-free result or remove your responsibility for the final check before merge.
 
+For the method, concrete code examples, and recorded demo evidence behind this pipeline, see the [Engineering Deep Dive](https://agiledigitalworker.com/Engineering-Deep-Dive#from-a-requirement-to-a-checked-implementation).
+
 ### Trello and execution flow
 
 1. **Card selection** — Digital Worker first resumes a card already in "Running"; otherwise it selects the first card from "To Plan", then "To Implement".
@@ -228,11 +232,11 @@ The workflow produces engineering evidence and reduces supervision, but it does 
 
 ---
 
-## How to Add Workflows into Digital Worker and Share Them With Your Team
+## How to Add Instructions into Digital Worker and Share Them With Your Team
 
-Digital Worker's instruction execution engine keeps required steps in the execution path instead of relying on the AI to remember a huge static prompt. Custom instructions use the same execution model.
+Digital Worker's Instruction Engine keeps required instructions in the execution path instead of relying on the AI to remember a huge static prompt. Custom instructions use the same execution model.
 
-Here is a simple way to customize and share workflows across your teams:
+Here is a simple way to customize and share instruction sets across your teams:
 1. Create a workflow using the shared Windsurf and Antigravity format. The easiest approach is to use the built-in "Create Workflow" feature in Windsurf Cascade or Google Antigravity.
 2. Test and refine your workflow locally in Windsurf Cascade or Google Antigravity.
 3. Send the workflow to your Digital Worker contact and provide a list of the repositories where it should be applied.
@@ -246,7 +250,7 @@ Here is a simple way to customize and share workflows across your teams:
 
 This includes but is not limited to:
 
-- Prompt extraction attacks (asking for system prompts, workflow steps, internal instructions, or protection mechanisms).
+- Prompt extraction attacks (asking for system prompts, checklist items, internal instructions, or protection mechanisms).
 - Instruction override attacks ("ignore previous instructions", "you are now...", "disregard all rules").
 - Encoding or obfuscation bypasses (base64, leet-speak, homoglyphs, zero-width characters).
 - Repo-poisoning attacks (planting malicious instructions in repository files).
@@ -274,7 +278,7 @@ Check the comment on the blocked card for an explanation.
 
 ### Do I need to supply my own AI model API keys (BYOK)?
 
-No. Digital Worker provides all AI infrastructure, model routing, and API keys. Bring-Your-Own-Key (BYOK) is not permitted in order to enforce enterprise Zero Data Retention (ZDR) guarantees and protect proprietary engineering workflows and instructions.
+No. Digital Worker provides all AI infrastructure, model routing, and API keys. Bring-Your-Own-Key (BYOK) is not permitted in order to enforce enterprise Zero Data Retention (ZDR) guarantees and protect proprietary engineering checklists and instructions.
 
 ### Can I ask Digital Worker questions about how it works?
 
@@ -298,4 +302,4 @@ Yes, when a recoverable worktree was preserved. Move the card back to "To Implem
 
 ### Can I have multiple tasks running at once?
 
-Yes. In dispatcher mode, Digital Worker processes multiple cards in parallel up to the configured concurrency limit. Each code-change task gets its own isolated Git worktree.
+Yes. In dispatcher mode — parallel card processing — Digital Worker processes multiple cards in parallel up to the configured concurrency limit. Each code-change task gets its own isolated Git worktree.

@@ -122,7 +122,7 @@ On well-scoped tasks, **we expect DigitalWorker to match or exceed the output of
 
 **Top 10% professional-developer output[^2] at AI execution cost.**
 
-Direct your judgment toward the product while DigitalWorker handles routine implementation and quality work. The current usage model is model cost plus approximately 20% markup; [see the economics and how to evaluate total effort](https://agiledigitalworker.com/Engineering-Deep-Dive#economics-pay-for-execution-keep-your-judgment).
+Direct your judgment toward the product while DigitalWorker handles routine implementation and quality work. The current usage model is model cost plus around 20% markup; [see the economics and how to evaluate total effort](https://agiledigitalworker.com/Engineering-Deep-Dive#economics-pay-for-execution-keep-your-judgment).
 
 Experienced developers can take on more design work, product decisions, and quality leadership while retaining the parts of engineering they enjoy. Non-developers can turn clear requirements into working software and bring in experienced judgment for consequential design choices. The opportunity is to build more of what matters to you, with competence visible in the result.
 
@@ -130,7 +130,7 @@ Experienced developers can take on more design work, product decisions, and qual
 
 **Top 10% professional-developer output[^2] at AI execution cost.**
 
-Direct your judgment toward the product while the workflow handles routine implementation and quality work. The current usage model is model cost plus approximately 20% markup; [see the economics and how to evaluate total effort](https://agiledigitalworker.com/Engineering-Deep-Dive#economics-pay-for-execution-keep-your-judgment).
+Direct your judgment toward the product while the workflow handles routine implementation and quality work. The current usage model is model cost plus around 20% markup; [see the economics and how to evaluate total effort](https://agiledigitalworker.com/Engineering-Deep-Dive#economics-pay-for-execution-keep-your-judgment).
 
 Experienced developers can take on more architecture, product decisions, and test leadership while retaining the parts of engineering they enjoy. Non-developers can turn clear requirements into working software and bring in experienced judgment for consequential design choices. The opportunity is to build more of what matters to you, with competence visible in the result.
 
@@ -138,11 +138,11 @@ Experienced developers can take on more architecture, product decisions, and tes
 
 ### The breakthrough behind the method: the Instruction Engine
 
-Reusable packages of instructions, examples, and tools help. Yet even top-tier models can struggle with long sequences of instructions: losing track partway through, dropping requirements, piling mistakes on earlier mistakes, or claiming actions they never took. These failure modes are documented industry-wide — [research on iterative coding tasks](https://www.arxiv.org/pdf/2603.24755) shows agents erode code quality over long tasks, and agents have been observed [bypassing mandatory process requirements even under explicit "never skip" guardrails](https://github.com/anthropics/claude-code/issues/39851). Keeping the entire procedure on track is a substantial engineering problem.
+Agent Skills - reusable packages of instructions, examples, and tools help. Yet even top-tier models can struggle with long sequences of instructions: losing track partway through, dropping requirements, piling mistakes on earlier mistakes, or claiming actions they never took. These failure modes are documented industry-wide — [research on iterative coding tasks](https://www.arxiv.org/pdf/2603.24755) shows agents erode code quality over long tasks, and agents have been observed [bypassing mandatory process requirements even under explicit "never skip" guardrails](https://github.com/anthropics/claude-code/issues/39851). Keeping the entire procedure on track is a substantial engineering problem.
 
 **DigitalWorker has virtually solved instruction-following for its engineering process in founder-observed production use.** Its proprietary <abbr title="makes the AI follow your process precisely instead of improvising or skipping instructions">Instruction Engine</abbr> keeps every required instruction in force through the whole task — design, implementation, testing, review, and repair — with two years of refined engineering rules behind them.
 
-That is the capability to evaluate when comparing it with a custom script or a collection of reusable instructions: sustained execution of the whole method. Inspect the delivered work and its fix history, then judge it on a bounded task of your own. “Virtually solved” describes practical reliability in our engineering process; it does not promise that every model action is infallible.
+That is the capability to evaluate when comparing it with <abbr title="a custom script or a collection of reusable instructions">agent skills</abbr>: sustained execution of the whole method. Inspect the delivered work and its fix history, then judge it on a bounded task of your own. “Virtually solved” describes practical reliability in our engineering process; it does not promise that every model action is infallible.
 
 <details markdown="1"><summary>Why instruction-following is the hard problem</summary>
 
@@ -158,7 +158,7 @@ Agentic skills help by packaging instructions, examples, and tools. Yet even top
 
 **DigitalWorker has virtually solved instruction-following for its engineering workflows in founder-observed production use.** Its proprietary model-adaptable Instruction Engine keeps the design, implementation, testing, review, and repair instructions in the execution path, with two years of refined engineering rules behind them.
 
-That is the capability to evaluate when comparing it with a custom script or a collection of skills: sustained execution of the whole method. Inspect the delivered work and its fix history, then judge it on a bounded task of your own. “Virtually solved” describes practical reliability in our production use; it does not promise that every model action is infallible.
+That is the capability to evaluate when comparing it with <abbr title="a custom script or a collection of reusable instructions">agent skills</abbr>: sustained execution of the whole method. Inspect the delivered work and its fix history, then judge it on a bounded task of your own. “Virtually solved” describes practical reliability in our production use; it does not promise that every model action is infallible.
 
 </details>
 

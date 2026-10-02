@@ -145,15 +145,13 @@ Reusable packages of instructions, examples, and tools help. Yet even top-tier m
 
 That is the capability to evaluate when comparing it with a custom script or a collection of reusable instructions: sustained execution of the whole method. Inspect the delivered work and its fix history, then judge it on a bounded task of your own. “Virtually solved” describes practical reliability in our engineering process; it does not promise that every model action is infallible.
 
-<details markdown="1"><summary>Why instruction-following is the hard problem — and the technical version</summary>
+<details markdown="1"><summary>Why instruction-following is the hard problem</summary>
 
 AI learns from existing code — including its bad habits. In our production work, models repeatedly drift back to shortcut designs and duplicated structures even when explicitly told not to. A well-written instruction does not ensure it will survive a long task.
 
-Reusable packages of instructions, examples, and tools help. Yet even top-tier models can struggle with long sequences of instructions: losing track partway through, dropping requirements, piling mistakes on earlier mistakes, or claiming actions they never took. These failure modes are documented industry-wide — [research on iterative coding tasks](https://www.arxiv.org/pdf/2603.24755) shows agents erode code quality over long tasks, and agents have been observed [bypassing mandatory process requirements even under explicit "never skip" guardrails](https://github.com/anthropics/claude-code/issues/39851). Keeping the entire procedure on track is a substantial engineering problem.
+</details>
 
----
-
-*The technical version:*
+<details markdown="1"><summary>The technical version</summary>
 
 AI learns from code that includes anti-patterns. In our production work, models repeatedly gravitate back to procedural designs, duplicated classes, and anemic domain models — objects that hold data but contain no behavior, violating object-oriented design — even when explicitly instructed otherwise. A well-written instruction does not ensure it will survive the whole execution chain.
 
@@ -167,11 +165,17 @@ That is the capability to evaluate when comparing it with a custom script or a c
 
 #### Bring your own expertise beyond code
 
+The same engine can carry your own professional instructions — write your process in a Markdown file and send it to us; we configure it for you for free.
+
+<details markdown="1"><summary>The full pitch</summary>
+
 The Instruction Engine's purpose extends to your own professional methods. Developers, lawyers, marketers, and other professionals can bring their instructions in a Markdown file so the whole procedure is carried through. Your competence defines the method; the engine supports its consistent execution.
 
 Have a process with several stages that your AI keeps only partly following? Write your instructions in a Markdown file and <a href="mailto:info@agiledigitalworker.com" data-cta="email_founder" data-location="mid_page">send them to us</a>. We will configure it for you for free. The built-in instructions are replaceable presets, not fixed: DigitalWorker currently ships software design and development related instructions, but swapping in custom instructions — for your own engineering method or for any other industry and profession — is trivial.
 
 Your instructions stay yours. They run through the same protected engine that guards our own proprietary instructions, and our AI provider stores nothing from our runs, so the instructions are never retained for model training.
+
+</details>
 
 <details markdown="1"><summary>The technical version</summary>
 
@@ -187,7 +191,7 @@ Your instructions stay yours. They run through the same protected engine that gu
 
 No repeated prompting, parallel tasks while you focus elsewhere, decisions shipped with the code, managed AI infrastructure, a discipline preset you can replace with your own, and no local setup to start.
 
-<details markdown="1"><summary>Six ways it fits — and the technical version</summary>
+<details markdown="1"><summary>Six ways it fits</summary>
 
 - **No repeated prompting:** Submit a task card and let DigitalWorker run. Review pivotal decisions when needed, without continuously driving implementation through chat.
 - **Work can continue while you focus elsewhere:** Several tasks can run at once, each in isolation, or arrive on recurring schedules through Trello's Task Repeater.
@@ -196,9 +200,9 @@ No repeated prompting, parallel tasks while you focus elsewhere, decisions shipp
 - **Opinionated but replaceable:** The built-in engineering discipline is a preset, not a cage. Bring your own process — the same Instruction Engine carries your instructions with the same precision.
 - **No local setup to start using it:** Connect your Trello board and GitHub codebase. No software to install or command line to configure.
 
----
+</details>
 
-*The technical version:*
+<details markdown="1"><summary>The technical version</summary>
 
 - **No iterative prompting:** Submit a task card and let the workflow execute. Review pivotal decisions when needed, without continuously driving implementation through chat.
 - **Work can continue while you focus elsewhere:** Tasks can run simultaneously in isolated branches and environments, or arrive on recurring schedules through Trello's Task Repeater.

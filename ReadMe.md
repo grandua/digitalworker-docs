@@ -16,8 +16,8 @@ No iterative prompting. No babysitting. No cleaning up after the AI.
 ## Why Did We Build Digital Worker? These Are Our Assumptions Behind It:
 
 - Current AI without working guardrails pretty much always produces sloppy, badly engineered code and architecture, since its statistical patterns come from training on human code — and most human code, public or private, ignores object-oriented design discipline, layering, and tests
-- We know of no working guardrails that stop AI from producing spaghetti code — reliably enforcing an engineering process on AI is a difficult, unsolved problem
-- Guiding AI to convert its spaghetti code and broken architecture takes a lot of review and fixing/prompting work, not just more AI usage. This is the main reason AI agents improve shipping speed only marginally — controlled research puts real-world gains at ~25% at best, not manifold[^3]
+- We know of no working guardrails that stop AI from producing bloated spaghetti code — reliably enforcing an engineering process on AI is a difficult, unsolved problem
+- Guiding AI to convert its spaghetti code and broken architecture takes a lot of hard manual labor, technical knowledge, and skill — reviewing, fixing, re-prompting — not just more AI usage. This is the main reason AI agents improve shipping speed only marginally — controlled research puts real-world gains at ~25% at best, not manifold[^3]
 - If a software solution is built with AI by a human who never fights back the AI slop, complexity limits are reached quickly: within as little as one month the AI's pace of change plateaus and the defect count becomes unmanageable
 - Even if a team of humans fights back using AI to review AI code, gives AI code standards, some architecture and instructions how to review code, the slop still overwhelms at scale — review capacity becomes the bottleneck, new features break existing ones, and the codebase converges to a plateau where only long-frozen features are dependable.[^1]
 - Current AI has severely impaired judgment which manifests in constant confusion about the real world

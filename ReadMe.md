@@ -42,7 +42,7 @@ Your engineering competence sets the standard. DigitalWorker carries it through 
 
 Take pride in maintainable and **beautiful** work: clear intent, well-organized <abbr title="cohesive objects">parts</abbr>, and code you can confidently extend.
 
-**See the task and the resulting pull request:** compare the <a href="https://trello.com/b/6a03d01d53cf7bb95f8325dd/digital-worker-demo" data-cta="view_example" data-location="hero">source task cards</a> with the <a href="https://github.com/grandua/Digital-Worker-Demo/pulls?q=is%3Apr+is%3Aclosed" data-cta="view_example" data-location="hero">generated code and pull-request/fix history</a>. Two demo applications, generated from task cards, with <abbr title="light human review">spot-reviews</abbr> and external defect feedback disclosed.
+**See the task and the resulting pull request:** compare the <a href="https://trello.com/b/6a03d01d53cf7bb95f8325dd/digital-worker-demo" data-cta="view_example" data-location="hero">source task cards</a> with the <a href="https://github.com/grandua/Digital-Worker-Demo/pulls?q=is%3Apr+is%3Aclosed" data-cta="view_example" data-location="hero">generated code and pull-request/fix history</a>. Two demo applications, generated from task cards, with <abbr title="light human review for a few selected parts">spot-reviews</abbr> and external defect feedback disclosed.
 
 [**Verify our claims — no account needed**](#2-verify-our-claims--no-account-needed)
 

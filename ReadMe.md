@@ -85,7 +85,7 @@ The sequence is explicit: **a failing behavior test → the minimum implementati
 
 #### Keep control of consequential decisions
 
-You choose what to build, what "done" means, and the trade-offs you can live with. You no longer review for logic — its own reviews and checklists handle that; your review is judgment, placed early, before implementation. Review the proposed plan, assumptions, and pivotal design decisions. Before new parts of the code are created, inspect their proposed responsibilities and how they relate; correct the design where needed. DigitalWorker executes the engineering work through its proprietary Instruction Engine.
+You choose what to build, what "done" means, and the trade-offs you can live with. You no longer review for logic — DigitalWorker own reviews and checklists handle that; your review is judgment, placed early, before implementation. Review the proposed plan, assumptions, and pivotal design decisions. Before new parts of the code are created, inspect their proposed responsibilities and how they relate; correct the design where needed. DigitalWorker executes the engineering work through its proprietary Instruction Engine.
 
 For non-developers, the starting point is the plan and a plain description of what "done" looks like. You can delegate implementation and routine design; novel or complex design still benefits from an experienced developer's judgment. You keep the final check that the software behaves as intended before the change is combined with your existing code.
 
@@ -139,19 +139,23 @@ Experienced developers can take on more architecture, product decisions, and tes
 
 ### The breakthrough behind the method: the Instruction Engine
 
-AI learns from existing code — including its bad habits. In our production work, models repeatedly drift back to shortcut designs and duplicated structures even when explicitly told not to. A well-written instruction does not ensure it will survive a long task.
-
 Reusable packages of instructions, examples, and tools help. Yet even top-tier models can struggle with long sequences of instructions: losing track partway through, dropping requirements, piling mistakes on earlier mistakes, or claiming actions they never took. These failure modes are documented industry-wide — [research on iterative coding tasks](https://www.arxiv.org/pdf/2603.24755) shows agents erode code quality over long tasks, and agents have been observed [bypassing mandatory process requirements even under explicit "never skip" guardrails](https://github.com/anthropics/claude-code/issues/39851). Keeping the entire procedure on track is a substantial engineering problem.
 
 **DigitalWorker has virtually solved instruction-following for its engineering process in founder-observed production use.** Its proprietary Instruction Engine keeps every required instruction in force through the whole task — design, implementation, testing, review, and repair — with two years of refined engineering rules behind them.
 
 That is the capability to evaluate when comparing it with a custom script or a collection of reusable instructions: sustained execution of the whole method. Inspect the delivered work and its fix history, then judge it on a bounded task of your own. “Virtually solved” describes practical reliability in our engineering process; it does not promise that every model action is infallible.
 
-<details markdown="1"><summary>The technical version</summary>
+<details markdown="1"><summary>Why instruction-following is the hard problem — and the technical version</summary>
 
-### The breakthrough behind the workflow: the Instruction Engine
+AI learns from existing code — including its bad habits. In our production work, models repeatedly drift back to shortcut designs and duplicated structures even when explicitly told not to. A well-written instruction does not ensure it will survive a long task.
 
-AI learns from code that includes anti-patterns. In our production work, models repeatedly gravitate back to procedural designs, duplicated classes, and anemic domain models — objects that hold data but contain no behavior, violating object-oriented programming — even when explicitly instructed otherwise. A well-written instruction does not ensure it will survive the whole execution chain.
+Reusable packages of instructions, examples, and tools help. Yet even top-tier models can struggle with long sequences of instructions: losing track partway through, dropping requirements, piling mistakes on earlier mistakes, or claiming actions they never took. These failure modes are documented industry-wide — [research on iterative coding tasks](https://www.arxiv.org/pdf/2603.24755) shows agents erode code quality over long tasks, and agents have been observed [bypassing mandatory process requirements even under explicit "never skip" guardrails](https://github.com/anthropics/claude-code/issues/39851). Keeping the entire procedure on track is a substantial engineering problem.
+
+---
+
+*The technical version:*
+
+AI learns from code that includes anti-patterns. In our production work, models repeatedly gravitate back to procedural designs, duplicated classes, and anemic domain models — objects that hold data but contain no behavior, violating object-oriented design — even when explicitly instructed otherwise. A well-written instruction does not ensure it will survive the whole execution chain.
 
 Agentic skills help by packaging instructions, examples, and tools. Yet even top-tier models can struggle with long, multi-step instructions: losing context, dropping requirements, compounding earlier mistakes, or hallucinating tool calls. These failure modes are documented industry-wide — [research on iterative coding tasks](https://www.arxiv.org/pdf/2603.24755) shows agents erode code quality over long horizons, and agents have been observed [bypassing mandatory workflow steps even under explicit "never skip" guardrails](https://github.com/anthropics/claude-code/issues/39851). Keeping the entire procedure on track is a substantial engineering problem.
 
@@ -181,6 +185,10 @@ Your instructions stay yours. They run through the same protected engine that gu
 
 ### Fits the way you want to work
 
+No repeated prompting, parallel tasks while you focus elsewhere, decisions shipped with the code, managed AI infrastructure, a discipline preset you can replace with your own, and no local setup to start.
+
+<details markdown="1"><summary>Six ways it fits — and the technical version</summary>
+
 - **No repeated prompting:** Submit a task card and let DigitalWorker run. Review pivotal decisions when needed, without continuously driving implementation through chat.
 - **Work can continue while you focus elsewhere:** Several tasks can run at once, each in isolation, or arrive on recurring schedules through Trello's Task Repeater.
 - **Decisions accompany the deliverable:** The design package records the decisions made, the trade-offs weighed, and the assumptions — so the reasoning arrives with the code.
@@ -188,7 +196,9 @@ Your instructions stay yours. They run through the same protected engine that gu
 - **Opinionated but replaceable:** The built-in engineering discipline is a preset, not a cage. Bring your own process — the same Instruction Engine carries your instructions with the same precision.
 - **No local setup to start using it:** Connect your Trello board and GitHub codebase. No software to install or command line to configure.
 
-<details markdown="1"><summary>The technical version</summary>
+---
+
+*The technical version:*
 
 - **No iterative prompting:** Submit a task card and let the workflow execute. Review pivotal decisions when needed, without continuously driving implementation through chat.
 - **Work can continue while you focus elsewhere:** Tasks can run simultaneously in isolated branches and environments, or arrive on recurring schedules through Trello's Task Repeater.
@@ -200,6 +210,10 @@ Your instructions stay yours. They run through the same protected engine that gu
 </details>
 
 ### Getting Started — Four Ways In
+
+From a one-minute read-only review of your real code, to a shared demo board, to running it on your own repo.
+
+<details markdown="1"><summary>See the four ways in — watch it work, verify our claims, try the demo board, or start on your repo</summary>
 
 #### 1. Watch it review your real PRs — GitHub only, ~1 minute
 
@@ -249,6 +263,8 @@ The demo trial requires a Trello account; no GitHub credentials or LLM key are n
 **Or start even smaller:** ask DigitalWorker to review a slice of your codebase. It marks architecture and code-smell issues as `//TODO` comments — without touching your code. Count how much it finds. The issues it surfaces are the same ones that make AI-written code plateau and eat your attention.
 
 You need a Trello account, GitHub account, and a repository you can authorize. We provide the AI infrastructure. No local install, terminal, or per-developer setup is required for this path.
+
+</details>
 
 [^2]: Founder-observed expectation based on 20 years of development experience and production use — not an independently benchmarked ranking.
 

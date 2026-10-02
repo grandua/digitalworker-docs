@@ -147,7 +147,7 @@ Take pride in maintainable and **beautiful** work: clear intent, <abbr title="co
 
   Agent Skills - reusable packages of instructions, examples, and tools help. Yet even top-tier models struggle with long sequences of instructions: losing track partway through, dropping requirements, piling mistakes on earlier mistakes, or claiming actions they never took. These failure modes are documented industry-wide — [research on iterative coding tasks](https://www.arxiv.org/pdf/2603.24755) shows agents erode code quality over long tasks, and agents have been observed [bypassing mandatory process requirements even under explicit "never skip" guardrails](https://github.com/anthropics/claude-code/issues/39851). Keeping the entire procedure on track is a substantial engineering problem.
 
-  **But DigitalWorker has virtually solved instruction-following** for its engineering process in founder-observed production use. Its proprietary <abbr title="makes the AI follow your process precisely instead of improvising or skipping instructions">Instruction Engine</abbr> keeps every required instruction in force through the whole task — design, implementation, testing, review, and repair — with two years of refined engineering rules behind them.
+  **But DigitalWorker has virtually solved instruction-following** for its engineering process in founder-observed production use. Its proprietary model-adaptable <abbr title="makes the AI follow your process precisely instead of improvising or skipping instructions">Instruction Engine</abbr> keeps every required instruction in force through the whole task — design, implementation, testing, review, and repair — with two years of refined engineering rules behind them.
 
   That is the capability to evaluate when comparing it with <abbr title="a custom script or a collection of reusable instructions">agent skills</abbr>: sustained execution of the whole method. Inspect the delivered work and its fix history, then judge it on a bounded task of your own. “Virtually solved” describes practical reliability in our engineering process; it does not promise that every model action is infallible.
 
@@ -190,10 +190,10 @@ Take pride in maintainable and **beautiful** work: clear intent, <abbr title="co
   </details>
 
   </details>
-- **Fits the way you want to work** — no repeated prompting, parallel tasks, decisions with the deliverable, managed AI infrastructure, replaceable discipline, no local setup.
+- **Fits the way you want to work** — No repeated prompting and local setup; tasks run in parallel, decisions ship with the deliverable, managed AI infrastructure, replaceable discipline.
   <details markdown="1"><summary>Show details</summary>
 
-  No repeated prompting, parallel tasks while you focus elsewhere, decisions shipped with the code, managed AI infrastructure, a discipline preset you can replace with your own, and no local setup to start.
+  No repeated prompting, tasks are parallel while you focus elsewhere, decisions shipped with the code, managed AI infrastructure, a discipline preset you can replace with your own, and no local setup to start.
 
   <details markdown="1"><summary>Six ways it fits</summary>
 

@@ -40,7 +40,7 @@ No iterative prompting. No babysitting. No cleaning up after the AI.
 
 Your engineering competence sets the standard. DigitalWorker carries it through the work: turning a task card into a tested, reviewed, production-ready pull request. You shape the pivotal decisions and perform the final behavior check; DigitalWorker handles implementation, testing, review, and fixes.
 
-Take pride in maintainable and **beautiful** work: clear intent, well-organized <abbr title="cohesive objects">parts</abbr>, and code you can confidently extend.
+Take pride in maintainable and **beautiful** work: clear intent, <abbr title="cohesive objects">well-organized parts</abbr>, and code you can confidently extend.
 
 **See the task and the resulting pull request:** compare the <a href="https://trello.com/b/6a03d01d53cf7bb95f8325dd/digital-worker-demo" data-cta="view_example" data-location="hero">source task cards</a> with the <a href="https://github.com/grandua/Digital-Worker-Demo/pulls?q=is%3Apr+is%3Aclosed" data-cta="view_example" data-location="hero">generated code and pull-request/fix history</a>. Two demo applications, generated from task cards, with <abbr title="light human review for a few selected parts">spot-reviews</abbr> and external defect feedback disclosed.
 

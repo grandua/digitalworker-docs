@@ -9,7 +9,7 @@
 ---
 AI wrote the code. You're still doing the cleanup.
 
-**You make the decisions that matter. DigitalWorker turns a task card into a tested, reviewed, production-ready <abbr title="a proposed change, packaged for review">pull request</abbr> — professional-developer output, not AI intern drafts. It's like assigning a top-10% developer to a well-scoped task — at AI cost.** 
+**You make the decisions that matter. DigitalWorker turns a task card into a tested, reviewed, production-ready[^4] <abbr title="a proposed change, packaged for review">pull request</abbr> — professional-developer output, not AI intern drafts. It's like assigning a top-10% developer to a well-scoped task — at AI cost.** 
 
 No iterative prompting. No babysitting. No cleaning up after the AI. 
 
@@ -38,7 +38,7 @@ No iterative prompting. No babysitting. No cleaning up after the AI.
 
 **Substantially fewer defects. Far less cleanup. More uninterrupted attention for the product you want to build.**
 
-Your engineering competence sets the standard. DigitalWorker carries it through the work: turning a task card into a tested, reviewed, production-ready pull request. You shape the pivotal decisions and perform the final behavior check; DigitalWorker handles implementation, testing, review, and fixes.
+Your engineering competence sets the standard. DigitalWorker carries it through the work: turning a task card into a tested, reviewed, production-ready[^4] pull request. You shape the pivotal decisions and perform the final behavior check; DigitalWorker handles implementation, testing, review, and fixes.
 
 Take pride in maintainable and **beautiful** work: clear intent, <abbr title="cohesive objects">well-organized parts</abbr>, and code you can confidently extend.
 
@@ -69,8 +69,6 @@ Fast generation helps only when the result moves your product forward. DigitalWo
 The sequence is explicit: **a <abbr title="unit tests">check</abbr> of the intended behavior that fails first → the smallest change to pass it → review, cleanup, fixes, and re-checks**. [See how the method earns the outcome](https://agiledigitalworker.com/Engineering-Deep-Dive#from-a-requirement-to-a-checked-implementation).
 
 **Stop paying the AI bug tax.** We observe substantially fewer defects and far less cleanup than AI coding without this enforced process. In founder production use, hands-on oversight is dramatically lower: make a fast human check of decisions and trade-offs, inspect the key code that implements your business rules, then check the final behavior. Routine code does not need line-by-line review in that operating experience.
-
-“Production-ready” means the implementation has completed the engineering process and is ready for your final hands-on check. Founder-observed results are not an independent benchmark or a defect-free guarantee for every codebase.
 
 <details markdown="1"><summary>The technical version</summary>
 
@@ -284,6 +282,8 @@ You need a Trello account, GitHub account, and a repository you can authorize. W
 </details>
 
 [^2]: Founder-observed expectation based on 20 years of development experience and production use — not an independently benchmarked ranking.
+
+[^4]: “Production-ready” means the implementation has completed the engineering process and is ready for your final hands-on check. Founder-observed results are not an independent benchmark or a defect-free guarantee for every codebase.
 
 ## Screenshots that demonstrate real life use cases working on a real prod repo
 

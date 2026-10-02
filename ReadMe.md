@@ -10,6 +10,7 @@
 AI wrote the code. You're still doing the cleanup.
 
 **You make the decisions that matter. DigitalWorker turns a task card into a tested, reviewed, production-ready <abbr title="a proposed change, packaged for review">pull request</abbr> — professional-developer output, not AI intern drafts. It's like assigning a top-10% developer to a well-scoped task — at AI cost.** 
+
 No iterative prompting. No babysitting. No cleaning up after the AI. 
 
 ## Why Did We Build Digital Worker? These Are Our Assumptions Behind It:
@@ -56,7 +57,7 @@ Take pride in maintainable and **beautiful** work: clear intent, well-organized 
 
 <details><summary>The technical version</summary>
 
-**A combination found nowhere else that we know of:** high-precision instruction enforcement plus this depth of Agile, OOP, test-first TDD, review, and anti-duplication class design. Other agents can code, test, review, and open PRs; DigitalWorker carries the complete engineering method through delivery. <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#why-this-combination-matters" data-cta="view_example" data-location="mid_page">Inspect the difference</a>.
+A combination found nowhere else that we know of: high-precision instruction enforcement plus this depth of Agile, OOP, test-first TDD, review, and anti-duplication class design. Other agents can code, test, review, and open PRs; DigitalWorker carries the complete engineering method through delivery. <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#why-this-combination-matters" data-cta="view_example" data-location="mid_page">Inspect the difference</a>.
 
 </details>
 
@@ -74,9 +75,9 @@ The sequence is explicit: **a check of the intended behavior that fails first �
 
 Fast generation helps only when the result moves your product forward. DigitalWorker makes quality work part of delivery: enforced test-first TDD, a dedicated ~100-step checklist-driven review (correctness, architecture and standards, code-smell detection, requirements audit), refactoring, and fixes before the PR. You receive the code, tests, and design decisions together.
 
-The sequence is explicit: **a failing behavior test → the minimum implementation to pass → review, refactoring, fixes, and re-checks**. [See how the workflow earns the outcome](https://agiledigitalworker.com/Engineering-Deep-Dive#from-a-requirement-to-a-checked-implementation).
+The sequence is explicit: a failing behavior test → the minimum implementation to pass → review, refactoring, fixes, and re-checks. [See how the workflow earns the outcome](https://agiledigitalworker.com/Engineering-Deep-Dive#from-a-requirement-to-a-checked-implementation).
 
-**Stop paying the AI bug tax.** We expect substantially fewer defects and far less cleanup than AI coding without this enforced pipeline. In founder production use, hands-on oversight is dramatically lower: spot-review the decisions and key domain code, then check the final behavior. Routine code does not need line-by-line review in that operating experience.
+Stop paying the AI bug tax. We expect substantially fewer defects and far less cleanup than AI coding without this enforced pipeline. In founder production use, hands-on oversight is dramatically lower: spot-review the decisions and key domain code, then check the final behavior. Routine code does not need line-by-line review in that operating experience.
 
 “Production-ready” means the implementation has completed the engineering workflow and is ready for your final hands-on check. Founder-observed results are not an independent benchmark or a defect-free guarantee for every repository.
 

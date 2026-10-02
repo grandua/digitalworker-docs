@@ -202,7 +202,7 @@ Take pride in maintainable and **beautiful** work: clear intent, <abbr title="co
   - **Decisions accompany the deliverable:** The design package records the decisions made, the trade-offs weighed, and the assumptions — so the reasoning arrives with the code.
   - **Managed AI infrastructure:** Each phase — planning, implementation, testing, review — runs on whichever AI model currently gives the best quality for its price, and the choice adapts as prices and capabilities change. The depth of the process matches the task: a small, well-defined fix avoids the cost of extensive planning. We provide access to the AI models and the credentials they require.
   - **Opinionated but replaceable:** The built-in engineering discipline is a preset, not a cage. Bring your own process — the same Instruction Engine carries your instructions with the same precision.
-  - **No local setup to start using it:** Connect your Trello board and GitHub codebase. No software to install or command line to configure.
+  - **No local setup to start using it:** Connect your GitHub codebase — optionally with a Trello board for task cards; Trello is not required if you use DigitalWorker purely as a reviewer of your GitHub changes. No software to install or command line to configure.
 
   </details>
 
@@ -213,7 +213,7 @@ Take pride in maintainable and **beautiful** work: clear intent, <abbr title="co
   - **Decisions accompany the deliverable:** The design package records architecture decisions, trade-offs, class responsibilities, and assumptions.
   - **Managed AI infrastructure:** Each phase — planning, implementation, testing, review — runs on whichever model currently sits on the price/performance frontier for that kind of work, and the selection adapts as the frontier shifts. Process depth scales with the task too: a bounded fix doesn't pay for a heavy planning pass. We provide the model access and API keys.
   - **Opinionated but replaceable:** The Agile, Clean Architecture, and OOP discipline bundle is a preset, not a cage. Bring your own engineering instructions — the same Instruction Engine carries them with the same precision.
-  - **No local setup to start using it:** Connect your Trello board and GitHub repository. No CLI configuration, IDE extension, or per-developer installation.
+  - **No local setup to start using it:** Connect your GitHub repository — optionally with a Trello board for task cards; Trello is not required when using DigitalWorker purely as the Reviewer GitHub App. No CLI configuration, IDE extension, or per-developer installation.
 
   </details>
 

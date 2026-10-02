@@ -54,7 +54,7 @@ Take pride in maintainable and **beautiful** work: clear intent, <abbr title="co
 
 ### Why it's different
 
-**A combination found nowhere else that we know of:** it makes the AI follow your engineering process precisely instead of improvising, and it applies the discipline a senior engineer would — design decisions before code, checks before implementation, a rigorous review of every change, and no duplicate structures. Other agents can code, test, review, and submit changes for approval; DigitalWorker carries the complete engineering method through delivery. <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#why-this-combination-matters" data-cta="view_example" data-location="mid_page">Inspect the difference</a>.
+**A combination found nowhere else that we know of:** it makes the AI follow your engineering process precisely instead of improvising, and it applies the discipline a senior engineer would — design decisions before code, <abbr title="unit tests">checks</abbr> before implementation, a rigorous review of every change, and no duplicate structures. Other agents can code, test, review, and submit changes for approval; DigitalWorker carries the complete engineering method through delivery. <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#why-this-combination-matters" data-cta="view_example" data-location="mid_page">Inspect the difference</a>.
 
 <details markdown="1"><summary>The technical version</summary>
 
@@ -64,11 +64,11 @@ Take pride in maintainable and **beautiful** work: clear intent, <abbr title="co
 
 #### Get relief from repeated review and repair
 
-Fast generation helps only when the result moves your product forward. DigitalWorker makes quality work part of delivery: it writes the checks before the code, reviews its own work against a ~100-item engineering checklist, then cleans up and fixes before handing you the change. You receive the code, the tests, and the reasoning behind the decisions together.
+Fast generation helps only when the result moves your product forward. DigitalWorker makes quality work part of delivery: it writes the <abbr title="unit tests">checks</abbr> before the code, reviews its own work against a ~100-item engineering checklist, then cleans up and fixes before handing you the change. You receive the code, the tests, and the reasoning behind the decisions together.
 
-The sequence is explicit: **a check of the intended behavior that fails first → the smallest change to pass it → review, cleanup, fixes, and re-checks**. [See how the method earns the outcome](https://agiledigitalworker.com/Engineering-Deep-Dive#from-a-requirement-to-a-checked-implementation).
+The sequence is explicit: **a <abbr title="unit tests">check</abbr> of the intended behavior that fails first → the smallest change to pass it → review, cleanup, fixes, and re-checks**. [See how the method earns the outcome](https://agiledigitalworker.com/Engineering-Deep-Dive#from-a-requirement-to-a-checked-implementation).
 
-**Stop paying the AI bug tax.** We expect substantially fewer defects and far less cleanup than AI coding without this enforced process. In founder production use, hands-on oversight is dramatically lower: make a fast human check of decisions and trade-offs, inspect the key code that implements your business rules, then check the final behavior. Routine code does not need line-by-line review in that operating experience.
+**Stop paying the AI bug tax.** We observe substantially fewer defects and far less cleanup than AI coding without this enforced process. In founder production use, hands-on oversight is dramatically lower: make a fast human check of decisions and trade-offs, inspect the key code that implements your business rules, then check the final behavior. Routine code does not need line-by-line review in that operating experience.
 
 “Production-ready” means the implementation has completed the engineering process and is ready for your final hands-on check. Founder-observed results are not an independent benchmark or a defect-free guarantee for every codebase.
 
@@ -78,7 +78,7 @@ Fast generation helps only when the result moves your product forward. DigitalWo
 
 The sequence is explicit: **a failing behavior test → the minimum implementation to pass → review, refactoring, fixes, and re-checks.** [See how the workflow earns the outcome](https://agiledigitalworker.com/Engineering-Deep-Dive#from-a-requirement-to-a-checked-implementation).
 
-**Stop paying the AI bug tax.** We expect substantially fewer defects and far less cleanup than AI coding without this enforced pipeline. In founder production use, hands-on oversight is dramatically lower: spot-review the decisions and key domain code, then check the final behavior. Routine code does not need line-by-line review in that operating experience.
+**Stop paying the AI bug tax.** We observe substantially fewer defects and far less cleanup than AI coding without this enforced pipeline. In founder production use, hands-on oversight is dramatically lower: spot-review the decisions and key domain code, then check the final behavior. Routine code does not need line-by-line review in that operating experience.
 
 “Production-ready” means the implementation has completed the engineering workflow and is ready for your final hands-on check. Founder-observed results are not an independent benchmark or a defect-free guarantee for every repository.
 

@@ -55,9 +55,9 @@ Take pride in maintainable and **beautiful** work: clear intent, well-organized 
 
 **A combination found nowhere else that we know of:** it makes the AI follow your engineering process precisely instead of improvising, and it applies the discipline a senior engineer would — design decisions before code, checks before implementation, a rigorous review of every change, and no duplicate structures. Other agents can code, test, review, and submit changes for approval; DigitalWorker carries the complete engineering method through delivery. <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#why-this-combination-matters" data-cta="view_example" data-location="mid_page">Inspect the difference</a>.
 
-<details><summary>The technical version</summary>
+<details markdown="1"><summary>The technical version</summary>
 
-A combination found nowhere else that we know of: high-precision instruction enforcement plus this depth of Agile, OOP, test-first TDD, review, and anti-duplication class design. Other agents can code, test, review, and open PRs; DigitalWorker carries the complete engineering method through delivery. <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#why-this-combination-matters" data-cta="view_example" data-location="mid_page">Inspect the difference</a>.
+**A combination found nowhere else that we know of:** high-precision instruction enforcement plus this depth of Agile, OOP, test-first TDD, review, and anti-duplication class design. Other agents can code, test, review, and open PRs; DigitalWorker carries the complete engineering method through delivery. <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#why-this-combination-matters" data-cta="view_example" data-location="mid_page">Inspect the difference</a>.
 
 </details>
 
@@ -71,13 +71,13 @@ The sequence is explicit: **a check of the intended behavior that fails first �
 
 “Production-ready” means the implementation has completed the engineering process and is ready for your final hands-on check. Founder-observed results are not an independent benchmark or a defect-free guarantee for every codebase.
 
-<details><summary>The technical version</summary>
+<details markdown="1"><summary>The technical version</summary>
 
 Fast generation helps only when the result moves your product forward. DigitalWorker makes quality work part of delivery: enforced test-first TDD, a dedicated ~100-step checklist-driven review (correctness, architecture and standards, code-smell detection, requirements audit), refactoring, and fixes before the PR. You receive the code, tests, and design decisions together.
 
-The sequence is explicit: a failing behavior test → the minimum implementation to pass → review, refactoring, fixes, and re-checks. [See how the workflow earns the outcome](https://agiledigitalworker.com/Engineering-Deep-Dive#from-a-requirement-to-a-checked-implementation).
+The sequence is explicit: **a failing behavior test → the minimum implementation to pass → review, refactoring, fixes, and re-checks.** [See how the workflow earns the outcome](https://agiledigitalworker.com/Engineering-Deep-Dive#from-a-requirement-to-a-checked-implementation).
 
-Stop paying the AI bug tax. We expect substantially fewer defects and far less cleanup than AI coding without this enforced pipeline. In founder production use, hands-on oversight is dramatically lower: spot-review the decisions and key domain code, then check the final behavior. Routine code does not need line-by-line review in that operating experience.
+**Stop paying the AI bug tax.** We expect substantially fewer defects and far less cleanup than AI coding without this enforced pipeline. In founder production use, hands-on oversight is dramatically lower: spot-review the decisions and key domain code, then check the final behavior. Routine code does not need line-by-line review in that operating experience.
 
 “Production-ready” means the implementation has completed the engineering workflow and is ready for your final hands-on check. Founder-observed results are not an independent benchmark or a defect-free guarantee for every repository.
 
@@ -89,7 +89,7 @@ You choose what to build, what "done" means, and the trade-offs you can live wit
 
 For non-developers, the starting point is the plan and a plain description of what "done" looks like. You can delegate implementation and routine design; novel or complex design still benefits from an experienced developer's judgment. You keep the final check that the software behaves as intended before the change is combined with your existing code.
 
-<details><summary>The technical version</summary>
+<details markdown="1"><summary>The technical version</summary>
 
 You choose what to build, the acceptance criteria, and the trade-offs you can live with. You no longer review for logic — AI reviews and checklists handle that; your review is judgment, placed early, before implementation. Review the proposed plan, assumptions, and pivotal architecture decisions. Before new classes are scaffolded, inspect their proposed responsibilities and relationships; correct the design where needed. DigitalWorker executes the engineering work through the proprietary Instruction Engine.
 
@@ -107,7 +107,7 @@ This always-on engineering discipline **prevents almost all <abbr title="shortcu
 
 On well-scoped tasks, **we expect DigitalWorker to match or exceed the output of the top 10%[^2] of professional developers**
 
-<details><summary>The technical version</summary>
+<details markdown="1"><summary>The technical version</summary>
 
 Beautiful software makes its intent easy to understand. DigitalWorker searches for existing domain concepts before adding classes, checks cohesion, and brings behavior and state together in Rich Domain Models. It applies Clean Architecture — business rules separated from frameworks, UI, and databases for easy testing and reuse — KISS, DRY, and YAGNI, pruning unnecessary abstractions and duplicate structures.
 
@@ -127,7 +127,7 @@ Direct your judgment toward the product while DigitalWorker handles routine impl
 
 Experienced developers can take on more design work, product decisions, and quality leadership while retaining the parts of engineering they enjoy. Non-developers can turn clear requirements into working software and bring in experienced judgment for consequential design choices. The opportunity is to build more of what matters to you, with competence visible in the result.
 
-<details><summary>The technical version</summary>
+<details markdown="1"><summary>The technical version</summary>
 
 **Top 10% professional-developer output[^2] at AI execution cost.**
 
@@ -147,7 +147,7 @@ Reusable packages of instructions, examples, and tools help. Yet even top-tier m
 
 That is the capability to evaluate when comparing it with a custom script or a collection of reusable instructions: sustained execution of the whole method. Inspect the delivered work and its fix history, then judge it on a bounded task of your own. “Virtually solved” describes practical reliability in our engineering process; it does not promise that every model action is infallible.
 
-<details><summary>The technical version</summary>
+<details markdown="1"><summary>The technical version</summary>
 
 ### The breakthrough behind the workflow: the Instruction Engine
 
@@ -169,7 +169,7 @@ Have a process with several stages that your AI keeps only partly following? Wri
 
 Your instructions stay yours. They run through the same protected engine that guards our own proprietary instructions, and our AI provider stores nothing from our runs, so the instructions are never retained for model training.
 
-<details><summary>The technical version</summary>
+<details markdown="1"><summary>The technical version</summary>
 
 The Instruction Engine's purpose extends to your own professional methods. Developers, lawyers, marketers, and other professionals can bring their instructions in `.md` format so the whole procedure is carried through. Your competence defines the method; the engine supports its consistent execution.
 
@@ -188,7 +188,7 @@ Your instructions stay yours. They run through the same protected engine that gu
 - **Opinionated but replaceable:** The built-in engineering discipline is a preset, not a cage. Bring your own process — the same Instruction Engine carries your instructions with the same precision.
 - **No local setup to start using it:** Connect your Trello board and GitHub codebase. No software to install or command line to configure.
 
-<details><summary>The technical version</summary>
+<details markdown="1"><summary>The technical version</summary>
 
 - **No iterative prompting:** Submit a task card and let the workflow execute. Review pivotal decisions when needed, without continuously driving implementation through chat.
 - **Work can continue while you focus elsewhere:** Tasks can run simultaneously in isolated branches and environments, or arrive on recurring schedules through Trello's Task Repeater.

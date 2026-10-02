@@ -143,6 +143,8 @@ Take pride in maintainable and **beautiful** work: clear intent, <abbr title="co
 - **The breakthrough behind the method: the Instruction Engine** — virtually solved instruction-following for its engineering process in founder-observed production use.
   <details markdown="1"><summary>Show details</summary>
 
+  AI learns from existing code — including its bad habits. In our production work, models repeatedly drift back to bloated spaghetti code and copy-pasted duplicates even when explicitly told not to. A well-written instruction does not ensure it will survive a long task.
+
   Agent Skills - reusable packages of instructions, examples, and tools help. Yet even top-tier models struggle with long sequences of instructions: losing track partway through, dropping requirements, piling mistakes on earlier mistakes, or claiming actions they never took. These failure modes are documented industry-wide — [research on iterative coding tasks](https://www.arxiv.org/pdf/2603.24755) shows agents erode code quality over long tasks, and agents have been observed [bypassing mandatory process requirements even under explicit "never skip" guardrails](https://github.com/anthropics/claude-code/issues/39851). Keeping the entire procedure on track is a substantial engineering problem.
 
   **DigitalWorker has virtually solved instruction-following for its engineering process in founder-observed production use.** Its proprietary <abbr title="makes the AI follow your process precisely instead of improvising or skipping instructions">Instruction Engine</abbr> keeps every required instruction in force through the whole task — design, implementation, testing, review, and repair — with two years of refined engineering rules behind them.

@@ -54,10 +54,10 @@ Take pride in maintainable and **beautiful** work: clear intent, <abbr title="co
 
 ### Why it's different
 
-- **A combination found nowhere else that we know of** — the AI follows your engineering process precisely instead of improvising, and applies the discipline a senior engineer would.
+- **A combination found nowhere else that we know of** — the AI follows a rigorous engineering process precisely instead of improvising, and applies the discipline a senior engineer would.
   <details markdown="1"><summary>Show details</summary>
 
-  **A combination found nowhere else that we know of:** it makes the AI follow your engineering process precisely instead of improvising, and it applies the discipline a senior engineer would — design decisions before code, <abbr title="unit tests">checks</abbr> before implementation, a rigorous review of every change, and no duplicate structures. Other agents can code, test, review, and submit changes for approval; DigitalWorker carries the complete engineering method through delivery. <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#why-this-combination-matters" data-cta="view_example" data-location="mid_page">Inspect the difference</a>.
+  **A combination found nowhere else that we know of:** it makes the AI follow a rigorous engineering process precisely instead of improvising, and it applies the discipline a senior engineer would — design decisions before code, <abbr title="unit tests">checks</abbr> before implementation, a rigorous review of every change, and no duplicate structures. Other agents can code, test, review, and submit changes for approval; DigitalWorker carries the complete engineering method through delivery. <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#why-this-combination-matters" data-cta="view_example" data-location="mid_page">Inspect the difference</a>.
 
   <details markdown="1"><summary>The technical version</summary>
 
@@ -92,13 +92,13 @@ Take pride in maintainable and **beautiful** work: clear intent, <abbr title="co
 - **Keep control of consequential decisions** — your judgment decides the plan, assumptions, and pivotal design; the implementation review is carried for you.
   <details markdown="1"><summary>Show details</summary>
 
-  You choose what to build, what "done" means, and the trade-offs you can live with. You no longer review for logic — DigitalWorker own reviews and checklists handle that; your review is judgment, placed early, before implementation. Review the proposed plan, assumptions, and pivotal design decisions. Before new parts of the code are created, inspect their proposed responsibilities and how they relate; correct the design where needed. DigitalWorker executes the engineering work through its proprietary Instruction Engine.
+  You choose what to build, what "done" means, and the trade-offs you can live with. You no longer review for defects — DigitalWorker own reviews and checklists handle that; your review is judgment, placed early, before implementation. Review the proposed plan, assumptions, and pivotal design decisions. Before new parts of the code are created, inspect their proposed responsibilities and how they relate; correct the design where needed. DigitalWorker executes the engineering work through its proprietary Instruction Engine.
 
   For non-developers, the starting point is the plan and a plain description of what "done" looks like. You can delegate implementation and routine design; novel or complex design still benefits from an experienced developer's judgment. You keep the final check that the software behaves as intended before the change is combined with your existing code.
 
   <details markdown="1"><summary>The technical version</summary>
 
-  You choose what to build, the acceptance criteria, and the trade-offs you can live with. You no longer review for logic — AI reviews and checklists handle that; your review is judgment, placed early, before implementation. Review the proposed plan, assumptions, and pivotal architecture decisions. Before new classes are scaffolded, inspect their proposed responsibilities and relationships; correct the design where needed. DigitalWorker executes the engineering work through the proprietary Instruction Engine.
+  You choose what to build, the acceptance criteria, and the trade-offs you can live with. You no longer review for defects — AI reviews and checklists handle that; your review is judgment, placed early, before implementation. Review the proposed plan, assumptions, and pivotal architecture decisions. Before new classes are scaffolded, inspect their proposed responsibilities and relationships; correct the design where needed. DigitalWorker executes the engineering work through the proprietary Instruction Engine.
 
   For non-developers, the starting point is the plan and acceptance criteria. You can delegate implementation and routine design; novel or complex architecture still benefits from an experienced developer's judgment. You keep the final behavior check before merge.
 
@@ -112,7 +112,7 @@ Take pride in maintainable and **beautiful** work: clear intent, <abbr title="co
 
   In the Calculator demo, one part of the code holds the calculator's current state and handles button presses through one clearly named action. The code that interprets mathematical expressions stays inside the part that needs it. The tests check the edges — numbers too large for the calculator to handle, and what happens after an error locks it. These are concrete examples of the clarity and care you can inspect. <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#what-beautiful-maintainable-code-looks-like" data-cta="view_example" data-location="mid_page">Explore the code and edge-case tests</a>.
 
-  This always-on engineering discipline **prevents almost all <abbr title="shortcuts that create future repair work">technical debt</abbr>** in founder-observed production use. Its method reflects more than 20 years of disciplined software development and two years of refinement with AI coding agents. The payoff extends beyond the next change: a codebase you can take pride in as features, integrations, customers, and business rules multiply.
+  This always-on engineering discipline **prevents almost all <abbr title="shortcuts that create future repair work">technical debt</abbr>** in founder-observed production use. Its method reflects more than 20 years of disciplined software development and two years of refinement with AI coding agents. The payoff extends beyond the next change: a codebase you can take pride in as features, integrations, customers, and business rules multiply and grow.
 
   On well-scoped tasks, **we expect DigitalWorker to match or exceed the output of the top 10%[^2] of professional developers**
 
@@ -122,7 +122,7 @@ Take pride in maintainable and **beautiful** work: clear intent, <abbr title="co
 
   In the Calculator demo, `Calculator` owns its state and behavior through `Press(InputKey)`; the parser stays inside `MathExpression`. Tests exercise overflow boundaries and the behavior of a locked error state. These are concrete examples of the clarity and care you can inspect. <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#what-beautiful-maintainable-code-looks-like" data-cta="view_example" data-location="mid_page">Explore the code and edge-case tests</a>.
 
-  This autonomous engineering governance layer **prevents almost all technical debt** in founder-observed production use. Its method reflects more than 20 years of Agile and OOP practice and two years of refinement with AI coding agents. The payoff extends beyond the next PR: a codebase you can take pride in as features, integrations, customers, and business rules multiply.
+  This autonomous engineering governance layer **prevents almost all technical debt** in founder-observed production use. Its method reflects more than 20 years of Agile and OOP practice and two years of refinement with AI coding agents. The payoff extends beyond the next PR: a codebase you can take pride in as features, integrations, customers, and business rules multiply and grow.
 
   On well-scoped tasks, **we expect DigitalWorker to match or exceed the output of the top 10%[^2] of professional developers**
 
@@ -139,21 +139,11 @@ Take pride in maintainable and **beautiful** work: clear intent, <abbr title="co
 
   Experienced developers can take on more design work, product decisions, and quality leadership while retaining the parts of engineering they enjoy. Non-developers can turn clear requirements into working software and bring in experienced judgment for consequential design choices. The opportunity is to build more of what matters to you, with competence visible in the result.
 
-  <details markdown="1"><summary>The technical version</summary>
-
-  **Top 10% professional-developer output[^2] at AI execution cost.**
-
-  Direct your judgment toward the product while the workflow handles routine implementation and quality work. The current usage model is model cost plus around 20% markup; [see the economics and how to evaluate total effort](https://agiledigitalworker.com/Engineering-Deep-Dive#economics-pay-for-execution-keep-your-judgment).
-
-  Experienced developers can take on more architecture, product decisions, and test leadership while retaining the parts of engineering they enjoy. Non-developers can turn clear requirements into working software and bring in experienced judgment for consequential design choices. The opportunity is to build more of what matters to you, with competence visible in the result.
-
-  </details>
-
   </details>
 - **The breakthrough behind the method: the Instruction Engine** — virtually solved instruction-following for its engineering process in founder-observed production use.
   <details markdown="1"><summary>Show details</summary>
 
-  Agent Skills - reusable packages of instructions, examples, and tools help. Yet even top-tier models can struggle with long sequences of instructions: losing track partway through, dropping requirements, piling mistakes on earlier mistakes, or claiming actions they never took. These failure modes are documented industry-wide — [research on iterative coding tasks](https://www.arxiv.org/pdf/2603.24755) shows agents erode code quality over long tasks, and agents have been observed [bypassing mandatory process requirements even under explicit "never skip" guardrails](https://github.com/anthropics/claude-code/issues/39851). Keeping the entire procedure on track is a substantial engineering problem.
+  Agent Skills - reusable packages of instructions, examples, and tools help. Yet even top-tier models struggle with long sequences of instructions: losing track partway through, dropping requirements, piling mistakes on earlier mistakes, or claiming actions they never took. These failure modes are documented industry-wide — [research on iterative coding tasks](https://www.arxiv.org/pdf/2603.24755) shows agents erode code quality over long tasks, and agents have been observed [bypassing mandatory process requirements even under explicit "never skip" guardrails](https://github.com/anthropics/claude-code/issues/39851). Keeping the entire procedure on track is a substantial engineering problem.
 
   **DigitalWorker has virtually solved instruction-following for its engineering process in founder-observed production use.** Its proprietary <abbr title="makes the AI follow your process precisely instead of improvising or skipping instructions">Instruction Engine</abbr> keeps every required instruction in force through the whole task — design, implementation, testing, review, and repair — with two years of refined engineering rules behind them.
 
@@ -163,7 +153,7 @@ Take pride in maintainable and **beautiful** work: clear intent, <abbr title="co
 
   AI learns from code that includes anti-patterns. In our production work, models repeatedly gravitate back to procedural designs, duplicated classes, and anemic domain models — objects that hold data but contain no behavior, violating object-oriented design — even when explicitly instructed otherwise. A well-written instruction does not ensure it will survive the whole execution chain.
 
-  Agentic skills help by packaging instructions, examples, and tools. Yet even top-tier models can struggle with long, multi-step instructions: losing context, dropping requirements, compounding earlier mistakes, or hallucinating tool calls. These failure modes are documented industry-wide — [research on iterative coding tasks](https://www.arxiv.org/pdf/2603.24755) shows agents erode code quality over long horizons, and agents have been observed [bypassing mandatory workflow steps even under explicit "never skip" guardrails](https://github.com/anthropics/claude-code/issues/39851). Keeping the entire procedure on track is a substantial engineering problem.
+  Agentic skills help by packaging instructions, examples, and tools. Yet even top-tier models struggle with long, multi-step instructions: losing context, dropping requirements, compounding earlier mistakes, or hallucinating tool calls. These failure modes are documented industry-wide — [research on iterative coding tasks](https://www.arxiv.org/pdf/2603.24755) shows agents erode code quality over long horizons, and agents have been observed [bypassing mandatory workflow steps even under explicit "never skip" guardrails](https://github.com/anthropics/claude-code/issues/39851). Keeping the entire procedure on track is a substantial engineering problem.
 
   **DigitalWorker has virtually solved instruction-following for its engineering workflows in founder-observed production use.** Its proprietary model-adaptable Instruction Engine keeps the design, implementation, testing, review, and repair instructions in the execution path, with two years of refined engineering rules behind them.
 

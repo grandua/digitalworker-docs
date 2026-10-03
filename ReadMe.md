@@ -228,6 +228,7 @@ The engineering results described here come from that daily production use. See 
 ### Getting Started — Four Ways In
 
 You don't need to read the docs first — wherever you meet DigitalWorker, on a card or on a pull request comment, you can just ask it how something works.
+
 From a one-minute read-only review of your real code, to a shared demo board, to running it on your own repo.
 
 #### 1. Watch it review your real <abbr title="PRs — proposed changes, packaged for review">pull requests</abbr> — GitHub only, ~1 minute

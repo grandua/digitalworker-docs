@@ -45,6 +45,7 @@ DigitalWorker PR Reviewer is the simplest, risk-free way to start: it is read-on
 
 Both products share the same trial and billing policy — one credit allowance per customer, whichever way you started:
 
+- **You pay from a prepaid credit balance.** Usage draws down your balance. When it runs out, work pauses until you add credit.
 - **Every new customer gets a bounded amount of free usage credit.** It makes no difference whether you installed the PR Reviewer GitHub App or onboarded a full DigitalWorker Trello board — the same credit policy applies to you as a customer.
 - **When the credit runs out, we tell you in place.** For PR Reviewer, DigitalWorker posts a comment on the pull request explaining the trial credit is exhausted and how to continue. For full DigitalWorker, the active card is moved to **Blocked** with a comment explaining the same, and new cards are held until credit is added.
 - **Converting to paid is one message.** Contact <a href="mailto:info@agiledigitalworker.com">info@agiledigitalworker.com</a> — we'll reply with a secure payment link. Your setup is untouched — no reinstall, no new onboarding, no lost history — and service resumes as soon as credit is added.

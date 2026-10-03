@@ -61,6 +61,8 @@ Take pride in maintainable and **beautiful** work: clear intent, <abbr title="co
 
   <details markdown="1"><summary>The technical version</summary>
 
+  **You asked for TDD and OOP. Your AI drifted anyway.** DigitalWorker makes those disciplines part of delivery: test-first implementation, architecture review, refactoring, and fixes, carried by its proprietary instruction engine. A task card becomes a tested, reviewed PR for your final behavior check. You keep the decisions that matter. Try one real task—$15 credit included.
+
   **A combination found nowhere else that we know of:** high-precision instruction enforcement plus this depth of Agile, OOP, test-first TDD, review, and anti-duplication class design. Other agents can code, test, review, and open PRs; DigitalWorker carries the complete engineering method through delivery. <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#why-this-combination-matters" data-cta="view_example" data-location="mid_page">Inspect the difference</a>.
 
   </details>

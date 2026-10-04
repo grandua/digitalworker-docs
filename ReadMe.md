@@ -11,7 +11,11 @@ AI wrote the code. You're still doing the cleanup.
 
 **You make the decisions that matter. DigitalWorker turns a task card into a tested, reviewed, production-ready[^4] <abbr title="a proposed change, packaged for review">pull request</abbr> — professional-developer output, not AI intern drafts. It's like assigning a top-10% developer to a well-scoped task — at AI cost.** 
 
-No iterative prompting. No babysitting. No cleaning up after the AI. 
+**With the full Agent:** No iterative prompting. No babysitting. No cleaning up after the AI.
+
+**Two products:**
+- **[DigitalWorker Agent](#try-digitalworker-agent)** — delegate the whole task.
+- **[DigitalWorker Reviewer](#get-digitalworker-reviewer)** — review your existing pull requests.
 
 ## Why Did We Build Digital Worker? These Are Our Assumptions Behind It:
 
@@ -51,6 +55,20 @@ Take pride in maintainable and **beautiful** work: clear intent, <abbr title="co
 *Developers: jump straight to the [recorded evidence](#2-verify-our-claims--no-account-or-setup-needed) or the [engineering deep dive](https://agiledigitalworker.com/Engineering-Deep-Dive). For the engineering details, open the technical blocks below.*
 
 ---
+
+### Two products. One engineering standard.
+
+1. **DigitalWorker Agent — Hand off the task, not just the typing.**
+
+   <a href="#4-start-using-it-on-your-repo--trello--github" data-cta="request_board" data-location="mid_page"><strong>Try the Agent — $15 credit included.</strong></a>
+
+2. **DigitalWorker Reviewer — Keep your coding tools. Catch the AI slop before merge.**
+
+   Add an engineering review to the pull requests your team or AI already creates: architecture problems, duplication, and test gaps, flagged on your actual changes. The Reviewer comments; it does not change your code. No Trello required.
+
+   <a href="https://github.com/apps/digitalworker-reviewer/installations/new" data-cta="install_app" data-location="mid_page"><strong>Install the Reviewer — ~1 minute.</strong></a>
+
+**The Reviewer uses the same review engine the full Agent uses on its own work. Use either product on its own.**
 
 ### Why it's different
 
@@ -227,13 +245,19 @@ I've used the AI engineering workflows behind DigitalWorker every day for two ye
 
 The engineering results described here come from that daily production use. See the process in action in the [public demo repo](https://github.com/grandua/Digital-Worker-Demo), including the tests, pull requests, and fix history.
 
-### Getting Started — Four Ways In
+<a id="getting-started--four-ways-in"></a>
 
-From a one-minute read-only review of your real code, to a shared demo board, to running it on your own repo.
+### Getting Started
+
+Choose your product below. The Reviewer connects directly to GitHub; the Agent offers evidence, a public demo, and a private-board trial.
 
 (You don't need to read the docs first — wherever you meet DigitalWorker, on a card or on a pull request comment, you can just ask it how something works).
 
-#### 1. Watch it review your real <abbr title="PRs — proposed changes, packaged for review">pull requests</abbr> — GitHub only, ~1 minute
+#### Get DigitalWorker Reviewer
+
+<a id="1-watch-it-review-your-real-pull-requests--github-only-1-minute"></a>
+
+##### Watch it review your real <abbr title="PRs — proposed changes, packaged for review">pull requests</abbr> — GitHub only, ~1 minute
 
 <details markdown="1"><summary>Show how</summary>
 
@@ -245,7 +269,11 @@ Want to try it on a repo you own? Install it there directly. For a work repo, sh
 
 </details>
 
-#### 2. Verify our claims — no account or setup needed
+#### Try DigitalWorker Agent
+
+<a id="2-verify-our-claims--no-account-or-setup-needed"></a>
+
+##### Verify our claims — no account or setup needed
 
 <details markdown="1"><summary>Show how</summary>
 
@@ -273,19 +301,23 @@ The Calculator domain/test solution needs no MAUI workloads. The [full app solut
 
 </details>
 
-#### 3. Try a task on our demo board — by email or Trello
+<a id="3-try-a-task-on-our-demo-board--by-email-or-trello"></a>
+
+##### Try a task on our demo board — by email or Trello
 
 <details markdown="1"><summary>Show how</summary>
 
 <a href="https://trello.com/invite/b/6a03d01d53cf7bb95f8325dd/ATTI3f3561b96a9f5663247cbafaa06b71b7DBE19FF1/digital-worker-demo" data-cta="view_example" data-location="pricing">Join the public demo board</a>, or <a href="mailto:info@agiledigitalworker.com" data-cta="request_board" data-location="pricing">email your Trello username</a> to request access, usually addressed within 24 hours. Create a bounded task in `To Implement`, or draft it in `Triage` and move it when ready. Watch DigitalWorker deliver a tested PR to the public demo repository.
 
-To add your own cards to the demo board, use a free Trello account. No GitHub credentials or LLM key are needed. Use a public-safe task on this shared board — no special card format, write it like any <abbr title="the cards already on the board are real examples">task</abbr>. Want privacy instead? Option 4 below gives you a private board on your own repo.
+To add your own cards to the demo board, use a free Trello account. No GitHub credentials or LLM key are needed. Use a public-safe task on this shared board — no special card format, write it like any <abbr title="the cards already on the board are real examples">task</abbr>. Want privacy instead? [Start on your own repo below](#4-start-using-it-on-your-repo--trello--github) with a private board.
 
 Prefer to try it by email? <a href="mailto:info@agiledigitalworker.com" data-cta="request_board" data-location="pricing">Send us a task you can share publicly</a> — we'll post the card for you and send you the link to follow the resulting PR.
 
 </details>
 
-#### 4. Start using it on your repo — Trello + GitHub
+<a id="4-start-using-it-on-your-repo--trello--github"></a>
+
+##### Start using it on your repo — Trello + GitHub
 
 <details markdown="1"><summary>Show how</summary>
 

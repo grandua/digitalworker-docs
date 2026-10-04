@@ -31,7 +31,7 @@ That creates a compounding business advantage. A disciplined codebase can suppor
 
 | | **DigitalWorker PR Reviewer** | **DigitalWorker** (full agent)                                                                                               |
 |---|---|------------------------------------------------------------------------------------------------------------------------------|
-| **What it does** | Reviews your pull requests and posts feedback as GitHub reviews | Every part of the software development lifecycle (SDLC): plans, architects, designs classes and UX, implements and tests features, reviews code, fixes issues |
+| **What it does** | Reviews your pull requests and posts feedback as GitHub reviews — Agile architecture violations such as incorrect layer dependencies and Anemic Domain Model anti-pattern, testability issues, test coverage gaps, and most code smells including code and class duplication | Every part of the software development lifecycle (SDLC): plans, architects, designs classes and UX, implements and tests features, reviews code, fixes issues |
 | **How you use it** | Always-on — every PR and every push is reviewed automatically; optional `@digitalworker review` comment | Create and move Trello cards on your board                                                                                   |
 | **Trello account** | Not needed | Required                                                                                                                     |
 | **GitHub access token (PAT)** | Not needed — GitHub App permissions only | Not needed — the Agent app covers it; a PAT exists only for legacy configurations |
@@ -57,6 +57,7 @@ Both products share the same trial and billing policy — one credit allowance p
 The DigitalWorker PR Reviewer is a GitHub App, and it needs no Trello account and no GitHub personal access token (PAT) — a scoped credential that lets a tool act on your repo. 
 Instead of picking up task cards, it reviews your pull requests and posts the result as a normal GitHub review. 
 It is **read-only**: it never modifies your code, pushes commits, edits files, or creates pull requests.
+It runs the same review engine the full DigitalWorker Agent uses on its own work: a ~100-item engineering checklist covering correctness, architecture and standards, code-smell detection, and requirements audit.
 DigitalWorker PR Reviewer is a great way to start simple and in a risk-free way and see if you want to progress to a full featured DigitalWorker.
 
 ### Onboarding - Installing the PR Reviewer on your repository
@@ -77,7 +78,7 @@ DigitalWorker PR Reviewer is a great way to start simple and in a risk-free way 
 
 A GitHub review from `digitalworker-reviewer[bot]` (state: `COMMENTED`, pinned to the commit that was reviewed) containing:
 
-- A summary with a letter-grade score (A–F), an overview, and key risks.
+- A summary with a letter-grade score (A–F), an overview of detected architectural issues and code smells, and key risks.
 - Inline comments attached to specific lines of the diff, each tagged with a severity (CRITICAL, HIGH, MEDIUM, LOW).
 
 Use it as a first-pass reviewer: it reads only the PR diff, so treat it as a strong second opinion, not a merge gate. It does not answer questions in comments — only the exact `@digitalworker review` command triggers it.

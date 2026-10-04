@@ -64,7 +64,7 @@ Take pride in maintainable and **beautiful** work: clear intent, <abbr title="co
 
 2. **DigitalWorker Reviewer — Keep your coding tools. Catch the AI slop before merge.**
 
-   Add an engineering review to the pull requests your team or AI already creates: architecture problems, duplication, and test gaps, flagged on your actual changes. The Reviewer comments; it does not change your code. No Trello required.
+   You asked for TDD, OOP and proper testable layers. Your AI drifted to bloated AI slop anyway. DigitalWorker Reviewer detects Agile architecture violations such as incorrect layer dependencies and Anemic Domain Model anti-pattern, testability issues, test coverage gaps, and most code smells including code and class duplication. The Reviewer comments; it does not change your code. No Trello required.
 
    <a href="https://github.com/apps/digitalworker-reviewer/installations/new" data-cta="install_app" data-location="mid_page"><strong>Install the Reviewer — ~1 minute.</strong></a>
 
@@ -257,13 +257,15 @@ Choose your product below. The Reviewer connects directly to GitHub; the Agent o
 
 <a id="1-watch-it-review-your-real-pull-requests--github-only-1-minute"></a>
 
+DigitalWorker is the first reviewer that enforces full and proper Agile discipline and architecture in code — including Patterns of Enterprise Application Architecture such as Layers and OOP/Rich Domain Model, testability, and clean code without code smells.
+
 ##### Watch it review your real <abbr title="PRs — proposed changes, packaged for review">pull requests</abbr> — GitHub only, ~1 minute
 
 <details markdown="1"><summary>Show how</summary>
 
-<a href="https://github.com/apps/digitalworker-reviewer/installations/new" data-cta="install_app" data-location="pricing">Install the DigitalWorker PR Reviewer GitHub App</a> on a repository you choose. From then on every pull request — and every push to it — gets an automatic read-only review posted by `digitalworker-reviewer[bot]`: a scored summary, key risks, and inline comments on specific lines. You can also post `@digitalworker review` on any PR to trigger it on demand.
+<a href="https://github.com/apps/digitalworker-reviewer/installations/new" data-cta="install_app" data-location="pricing">Install the DigitalWorker PR Reviewer GitHub App</a> on a repository you choose. From then on every pull request — and every push to it — gets an automatic read-only review posted by `digitalworker-reviewer[bot]`: a scored summary, detected architectural issues, code smells and key risks, and inline comments on specific lines. You can also post `@digitalworker review` on any PR to trigger it on demand.
 
-No Trello account, no personal access token, no code changes — and it uninstalls in one click from GitHub Settings > Applications. This is the same review engine the full agent uses on its own work, on your real diffs.
+No Trello account, no personal access token, no code changes — and it uninstalls in one click from GitHub Settings > Applications. The Reviewer uses the same review engine the full DigitalWorker Agent uses on its own work: a ~100-item engineering checklist covering correctness, architecture and standards, code-smell detection, and requirements audit — on your real diffs.
 
 Want to try it on a repo you own? Install it there directly. For a work repo, share the install link with your repository administrator or organization owner.
 

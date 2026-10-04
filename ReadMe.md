@@ -11,7 +11,7 @@ AI wrote the code. You're still doing the cleanup.
 
 **You make the decisions that matter. DigitalWorker turns a task card into a tested, reviewed, production-ready[^4] <abbr title="a proposed change, packaged for review">pull request</abbr> — professional-developer output, not AI intern drafts. It's like assigning a top-10% developer to a well-scoped task — at AI cost.** 
 
-**With the full Agent:** No iterative prompting. No babysitting. No cleaning up after the AI.
+No iterative prompting. No babysitting. No cleaning up after the AI.[^agent]
 
 **Two products:**
 - **[DigitalWorker Agent](#try-digitalworker-agent)** — delegate the whole task.
@@ -339,6 +339,8 @@ You need a Trello account, GitHub account, and a repository you can authorize. W
 [^2]: Founder-observed expectation based on 20 years of development experience and production use — not an independently benchmarked ranking.
 
 [^4]: “Production-ready” means the implementation has completed the engineering process and is ready for your final hands-on check. Founder-observed results are not an independent benchmark or a defect-free guarantee for every codebase.
+
+[^agent]: These benefits describe the full DigitalWorker Agent. The Reviewer reviews existing pull requests; it does not implement changes.
 
 ## Screenshots that demonstrate real life use cases working on a real prod repo
 

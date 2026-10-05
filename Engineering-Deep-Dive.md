@@ -122,4 +122,6 @@ Double-check the findings; your existing AI-agent costs may apply. For your own 
 
 **Ready to see what it does for your work?** [Choose Verify, Try, or Start using](https://github.com/grandua/digitalworker-docs/blob/main/ReadMe.md#getting-started--three-ways-in), or [tell us about a bounded task](mailto:info@agiledigitalworker.com). The [User Guide](https://github.com/grandua/digitalworker-docs/blob/main/user-guide.md) owns operational setup instructions.
 
+*Saving the world from spaghetti code.*
+
 © 2026 Agile Design LLC. DigitalWorker and its workflow materials are proprietary.

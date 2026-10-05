@@ -13,6 +13,8 @@ AI wrote the code. You're still doing the cleanup.
 
 No iterative prompting. No babysitting. No cleaning up after the AI.[^agent]
 
+*Saving the world from spaghetti code.*
+
 **Two products:**
 - **[DigitalWorker Agent](#try-digitalworker-agent)** — delegate the whole task.
 - **[DigitalWorker Reviewer](#get-digitalworker-reviewer)** — review your existing pull requests.
@@ -27,6 +29,7 @@ No iterative prompting. No babysitting. No cleaning up after the AI.[^agent]
 - Current AI has severely impaired judgment which manifests in constant confusion about the real world
 - Current AI absolutely cannot be trusted to make important decisions
 - AI will not fix itself without competent help from human experts: Current AI is nowhere close to AGI — AI that can do any job a person can — and no known architecture changes that anytime soon.
+- Cheap AI generation does not make code quality matter less — it makes it matter more: AI struggles against spaghetti even harder than human maintainers do, since context limits and compounding errors hit hardest on large, messy codebases — controlled research found experienced developers ~19% *slower* with AI on their own mature repositories[^3]. As generation cost falls, the binding constraint shifts to whether the code can be changed at all — making scalable, maintainable software the decisive economic prize
 
 [^1]: Evidence from OpenClaw (2026): maintainers had to halt feature work for 7 weeks and then integrate 16,000 PRs in one release, stating that human review, architecture and release processes had become the bottleneck; ~80% of AI-generated PRs get rejected; of what passes, more than half of subsequent commits are fixes for what was just merged; new releases routinely regress working functionality, forcing users to pin old versions; the project's own engineers publicly acknowledged AI "vibe slop" slips through because review capacity cannot scale with agent output. Asking AI to fight its own slop shifts the bottleneck from writing code to reviewing it rather than eliminating it.
 

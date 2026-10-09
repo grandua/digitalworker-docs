@@ -1,58 +1,60 @@
 # Why DigitalWorker?
 
-**Written for:** developers, non-developer builders, and business owners — outcomes, examples, and ways to evaluate DigitalWorker; internals: [engineering deep dive](https://agiledigitalworker.com/Engineering-Deep-Dive). <!-- audience: dev, non-dev builder, business · ceiling: T1 narrative everywhere; T2/T3 in labeled technical compartments -->
+**Fast read:** read the headings and **bold** text for the main message, evidence, and next steps. Read the surrounding text for detail; open the expandable sections when you want more.
+
+**Written for: developers, non-developer builders, and business owners** — outcomes, examples, and ways to evaluate DigitalWorker; internals: [engineering deep dive](https://agiledigitalworker.com/Engineering-Deep-Dive). <!-- audience: dev, non-dev builder, business · ceiling: T1 narrative everywhere; T2/T3 in labeled technical compartments -->
 
 ---
 
 ![ILLUSTRATIVE TYPICAL RUN — actual results vary by task](./Sells-Sheet-Images/Sells-Sheet-top-image-Trello-with-popups.png)
 
 ---
-AI wrote the code. You're still doing the cleanup.
+**AI wrote the code. You're cleaning up. Let DigitalWorker handle the cleanup.**
 
-**You make the decisions that matter. DigitalWorker turns a task card into a tested, reviewed, production-ready[^4] <abbr title="a proposed change, packaged for review">pull request</abbr> — professional-developer output, not AI intern drafts. It's like assigning a top-10% developer to a well-scoped task — at AI cost.** 
+**You make the decisions that matter.** **DigitalWorker turns a task card into a tested, reviewed, production-ready[^4] <abbr title="a proposed change, packaged for review">pull request</abbr>** — professional-developer output, not AI intern drafts. **It's like assigning a top-10% developer to a well-scoped task — at AI cost.** 
 
 No iterative prompting. No babysitting. No cleaning up after the AI.[^agent]
 
 *Saving the world from spaghetti code.*
 
 **Two products:**
-- **[DigitalWorker Agent](#try-digitalworker-agent)** — delegate the whole task.
-- **[DigitalWorker Reviewer](#get-digitalworker-reviewer)** — review your existing pull requests.
+- **[DigitalWorker Reviewer](#get-digitalworker-reviewer) — review your existing pull requests.**
+- **[DigitalWorker Agent](#try-digitalworker-agent) — delegate the whole task.**
 
 ## You're Doing AI Coding Slow!
-*The assumptions behind DigitalWorker - why we developed it:*
+***The assumptions behind DigitalWorker - why we developed it:***
 
-- Current AI generates average code and architecture — sloppy, badly engineered — because it was trained on median human code — and most human code, public or private, ignores <abbr title="a design discipline where each part of the code carries its data and the rules that act on it together">object-oriented design</abbr> discipline, layering, and automated test coverage
-- Without **working** architectural guardrails, AI prints technical debt at machine speed — reliably enforcing an engineering process on AI is a difficult, unsolved problem
-- Guiding AI to convert its spaghetti code and broken architecture takes a lot of hard manual labor, technical knowledge, and skill — reviewing, fixing, re-prompting — not just more AI usage. This is the main reason AI agents improve shipping speed only marginally — controlled research puts real-world gains at ~25% at best, not manifold[^3]
-- If a software solution is built with AI by a human who never fights back the AI slop, complexity limits are reached quickly: within as little as one month the AI's pace of change plateaus and the defect count becomes unmanageable
-- Even if a team of humans fights back using AI to review AI code, gives AI code standards, some architecture and instructions on how to review code, the slop still overwhelms at scale — review capacity becomes the bottleneck, new features break existing ones, and the codebase converges to a plateau where only long-frozen features are dependable.[^1]
-- Current AI has severely impaired judgment which manifests in constant confusion about the real world
-- Current AI absolutely cannot be trusted to make important decisions
-- AI will not fix itself without competent help from human experts: AI often knows what the best practices are but does not follow them anyway, even when you explicitly ask it to.  Current AI is nowhere close to AGI — AI that can do any job a person can — and no known architecture changes that anytime soon.
-- Cheap AI generation does not make code quality matter less — it makes it matter sooner: AI struggles against spaghetti even harder than human maintainers do — context limits and compounding errors hit hardest on large, messy codebases. Controlled research found experienced developers ~19% *slower* with AI on their own mature repositories[^3]
-- Engineering discipline is not a tax on speed — past a few thousand lines it *is* the speed: in a peer-reviewed study of 39 production codebases, low-quality code carried 15×(!) more defects and took approximately 2.2× as long to resolve issues[^5]
-- As generation cost falls, the binding constraint shifts to whether the code can be changed at all — making scalable, maintainable software the decisive economic prize
+- **Current AI generates average code and architecture — sloppy, badly engineered** — because it was trained on median human code — and most human code, public or private, ignores <abbr title="a design discipline where each part of the code carries its data and the rules that act on it together">object-oriented design</abbr> discipline, layering, and automated test coverage
+- Without **working** architectural guardrails, **AI prints technical debt at machine speed** — reliably enforcing an engineering process on AI is a difficult, unsolved problem
+- **Guiding AI to convert its spaghetti code and broken architecture takes a lot of hard manual labor, technical knowledge, and skill** — reviewing, fixing, re-prompting — not just more AI usage. This is the main reason AI agents improve shipping speed only marginally — **controlled research puts real-world gains at ~25% at best, not manifold[^3]**
+- **If a software solution is built with AI by a human who never fights back the AI slop**, complexity limits are reached quickly: **within as little as one month the AI's pace of change plateaus and the defect count becomes unmanageable**
+- **Even if a team** of humans **fights back using AI to review AI** code, gives AI code standards, some architecture and instructions on how to review code, **the slop still overwhelms at scale — review capacity becomes the bottleneck**, new features break existing ones, and the codebase converges to a plateau where only long-frozen features are dependable.[^1]
+- **Current AI has severely impaired judgment** which manifests in **constant confusion** about the real world
+- **Current AI absolutely cannot be trusted to make important decisions**
+- **AI will not fix itself without competent help from human experts:** AI often knows what the best practices are but does not follow them anyway, even when you explicitly ask it to.  Current AI is nowhere close to AGI — AI that can do any job a person can — and no known architecture changes that anytime soon.
+- **Cheap AI generation does not make code quality matter less — it makes it matter sooner:** AI struggles against spaghetti even harder than human maintainers do — context limits and compounding errors hit hardest on large, messy codebases. **Controlled research found experienced developers ~19% *slower* with AI on their own mature repositories[^3]**
+- **Engineering discipline is not a tax on speed** — past a few thousand lines **it is the speed**: in a peer-reviewed study of 39 production codebases, low-quality code carried 15×(!) more defects and took approximately 2.2× as long to resolve issues[^5]
+- **As generation cost falls**, the binding constraint shifts to whether the code can be changed at all — **making scalable, maintainable software the decisive economic prize**
 
 [^1]: Evidence from OpenClaw (2026): maintainers had to halt feature work for 7 weeks and then integrate 16,000 PRs in one release, stating that human review, architecture and release processes had become the bottleneck; ~80% of AI-generated PRs get rejected; of what passes, more than half of subsequent commits are fixes for what was just merged; new releases routinely regress working functionality, forcing users to pin old versions; the project's own engineers publicly acknowledged AI "vibe slop" slips through because review capacity cannot scale with agent output. Asking AI to fight its own slop shifts the bottleneck from writing code to reviewing it rather than eliminating it.
 
 [^3]: The strongest controlled evidence brackets the gain narrowly: three field RCTs across 4,867 developers at Microsoft, Accenture, and a Fortune 100 company found a 26% increase in completed tasks with an AI assistant (Cui et al., Management Science, 2025) — while a 2025 METR RCT found experienced open-source developers were actually ~19% *slower* with AI tools on their own mature repositories, even though they believed they had been ~20% faster. Our founder's own measured experience before adopting AI-checklist-driven workflows matched the ~25% figure.
 
 ## What we claim as possible
-- Nevertheless, the problem above has a better solution and current AI can be asked to run checklists with hundreds of items and produce much better structured code that is actually easy to follow, easy to change, with pretty good <abbr title="the tests catch any defect introduced into the covered code">mutation test coverage</abbr>, and that scales almost linearly with complexity.
-- The catch is that AI will not follow such huge checklists if they are given to it as pure text and in a generic fashion. However, checklists coupled with a smart, adjustable Instruction Engine can make AI follow every instruction.
-- Also, current AI can be asked to make most important decisions upfront in a <abbr title="practice-run">dry-run</abbr> fashion, which allows humans to unconfuse AI by overriding those decisions as needed (and optionally explaining rationale)
+- Nevertheless, the problem above has a better solution and current AI can be asked to run checklists with hundreds of items and **produce much better structured code that is actually easy to follow, easy to change**, with pretty good <abbr title="the tests catch any defect introduced into the covered code">mutation test coverage</abbr>, and that scales almost linearly with complexity.
+- The catch is that AI will not follow such huge checklists if they are given to it as pure text and in a generic fashion. However, **checklists coupled with a smart, adjustable Instruction Engine can make AI follow every instruction**.
+- Also, **current AI can be asked to make most important decisions upfront** in a <abbr title="practice-run">dry-run</abbr> fashion, which allows **humans to unconfuse AI early by overriding those decisions as needed** (and optionally explaining rationale)
 
 
 ## You make the decisions that matter. Build software you're proud to put your name on.
 
 **Substantially fewer defects. Far less cleanup. More uninterrupted attention for the product you want to build.**
 
-Your engineering competence sets the standard. DigitalWorker carries it through the work: turning a task card into a tested, reviewed, production-ready[^4] pull request. You shape the pivotal decisions and perform the final behavior check; DigitalWorker handles implementation, testing, review, and fixes.
+Your engineering competence sets the standard. DigitalWorker carries it through the work: turning a task card into a tested, reviewed, production-ready[^4] pull request. **You shape the pivotal decisions and perform the final behavior check; DigitalWorker handles implementation, testing, review, and fixes.**
 
-Take pride in maintainable and **beautiful** work: clear intent, <abbr title="cohesive objects">well-organized parts</abbr>, and code you can confidently extend.
+**Take pride in maintainable and beautiful work:** clear intent, <abbr title="cohesive objects">well-organized parts</abbr>, and code you can confidently extend.
 
-**See the task and the resulting pull request:** compare the <a href="https://trello.com/b/6a03d01d53cf7bb95f8325dd/digital-worker-demo" data-cta="view_example" data-location="hero">source task cards</a> with the <a href="https://github.com/grandua/Digital-Worker-Demo/pulls?q=is%3Apr+is%3Aclosed" data-cta="view_example" data-location="hero">generated code and pull-request/fix history</a>. Two demo applications, generated from task cards, with <abbr title="light human review for a few selected parts">spot-reviews</abbr> and external defect feedback disclosed.
+**See the task and the resulting pull request:** compare the <a href="https://trello.com/b/6a03d01d53cf7bb95f8325dd/digital-worker-demo" data-cta="view_example" data-location="hero"><strong>source task cards</strong></a> with the <a href="https://github.com/grandua/Digital-Worker-Demo/pulls?q=is%3Apr+is%3Aclosed" data-cta="view_example" data-location="hero"><strong>generated code and pull-request/fix history</strong></a>. Two demo applications, generated from task cards, with <abbr title="light human review for a few selected parts">spot-reviews</abbr> and external defect feedback disclosed.
 
 [**Verify our claims — no account or setup needed**](#2-verify-our-claims--no-account-or-setup-needed)
 
@@ -64,15 +66,15 @@ Take pride in maintainable and **beautiful** work: clear intent, <abbr title="co
 
 ### Two products. One engineering standard.
 
-1. **DigitalWorker Agent — Hand off the task, not just the typing.**
+1. **DigitalWorker Reviewer — Keep your coding tools. Catch the AI slop before merge.**
+
+   You asked for TDD, OOP and proper testable layers. Your AI drifted to bloated AI slop anyway. DigitalWorker Reviewer detects Agile architecture violations such as incorrect layer dependencies and Anemic Domain Model anti-pattern, testability issues, test coverage gaps, and most code smells including code and class duplication. **The Reviewer comments; it does not change your code.** No Trello required.
+
+   <a href="https://github.com/apps/digitalworker-reviewer/installations/new" data-cta="install_app" data-location="mid_page"><strong>Install the Reviewer — ~1 minute.</strong></a>
+2. **DigitalWorker Agent — Hand off the task. Get code implemented, reviewed, and refactored against the same architecture and maintainability standards.**
 
    <a href="#4-start-using-it-on-your-repo--trello--github" data-cta="request_board" data-location="mid_page"><strong>Try the Agent — $15 credit included.</strong></a>
 
-2. **DigitalWorker Reviewer — Keep your coding tools. Catch the AI slop before merge.**
-
-   You asked for TDD, OOP and proper testable layers. Your AI drifted to bloated AI slop anyway. DigitalWorker Reviewer detects Agile architecture violations such as incorrect layer dependencies and Anemic Domain Model anti-pattern, testability issues, test coverage gaps, and most code smells including code and class duplication. The Reviewer comments; it does not change your code. No Trello required.
-
-   <a href="https://github.com/apps/digitalworker-reviewer/installations/new" data-cta="install_app" data-location="mid_page"><strong>Install the Reviewer — ~1 minute.</strong></a>
 
 **The Reviewer uses the same review engine the full Agent uses on its own work. Use either product on its own.**
 
@@ -81,13 +83,13 @@ Take pride in maintainable and **beautiful** work: clear intent, <abbr title="co
 - **A combination found nowhere else that we know of** — the AI follows a rigorous engineering process precisely instead of improvising, and applies the discipline a senior engineer would.
   <details markdown="1"><summary>Show details</summary>
 
-  **A combination found nowhere else that we know of:** it makes the AI follow a rigorous engineering process precisely instead of improvising, and it applies the discipline a senior engineer would — design decisions before code, <abbr title="unit tests">checks</abbr> before implementation, a rigorous review of every change, and no duplicate structures. Other agents can code, test, review, and submit changes for approval; DigitalWorker carries the complete engineering method through delivery. <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#why-this-combination-matters" data-cta="view_example" data-location="mid_page">Inspect the difference</a>.
+  **A combination found nowhere else that we know of:** it makes the AI follow a rigorous engineering process precisely instead of improvising, and it applies the discipline a senior engineer would — design decisions before code, <abbr title="unit tests">checks</abbr> before implementation, a rigorous review of every change, and no duplicate structures. Other agents can code, test, review, and submit changes for approval; **DigitalWorker carries the complete engineering method through delivery.** <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#why-this-combination-matters" data-cta="view_example" data-location="mid_page">Inspect the difference</a>.
 
   <details markdown="1"><summary>The technical version</summary>
 
-  **You asked for TDD and OOP. Your AI drifted anyway.** DigitalWorker makes those disciplines part of delivery: test-first implementation, architecture review, refactoring, and fixes, carried by its proprietary instruction engine. A task card becomes a tested, reviewed PR for your final behavior check. You keep the decisions that matter. Try one real task—$15 credit included.
+  **You asked for TDD and OOP. Your AI drifted anyway.** DigitalWorker makes those disciplines part of delivery: test-first implementation, architecture review, refactoring, and fixes, carried by its proprietary instruction engine. A task card becomes a tested, reviewed PR for your final behavior check. **You keep the decisions that matter. Try one real task—$15 credit included.**
 
-  **A combination found nowhere else that we know of:** high-precision instruction enforcement plus this depth of Agile, OOP, test-first TDD, review, and anti-duplication class design. Other agents can code, test, review, and open PRs; DigitalWorker carries the complete engineering method through delivery. <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#why-this-combination-matters" data-cta="view_example" data-location="mid_page">Inspect the difference</a>.
+  **A combination found nowhere else that we know of:** high-precision instruction enforcement plus this depth of Agile, OOP, test-first TDD, review, and anti-duplication class design. Other agents can code, test, review, and open PRs; **DigitalWorker carries the complete engineering method through delivery.** <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#why-this-combination-matters" data-cta="view_example" data-location="mid_page">Inspect the difference</a>.
 
   </details>
 
@@ -95,21 +97,21 @@ Take pride in maintainable and **beautiful** work: clear intent, <abbr title="co
 - **Get relief from repeated review and repair** — fewer defects, far less cleanup, and a light human check instead of line-by-line review.
   <details markdown="1"><summary>Show details</summary>
 
-  Fast generation helps only when the result moves your product forward. DigitalWorker makes quality work part of delivery: it writes the <abbr title="unit tests">checks</abbr> before the code, reviews its own work against a ~100-item engineering checklist, then cleans up and fixes before handing you the change. You receive the code, the tests, and the reasoning behind the decisions together.
+  Fast generation helps only when the result moves your product forward. DigitalWorker makes quality work part of delivery: it writes the <abbr title="unit tests">checks</abbr> before the code, reviews its own work against a ~100-item engineering checklist, then cleans up and fixes before handing you the change. **You receive the code, the tests, and the reasoning behind the decisions together.**
 
   The sequence is explicit: **a <abbr title="unit tests">check</abbr> of the intended behavior that fails first → the smallest change to pass it → review, cleanup, fixes, and re-checks**. [See how the method earns the outcome](https://agiledigitalworker.com/Engineering-Deep-Dive#from-a-requirement-to-a-checked-implementation).
 
-  **Stop paying the AI bug tax.** We observe substantially fewer defects and far less cleanup than AI coding without this enforced process. In founder production use, hands-on oversight is dramatically lower: make a fast human check of decisions and trade-offs, inspect the key code that implements your business rules, then check the final behavior. Routine code does not need line-by-line review in that operating experience.
+  **Stop paying the AI bug tax.** **We observe substantially fewer defects and far less cleanup than AI coding without this enforced process.** **In founder production use, hands-on oversight is dramatically lower:** make a fast human check of decisions and trade-offs, inspect the key code that implements your business rules, then check the final behavior. **Routine code does not need line-by-line review in that operating experience.**
 
   <details markdown="1"><summary>The technical version</summary>
 
-  Fast generation helps only when the result moves your product forward. DigitalWorker makes quality work part of delivery: enforced test-first TDD, a dedicated ~100-step checklist-driven review (correctness, architecture and standards, code-smell detection, requirements audit), refactoring, and fixes before the PR. You receive the code, tests, and design decisions together.
+  Fast generation helps only when the result moves your product forward. DigitalWorker makes quality work part of delivery: enforced test-first TDD, a dedicated ~100-step checklist-driven review (correctness, architecture and standards, code-smell detection, requirements audit), refactoring, and fixes before the PR. **You receive the code, tests, and design decisions together.**
 
   The sequence is explicit: **a failing behavior test → the minimum implementation to pass → review, refactoring, fixes, and re-checks.** [See how the workflow earns the outcome](https://agiledigitalworker.com/Engineering-Deep-Dive#from-a-requirement-to-a-checked-implementation).
 
-  **Stop paying the AI bug tax.** We observe substantially fewer defects and far less cleanup than AI coding without this enforced pipeline. In founder production use, hands-on oversight is dramatically lower: spot-review the decisions and key domain code, then check the final behavior. Routine code does not need line-by-line review in that operating experience.
+  **Stop paying the AI bug tax.** **We observe substantially fewer defects and far less cleanup than AI coding without this enforced pipeline.** **In founder production use, hands-on oversight is dramatically lower:** spot-review the decisions and key domain code, then check the final behavior. **Routine code does not need line-by-line review in that operating experience.**
 
-  “Production-ready” means the implementation has completed the engineering workflow and is ready for your final hands-on check. Founder-observed results are not an independent benchmark or a defect-free guarantee for every repository.
+  **“Production-ready” means the implementation has completed the engineering workflow and is ready for your final hands-on check.** **Founder-observed results are not an independent benchmark or a defect-free guarantee for every repository.**
 
   </details>
 
@@ -118,15 +120,15 @@ Take pride in maintainable and **beautiful** work: clear intent, <abbr title="co
 - **Keep control of consequential decisions** — your judgment decides the plan, assumptions, and pivotal design; the implementation review is carried for you.
   <details markdown="1"><summary>Show details</summary>
 
-  You choose what to build, what "done" means, and the trade-offs you can live with. You no longer review for defects — DigitalWorker's own reviews and checklists handle that; your review is judgment, placed early, before implementation. Review the proposed plan, assumptions, and pivotal design decisions. Before new parts of the code are created, inspect their proposed responsibilities and how they relate; correct the design where needed. DigitalWorker executes the engineering work through its proprietary Instruction Engine.
+  **You choose what to build, what "done" means, and the trade-offs you can live with.** You no longer review for defects — DigitalWorker's own reviews and checklists handle that; your review is judgment, placed early, before implementation. **Review the proposed plan, assumptions, and pivotal design decisions.** Before new parts of the code are created, inspect their proposed responsibilities and how they relate; correct the design where needed. DigitalWorker executes the engineering work through its proprietary Instruction Engine.
 
-  For non-developers, the starting point is the plan and a plain description of what "done" looks like. You can delegate implementation and routine design; novel or complex design still benefits from an experienced developer's judgment. You keep the final check that the software behaves as intended before the change is combined with your existing code.
+  For non-developers, the starting point is the plan and a plain description of what "done" looks like. You can delegate implementation and routine design; **novel or complex design still benefits from an experienced developer's judgment.** **You keep the final check that the software behaves as intended before the change is combined with your existing code.**
 
   <details markdown="1"><summary>The technical version</summary>
 
-  You choose what to build, the acceptance criteria, and the trade-offs you can live with. You no longer review for defects — AI reviews and checklists handle that; your review is judgment, placed early, before implementation. Review the proposed plan, assumptions, and pivotal architecture decisions. Before new classes are scaffolded, inspect their proposed responsibilities and relationships; correct the design where needed. DigitalWorker executes the engineering work through the proprietary Instruction Engine.
+  **You choose what to build, the acceptance criteria, and the trade-offs you can live with.** You no longer review for defects — AI reviews and checklists handle that; your review is judgment, placed early, before implementation. **Review the proposed plan, assumptions, and pivotal architecture decisions.** Before new classes are scaffolded, inspect their proposed responsibilities and relationships; correct the design where needed. DigitalWorker executes the engineering work through the proprietary Instruction Engine.
 
-  For non-developers, the starting point is the plan and acceptance criteria. You can delegate implementation and routine design; novel or complex architecture still benefits from an experienced developer's judgment. You keep the final behavior check before merge.
+  For non-developers, the starting point is the plan and acceptance criteria. You can delegate implementation and routine design; **novel or complex architecture still benefits from an experienced developer's judgment.** **You keep the final behavior check before merge.**
 
   </details>
 
@@ -134,23 +136,23 @@ Take pride in maintainable and **beautiful** work: clear intent, <abbr title="co
 - **Build something beautiful that stays maintainable** — clear intent, focused parts, and business rules kept separate from the technical details.
   <details markdown="1"><summary>Show details</summary>
 
-  Beautiful software makes its intent easy to understand. DigitalWorker looks for concepts your code already has before inventing new ones, keeps each part focused on one clear job, and keeps rules and the data they act on together. It separates your business rules from the technical details — so the logic stays easy to read, test, reuse, and change — and prunes needless complexity and duplicate structures.
+  **Beautiful software makes its intent easy to understand.** DigitalWorker looks for concepts your code already has before inventing new ones, keeps each part focused on one clear job, and keeps rules and the data they act on together. It separates your business rules from the technical details — **so the logic stays easy to read, test, reuse, and change** — and prunes needless complexity and duplicate structures.
 
   In the Calculator demo, one part of the code holds the calculator's current state and handles button presses through one clearly named action. The code that interprets mathematical expressions stays inside the part that needs it. The tests check the edges — numbers too large for the calculator to handle, and what happens after an error locks it. These are concrete examples of the clarity and care you can inspect. <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#what-beautiful-maintainable-code-looks-like" data-cta="view_example" data-location="mid_page">Explore the code and edge-case tests</a>.
 
-  This always-on engineering discipline **prevents almost all <abbr title="shortcuts that create future repair work">technical debt</abbr>** in founder-observed production use. Its method reflects more than 20 years of disciplined software development and two years of refinement with AI coding agents. The payoff extends beyond the next change: a codebase you can take pride in as features, integrations, customers, and business rules multiply and grow.
+  This always-on engineering discipline **prevents almost all <abbr title="shortcuts that create future repair work">technical debt</abbr> in founder-observed production use.** Its method reflects more than 20 years of disciplined software development and two years of refinement with AI coding agents. The payoff extends beyond the next change: a codebase you can take pride in as features, integrations, customers, and business rules multiply and grow.
 
-  On well-scoped tasks, **we expect DigitalWorker to match or exceed the output of the top 10%[^2] of professional developers**
+  **On well-scoped tasks, we expect DigitalWorker to match or exceed the output of the top 10%[^2] of professional developers**
 
   <details markdown="1"><summary>The technical version</summary>
 
-  Beautiful software makes its intent easy to understand. DigitalWorker searches for existing domain concepts before adding classes, checks cohesion, and brings behavior and state together in Rich Domain Models. It applies Clean Architecture — business rules separated from frameworks, UI, and databases for easy testing and reuse — KISS, DRY, and YAGNI, pruning unnecessary abstractions and duplicate structures.
+  **Beautiful software makes its intent easy to understand.** DigitalWorker searches for existing domain concepts before adding classes, checks cohesion, and brings behavior and state together in Rich Domain Models. It applies Clean Architecture — business rules separated from frameworks, UI, and databases for easy testing and reuse — KISS, DRY, and YAGNI, pruning unnecessary abstractions and duplicate structures.
 
   In the Calculator demo, `Calculator` owns its state and behavior through `Press(InputKey)`; the parser stays inside `MathExpression`. Tests exercise overflow boundaries and the behavior of a locked error state. These are concrete examples of the clarity and care you can inspect. <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#what-beautiful-maintainable-code-looks-like" data-cta="view_example" data-location="mid_page">Explore the code and edge-case tests</a>.
 
-  This autonomous engineering governance layer **prevents almost all technical debt** in founder-observed production use. Its method reflects more than 20 years of Agile and OOP practice and two years of refinement with AI coding agents. The payoff extends beyond the next PR: a codebase you can take pride in as features, integrations, customers, and business rules multiply and grow.
+  This autonomous engineering governance layer **prevents almost all technical debt in founder-observed production use.** Its method reflects more than 20 years of Agile and OOP practice and two years of refinement with AI coding agents. The payoff extends beyond the next PR: a codebase you can take pride in as features, integrations, customers, and business rules multiply and grow.
 
-  On well-scoped tasks, **we expect DigitalWorker to match or exceed the output of the top 10%[^2] of professional developers**
+  **On well-scoped tasks, we expect DigitalWorker to match or exceed the output of the top 10%[^2] of professional developers**
 
   </details>
 
@@ -161,33 +163,33 @@ Take pride in maintainable and **beautiful** work: clear intent, <abbr title="co
 
   **Top 10% professional-developer output[^2] at AI execution cost.**
 
-  Direct your judgment toward the product while DigitalWorker handles routine implementation and quality work. The current usage model is model cost plus around 20% markup; [see the economics and how to evaluate total effort](https://agiledigitalworker.com/Engineering-Deep-Dive#economics-pay-for-execution-keep-your-judgment).
+  Direct your judgment toward the product while DigitalWorker handles routine implementation and quality work. **The current usage model is model cost plus around 20% markup;** [see the economics and how to evaluate total effort](https://agiledigitalworker.com/Engineering-Deep-Dive#economics-pay-for-execution-keep-your-judgment).
 
-  Enforced discipline is not overhead—it is why velocity does not slow down as the codebase grows. In founder production use, a greenfield system with 4,000 automated tests and 53,000 lines of code reached production in 5 months. A parallel 51,000-line commercial codebase sustained ~85 commits per month for nearly a year without throughput degradation.
+  Enforced discipline is not overhead—it is why velocity does not slow down as the codebase grows. **In founder production use, a greenfield system with 4,000 automated tests and 53,000 lines of code reached production in 5 months.** **A parallel 51,000-line commercial codebase sustained ~85 commits per month for nearly a year without throughput degradation.**
 
-  Experienced developers can take on more design work, product decisions, and quality leadership while retaining the parts of engineering they enjoy. Non-developers can turn clear requirements into working software and bring in experienced judgment for consequential design choices. The opportunity is to build more of what matters to you, with competence visible in the result.
+  Experienced developers can take on more design work, product decisions, and quality leadership while retaining the parts of engineering they enjoy. **Non-developers can turn clear requirements into working software and bring in experienced judgment for consequential design choices.** The opportunity is to build more of what matters to you, with competence visible in the result.
 
   </details>
-- **Instruction-following is the hard problem, especially when going against training data. But our breakthrough: the Instruction Engine — virtually solved it** for its engineering process in founder-observed production use.
+- **Instruction-following is the hard problem, especially when going against training data.** But our breakthrough: **the Instruction Engine — virtually solved it for its engineering process in founder-observed production use.**
   <details markdown="1"><summary>Show details</summary>
 
-  AI learns from existing code — including its bad habits. In our production work, models repeatedly drift back to bloated spaghetti code and copy-pasted duplicates even when explicitly told not to. A well-written instruction does not ensure it will survive a long task.
+  AI learns from existing code — including its bad habits. In our production work, models repeatedly drift back to bloated spaghetti code and copy-pasted duplicates even when explicitly told not to. **A well-written instruction does not ensure it will survive a long task.**
 
-  <abbr title="reusable packages of instructions, examples, and tools">Agent skills</abbr> help. Yet even top-tier models struggle with long sequences of instructions: losing track partway through, dropping requirements, piling mistakes on earlier mistakes, or claiming actions they never took. These failure modes are documented industry-wide — [research on iterative coding tasks](https://www.arxiv.org/pdf/2603.24755) shows agents erode code quality over long tasks, and agents have been observed [bypassing mandatory process requirements even under explicit "never skip" guardrails](https://github.com/anthropics/claude-code/issues/39851). Keeping the entire procedure on track is a substantial engineering problem.
+  <abbr title="reusable packages of instructions, examples, and tools">Agent skills</abbr> help. Yet even top-tier models struggle with long sequences of instructions: losing track partway through, dropping requirements, piling mistakes on earlier mistakes, or claiming actions they never took. These failure modes are documented industry-wide — [research on iterative coding tasks](https://www.arxiv.org/pdf/2603.24755) shows agents erode code quality over long tasks, and agents have been observed [bypassing mandatory process requirements even under explicit "never skip" guardrails](https://github.com/anthropics/claude-code/issues/39851). **Keeping the entire procedure on track is a substantial engineering problem.**
 
-  **But DigitalWorker has virtually solved instruction-following** for its engineering process in founder-observed production use. Its proprietary model-adaptable <abbr title="makes the AI follow your process precisely instead of improvising or skipping instructions">Instruction Engine</abbr> keeps every required instruction in force through the whole task — design, implementation, testing, review, and repair — with two years of refined engineering rules behind them.
+  **But DigitalWorker has virtually solved instruction-following for its engineering process in founder-observed production use.** Its proprietary model-adaptable <abbr title="makes the AI follow your process precisely instead of improvising or skipping instructions">Instruction Engine</abbr> keeps every required instruction in force through the whole task — design, implementation, testing, review, and repair — with two years of refined engineering rules behind them.
 
-  That is the capability to evaluate when comparing it with <abbr title="a custom script or a collection of reusable instructions">agent skills</abbr>: sustained execution of the whole method. Inspect the delivered work and its fix history, then judge it on a bounded task of your own. “Virtually solved” describes practical reliability in our engineering process; it does not promise that every model action is infallible.
+  That is the capability to evaluate when comparing it with <abbr title="a custom script or a collection of reusable instructions">agent skills</abbr>: sustained execution of the whole method. Inspect the delivered work and its fix history, then judge it on a bounded task of your own. **“Virtually solved” describes practical reliability in our engineering process; it does not promise that every model action is infallible.**
 
   <details markdown="1"><summary>The technical version</summary>
 
-  AI learns from code that includes anti-patterns. In our production work, models repeatedly gravitate back to procedural designs, duplicated classes, and anemic domain models — objects that hold data but contain no behavior, violating object-oriented design — even when explicitly instructed otherwise. A well-written instruction does not ensure it will survive the whole execution chain.
+  AI learns from code that includes anti-patterns. In our production work, models repeatedly gravitate back to procedural designs, duplicated classes, and anemic domain models — objects that hold data but contain no behavior, violating object-oriented design — even when explicitly instructed otherwise. **A well-written instruction does not ensure it will survive the whole execution chain.**
 
-  Agentic skills help by packaging instructions, examples, and tools. Yet even top-tier models struggle with long, multi-step instructions: losing context, dropping requirements, compounding earlier mistakes, or hallucinating tool calls. These failure modes are documented industry-wide — [research on iterative coding tasks](https://www.arxiv.org/pdf/2603.24755) shows agents erode code quality over long horizons, and agents have been observed [bypassing mandatory workflow steps even under explicit "never skip" guardrails](https://github.com/anthropics/claude-code/issues/39851). Keeping the entire procedure on track is a substantial engineering problem.
+  Agentic skills help by packaging instructions, examples, and tools. Yet even top-tier models struggle with long, multi-step instructions: losing context, dropping requirements, compounding earlier mistakes, or hallucinating tool calls. These failure modes are documented industry-wide — [research on iterative coding tasks](https://www.arxiv.org/pdf/2603.24755) shows agents erode code quality over long horizons, and agents have been observed [bypassing mandatory workflow steps even under explicit "never skip" guardrails](https://github.com/anthropics/claude-code/issues/39851). **Keeping the entire procedure on track is a substantial engineering problem.**
 
   **DigitalWorker has virtually solved instruction-following for its engineering workflows in founder-observed production use.** Its proprietary model-adaptable Instruction Engine keeps the design, implementation, testing, review, and repair instructions in the execution path, with two years of refined engineering rules behind them.
 
-  That is the capability to evaluate when comparing it with <abbr title="a custom script or a collection of reusable instructions">agent skills</abbr>: sustained execution of the whole method. Inspect the delivered work and its fix history, then judge it on a bounded task of your own. “Virtually solved” describes practical reliability in our production use; it does not promise that every model action is infallible.
+  That is the capability to evaluate when comparing it with <abbr title="a custom script or a collection of reusable instructions">agent skills</abbr>: sustained execution of the whole method. Inspect the delivered work and its fix history, then judge it on a bounded task of your own. **“Virtually solved” describes practical reliability in our production use; it does not promise that every model action is infallible.**
 
   </details>
 
@@ -195,25 +197,25 @@ Take pride in maintainable and **beautiful** work: clear intent, <abbr title="co
 - **Bring your own expertise beyond code** — the same engine can carry your professional instructions, of any length.
   <details markdown="1"><summary>Show details</summary>
 
-  The same engine can carry *your* professional instructions — of any length — and make AI execute them almost as if they were code. Write your process in a <abbr title="a plain-text file with light formatting">Markdown</abbr> file and send it to us; we configure it for you for free.
+  **The same engine can carry *your* professional instructions — of any length — and make AI execute them almost as if they were code.** Write your process in a <abbr title="a plain-text file with light formatting">Markdown</abbr> file and send it to us; we configure it for you for free.
 
   <details markdown="1"><summary>The full pitch</summary>
 
-  The Instruction Engine's purpose extends to your own professional methods. Developers, lawyers, marketers, and other professionals can bring their instructions in a Markdown file so the whole procedure is carried through. Your competence defines the method; the engine supports its consistent execution.
+  The Instruction Engine's purpose extends to your own professional methods. Developers, lawyers, marketers, and other professionals can bring their instructions in a Markdown file so the whole procedure is carried through. **Your competence defines the method; the engine supports its consistent execution.**
 
-  Have a process with several stages that your AI keeps only partly following? Write your instructions in a Markdown file and <a href="mailto:info@agiledigitalworker.com" data-cta="email_founder" data-location="mid_page">send them to us</a>. We will configure it for you for free. The built-in instructions are replaceable presets, not fixed: DigitalWorker currently ships software design and development related instructions, but swapping in custom instructions — for your own engineering method or for any other industry and profession — is trivial.
+  Have a process with several stages that your AI keeps only partly following? Write your instructions in a Markdown file and <a href="mailto:info@agiledigitalworker.com" data-cta="email_founder" data-location="mid_page"><strong>send them to us</strong></a>. **We will configure it for you for free.** The built-in instructions are replaceable presets, not fixed: DigitalWorker currently ships software design and development related instructions, but swapping in custom instructions — for your own engineering method or for any other industry and profession — is trivial.
 
-  Your instructions stay yours. They run through the same protected engine that guards our own proprietary instructions, and our AI provider stores nothing from our runs, so the instructions are never retained for model training.
+  **Your instructions stay yours.** They run through the same protected engine that guards our own proprietary instructions, and our AI provider stores nothing from our runs, so **the instructions are never retained for model training.**
 
   </details>
 
   <details markdown="1"><summary>The technical version</summary>
 
-  The Instruction Engine's purpose extends to your own professional methods. Developers, lawyers, marketers, and other professionals can bring their instructions in `.md` format so the whole procedure is carried through. Your competence defines the method; the engine supports its consistent execution.
+  The Instruction Engine's purpose extends to your own professional methods. Developers, lawyers, marketers, and other professionals can bring their instructions in `.md` format so the whole procedure is carried through. **Your competence defines the method; the engine supports its consistent execution.**
 
-  Have a multi-step process that your AI keeps only partly following? Write your instructions in a Markdown file and <a href="mailto:info@agiledigitalworker.com" data-cta="email_founder" data-location="mid_page">send them to us</a>. We will configure it for you for free. The built-in instructions are replaceable presets, not fixed: DigitalWorker currently ships software design and development related instructions, but swapping in custom instructions — for your own engineering method or for any other industry and profession — is trivial.
+  Have a multi-step process that your AI keeps only partly following? Write your instructions in a Markdown file and <a href="mailto:info@agiledigitalworker.com" data-cta="email_founder" data-location="mid_page"><strong>send them to us</strong></a>. **We will configure it for you for free.** The built-in instructions are replaceable presets, not fixed: DigitalWorker currently ships software design and development related instructions, but swapping in custom instructions — for your own engineering method or for any other industry and profession — is trivial.
 
-  Your instructions stay yours. They run through the same protected engine that guards our own instruction IP, and provider-side Zero Data Retention means they are never retained for model training.
+  **Your instructions stay yours.** They run through the same protected engine that guards our own instruction IP, and **provider-side Zero Data Retention means they are never retained for model training.**
 
   </details>
 
@@ -221,7 +223,7 @@ Take pride in maintainable and **beautiful** work: clear intent, <abbr title="co
 - **Fits the way you want to work** — No repeated prompting and local setup; tasks run in parallel, decisions ship with the deliverable, managed AI infrastructure, replaceable discipline.
   <details markdown="1"><summary>Show details</summary>
 
-  No repeated prompting, tasks are parallel while you focus elsewhere, decisions shipped with the code, managed AI infrastructure, a discipline preset you can replace with your own, and no local setup to start.
+  **No repeated prompting, tasks are parallel while you focus elsewhere, decisions shipped with the code, managed AI infrastructure, a discipline preset you can replace with your own, and no local setup to start.**
 
   <details markdown="1"><summary>Six ways it fits</summary>
 
@@ -249,17 +251,17 @@ Take pride in maintainable and **beautiful** work: clear intent, <abbr title="co
 
 ### Founder experience
 
-I've used the AI engineering workflows behind DigitalWorker every day for two years. With those workflows, I've completed several production projects, each with many thousands of unit tests and AI-run code review and testing. They took very minimal prompting, and I wrote only a few lines of code by hand. All of them run smoothly in production today.
+**I've used the AI engineering workflows behind DigitalWorker every day for two years.** With those workflows, **I've completed several production projects**, each with many thousands of unit tests and AI-run code review and testing. They took very minimal prompting, and I wrote only a few lines of code by hand. **All of them run smoothly in production today.**
 
-The engineering results described here come from that daily production use. See the process in action in the [public demo repo](https://github.com/grandua/Digital-Worker-Demo), including the tests, pull requests, and fix history.
+**The engineering results described here come from that daily production use.** See the process in action in the [public demo repo](https://github.com/grandua/Digital-Worker-Demo), including the tests, pull requests, and fix history.
 
 <a id="getting-started--four-ways-in"></a>
 
 ### Getting Started
 
-Choose your product below. The Reviewer connects directly to GitHub; the Agent offers evidence, a public demo, and a private-board trial.
+Choose your product below. **The Reviewer connects directly to GitHub; the Agent offers evidence, a public demo, and a private-board trial.**
 
-(You don't need to read the docs first — wherever you meet DigitalWorker, on a card or on a pull request comment, you can just ask it how something works).
+(**You don't need to read the docs first** — wherever you meet DigitalWorker, on a card or on a pull request comment, **you can just ask it how something works**).
 
 #### Get DigitalWorker Reviewer
 
@@ -271,9 +273,9 @@ DigitalWorker is the first reviewer that enforces full and proper Agile discipli
 
 <details markdown="1"><summary>Show how</summary>
 
-<a href="https://github.com/apps/digitalworker-reviewer/installations/new" data-cta="install_app" data-location="pricing">Install the DigitalWorker PR Reviewer GitHub App</a> on a repository you choose. From then on every pull request — and every push to it — gets an automatic read-only review posted by `digitalworker-reviewer[bot]`: a scored summary, detected architectural issues, code smells and key risks, and inline comments on specific lines. You can also post `@digitalworker review` on any PR to trigger it on demand.
+<a href="https://github.com/apps/digitalworker-reviewer/installations/new" data-cta="install_app" data-location="pricing"><strong>Install the DigitalWorker PR Reviewer GitHub App</strong></a> on a repository you choose. **From then on every pull request — and every push to it — gets an automatic read-only review** posted by `digitalworker-reviewer[bot]`: a scored summary, detected architectural issues, code smells and key risks, and inline comments on specific lines. You can also post `@digitalworker review` on any PR to trigger it on demand.
 
-No Trello account, no personal access token, no code changes — and it uninstalls in one click from GitHub Settings > Applications. The Reviewer uses the same review engine the full DigitalWorker Agent uses on its own work: a ~100-item engineering checklist covering correctness, architecture and standards, code-smell detection, and requirements audit — on your real diffs.
+**No Trello account, no personal access token, no code changes — and it uninstalls in one click from GitHub Settings > Applications.** The Reviewer uses the same review engine the full DigitalWorker Agent uses on its own work: a ~100-item engineering checklist covering correctness, architecture and standards, code-smell detection, and requirements audit — on your real diffs.
 
 Want to try it on a repo you own? Install it there directly. For a work repo, share the install link with your repository administrator or organization owner.
 
@@ -287,14 +289,14 @@ Want to try it on a repo you own? Install it there directly. For a work repo, sh
 
 <details markdown="1"><summary>Show how</summary>
 
-Browse the <a href="https://github.com/grandua/Digital-Worker-Demo" data-cta="view_example" data-location="pricing">public source</a>, <a href="https://trello.com/b/6a03d01d53cf7bb95f8325dd/digital-worker-demo" data-cta="view_example" data-location="pricing">source task cards</a>, and <a href="https://github.com/grandua/Digital-Worker-Demo/pulls?q=is%3Apr+is%3Aclosed" data-cta="view_example" data-location="pricing">PR history</a>. Both applications were 100% generated by DigitalWorker from task cards. Human involvement consisted of fast spot-reviews and, for the Calculator, passing external review feedback into a fix card for autonomous remediation.
+Browse the <a href="https://github.com/grandua/Digital-Worker-Demo" data-cta="view_example" data-location="pricing">public source</a>, <a href="https://trello.com/b/6a03d01d53cf7bb95f8325dd/digital-worker-demo" data-cta="view_example" data-location="pricing"><strong>source task cards</strong></a>, and <a href="https://github.com/grandua/Digital-Worker-Demo/pulls?q=is%3Apr+is%3Aclosed" data-cta="view_example" data-location="pricing">PR history</a>. **Both applications were 100% generated by DigitalWorker from task cards.** **Human involvement consisted of fast spot-reviews and, for the Calculator, passing external review feedback into a fix card for autonomous remediation.**
 
-- **[Scientific Calculator](https://github.com/grandua/Digital-Worker-Demo/tree/main/Calculator):** 230 domain unit tests, a Rich Domain Model, and explicit edge-case behavior. External review found issues, followed by autonomous remediation through a fix card.
-- **[URL Shortener API](https://github.com/grandua/Digital-Worker-Demo/tree/main/UrlShortener):** 40 unit tests, Clean Architecture, Entity Framework data access, and requirements traceability.
+- **[Scientific Calculator](https://github.com/grandua/Digital-Worker-Demo/tree/main/Calculator): 230 domain unit tests**, a Rich Domain Model, and explicit edge-case behavior. **External review found issues, followed by autonomous remediation through a fix card.**
+- **[URL Shortener API](https://github.com/grandua/Digital-Worker-Demo/tree/main/UrlShortener): 40 unit tests**, Clean Architecture, Entity Framework data access, and requirements traceability.
 
 If you read the code like a senior dev, you'll find: methods are short, parameters few, state and behavior live in the same classes, Domain depends on nothing, and coverage is near-complete.
 
-[Inspect the recorded coverage, execution times, human involvement, and recovery](https://agiledigitalworker.com/Engineering-Deep-Dive#recorded-demo-results-and-recovery). The examples demonstrate the work delivered, not a guaranteed result for every task. Initial internal review did not catch every Calculator issue; the fix history shows what happened next.
+[Inspect the recorded coverage, execution times, human involvement, and recovery](https://agiledigitalworker.com/Engineering-Deep-Dive#recorded-demo-results-and-recovery). **The examples demonstrate the work delivered, not a guaranteed result for every task.** **Initial internal review did not catch every Calculator issue; the fix history shows what happened next.**
 
 To run the domain/API tests yourself, install the .NET 10 SDK and use:
 
@@ -307,7 +309,7 @@ dotnet test UrlShortener/UrlShortener.slnx
 
 The Calculator domain/test solution needs no MAUI workloads. The [full app solution](https://github.com/grandua/Digital-Worker-Demo/blob/main/Calculator/SciCalc.App.slnx) requires them; see the [SciCalc project guide](https://github.com/grandua/Digital-Worker-Demo/blob/main/Calculator/Presentation/SciCalc.Maui/README.md).
 
-**Use your own judgment and your own AI coding agent.** The deep dive includes a [balanced inspection prompt and evaluation method](https://agiledigitalworker.com/Engineering-Deep-Dive#evaluate-it-against-your-own-standard). Choose your acceptance criteria first and judge the result, remaining cleanup, and hands-on time. Your existing AI-agent costs may apply.
+**Use your own judgment and your own AI coding agent.** The deep dive includes a [balanced inspection prompt and evaluation method](https://agiledigitalworker.com/Engineering-Deep-Dive#evaluate-it-against-your-own-standard). **Choose your acceptance criteria first and judge the result, remaining cleanup, and hands-on time.** Your existing AI-agent costs may apply.
 
 </details>
 
@@ -317,11 +319,11 @@ The Calculator domain/test solution needs no MAUI workloads. The [full app solut
 
 <details markdown="1"><summary>Show how</summary>
 
-<a href="https://trello.com/invite/b/6a03d01d53cf7bb95f8325dd/ATTI3f3561b96a9f5663247cbafaa06b71b7DBE19FF1/digital-worker-demo" data-cta="view_example" data-location="pricing">Join the public demo board</a>, or <a href="mailto:info@agiledigitalworker.com" data-cta="request_board" data-location="pricing">email your Trello username</a> to request access, usually addressed within 24 hours. Create a bounded task in `To Implement`, or draft it in `Triage` and move it when ready. Watch DigitalWorker deliver a tested PR to the public demo repository.
+<a href="https://trello.com/invite/b/6a03d01d53cf7bb95f8325dd/ATTI3f3561b96a9f5663247cbafaa06b71b7DBE19FF1/digital-worker-demo" data-cta="view_example" data-location="pricing"><strong>Join the public demo board</strong></a>, or <a href="mailto:info@agiledigitalworker.com" data-cta="request_board" data-location="pricing"><strong>email your Trello username</strong></a> to request access, usually addressed within 24 hours. **Create a bounded task in `To Implement`, or draft it in `Triage` and move it when ready.** Watch DigitalWorker deliver a tested PR to the public demo repository.
 
-To add your own cards to the demo board, use a free Trello account. No GitHub credentials or LLM key are needed. Use a public-safe task on this shared board — no special card format, write it like any <abbr title="the cards already on the board are real examples">task</abbr>. Want privacy instead? [Start on your own repo below](#4-start-using-it-on-your-repo--trello--github) with a private board.
+To add your own cards to the demo board, use a free Trello account. **No GitHub credentials or LLM key are needed.** **Use a public-safe task on this shared board** — no special card format, write it like any <abbr title="the cards already on the board are real examples">task</abbr>. Want privacy instead? [Start on your own repo below](#4-start-using-it-on-your-repo--trello--github) with a private board.
 
-Prefer to try it by email? <a href="mailto:info@agiledigitalworker.com" data-cta="request_board" data-location="pricing">Send us a task you can share publicly</a> — we'll post the card for you and send you the link to follow the resulting PR.
+Prefer to try it by email? <a href="mailto:info@agiledigitalworker.com" data-cta="request_board" data-location="pricing"><strong>Send us a task you can share publicly</strong></a> — we'll post the card for you and send you the link to follow the resulting PR.
 
 </details>
 
@@ -331,28 +333,28 @@ Prefer to try it by email? <a href="mailto:info@agiledigitalworker.com" data-cta
 
 <details markdown="1"><summary>Show how</summary>
 
-**Use the included $15 credit to evaluate one bounded real task on your own codebase before paying.** Larger tasks should be scoped first; the credit does not guarantee every task costs $15 or less. Further usage is prepaid: contact us for a secure payment link when you want to add credit. Work pauses when your balance runs out.
+**Use the included $15 credit to evaluate one bounded real task on your own codebase before paying.** **Larger tasks should be scoped first; the credit does not guarantee every task costs $15 or less.** **Further usage is prepaid: contact us for a secure payment link when you want to add credit.** **Work pauses when your balance runs out.**
 
-1. <a href="mailto:info@agiledigitalworker.com" data-cta="request_board" data-location="pricing">Email your preferred Trello board name</a>. The first 20 early adopters get personal setup help from the founder, including a private board, usually within 24 hours.
-2. On the private board, follow the 2-question [onboarding steps](https://agiledigitalworker.com/user-guide#onboarding-digitalworker): install the **DigitalWorker Agent GitHub App** on your repository from its public install link (~1 minute), then answer the 2 onboarding questions on the first card — repository HTTPS clone URL and default branch. No tokens to create or paste. Setup does not run an AI coding task.
-3. Add a bounded task and acceptance criteria in `To Implement`, or draft in `Triage` and move it when ready.
-4. Review pivotal decisions as needed, receive the tested/reviewed PR and design package, and perform the final behavior check. Use experienced architecture review for complex or novel design decisions.
+1. <a href="mailto:info@agiledigitalworker.com" data-cta="request_board" data-location="pricing"><strong>Email your preferred Trello board name</strong></a>. The first 20 early adopters get personal setup help from the founder, including a private board, usually within 24 hours.
+2. On the private board, follow the 2-question [onboarding steps](https://agiledigitalworker.com/user-guide#onboarding-digitalworker): **install the DigitalWorker Agent GitHub App on your repository** from its public install link (~1 minute), **then answer the 2 onboarding questions on the first card — repository HTTPS clone URL and default branch.** No tokens to create or paste. Setup does not run an AI coding task.
+3. **Add a bounded task and acceptance criteria in `To Implement`**, or draft in `Triage` and move it when ready.
+4. **Review pivotal decisions as needed, receive the tested/reviewed PR and design package, and perform the final behavior check.** **Use experienced architecture review for complex or novel design decisions.**
 
-**Or start even smaller:** ask DigitalWorker to review a slice of your codebase. It marks architecture and code-smell issues as `//TODO` comments — without touching your code. Count how much it finds. The issues it surfaces are the same ones that make AI-written code plateau and eat your attention.
+**Or start even smaller: ask DigitalWorker to review a slice of your codebase.** It marks architecture and code-smell issues as `//TODO` comments — without touching your code. Count how much it finds. The issues it surfaces are the same ones that make AI-written code plateau and eat your attention.
 
-You need a Trello account, GitHub account, and a repository you can authorize. We provide the AI infrastructure. No local install, terminal, or per-developer setup is required for this path.
+**You need a Trello account, GitHub account, and a repository you can authorize.** We provide the AI infrastructure. No local install, terminal, or per-developer setup is required for this path.
 
 *The full agent currently takes tasks from Trello. GitHub Issues integration is coming soon.*
 
 </details>
 
-[^2]: Founder-observed expectation based on 20 years of development experience and production use — not an independently benchmarked ranking.
+[^2]: **Founder-observed expectation based on 20 years of development experience and production use — not an independently benchmarked ranking.**
 
-[^4]: “Production-ready” means the implementation has completed the engineering process and is ready for your final hands-on check. Founder-observed results are not an independent benchmark or a defect-free guarantee for every codebase.
+[^4]: **“Production-ready” means the implementation has completed the engineering process and is ready for your final hands-on check.** **Founder-observed results are not an independent benchmark or a defect-free guarantee for every codebase.**
 
 [^5]: Tornhill & Borg, *Code Red: The Business Impact of Code Quality* (IEEE/ACM TechDebt 2022) — peer-reviewed analysis of 39 proprietary production codebases (30,737 files): low-quality code contained 15× more defects, took 124% more development time to resolve issues, and showed 9× longer maximum cycle times. Independently, Stripe's Developer Coefficient survey (2018) found developers spend ~42% of the work week on technical debt and bad code. In founder experience AI-generated code falls under the same math: trained on average human code, it reproduces average professional quality at best, so the codebase-scale penalties apply unchanged.
 
-[^agent]: These benefits describe the full DigitalWorker Agent. The Reviewer reviews existing pull requests; it does not implement changes.
+[^agent]: **These benefits describe the full DigitalWorker Agent. The Reviewer reviews existing pull requests; it does not implement changes.**
 
 ## Screenshots that demonstrate real life use cases working on a real prod repo
 
@@ -364,7 +366,7 @@ You need a Trello account, GitHub account, and a repository you can authorize. W
 
 **Agile Design LLC · New York, NY**
 
-<a href="https://www.linkedin.com/in/grand" data-cta="email_founder" data-location="pricing">Message on LinkedIn</a> · <a href="mailto:info@agiledigitalworker.com" data-cta="email_founder" data-location="pricing">Email us</a> · [agiledigitalworker.com](https://agiledigitalworker.com) · [User Guide](https://agiledigitalworker.com/user-guide)
+<a href="https://www.linkedin.com/in/grand" data-cta="email_founder" data-location="pricing"><strong>Message on LinkedIn</strong></a> · <a href="mailto:info@agiledigitalworker.com" data-cta="email_founder" data-location="pricing"><strong>Email us</strong></a> · [agiledigitalworker.com](https://agiledigitalworker.com) · [User Guide](https://agiledigitalworker.com/user-guide)
 
 © 2026 Agile Design LLC. DigitalWorker and its workflow materials are proprietary.
 

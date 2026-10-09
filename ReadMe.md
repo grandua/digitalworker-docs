@@ -20,7 +20,7 @@ No iterative prompting. No babysitting. No cleaning up after the AI.[^agent]
 - **[DigitalWorker Reviewer](#get-digitalworker-reviewer)** — review your existing pull requests.
 
 ## You're Doing AI Coding Slow!
-*These are the assumptions behind DigitalWorker:*
+*The assumptions behind DigitalWorker - why we developed it:*
 
 - Current AI generates average code and architecture — sloppy, badly engineered — because it was trained on median human code — and most human code, public or private, ignores <abbr title="a design discipline where each part of the code carries its data and the rules that act on it together">object-oriented design</abbr> discipline, layering, and automated test coverage
 - Without **working** architectural guardrails, AI prints technical debt at machine speed — reliably enforcing an engineering process on AI is a difficult, unsolved problem
@@ -30,7 +30,9 @@ No iterative prompting. No babysitting. No cleaning up after the AI.[^agent]
 - Current AI has severely impaired judgment which manifests in constant confusion about the real world
 - Current AI absolutely cannot be trusted to make important decisions
 - AI will not fix itself without competent help from human experts: AI often knows what the best practices are but does not follow them anyway, even when you explicitly ask it to.  Current AI is nowhere close to AGI — AI that can do any job a person can — and no known architecture changes that anytime soon.
-- Cheap AI generation does not make code quality matter less — it makes it matter sooner: AI struggles against spaghetti even harder than human maintainers do, since context limits and compounding errors hit hardest on large, messy codebases — controlled research found experienced developers ~19% *slower* with AI on their own mature repositories[^3]. And the discipline is not a tax on speed — past a few thousand lines it *is* the speed: in a peer-reviewed study of 39 production codebases, low-quality code carried 15×(!) more defects and took over twice as long to change[^5]. As generation cost falls, the binding constraint shifts to whether the code can be changed at all — making scalable, maintainable software the decisive economic prize
+- Cheap AI generation does not make code quality matter less — it makes it matter sooner: AI struggles against spaghetti even harder than human maintainers do — context limits and compounding errors hit hardest on large, messy codebases. Controlled research found experienced developers ~19% *slower* with AI on their own mature repositories[^3]
+- Engineering discipline is not a tax on speed — past a few thousand lines it *is* the speed: in a peer-reviewed study of 39 production codebases, low-quality code carried 15×(!) more defects and took approximately 2.2× as long to resolve issues[^5]
+- As generation cost falls, the binding constraint shifts to whether the code can be changed at all — making scalable, maintainable software the decisive economic prize
 
 [^1]: Evidence from OpenClaw (2026): maintainers had to halt feature work for 7 weeks and then integrate 16,000 PRs in one release, stating that human review, architecture and release processes had become the bottleneck; ~80% of AI-generated PRs get rejected; of what passes, more than half of subsequent commits are fixes for what was just merged; new releases routinely regress working functionality, forcing users to pin old versions; the project's own engineers publicly acknowledged AI "vibe slop" slips through because review capacity cannot scale with agent output. Asking AI to fight its own slop shifts the bottleneck from writing code to reviewing it rather than eliminating it.
 

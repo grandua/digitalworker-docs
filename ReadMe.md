@@ -24,7 +24,7 @@ No iterative prompting. No babysitting. No cleaning up after the AI.[^agent]
 ## You're Doing AI Coding Slow!
 ***The assumptions behind DigitalWorker - why we developed it:***
 
-- **Current AI generates average code and architecture — sloppy, badly engineered** — because it was trained on median human code — and most human code, public or private, ignores <abbr title="a design discipline where each part of the code carries its data and the rules that act on it together">object-oriented design</abbr> discipline, layering, and automated test coverage
+- **Current AI generates average code and architecture — sloppy, disorganized, badly engineered** — because it was trained on median human code — and most human code, public or private, ignores <abbr title="a design discipline where each part of the code carries its data and the rules that act on it together">object-oriented design</abbr> discipline, layering, and automated test coverage
 - Without **working** architectural guardrails, **AI prints technical debt at machine speed** — reliably enforcing an engineering process on AI is a difficult, unsolved problem
 - **Guiding AI to convert its spaghetti code and broken architecture takes a lot of hard manual labor, technical knowledge, and skill** — reviewing, fixing, re-prompting — not just more AI usage. This is the main reason AI agents improve shipping speed only marginally — **controlled research puts real-world gains at ~25% at best, not manifold[^3]**
 - **If a software solution is built with AI by a human who never fights back the AI slop**, complexity limits are reached quickly: **within as little as one month the AI's pace of change plateaus and the defect count becomes unmanageable**
@@ -68,7 +68,7 @@ Your engineering competence sets the standard. DigitalWorker carries it through 
 
 1. **DigitalWorker Reviewer — Keep your coding tools. Catch the AI slop before merge.**
 
-   You asked for TDD, OOP and proper testable layers. Your AI drifted to bloated AI slop anyway. DigitalWorker Reviewer detects Agile architecture violations such as incorrect layer dependencies and Anemic Domain Model anti-pattern, testability issues, test coverage gaps, and most code smells including code and class duplication. **The Reviewer comments; it does not change your code.** No Trello required.
+   You asked for TDD, OOP and proper testable layers. Your AI drifted to bloated, disorganized slop anyway. DigitalWorker Reviewer detects Agile architecture violations such as incorrect layer dependencies and Anemic Domain Model anti-pattern, testability issues, test coverage gaps, and most code smells including code and class duplication. **The Reviewer comments; it does not change your code.** No Trello required.
 
    <a href="https://github.com/apps/digitalworker-reviewer/installations/new" data-cta="install_app" data-location="mid_page"><strong>Install the Reviewer — ~1 minute.</strong></a>
 2. **DigitalWorker Agent — Hand off the task. Get code implemented, reviewed, and refactored against the same architecture and maintainability standards.**
@@ -342,7 +342,7 @@ Prefer to try it by email? <a href="mailto:info@agiledigitalworker.com" data-cta
 3. **Add a bounded task and acceptance criteria in `To Implement`**, or draft in `Triage` and move it when ready.
 4. **Review pivotal decisions as needed, receive the tested/reviewed PR and design package, and perform the final behavior check.** **Use experienced architecture review for complex or novel design decisions.**
 
-**Or start even smaller: ask DigitalWorker to review a slice of your codebase.** It marks architecture and code-smell issues as `//TODO` comments — without touching your code. Count how much it finds. The issues it surfaces are the same ones that make AI-written code plateau and eat your attention.
+**Or start even smaller: ask DigitalWorker to review a slice of your codebase.** It marks architecture and code-smell issues as `//TODO` comments — without touching your code. Count how much it finds. The issues it surfaces are the same disorganization that makes AI-written code plateau and eat your attention.
 
 **You need a Trello account, GitHub account, and a repository you can authorize.** We provide the AI infrastructure. No local install, terminal, or per-developer setup is required for this path.
 

@@ -249,9 +249,11 @@ Your engineering competence sets the standard. DigitalWorker carries it through 
 
   </details>
 
-### Founder experience
+### Founder Experience
 
 **I've used the AI engineering workflows behind DigitalWorker every day for two years.** With those workflows, **I've completed several production projects**, each with many thousands of unit tests and AI-run code review and testing. They took very minimal prompting, and I wrote only a few lines of code by hand. **All of them run smoothly in production today.**
+
+In my own production work, **I delivered a greenfield system with approximately 53,000 lines of code and 4,000 automated tests to production in 5 months.** In parallel, **I sustained approximately 85 commits per month for nearly a year on a commercial codebase of approximately 51,000 lines, at constant effort, without throughput degradation.**
 
 **The engineering results described here come from that daily production use.** See the process in action in the [public demo repo](https://github.com/grandua/Digital-Worker-Demo), including the tests, pull requests, and fix history.
 

@@ -19,17 +19,18 @@ No iterative prompting. No babysitting. No cleaning up after the AI.[^agent]
 - **[DigitalWorker Agent](#try-digitalworker-agent)** — delegate the whole task.
 - **[DigitalWorker Reviewer](#get-digitalworker-reviewer)** — review your existing pull requests.
 
-## Why Did We Build Digital Worker? These Are Our Assumptions Behind It:
+## You're Doing AI Coding Slow!
+*These are the assumptions behind DigitalWorker:*
 
-- Current AI without working guardrails pretty much always produces sloppy, badly engineered code and architecture, since its statistical patterns come from training on human code — and most human code, public or private, ignores <abbr title="a design discipline where each part of the code carries its data and the rules that act on it together">object-oriented design</abbr> discipline, layering, and automated test coverage
-- We know of no working guardrails that stop AI from producing bloated spaghetti code — reliably enforcing an engineering process on AI is a difficult, unsolved problem
+- Current AI generates average code and architecture — sloppy, badly engineered — because it was trained on median human code — and most human code, public or private, ignores <abbr title="a design discipline where each part of the code carries its data and the rules that act on it together">object-oriented design</abbr> discipline, layering, and automated test coverage
+- Without **working** architectural guardrails, AI prints technical debt at machine speed — reliably enforcing an engineering process on AI is a difficult, unsolved problem
 - Guiding AI to convert its spaghetti code and broken architecture takes a lot of hard manual labor, technical knowledge, and skill — reviewing, fixing, re-prompting — not just more AI usage. This is the main reason AI agents improve shipping speed only marginally — controlled research puts real-world gains at ~25% at best, not manifold[^3]
 - If a software solution is built with AI by a human who never fights back the AI slop, complexity limits are reached quickly: within as little as one month the AI's pace of change plateaus and the defect count becomes unmanageable
 - Even if a team of humans fights back using AI to review AI code, gives AI code standards, some architecture and instructions on how to review code, the slop still overwhelms at scale — review capacity becomes the bottleneck, new features break existing ones, and the codebase converges to a plateau where only long-frozen features are dependable.[^1]
 - Current AI has severely impaired judgment which manifests in constant confusion about the real world
 - Current AI absolutely cannot be trusted to make important decisions
-- AI will not fix itself without competent help from human experts: Current AI is nowhere close to AGI — AI that can do any job a person can — and no known architecture changes that anytime soon.
-- Cheap AI generation does not make code quality matter less — it makes it matter more: AI struggles against spaghetti even harder than human maintainers do, since context limits and compounding errors hit hardest on large, messy codebases — controlled research found experienced developers ~19% *slower* with AI on their own mature repositories[^3]. As generation cost falls, the binding constraint shifts to whether the code can be changed at all — making scalable, maintainable software the decisive economic prize
+- AI will not fix itself without competent help from human experts: AI often knows what the best practices are but does not follow them anyway, even when you explicitly ask it to.  Current AI is nowhere close to AGI — AI that can do any job a person can — and no known architecture changes that anytime soon.
+- Cheap AI generation does not make code quality matter less — it makes it matter sooner: AI struggles against spaghetti even harder than human maintainers do, since context limits and compounding errors hit hardest on large, messy codebases — controlled research found experienced developers ~19% *slower* with AI on their own mature repositories[^3]. And the discipline is not a tax on speed — past a few thousand lines it *is* the speed: in a peer-reviewed study of 39 production codebases, low-quality code carried 15×(!) more defects and took over twice as long to change[^5]. As generation cost falls, the binding constraint shifts to whether the code can be changed at all — making scalable, maintainable software the decisive economic prize
 
 [^1]: Evidence from OpenClaw (2026): maintainers had to halt feature work for 7 weeks and then integrate 16,000 PRs in one release, stating that human review, architecture and release processes had become the bottleneck; ~80% of AI-generated PRs get rejected; of what passes, more than half of subsequent commits are fixes for what was just merged; new releases routinely regress working functionality, forcing users to pin old versions; the project's own engineers publicly acknowledged AI "vibe slop" slips through because review capacity cannot scale with agent output. Asking AI to fight its own slop shifts the bottleneck from writing code to reviewing it rather than eliminating it.
 
@@ -159,6 +160,8 @@ Take pride in maintainable and **beautiful** work: clear intent, <abbr title="co
   **Top 10% professional-developer output[^2] at AI execution cost.**
 
   Direct your judgment toward the product while DigitalWorker handles routine implementation and quality work. The current usage model is model cost plus around 20% markup; [see the economics and how to evaluate total effort](https://agiledigitalworker.com/Engineering-Deep-Dive#economics-pay-for-execution-keep-your-judgment).
+
+  Enforced discipline is not overhead—it is why velocity does not slow down as the codebase grows. In founder production use, a greenfield system with 4,000 automated tests and 53,000 lines of code reached production in 5 months. A parallel 51,000-line commercial codebase sustained ~85 commits per month for nearly a year without throughput degradation.
 
   Experienced developers can take on more design work, product decisions, and quality leadership while retaining the parts of engineering they enjoy. Non-developers can turn clear requirements into working software and bring in experienced judgment for consequential design choices. The opportunity is to build more of what matters to you, with competence visible in the result.
 
@@ -344,6 +347,8 @@ You need a Trello account, GitHub account, and a repository you can authorize. W
 [^2]: Founder-observed expectation based on 20 years of development experience and production use — not an independently benchmarked ranking.
 
 [^4]: “Production-ready” means the implementation has completed the engineering process and is ready for your final hands-on check. Founder-observed results are not an independent benchmark or a defect-free guarantee for every codebase.
+
+[^5]: Tornhill & Borg, *Code Red: The Business Impact of Code Quality* (IEEE/ACM TechDebt 2022) — peer-reviewed analysis of 39 proprietary production codebases (30,737 files): low-quality code contained 15× more defects, took 124% more development time to resolve issues, and showed 9× longer maximum cycle times. Independently, Stripe's Developer Coefficient survey (2018) found developers spend ~42% of the work week on technical debt and bad code. In founder experience AI-generated code falls under the same math: trained on average human code, it reproduces average professional quality at best, so the codebase-scale penalties apply unchanged.
 
 [^agent]: These benefits describe the full DigitalWorker Agent. The Reviewer reviews existing pull requests; it does not implement changes.
 

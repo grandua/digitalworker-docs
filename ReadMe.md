@@ -387,7 +387,9 @@ The Calculator domain/test solution needs no MAUI workloads. The [full app solut
 
 
 
-Outcomes, examples, and ways to evaluate DigitalWorker; internals: [engineering deep dive](https://agiledigitalworker.com/Engineering-Deep-Dive). <!-- audience: dev, non-dev builder, business · ceiling: T1 narrative everywhere; T2/T3 in labeled technical compartments -->
+---
+
+*Internals, method, and economics: [engineering deep dive](https://agiledigitalworker.com/Engineering-Deep-Dive).* <!-- audience: dev, non-dev builder, business · ceiling: T1 narrative everywhere; T2/T3 in labeled technical compartments -->
 
 
 [^2]: **Founder-observed expectation based on 20 years of development experience and production use — not an independently benchmarked ranking.**

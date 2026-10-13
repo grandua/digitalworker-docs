@@ -1,6 +1,6 @@
 # Why DigitalWorker?
 
-**Fast read:** read the headings and **bold** text for the main message, evidence, and next steps. Read the surrounding text for detail; open the expandable sections when you want more. Written for: developers, non-developer builders, and business owners.
+**Fast read:** read the headings and **bold** text for the main message. Written for: developers, non-developer builders, and business owners.
 
 <table>
   <tr><th colspan="2">Gallery — click to enlarge</th></tr>

@@ -8,7 +8,7 @@
 
 | | |
 |---|---|
-| <a href="./Sells-Sheet-Images/Sells-Sheet-top-image-Trello-with-popups.png" aria-label="Enlarge: Illustrative typical run"><img src="./Sells-Sheet-Images/Sells-Sheet-top-image-Trello-with-popups.png" width="420" alt="Trello board view of a typical DigitalWorker run"></a> | <a href="https://raw.githubusercontent.com/grandua/digitalworker-docs/main/Sells-Sheet-Images/plan-for-first-citizens-parsing.md.png" aria-label="Enlarge: Real life plan example"><img src="https://raw.githubusercontent.com/grandua/digitalworker-docs/main/Sells-Sheet-Images/plan-for-first-citizens-parsing.md.png" width="420" alt="Plan generated for a real production repository task"></a> |
+| <a href="./Sells-Sheet-Images/Sells-Sheet-top-image-Trello-with-popups.png" aria-label="Enlarge: Illustrative typical run"><img src="./Sells-Sheet-Images/Sells-Sheet-top-image-Trello-with-popups.png" width="281" alt="Trello board view of a typical DigitalWorker run"></a> | <a href="https://raw.githubusercontent.com/grandua/digitalworker-docs/main/Sells-Sheet-Images/plan-for-first-citizens-parsing.md.png" aria-label="Enlarge: Real life plan example"><img src="https://raw.githubusercontent.com/grandua/digitalworker-docs/main/Sells-Sheet-Images/plan-for-first-citizens-parsing.md.png" width="281" alt="Plan generated for a real production repository task"></a> |
 | **Illustrative Typical Run**<br><sub>Actual results vary by task</sub> | **Real Life Plan Example**<br><sub>From a real prod repo</sub> |
 
 ---

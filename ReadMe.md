@@ -4,12 +4,17 @@
 
 **Written for: developers, non-developer builders, and business owners** — outcomes, examples, and ways to evaluate DigitalWorker; internals: [engineering deep dive](https://agiledigitalworker.com/Engineering-Deep-Dive). <!-- audience: dev, non-dev builder, business · ceiling: T1 narrative everywhere; T2/T3 in labeled technical compartments -->
 
-#### Gallery — click to enlarge
-
-| | |
-|---|---|
-| <a href="./Sells-Sheet-Images/Sells-Sheet-top-image-Trello-with-popups.png" aria-label="Enlarge: Illustrative typical run"><img src="./Sells-Sheet-Images/Sells-Sheet-top-image-Trello-with-popups.png" width="281" alt="Trello board view of a typical DigitalWorker run"></a> | <a href="https://raw.githubusercontent.com/grandua/digitalworker-docs/main/Sells-Sheet-Images/plan-for-first-citizens-parsing.md.png" aria-label="Enlarge: Real life plan example"><img src="https://raw.githubusercontent.com/grandua/digitalworker-docs/main/Sells-Sheet-Images/plan-for-first-citizens-parsing.md.png" width="281" alt="Plan generated for a real production repository task"></a> |
-| **Illustrative Typical Run**<br><sub>Actual results vary by task</sub> | **Real Life Plan Example**<br><sub>From a real prod repo</sub> |
+<table>
+  <tr><th colspan="2">Gallery — click to enlarge</th></tr>
+  <tr>
+    <td><a href="./Sells-Sheet-Images/Sells-Sheet-top-image-Trello-with-popups.png" aria-label="Enlarge: Illustrative typical run"><img src="./Sells-Sheet-Images/Sells-Sheet-top-image-Trello-with-popups.png" width="281" alt="Trello board view of a typical DigitalWorker run"></a></td>
+    <td><a href="https://raw.githubusercontent.com/grandua/digitalworker-docs/main/Sells-Sheet-Images/plan-for-first-citizens-parsing.md.png" aria-label="Enlarge: Real life plan example"><img src="https://raw.githubusercontent.com/grandua/digitalworker-docs/main/Sells-Sheet-Images/plan-for-first-citizens-parsing.md.png" width="281" alt="Plan generated for a real production repository task"></a></td>
+  </tr>
+  <tr>
+    <td><strong>Illustrative Typical Run</strong><br><sub>Actual results vary by task</sub></td>
+    <td><strong>Real Life Plan Example</strong><br><sub>From a real prod repo</sub></td>
+  </tr>
+</table>
 
 ---
 *Saving the world from spaghetti code.*

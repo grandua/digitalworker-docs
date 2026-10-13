@@ -4,7 +4,7 @@
 
 **Written for: developers, non-developer builders, and business owners** — outcomes, examples, and ways to evaluate DigitalWorker; internals: [engineering deep dive](https://agiledigitalworker.com/Engineering-Deep-Dive). <!-- audience: dev, non-dev builder, business · ceiling: T1 narrative everywhere; T2/T3 in labeled technical compartments -->
 
-## Gallery — click to enlarge
+#### Gallery — click to enlarge
 
 | | |
 |---|---|
@@ -14,7 +14,7 @@
 ---
 *Saving the world from spaghetti code.*
 
-**You make the decisions that matter.** **DigitalWorker turns a task card into a tested, reviewed, production-ready[^4] <abbr title="a proposed change, packaged for review">pull request</abbr>** — professional-developer output, not AI intern drafts. **It's like assigning a top-10% developer to a well-scoped task — at AI cost.**
+**You make the decisions that matter.** **DigitalWorker turns a ticket into a tested, reviewed, production-ready[^4] <abbr title="a proposed change, packaged for review">pull request</abbr>** — professional-developer output, not AI intern drafts. **It's like assigning a top-10% developer to a well-scoped task — at AI cost.**
 
 No iterative prompting. No babysitting. No cleaning up after the AI.[^agent]
 
@@ -56,7 +56,7 @@ No iterative prompting. No babysitting. No cleaning up after the AI.[^agent]
 
 **Substantially fewer defects. Far less cleanup. More uninterrupted attention for the product you want to build.**
 
-Your engineering competence sets the standard. DigitalWorker carries it through the work: turning a task card into a tested, reviewed, production-ready[^4] pull request. **You shape the pivotal decisions and perform the final behavior check; DigitalWorker handles implementation, testing, review, and fixes.**
+Your engineering competence sets the standard. DigitalWorker carries it through the work: turning a ticket into a tested, reviewed, production-ready[^4] pull request. **You shape the pivotal decisions and perform the final behavior check; DigitalWorker handles implementation, testing, review, and fixes.**
 
 **Take pride in maintainable and beautiful work:** clear intent, <abbr title="cohesive objects">well-organized parts</abbr>, and code you can confidently extend.
 
@@ -93,7 +93,7 @@ Your engineering competence sets the standard. DigitalWorker carries it through 
 
   <details markdown="1"><summary>The technical version</summary>
 
-  **You asked for TDD and OOP. Your AI drifted anyway.** DigitalWorker makes those disciplines part of delivery: test-first implementation, architecture review, refactoring, and fixes, carried by its proprietary instruction engine. A task card becomes a tested, reviewed PR for your final behavior check. **You keep the decisions that matter. Try one real task—$15 credit included.**
+  **You asked for TDD and OOP. Your AI drifted anyway.** DigitalWorker makes those disciplines part of delivery: test-first implementation, architecture review, refactoring, and fixes, carried by its proprietary instruction engine. A ticket becomes a tested, reviewed PR for your final behavior check. **You keep the decisions that matter. Try one real task—$15 credit included.**
 
   **A combination found nowhere else that we know of:** high-precision instruction enforcement plus this depth of Agile, OOP, test-first TDD, review, and anti-duplication class design. Other agents can code, test, review, and open PRs; **DigitalWorker carries the complete engineering method through delivery.** <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#why-this-combination-matters" data-cta="view_example" data-location="mid_page">Inspect the difference</a>.
 
@@ -233,7 +233,7 @@ Your engineering competence sets the standard. DigitalWorker carries it through 
 
   <details markdown="1"><summary>Six ways it fits</summary>
 
-  - **No repeated prompting:** Submit a task card and let DigitalWorker run. Review pivotal decisions when needed, without continuously driving implementation through chat.
+  - **No repeated prompting:** Submit a ticket and let DigitalWorker run. Review pivotal decisions when needed, without continuously driving implementation through chat.
   - **Work can continue while you focus elsewhere:** Several tasks can run at once, each in isolation, or arrive on recurring schedules through Trello's Task Repeater.
   - **Decisions accompany the deliverable:** The design package records the decisions made, the trade-offs weighed, and the assumptions — so the reasoning arrives with the code.
   - **Managed AI infrastructure:** Each phase — planning, implementation, testing, review — runs on whichever AI model currently gives the best quality for its price, and the choice adapts as prices and capabilities change. The depth of the process matches the task: a small, well-defined fix avoids the cost of extensive planning. We provide access to the AI models and the credentials they require.
@@ -244,7 +244,7 @@ Your engineering competence sets the standard. DigitalWorker carries it through 
 
   <details markdown="1"><summary>The technical version</summary>
 
-  - **No iterative prompting:** Submit a task card and let the workflow execute. Review pivotal decisions when needed, without continuously driving implementation through chat.
+  - **No iterative prompting:** Submit a ticket and let the workflow execute. Review pivotal decisions when needed, without continuously driving implementation through chat.
   - **Work can continue while you focus elsewhere:** Tasks can run simultaneously in isolated branches and environments, or arrive on recurring schedules through Trello's Task Repeater.
   - **Decisions accompany the deliverable:** The design package records architecture decisions, trade-offs, class responsibilities, and assumptions.
   - **Managed AI infrastructure:** Each phase — planning, implementation, testing, review — runs on whichever model currently sits on the price/performance frontier for that kind of work, and the selection adapts as the frontier shifts. Process depth scales with the task too: a bounded fix doesn't pay for a heavy planning pass. We provide the model access and API keys.

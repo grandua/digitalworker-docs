@@ -9,7 +9,7 @@
     <td><a href="https://raw.githubusercontent.com/grandua/digitalworker-docs/main/Sells-Sheet-Images/plan-for-first-citizens-parsing.md.png" aria-label="Enlarge: Real life plan example"><img src="https://raw.githubusercontent.com/grandua/digitalworker-docs/main/Sells-Sheet-Images/plan-for-first-citizens-parsing.md.png" width="281" alt="Plan generated for a real production repository task"></a></td>
   </tr>
   <tr>
-    <td><strong>Illustrative Typical Run</strong><br><sub>Actual results vary by task</sub></td>
+    <td><strong>Illustrative Typical Run</strong><br><sub>Actual results vary by task</sub><br><sub>GitHub Issues works the same way</sub></td>
     <td><strong>Real Life Plan Example</strong><br><sub>From a real prod repo</sub></td>
   </tr>
 </table>
@@ -82,7 +82,7 @@ Your engineering competence sets the standard. DigitalWorker carries it through 
    <a href="https://github.com/apps/digitalworker-reviewer/installations/new" data-cta="install_app" data-location="mid_page"><strong>Install the Reviewer — ~1 minute.</strong></a>
 2. **DigitalWorker Agent — Hand off the task. Get code implemented, reviewed, and refactored against the same architecture and maintainability standards.**
 
-   <a href="#4-start-using-it-on-your-repo--github-issues" data-cta="request_board" data-location="mid_page"><strong>Try the Agent — $15 credit included.</strong></a>
+   <a href="#4-start-using-it-on-your-repo--github-issues" data-cta="request_board" data-location="mid_page"><strong>Try the Agent — &#36;15 credit included.</strong></a>
 
 
 **The Reviewer uses the same review engine the full Agent uses on its own work. Use either product on its own.**
@@ -96,7 +96,7 @@ Your engineering competence sets the standard. DigitalWorker carries it through 
 
   <details markdown="1"><summary>The technical version</summary>
 
-  **You asked for TDD and OOP. Your AI drifted anyway.** DigitalWorker makes those disciplines part of delivery: test-first implementation, architecture review, refactoring, and fixes, carried by its proprietary instruction engine. A ticket becomes a tested, reviewed PR for your final behavior check. **You keep the decisions that matter. Try one real task—$15 credit included.**
+  **You asked for TDD and OOP. Your AI drifted anyway.** DigitalWorker makes those disciplines part of delivery: test-first implementation, architecture review, refactoring, and fixes, carried by its proprietary instruction engine. A ticket becomes a tested, reviewed PR for your final behavior check. **You keep the decisions that matter. Try one real task—&#36;15 credit included.**
 
   **A combination found nowhere else that we know of:** high-precision instruction enforcement plus this depth of Agile, OOP, test-first TDD, review, and anti-duplication class design. Other agents can code, test, review, and open PRs; **DigitalWorker carries the complete engineering method through delivery.** <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#why-this-combination-matters" data-cta="view_example" data-location="mid_page">Inspect the difference</a>.
 
@@ -237,22 +237,22 @@ Your engineering competence sets the standard. DigitalWorker carries it through 
   <details markdown="1"><summary>Six ways it fits</summary>
 
   - **No repeated prompting:** Submit a ticket and let DigitalWorker run. Review pivotal decisions when needed, without continuously driving implementation through chat.
-  - **Work can continue while you focus elsewhere:** Several tasks can run at once, each in isolation, or arrive on recurring schedules through Trello's Task Repeater.
+  - **Work can continue while you focus elsewhere:** Several tasks can run at once, each in isolation, or arrive on recurring schedules through Trello's Task Repeater (Trello boards only).
   - **Decisions accompany the deliverable:** The design package records the decisions made, the trade-offs weighed, and the assumptions — so the reasoning arrives with the code.
   - **Managed AI infrastructure:** Each phase — planning, implementation, testing, review — runs on whichever AI model currently gives the best quality for its price, and the choice adapts as prices and capabilities change. The depth of the process matches the task: a small, well-defined fix avoids the cost of extensive planning. We provide access to the AI models and the credentials they require.
   - **Opinionated but replaceable:** The built-in engineering discipline is a preset, not a cage. Bring your own process — the same Instruction Engine carries your instructions with the same precision.
-  - **No local setup to start using it:** Connect your GitHub codebase — optionally with a Trello board for task cards; Trello is not required if you use DigitalWorker purely as a reviewer of your GitHub changes. No software to install or command line to configure.
+  - **No local setup to start using it:** Connect your GitHub repository — tasks arrive as GitHub Issues, or as cards on an optional Trello board; neither is needed when using DigitalWorker purely as a reviewer of your GitHub changes. No software to install or command line to configure.
 
   </details>
 
   <details markdown="1"><summary>The technical version</summary>
 
   - **No iterative prompting:** Submit a ticket and let the workflow execute. Review pivotal decisions when needed, without continuously driving implementation through chat.
-  - **Work can continue while you focus elsewhere:** Tasks can run simultaneously in isolated branches and environments, or arrive on recurring schedules through Trello's Task Repeater.
+  - **Work can continue while you focus elsewhere:** Tasks can run simultaneously in isolated branches and environments, or arrive on recurring schedules through Trello's Task Repeater (Trello boards only).
   - **Decisions accompany the deliverable:** The design package records architecture decisions, trade-offs, class responsibilities, and assumptions.
   - **Managed AI infrastructure:** Each phase — planning, implementation, testing, review — runs on whichever model currently sits on the price/performance frontier for that kind of work, and the selection adapts as the frontier shifts. Process depth scales with the task too: a bounded fix doesn't pay for a heavy planning pass. We provide the model access and API keys.
   - **Opinionated but replaceable:** The Agile, Clean Architecture, and OOP discipline bundle is a preset, not a cage. Bring your own engineering instructions — the same Instruction Engine carries them with the same precision.
-  - **No local setup to start using it:** Connect your GitHub repository — optionally with a Trello board for task cards; Trello is not required when using DigitalWorker purely as the Reviewer GitHub App. No CLI configuration, IDE extension, or per-developer installation.
+  - **No local setup to start using it:** Connect your GitHub repository — tasks arrive as GitHub Issues, or as cards on an optional Trello board; neither is needed when using DigitalWorker purely as the Reviewer GitHub App. No CLI configuration, IDE extension, or per-developer installation.
 
   </details>
 
@@ -270,9 +270,9 @@ In my own production work, **I delivered a greenfield system with approximately 
 
 ### Getting Started
 
-Choose your product below. **The Reviewer connects directly to GitHub; the Agent offers evidence, a public demo, and a private-board trial.**
+Choose your product below. **The Reviewer connects directly to GitHub; the Agent offers evidence, a public demo, and a private trial on your repo.**
 
-(**You don't need to read the docs first** — wherever you meet DigitalWorker, on a card or on a pull request comment, **you can just ask it how something works**).
+(**You don't need to read the docs first** — wherever you meet DigitalWorker — on an issue, a card, or a pull request comment, **you can just ask it how something works**).
 
 #### Get DigitalWorker Reviewer
 
@@ -300,7 +300,7 @@ Want to try it on a repo you own? Install it there directly. For a work repo, sh
 
 <details markdown="1"><summary>Show how</summary>
 
-Browse the <a href="https://github.com/grandua/Digital-Worker-Demo" data-cta="view_example" data-location="pricing">public source</a>, <a href="https://trello.com/b/6a03d01d53cf7bb95f8325dd/digital-worker-demo" data-cta="view_example" data-location="pricing"><strong>source task cards</strong></a>, and <a href="https://github.com/grandua/Digital-Worker-Demo/pulls?q=is%3Apr+is%3Aclosed" data-cta="view_example" data-location="pricing">PR history</a>. **Both applications were 100% generated by DigitalWorker from task cards.** **Human involvement consisted of fast spot-reviews and, for the Calculator, passing external review feedback into a fix card for autonomous remediation.**
+Browse the <a href="https://github.com/grandua/Digital-Worker-Demo" data-cta="view_example" data-location="pricing">public source</a>, <a href="https://trello.com/b/6a03d01d53cf7bb95f8325dd/digital-worker-demo" data-cta="view_example" data-location="pricing"><strong>source task cards</strong></a>, and <a href="https://github.com/grandua/Digital-Worker-Demo/pulls?q=is%3Apr+is%3Aclosed" data-cta="view_example" data-location="pricing">PR history</a>. **Both applications were 100% generated by DigitalWorker from task cards on the Trello demo board** — the same flow runs from GitHub Issues on your repo. **Human involvement consisted of fast spot-reviews and, for the Calculator, passing external review feedback into a fix card for autonomous remediation.**
 
 - **[Scientific Calculator](https://github.com/grandua/Digital-Worker-Demo/tree/main/Calculator): 230 domain unit tests**, a Rich Domain Model, and explicit edge-case behavior. **External review found issues, followed by autonomous remediation through a fix card.**
 - **[URL Shortener API](https://github.com/grandua/Digital-Worker-Demo/tree/main/UrlShortener): 40 unit tests**, Clean Architecture, Entity Framework data access, and requirements traceability.
@@ -324,17 +324,19 @@ The Calculator domain/test solution needs no MAUI workloads. The [full app solut
 
 </details>
 
-<a id="3-try-a-task-on-our-demo-board--by-email-or-trello"></a>
+<a id="3-try-a-task-on-our-demo-repo--github-issues-email-or-trello"></a>
 
-##### Try a task on our demo board — by email or Trello
+##### Try a task on our demo — GitHub Issues, email, or Trello
 
 <details markdown="1"><summary>Show how</summary>
 
-<a href="https://trello.com/invite/b/6a03d01d53cf7bb95f8325dd/ATTI3f3561b96a9f5663247cbafaa06b71b7DBE19FF1/digital-worker-demo" data-cta="view_example" data-location="pricing"><strong>Join the public demo board</strong></a>, or <a href="mailto:info@agiledigitalworker.com" data-cta="request_board" data-location="pricing"><strong>email your Trello username</strong></a> to request access, usually addressed within 24 hours. **Create a bounded task in `To Implement`, or draft it in `Triage` and move it when ready.** Watch DigitalWorker deliver a tested PR to the public demo repository.
+**Open an issue on the [public demo repository](https://github.com/grandua/Digital-Worker-Demo/issues)** describing a bounded task with acceptance criteria, and include `@digitalworker` in the description — DigitalWorker delivers a tested PR right there in public. **Only a GitHub account is needed — no Trello, no LLM key.** **Use a public-safe task on this shared repo.**
 
-To add your own cards to the demo board, use a free Trello account. **No GitHub credentials or LLM key are needed.** **Use a public-safe task on this shared board** — no special card format, write it like any <abbr title="the cards already on the board are real examples">task</abbr>. Want privacy instead? [Start on your own repo below](#4-start-using-it-on-your-repo--github-issues) with a private board.
+Prefer Trello? <a href="https://trello.com/invite/b/6a03d01d53cf7bb95f8325dd/ATTI3f3561b96a9f5663247cbafaa06b71b7DBE19FF1/digital-worker-demo" data-cta="view_example" data-location="pricing"><strong>Join the public demo board</strong></a> with a free Trello account, or <a href="mailto:info@agiledigitalworker.com" data-cta="request_board" data-location="pricing"><strong>email your Trello username</strong></a> to request access, usually addressed within 24 hours. **Create a bounded task in `To Implement`, or draft it in `Triage` and move it when ready.**
 
-Prefer to try it by email? <a href="mailto:info@agiledigitalworker.com" data-cta="request_board" data-location="pricing"><strong>Send us a task you can share publicly</strong></a> — we'll post the card for you and send you the link to follow the resulting PR.
+Prefer to try it by email? <a href="mailto:info@agiledigitalworker.com" data-cta="request_board" data-location="pricing"><strong>Send us a task you can share publicly</strong></a> — we'll post the ticket for you and send you the link to follow the resulting PR.
+
+Want privacy instead? [Start on your own repo below](#4-start-using-it-on-your-repo--github-issues) — GitHub Issues or a private Trello board.
 
 </details>
 
@@ -344,20 +346,19 @@ Prefer to try it by email? <a href="mailto:info@agiledigitalworker.com" data-cta
 
 <details markdown="1"><summary>Show how</summary>
 
-**Use the included $15 credit to evaluate one bounded real task on your own codebase before paying.** **Larger tasks should be scoped first; the credit does not guarantee every task costs $15 or less.** **Further usage is prepaid: contact us for a secure payment link when you want to add credit.** **Work pauses when your balance runs out.**
+**Use the included &#36;15 credit to evaluate one bounded real task on your own codebase before paying.** **Larger tasks should be scoped first; the credit does not guarantee every task costs &#36;15 or less.** **Further usage is prepaid: contact us for a secure payment link when you want to add credit.** **Work pauses when your balance runs out.**
 
 1. **Install the DigitalWorker Agent GitHub App on your repository** from its public install link: `https://github.com/apps/digitalworker-agent/installations/new` (~1 minute).
    - Permissions granted: `Contents: Read & write`, `Pull requests: Read & write`, `Issues: Read & write`.
    - Accept the updated permissions prompt under GitHub `Settings > Applications > Installed GitHub Apps > digitalworker-agent > Review permissions` if prompted.
-2. **Add labels to your repository:** Under `Issues > Labels`, ensure `digital-worker` (trigger label) and `dw-in-progress`, `dw-done`, `dw-blocked` (runtime status labels) exist.
-3. **Open an issue** with your task requirements, context, and acceptance criteria.
-4. **Trigger DigitalWorker:**
+2. **Open an issue** with your task requirements, context, and acceptance criteria. The `digital-worker` trigger label and runtime status labels are provisioned automatically on installation.
+3. **Trigger DigitalWorker:**
    - Include `@digitalworker` in the description when opening the issue to start immediately, OR
    - Post a fresh comment mentioning `@digitalworker`, OR
    - Apply the `digital-worker` label to the issue.
 
    Reopening alone does not start another run; post a fresh mention comment or reapply the label.
-5. **Review pivotal decisions as needed, receive the tested/reviewed PR and design package, and perform the final behavior check.**
+4. **Review pivotal decisions as needed, receive the tested/reviewed PR and design package, and perform the final behavior check.**
 
 **No Trello account, no local install, terminal, or per-developer setup required.**
 

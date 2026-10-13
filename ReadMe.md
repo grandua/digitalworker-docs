@@ -5,17 +5,11 @@
 **Written for: developers, non-developer builders, and business owners** — outcomes, examples, and ways to evaluate DigitalWorker; internals: [engineering deep dive](https://agiledigitalworker.com/Engineering-Deep-Dive). <!-- audience: dev, non-dev builder, business · ceiling: T1 narrative everywhere; T2/T3 in labeled technical compartments -->
 
 ---
-
-![ILLUSTRATIVE TYPICAL RUN — actual results vary by task](./Sells-Sheet-Images/Sells-Sheet-top-image-Trello-with-popups.png)
-
----
-**AI wrote the code. You're cleaning up. Let DigitalWorker handle the cleanup.**
+*Saving the world from spaghetti code.*
 
 **You make the decisions that matter.** **DigitalWorker turns a task card into a tested, reviewed, production-ready[^4] <abbr title="a proposed change, packaged for review">pull request</abbr>** — professional-developer output, not AI intern drafts. **It's like assigning a top-10% developer to a well-scoped task — at AI cost.** 
 
 No iterative prompting. No babysitting. No cleaning up after the AI.[^agent]
-
-*Saving the world from spaghetti code.*
 
 **Two products:**
 - **[DigitalWorker Reviewer](#get-digitalworker-reviewer) — review your existing pull requests.**
@@ -27,6 +21,9 @@ No iterative prompting. No babysitting. No cleaning up after the AI.[^agent]
 - **Current AI generates average code and architecture — sloppy, disorganized, badly engineered** — because it was trained on median human code — and most human code, public or private, ignores <abbr title="a design discipline where each part of the code carries its data and the rules that act on it together">object-oriented design</abbr> discipline, layering, and automated test coverage
 - Without **working** architectural guardrails, **AI prints technical debt at machine speed** — reliably enforcing an engineering process on AI is a difficult, unsolved problem
 - **Guiding AI to convert its spaghetti code and broken architecture takes a lot of hard manual labor, technical knowledge, and skill** — reviewing, fixing, re-prompting — not just more AI usage. This is the main reason AI agents improve shipping speed only marginally — **controlled research puts real-world gains at ~25% at best, not manifold[^3]**
+
+<details markdown="1"><summary>See all</summary>
+
 - **If a software solution is built with AI by a human who never fights back the AI slop**, complexity limits are reached quickly: **within as little as one month the AI's pace of change plateaus and the defect count becomes unmanageable**
 - **Even if a team** of humans **fights back using AI to review AI** code, gives AI code standards, some architecture and instructions on how to review code, **the slop still overwhelms at scale — review capacity becomes the bottleneck**, new features break existing ones, and the codebase converges to a plateau where only long-frozen features are dependable.[^1]
 - **Current AI has severely impaired judgment** which manifests in **constant confusion** about the real world
@@ -34,7 +31,9 @@ No iterative prompting. No babysitting. No cleaning up after the AI.[^agent]
 - **AI will not fix itself without competent help from human experts:** AI often knows what the best practices are but does not follow them anyway, even when you explicitly ask it to.  Current AI is nowhere close to AGI — AI that can do any job a person can — and no known architecture changes that anytime soon.
 - **Cheap AI generation does not make code quality matter less — it makes it matter sooner:** AI struggles against spaghetti even harder than human maintainers do — context limits and compounding errors hit hardest on large, messy codebases. **Controlled research found experienced developers ~19% *slower* with AI on their own mature repositories[^3]**
 - **Engineering discipline is not a tax on speed** — past a few thousand lines **it is the speed**: in a peer-reviewed study of 39 production codebases, low-quality code carried 15×(!) more defects and took approximately 2.2× as long to resolve issues[^5]
-- **As generation cost falls**, the binding constraint shifts to whether the code can be changed at all — **making scalable, maintainable software the decisive economic prize**
+- **As generation cost falls**, the binding **constraint shifts to whether the code can be changed at all** — making scalable, maintainable software the decisive economic prize
+
+</details>
 
 [^1]: Evidence from OpenClaw (2026): maintainers had to halt feature work for 7 weeks and then integrate 16,000 PRs in one release, stating that human review, architecture and release processes had become the bottleneck; ~80% of AI-generated PRs get rejected; of what passes, more than half of subsequent commits are fixes for what was just merged; new releases routinely regress working functionality, forcing users to pin old versions; the project's own engineers publicly acknowledged AI "vibe slop" slips through because review capacity cannot scale with agent output. Asking AI to fight its own slop shifts the bottleneck from writing code to reviewing it rather than eliminating it.
 
@@ -381,10 +380,10 @@ If your team prefers managing tasks via a dedicated Kanban board:
 
 [^agent]: **These benefits describe the full DigitalWorker Agent. The Reviewer reviews existing pull requests; it does not implement changes.**
 
-## Screenshots that demonstrate real life use cases working on a real prod repo
+![ILLUSTRATIVE TYPICAL RUN — actual results vary by task](./Sells-Sheet-Images/Sells-Sheet-top-image-Trello-with-popups.png)
 
-![Starting by moving cards into To Implement list](https://raw.githubusercontent.com/grandua/digitalworker-docs/main/Sells-Sheet-Images/to-implement.png)
-![Running multiple similar implementations in parallel](https://raw.githubusercontent.com/grandua/digitalworker-docs/main/Sells-Sheet-Images/running-3-in-parallel.png)
+## Real life plan example
+
 ![Example from a real life plan](https://raw.githubusercontent.com/grandua/digitalworker-docs/main/Sells-Sheet-Images/plan-for-first-citizens-parsing.md.png)
 
 ---

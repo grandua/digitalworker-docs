@@ -1,8 +1,6 @@
 # Why DigitalWorker?
 
-**Fast read:** read the headings and **bold** text for the main message, evidence, and next steps. Read the surrounding text for detail; open the expandable sections when you want more.
-
-**Written for: developers, non-developer builders, and business owners** — outcomes, examples, and ways to evaluate DigitalWorker; internals: [engineering deep dive](https://agiledigitalworker.com/Engineering-Deep-Dive). <!-- audience: dev, non-dev builder, business · ceiling: T1 narrative everywhere; T2/T3 in labeled technical compartments -->
+**Fast read:** read the headings and **bold** text for the main message, evidence, and next steps. Read the surrounding text for detail; open the expandable sections when you want more. Written for: developers, non-developer builders, and business owners.
 
 <table>
   <tr><th colspan="2">Gallery — click to enlarge</th></tr>
@@ -383,6 +381,9 @@ If your team prefers managing tasks via a dedicated Kanban board:
 **Requires a Trello account and a GitHub repository you can authorize.**
 
 </details>
+
+Outcomes, examples, and ways to evaluate DigitalWorker; internals: [engineering deep dive](https://agiledigitalworker.com/Engineering-Deep-Dive). <!-- audience: dev, non-dev builder, business · ceiling: T1 narrative everywhere; T2/T3 in labeled technical compartments -->
+
 
 [^2]: **Founder-observed expectation based on 20 years of development experience and production use — not an independently benchmarked ranking.**
 

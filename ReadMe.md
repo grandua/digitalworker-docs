@@ -73,7 +73,7 @@ Your engineering competence sets the standard. DigitalWorker carries it through 
    <a href="https://github.com/apps/digitalworker-reviewer/installations/new" data-cta="install_app" data-location="mid_page"><strong>Install the Reviewer — ~1 minute.</strong></a>
 2. **DigitalWorker Agent — Hand off the task. Get code implemented, reviewed, and refactored against the same architecture and maintainability standards.**
 
-   <a href="#4-start-using-it-on-your-repo--trello--github" data-cta="request_board" data-location="mid_page"><strong>Try the Agent — $15 credit included.</strong></a>
+   <a href="#4-start-using-it-on-your-repo--github-issues" data-cta="request_board" data-location="mid_page"><strong>Try the Agent — $15 credit included.</strong></a>
 
 
 **The Reviewer uses the same review engine the full Agent uses on its own work. Use either product on its own.**
@@ -323,30 +323,53 @@ The Calculator domain/test solution needs no MAUI workloads. The [full app solut
 
 <a href="https://trello.com/invite/b/6a03d01d53cf7bb95f8325dd/ATTI3f3561b96a9f5663247cbafaa06b71b7DBE19FF1/digital-worker-demo" data-cta="view_example" data-location="pricing"><strong>Join the public demo board</strong></a>, or <a href="mailto:info@agiledigitalworker.com" data-cta="request_board" data-location="pricing"><strong>email your Trello username</strong></a> to request access, usually addressed within 24 hours. **Create a bounded task in `To Implement`, or draft it in `Triage` and move it when ready.** Watch DigitalWorker deliver a tested PR to the public demo repository.
 
-To add your own cards to the demo board, use a free Trello account. **No GitHub credentials or LLM key are needed.** **Use a public-safe task on this shared board** — no special card format, write it like any <abbr title="the cards already on the board are real examples">task</abbr>. Want privacy instead? [Start on your own repo below](#4-start-using-it-on-your-repo--trello--github) with a private board.
+To add your own cards to the demo board, use a free Trello account. **No GitHub credentials or LLM key are needed.** **Use a public-safe task on this shared board** — no special card format, write it like any <abbr title="the cards already on the board are real examples">task</abbr>. Want privacy instead? [Start on your own repo below](#4-start-using-it-on-your-repo--github-issues) with a private board.
 
 Prefer to try it by email? <a href="mailto:info@agiledigitalworker.com" data-cta="request_board" data-location="pricing"><strong>Send us a task you can share publicly</strong></a> — we'll post the card for you and send you the link to follow the resulting PR.
 
 </details>
 
-<a id="4-start-using-it-on-your-repo--trello--github"></a>
+<a id="4-start-using-it-on-your-repo--github-issues"></a>
 
-##### Start using it on your repo — Trello + GitHub
+##### Start using it on your repo — GitHub Issues (Recommended for simpler onboarding, Trello is also supported)
 
 <details markdown="1"><summary>Show how</summary>
 
 **Use the included $15 credit to evaluate one bounded real task on your own codebase before paying.** **Larger tasks should be scoped first; the credit does not guarantee every task costs $15 or less.** **Further usage is prepaid: contact us for a secure payment link when you want to add credit.** **Work pauses when your balance runs out.**
 
-1. <a href="mailto:info@agiledigitalworker.com" data-cta="request_board" data-location="pricing"><strong>Email your preferred Trello board name</strong></a>. The first 20 early adopters get personal setup help from the founder, including a private board, usually within 24 hours.
-2. On the private board, follow the 2-question [onboarding steps](https://agiledigitalworker.com/user-guide#onboarding-digitalworker): **install the DigitalWorker Agent GitHub App on your repository** from its public install link (~1 minute), **then answer the 2 onboarding questions on the first card — repository HTTPS clone URL and default branch.** No tokens to create or paste. Setup does not run an AI coding task.
-3. **Add a bounded task and acceptance criteria in `To Implement`**, or draft in `Triage` and move it when ready.
-4. **Review pivotal decisions as needed, receive the tested/reviewed PR and design package, and perform the final behavior check.** **Use experienced architecture review for complex or novel design decisions.**
+1. **Install the DigitalWorker Agent GitHub App on your repository** from its public install link: `https://github.com/apps/digitalworker-agent/installations/new` (~1 minute).
+   - Permissions granted: `Contents: Read & write`, `Pull requests: Read & write`, `Issues: Read & write`.
+   - Accept the updated permissions prompt under GitHub `Settings > Applications > Installed GitHub Apps > digitalworker-agent > Review permissions` if prompted.
+2. **Add labels to your repository:** Under `Issues > Labels`, ensure `digital-worker` (trigger label) and `dw-in-progress`, `dw-done`, `dw-blocked` (runtime status labels) exist.
+3. **Open an issue** with your task requirements, context, and acceptance criteria.
+4. **Trigger DigitalWorker:**
+   - Include `@digitalworker` in the description when opening the issue to start immediately, OR
+   - Post a fresh comment mentioning `@digitalworker`, OR
+   - Apply the `digital-worker` label to the issue.
+
+   Reopening alone does not start another run; post a fresh mention comment or reapply the label.
+5. **Review pivotal decisions as needed, receive the tested/reviewed PR and design package, and perform the final behavior check.**
+
+**No Trello account, no local install, terminal, or per-developer setup required.**
 
 **Or start even smaller: ask DigitalWorker to review a slice of your codebase.** It marks architecture and code-smell issues as `//TODO` comments — without touching your code. Count how much it finds. The issues it surfaces are the same disorganization that makes AI-written code plateau and eat your attention.
 
-**You need a Trello account, GitHub account, and a repository you can authorize.** We provide the AI infrastructure. No local install, terminal, or per-developer setup is required for this path.
+</details>
 
-*The full agent currently takes tasks from Trello. GitHub Issues integration is coming soon.*
+<a id="5-start-using-it-on-your-repo--trello--github"></a>
+
+##### Start using it on your repo — Trello Board (Alternative)
+
+<details markdown="1"><summary>Show how</summary>
+
+If your team prefers managing tasks via a dedicated Kanban board:
+
+1. <a href="mailto:info@agiledigitalworker.com" data-cta="request_board" data-location="pricing"><strong>Email your preferred Trello board name</strong></a>. The first 20 early adopters get personal setup help from the founder, including a private board, usually within 24 hours.
+2. On the private board, follow the 2-question onboarding steps: install the **DigitalWorker Agent** GitHub App on your repository, then answer the 2 onboarding questions on the first card — repository HTTPS clone URL and default branch. No tokens to create or paste.
+3. **Add a bounded task and acceptance criteria in `To Implement`**, or draft in `Triage` and move it when ready.
+4. **Receive the tested/reviewed PR and design package**, spot-check, and merge.
+
+**Requires a Trello account and a GitHub repository you can authorize.**
 
 </details>
 

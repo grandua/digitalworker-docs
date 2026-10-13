@@ -32,8 +32,8 @@ That creates a compounding business advantage. A disciplined codebase can suppor
 | | **DigitalWorker PR Reviewer** | **DigitalWorker** (full agent)                                                                                               |
 |---|---|------------------------------------------------------------------------------------------------------------------------------|
 | **What it does** | Reviews your pull requests and posts feedback as GitHub reviews — Agile architecture violations such as incorrect layer dependencies and Anemic Domain Model anti-pattern, testability issues, test coverage gaps, and most code smells including code and class duplication | Every part of the software development lifecycle (SDLC): plans, architects, designs classes and UX, implements and tests features, reviews code, fixes issues |
-| **How you use it** | Always-on — every PR and every push is reviewed automatically; optional `@digitalworker review` comment | Create and move Trello cards on your board                                                                                   |
-| **Trello account** | Not needed | Required                                                                                                                     |
+| **How you use it** | Always-on — every PR and every push is reviewed automatically; optional `@digitalworker review` comment | Create and move Trello cards on your board, or trigger directly via GitHub Issues (`@digitalworker` mention or `digital-worker` label) |
+| **Trello account** | Not needed | Optional when using GitHub Issues; required for Trello board workflow                                                        |
 | **GitHub access token (PAT)** | Not needed — GitHub App permissions only | Not needed — the Agent app covers it; a PAT exists only for legacy configurations |
 | **Onboarding effort** | Install the app on your repos (~1 minute) | Board provisioning + repository onboarding (~7 minutes)                                                                      |
 
@@ -87,7 +87,57 @@ Use it as a first-pass reviewer: it reads only the PR diff, so treat it as a str
 ---
 ## How to Use DigitalWorker
 
-### Onboarding DigitalWorker
+Digital Worker supports two task-management workflows:
+1. **GitHub Issues (Primary & Recommended)** — Assign tasks, track progress, and receive pull requests directly within your GitHub repository. No Trello account or board setup required.
+2. **Trello Board** — Kanban board management on a dedicated private board.
+
+---
+
+### Option A: Using DigitalWorker via GitHub Issues (Recommended)
+
+#### 1. Configuration & Setup (~2 minutes)
+
+1. **Install the Digital Worker Agent GitHub App:**
+   Open the public install link: `https://github.com/apps/digitalworker-agent/installations/new` and select your target repository.
+   Permissions requested:
+   - `Contents`: Read & write (branch creation, commits, pull requests)
+   - `Pull requests`: Read & write
+   - `Issues`: Read & write (read requirements, publish status comments, apply labels)
+   - `Metadata`: Read-only
+2. **Accept Updated Permissions (if prompted):**
+   When upgrading or modifying permissions, check GitHub `Settings > Applications > Installed GitHub Apps > digitalworker-agent > Review permissions` and approve the `Issues: Read & write` permission.
+3. **Repository Labels Setup:**
+   In your repository (`Issues > Labels`), ensure the following labels are created:
+   - **Trigger label:** `digital-worker`
+   - **Lifecycle status labels:** `dw-in-progress`, `dw-done`, `dw-blocked`.
+4. **Webhook & Infrastructure Settings (Operator / Production):**
+   - **Webhook URL:** `https://<host>/webhooks/github/issues` (served over Tailscale Funnel)
+   - **Webhook secret:** `GitHubAgentWebhookSecret`
+   - **Subscribed events:** `Issues` and `Issue comment`
+   - **Tailscale key expiry:** Set **"Disable key expiry"** for the webhook host machine in the Tailscale Admin Console so background Funnel mappings never drop unexpectedly.
+
+#### 2. Submitting a Task via GitHub Issues
+
+1. **Create or open an issue** describing the task — context, requirements, constraints, and acceptance criteria.
+2. **Trigger Digital Worker:**
+   - **Description Mention:** Include `@digitalworker` in its description when creating the issue to start immediately, OR
+   - **Comment Mention:** Post a comment containing `@digitalworker` (e.g. `@digitalworker please implement this following the acceptance criteria above`), OR
+   - **Label Trigger:** Add the `digital-worker` label to the issue.
+   *(Note: On GitHub personal repositories, GitHub does not permit assigning GitHub App bot accounts as issue assignees; triggering is done via `@digitalworker` mentions or the `digital-worker` label).*
+
+   Reopening alone never starts another run, even with a retained description mention. Post a fresh mention comment or reapply `digital-worker` to request another run. To prepare an issue for later, omit the opening mention.
+
+3. **Tracking Progress & Receiving Results:**
+   Digital Worker receives the webhook delivery at `POST /webhooks/github/issues` and manages progress labels:
+   - `dw-in-progress` — task claimed and currently executing.
+   - `dw-done` — task completed successfully; summary and pull request link posted in a comment.
+   - `dw-blocked` — task denied, failed, or blocked; reason posted where publication is possible. Hard security blocks apply this label after a delay without a comment.
+
+---
+
+### Option B: Using DigitalWorker via Trello Board
+
+#### 1. Onboarding DigitalWorker (Trello)
 
 1. **Email your preferred Trello board name** to <a href="mailto:info@agiledigitalworker.com">info@agiledigitalworker.com</a> (or message your contact). Digital Worker provisions your private board and sends you an invite (requests are usually addressed within 24 hours).
 2. **Connect your repository (takes ~1 minute):** Onboarding is instant and does not run any AI coding agents. On your board's first card, answer the clone URL and default branch. When your operator has linked the **Digital Worker Agent** GitHub App to your Trello account, repository, and board, you are **not** asked for a personal access token. If linking is still pending, the card asks you to wait for the operator — it will not request a PAT.
@@ -101,7 +151,7 @@ Use it as a first-pass reviewer: it reads only the PR diff, so treat it as a str
 4. Digital Worker saves the repository configuration and requests a service restart automatically. You do not install software, run terminal commands, or configure each developer's machine.
 5. **Delete/archive the onboarding card in "Blocked"** and create a new card for your first task, or rerun the first card if it already has a real task. Agent onboarding has no token-deletion step — in legacy PAT mode only, also delete the comment that held the token.
 
-### Submitting a task
+#### 2. Submitting a Task (Trello)
 
 1. **Create a Trello card** on the configured Digital Worker board.
 2. **Set the card title** to a short, clear summary of the task.

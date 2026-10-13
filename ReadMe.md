@@ -4,10 +4,17 @@
 
 **Written for: developers, non-developer builders, and business owners** — outcomes, examples, and ways to evaluate DigitalWorker; internals: [engineering deep dive](https://agiledigitalworker.com/Engineering-Deep-Dive). <!-- audience: dev, non-dev builder, business · ceiling: T1 narrative everywhere; T2/T3 in labeled technical compartments -->
 
+## Gallery — click to enlarge
+
+| | |
+|---|---|
+| <a href="./Sells-Sheet-Images/Sells-Sheet-top-image-Trello-with-popups.png" aria-label="Enlarge: Illustrative typical run"><img src="./Sells-Sheet-Images/Sells-Sheet-top-image-Trello-with-popups.png" width="420" alt="Trello board view of a typical DigitalWorker run"></a> | <a href="https://raw.githubusercontent.com/grandua/digitalworker-docs/main/Sells-Sheet-Images/plan-for-first-citizens-parsing.md.png" aria-label="Enlarge: Real life plan example"><img src="https://raw.githubusercontent.com/grandua/digitalworker-docs/main/Sells-Sheet-Images/plan-for-first-citizens-parsing.md.png" width="420" alt="Plan generated for a real production repository task"></a> |
+| **Illustrative Typical Run**<br><sub>Actual results vary by task</sub> | **Real Life Plan Example**<br><sub>From a real prod repo</sub> |
+
 ---
 *Saving the world from spaghetti code.*
 
-**You make the decisions that matter.** **DigitalWorker turns a task card into a tested, reviewed, production-ready[^4] <abbr title="a proposed change, packaged for review">pull request</abbr>** — professional-developer output, not AI intern drafts. **It's like assigning a top-10% developer to a well-scoped task — at AI cost.** 
+**You make the decisions that matter.** **DigitalWorker turns a task card into a tested, reviewed, production-ready[^4] <abbr title="a proposed change, packaged for review">pull request</abbr>** — professional-developer output, not AI intern drafts. **It's like assigning a top-10% developer to a well-scoped task — at AI cost.**
 
 No iterative prompting. No babysitting. No cleaning up after the AI.[^agent]
 
@@ -379,12 +386,6 @@ If your team prefers managing tasks via a dedicated Kanban board:
 [^5]: Tornhill & Borg, *Code Red: The Business Impact of Code Quality* (IEEE/ACM TechDebt 2022) — peer-reviewed analysis of 39 proprietary production codebases (30,737 files): low-quality code contained 15× more defects, took 124% more development time to resolve issues, and showed 9× longer maximum cycle times. Independently, Stripe's Developer Coefficient survey (2018) found developers spend ~42% of the work week on technical debt and bad code. In founder experience AI-generated code falls under the same math: trained on average human code, it reproduces average professional quality at best, so the codebase-scale penalties apply unchanged.
 
 [^agent]: **These benefits describe the full DigitalWorker Agent. The Reviewer reviews existing pull requests; it does not implement changes.**
-
-![ILLUSTRATIVE TYPICAL RUN — actual results vary by task](./Sells-Sheet-Images/Sells-Sheet-top-image-Trello-with-popups.png)
-
-## Real life plan example
-
-![Example from a real life plan](https://raw.githubusercontent.com/grandua/digitalworker-docs/main/Sells-Sheet-Images/plan-for-first-citizens-parsing.md.png)
 
 ---
 

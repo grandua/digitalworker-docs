@@ -2,7 +2,7 @@
 
 **Fast read:** read the headings and **bold** text for the main message. Written for: developers, non-developer builders, and business owners.
 
-<div align="right"><a href="https://github.com/apps/digitalworker-reviewer/installations/new" data-cta="install_app" data-location="header"><strong>Install the Reviewer — ~1 min, free trial</strong></a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="https://github.com/grandua/Digital-Worker-Demo/issues" data-cta="view_example" data-location="header"><strong>See it work — no install</strong></a></div>
+<p align="right"><a href="https://github.com/apps/digitalworker-reviewer/installations/new" data-cta="install_app" data-location="header"><strong>Install the Reviewer — ~1 min, free trial</strong></a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="https://github.com/grandua/Digital-Worker-Demo/issues" data-cta="view_example" data-location="header"><strong>See it work — no install</strong></a></p>
 
 <table>
   <tr><th colspan="2">Gallery — click to enlarge</th></tr>

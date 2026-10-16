@@ -38,7 +38,7 @@ No iterative prompting. No babysitting. No cleaning up after the AI.[^agent]
 - **You see where the AI is about to go wrong** before it writes a line — **and steer it before its confusion turns into a codebase of wrong dependencies.**
 - You do the work of an architect and a product manager — never a babysitter.
 - **No bloated AI slop — beautiful, well-architected code, minimal duplication, above-80% test coverage.**
-- **You create a ticket even for a complex feature — and get it back <abbr title="a ticket in, production-ready code out ">solved, tested, and reviewed</abbr>**, close enough to done that you ship to production in a day or two.
+- **You create a ticket even for a complex feature — and get it back <abbr title="a ticket in, production-ready code out is known as a Software Factory">solved, tested, and reviewed</abbr>**, close enough to done that you ship to production in a day or two.
 
 **It's not imagination anymore — it's reality.** DigitalWorker itself was built this way — [see the receipts](#2-verify-our-claims--no-account-or-setup-needed).
 

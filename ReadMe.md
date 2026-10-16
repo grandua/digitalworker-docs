@@ -29,13 +29,14 @@ No iterative prompting. No babysitting. No cleaning up after the AI.[^agent]
 
 ## Imagine…
 
-- **AI solves your most complex business problems** — and grows your solution without complexity limits, without slowing down.
-- You tell AI what to do — not how — and it goes and does it. No babysitting.
-- **You never debug your code** and never have to write any code by hand.
-- AI does ~80% of your work — **you're 4-6x more productive than developers using current AI agents**. (53K lines on a side project under 6 months; ~3K generated unit tests in under 3.)
+- **AI solves your most complex business problems — and grows your solution without complexity limits, without slowing down** (the same pace at month 11 and 50K+ lines as in week 1).
+- You tell AI what to do — not how — and it goes and does it. **No hand-holding through every step.**
+- **You see where the AI is about to go wrong** before it writes a line — **and steer it before its confusion turns into a codebase of wrong dependencies.**
+- **You never open a debugger** — the code is so modular and well-tested that AI tracks down and fixes 100% of bugs for you (2+ years without attaching a debugger once).
+- **Writing code by hand becomes purely optional** — even if you love coding, telling AI what to change is faster than finding the file yourself (~1 hand-written line a month).
+- AI does ~80% of your work — **you're 4-6x more productive than developers using current AI agents**. (53K lines on a side project under 6 months; ~3K generated unit tests in under 3 months.)
 - **Code and architecture so clean that even AI can understand and change them without breaking things.**
 - **Test coverage so high that even AI can't break what was working before.**
-- **You see where the AI is about to go wrong** before it writes a line — **and steer it before its confusion turns into a codebase of wrong dependencies.**
 - You do the work of an architect and a product manager — never a babysitter.
 - **No bloated AI slop — beautiful, well-architected code, minimal duplication, above-80% test coverage.**
 - **You create a ticket even for a complex feature — and get it back <abbr title="a ticket in, production-ready code out is known as a Software Factory">solved, tested, and reviewed</abbr>**, close enough to done that you ship to production in a day or two.
@@ -43,7 +44,7 @@ No iterative prompting. No babysitting. No cleaning up after the AI.[^agent]
 **It's not imagination anymore — it's reality.** DigitalWorker itself was built this way — [see the receipts](#2-verify-our-claims--no-account-or-setup-needed).
 
 ## You're Doing AI Coding Slow!
-***The assumptions behind DigitalWorker — why we developed it:***
+***Why raw AI agents hit a wall — and the assumptions behind DigitalWorker:***
 
 - **Current AI generates average code and architecture — sloppy, disorganized, badly engineered** — because it was trained on median human code — and most human code, public or private, ignores <abbr title="a design discipline where each part of the code carries its data and the rules that act on it together">object-oriented design</abbr> discipline, layering, and automated test coverage
 - Without **working** architectural guardrails, **AI prints technical debt at machine speed** — reliably enforcing an engineering process on AI is a difficult, unsolved problem
@@ -69,7 +70,7 @@ No iterative prompting. No babysitting. No cleaning up after the AI.[^agent]
 ## What we claim as possible
 - Nevertheless, the problem above has a better solution and current AI can be asked to run checklists with hundreds of items and **produce much better structured code that is actually easy to follow, easy to change**, with pretty good <abbr title="the tests catch any defect introduced into the covered code">mutation test coverage</abbr>, and that scales almost linearly with complexity.
 - The catch is that AI will not follow such huge checklists if they are given to it as pure text and in a generic fashion. However, **checklists coupled with a smart, adjustable Instruction Engine can make AI follow every instruction**.
-- Also, **current AI can be asked to make most important decisions upfront** in a <abbr title="practice-run">dry-run</abbr> fashion, which allows **humans to unconfuse AI early by overriding those decisions as needed** (and optionally explaining rationale)
+- **That is how impaired AI judgment still solves complex problems:** DigitalWorker forces AI to surface its product and class-design decisions upfront in a <abbr title="practice-run">dry-run</abbr> before writing a line of code — **so you override bad or lackluster decisions in minutes, and the Instruction Engine enforces the rest.**
 
 
 ## You make the decisions that matter. Build software you're proud to put your name on.
@@ -336,7 +337,7 @@ Want to try it on a repo you own? Install it there directly. For a work repo, sh
 
 **No Trello account, no local install, terminal, or per-developer setup required.**
 
-**Or start even smaller: ask DigitalWorker to review a slice of your codebase.** All found architecture and code-smell issues land as PR comments — it has no write access and never touches your code. Count how much it finds. The issues it surfaces are the same disorganization that makes AI-written code plateau and eat your attention.
+**Or start even smaller: ask DigitalWorker to review a slice of your codebase** (open a PR or comment `@digitalworker review` on an existing PR). All found architecture and code-smell issues land as PR comments — it has no write access and never touches your code. Count how much it finds. The issues it surfaces are the same disorganization that makes AI-written code plateau and eat your attention.
 
 </details>
 
@@ -411,7 +412,7 @@ The Calculator domain/test solution needs no MAUI workloads. The [full app solut
 - **What if it produces slop or misses the task?** You see the plan and pivotal decisions before implementation, and its ~100-item checklist review runs before the PR reaches you. The public demo even shows a real miss and the autonomous fix — [judge it there](#2-verify-our-claims--no-account-or-setup-needed).
 - **What does it cost after the free trial or the &#36;15 credit?** Nothing automatically — usage beyond that is prepaid: add credit via a secure payment link; **work pauses at zero, nothing is ever charged automatically.**
 - **Do I need local setup, tokens, API key or Trello?** No — a GitHub App install and an issue are enough; Trello is optional.
-- **What's the smallest way to try it?** Ask it to review a slice of your codebase — findings arrive as PR comments; your code is never touched. Or run a task on the [public demo repo](https://github.com/grandua/Digital-Worker-Demo/issues) — the Agent is already installed.
+- **What's the smallest way to try it?** Ask it to review a slice of your codebase (comment `@digitalworker review` on any PR) — findings arrive as PR comments; your code is never touched. Or run a task on the [public demo repo](https://github.com/grandua/Digital-Worker-Demo/issues) — the Agent is already installed.
 - **No GitHub account — can I still see it work?** Yes — [email us a public-safe task](mailto:info@agiledigitalworker.com) or [book a live walkthrough](mailto:info@agiledigitalworker.com) — we drive our private 50K+ line codebase on the video call.
 
 ---

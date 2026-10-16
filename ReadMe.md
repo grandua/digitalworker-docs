@@ -2,6 +2,8 @@
 
 **Fast read:** read the headings and **bold** text for the main message. Written for: developers, non-developer builders, and business owners.
 
+<div align="right"><a href="https://github.com/apps/digitalworker-reviewer/installations/new" data-cta="install_app" data-location="header"><strong>Install the Reviewer — ~1 min, free trial</strong></a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="https://github.com/grandua/Digital-Worker-Demo/issues" data-cta="view_example" data-location="header"><strong>See it work — no install</strong></a></div>
+
 <table>
   <tr><th colspan="2">Gallery — click to enlarge</th></tr>
   <tr>
@@ -17,7 +19,7 @@
 ---
 *Saving the world from spaghetti code.*
 
-**You make the decisions that matter.** **DigitalWorker turns a ticket into a tested, reviewed, production-ready[^4] <abbr title="a proposed change, packaged for review">pull request</abbr>** — professional-developer output, not AI intern drafts. **It's like assigning a top-10% developer to a well-scoped task — at AI cost.**
+**You make the decisions that matter.** **DigitalWorker turns a ticket into a tested, reviewed, production-ready[^4] <abbr title="a proposed change, packaged for review">pull request</abbr>** — professional-developer output, not AI intern drafts. **It's like assigning a top-10%[^2] developer to a well-scoped task — at AI cost.**
 
 No iterative prompting. No babysitting. No cleaning up after the AI.[^agent]
 
@@ -25,8 +27,23 @@ No iterative prompting. No babysitting. No cleaning up after the AI.[^agent]
 - **[DigitalWorker Reviewer](#get-digitalworker-reviewer) — review your existing pull requests.**
 - **[DigitalWorker Agent](#try-digitalworker-agent) — delegate the whole task.**
 
+## Imagine…
+
+- **AI solves your most complex business problems** — and grows your solution without complexity limits, without slowing down.
+- You tell AI what to do — not how — and it goes and does it. No babysitting.
+- **You never debug your code** and never have to write any code by hand.
+- AI does ~80% of your work — **you're 4-6x more productive than developers using current AI agents**. (53K lines on a side project under 6 months; ~3K generated unit tests in under 3.)
+- **Code and architecture so clean that even AI can understand and change them without breaking things.**
+- **Test coverage so high that even AI can't break what was working before.**
+- **You see where the AI is about to go wrong** before it writes a line — **and steer it before its confusion turns into a codebase of wrong dependencies.**
+- You do the work of an architect and a product manager — never a babysitter.
+- **No bloated AI slop — beautiful, well-architected code, minimal duplication, above-80% test coverage.**
+- **You create a ticket even for a complex feature — and get it back <abbr title="a ticket in, production-ready code out ">solved, tested, and reviewed</abbr>**, close enough to done that you ship to production in a day or two.
+
+**It's not imagination anymore — it's reality.** DigitalWorker itself was built this way — [see the receipts](#2-verify-our-claims--no-account-or-setup-needed).
+
 ## You're Doing AI Coding Slow!
-***The assumptions behind DigitalWorker - why we developed it:***
+***The assumptions behind DigitalWorker — why we developed it:***
 
 - **Current AI generates average code and architecture — sloppy, disorganized, badly engineered** — because it was trained on median human code — and most human code, public or private, ignores <abbr title="a design discipline where each part of the code carries its data and the rules that act on it together">object-oriented design</abbr> discipline, layering, and automated test coverage
 - Without **working** architectural guardrails, **AI prints technical debt at machine speed** — reliably enforcing an engineering process on AI is a difficult, unsolved problem
@@ -39,7 +56,7 @@ No iterative prompting. No babysitting. No cleaning up after the AI.[^agent]
 - **Current AI has severely impaired judgment** which manifests in **constant confusion** about the real world
 - **Current AI absolutely cannot be trusted to make important decisions**
 - **AI will not fix itself without competent help from human experts:** AI often knows what the best practices are but does not follow them anyway, even when you explicitly ask it to.  Current AI is nowhere close to AGI — AI that can do any job a person can — and no known architecture changes that anytime soon.
-- **Cheap AI generation does not make code quality matter less — it makes it matter sooner:** AI struggles against spaghetti even harder than human maintainers do — context limits and compounding errors hit hardest on large, messy codebases. **Controlled research found experienced developers ~19% *slower* with AI on their own mature repositories[^3]**
+- **Cheap AI generation does not make code quality matter less — it makes it matter sooner:** AI struggles against spaghetti even harder than human maintainers do — context limits and compounding errors hit hardest on large, messy codebases. **Controlled research found experienced developers ~19% *slower* with AI tools on their own mature repositories[^3]**
 - **Engineering discipline is not a tax on speed** — past a few thousand lines **it is the speed**: in a peer-reviewed study of 39 production codebases, low-quality code carried 15×(!) more defects and took approximately 2.2× as long to resolve issues[^5]
 - **As generation cost falls**, the binding **constraint shifts to whether the code can be changed at all** — making scalable, maintainable software the decisive economic prize
 
@@ -79,10 +96,10 @@ Your engineering competence sets the standard. DigitalWorker carries it through 
 
    You asked for TDD, OOP and proper testable layers. Your AI drifted to bloated, disorganized slop anyway. DigitalWorker Reviewer detects Agile architecture violations such as incorrect layer dependencies and Anemic Domain Model anti-pattern, testability issues, test coverage gaps, and most code smells including code and class duplication. **The Reviewer comments; it does not change your code.** No Trello required.
 
-   <a href="https://github.com/apps/digitalworker-reviewer/installations/new" data-cta="install_app" data-location="mid_page"><strong>Install the Reviewer — ~1 minute.</strong></a>
+   <a href="https://github.com/apps/digitalworker-reviewer/installations/new" data-cta="install_app" data-location="mid_page"><strong>Install the Reviewer — ~1 minute, free trial.</strong></a> Then comment `@digitalworker review` on any existing PR — first result in minutes.
 2. **DigitalWorker Agent — Hand off the task. Get code implemented, reviewed, and refactored against the same architecture and maintainability standards.**
 
-   <a href="#4-start-using-it-on-your-repo--github-issues" data-cta="install_app" data-location="mid_page"><strong>Install the Agent — ~2 minutes.</strong></a>
+   <a href="#4-start-using-it-on-your-repo--github-issues" data-cta="install_app" data-location="mid_page"><strong>Install the Agent on your repo — ~2 minutes, private, &#36;15 credit included, no card required.</strong></a> Or watch it work first: the Agent is already installed on the <a href="https://github.com/grandua/Digital-Worker-Demo/issues" data-cta="view_example" data-location="mid_page">public demo repo</a> — open an issue mentioning `@digitalworker`, no permissions needed on your repos.
 
 
 **The Reviewer uses the same review engine the full Agent uses on its own work. Use either product on its own.**
@@ -278,7 +295,7 @@ Choose your product below. **The Reviewer connects directly to GitHub; the Agent
 
 <a id="1-watch-it-review-your-real-pull-requests--github-only-1-minute"></a>
 
-DigitalWorker is the first reviewer that enforces full and proper Agile discipline and architecture in code — including Patterns of Enterprise Application Architecture such as Layers and OOP/Rich Domain Model, testability, and clean code without code smells.
+DigitalWorker is the first reviewer we know of that enforces full and proper Agile discipline and architecture in code — including Patterns of Enterprise Application Architecture such as Layers and OOP/Rich Domain Model, testability, and clean code without code smells.
 
 ##### Watch it review your real <abbr title="PRs — proposed changes, packaged for review">pull requests</abbr> — GitHub only, ~1 minute
 
@@ -286,29 +303,13 @@ DigitalWorker is the first reviewer that enforces full and proper Agile discipli
 
 <a href="https://github.com/apps/digitalworker-reviewer/installations/new" data-cta="install_app" data-location="pricing"><strong>Install the DigitalWorker PR Reviewer GitHub App</strong></a> on a repository you choose. **From then on every pull request — and every push to it — gets an automatic read-only review** posted by `digitalworker-reviewer[bot]`: a scored summary, detected architectural issues, code smells and key risks, and inline comments on specific lines. You can also post `@digitalworker review` on any PR to trigger it on demand.
 
-**No Trello account, no personal access token, no code changes — and it uninstalls in one click from GitHub Settings > Applications.** The Reviewer uses the same review engine the full DigitalWorker Agent uses on its own work: a ~100-item engineering checklist covering correctness, architecture and standards, code-smell detection, and requirements audit — on your real diffs.
+**No Trello account, no personal access token, no code changes — and it uninstalls in one click from GitHub Settings > Applications.** **Free trial included; usage beyond it is prepaid — nothing is ever charged automatically.** The Reviewer uses the same review engine the full DigitalWorker Agent uses on its own work: a ~100-item engineering checklist covering correctness, architecture and standards, code-smell detection, and requirements audit — on your real diffs.
 
 Want to try it on a repo you own? Install it there directly. For a work repo, share the install link with your repository administrator or organization owner.
 
 </details>
 
 #### Try DigitalWorker Agent
-
-<a id="3-try-a-task-on-our-demo-repo--github-issues-email-or-trello"></a>
-
-##### Try a task on our demo — GitHub Issues, email, or Trello
-
-<details markdown="1"><summary>Show how</summary>
-
-**Open an issue on the [public demo repository](https://github.com/grandua/Digital-Worker-Demo/issues)** describing a bounded task with acceptance criteria, and include `@digitalworker` in the description — DigitalWorker delivers a tested PR right there in public. **Only a GitHub account is needed — no Trello, no LLM key.** **Use a public-safe task on this shared repo.**
-
-Prefer Trello? <a href="https://trello.com/invite/b/6a03d01d53cf7bb95f8325dd/ATTI3f3561b96a9f5663247cbafaa06b71b7DBE19FF1/digital-worker-demo" data-cta="view_example" data-location="pricing"><strong>Join the public demo board</strong></a> with a free Trello account, or <a href="mailto:info@agiledigitalworker.com" data-cta="request_board" data-location="pricing"><strong>email your Trello username</strong></a> to request access, usually addressed within 24 hours. **Create a bounded task in `To Implement`, or draft it in `Triage` and move it when ready.**
-
-Prefer to try it by email? <a href="mailto:info@agiledigitalworker.com" data-cta="request_board" data-location="pricing"><strong>Send us a task you can share publicly</strong></a> — we'll post the ticket for you and send you the link to follow the resulting PR.
-
-Want privacy instead? [Start on your own repo below](#4-start-using-it-on-your-repo--github-issues) — GitHub Issues or a private Trello board.
-
-</details>
 
 <a id="4-start-using-it-on-your-repo--github-issues"></a>
 
@@ -318,10 +319,11 @@ Want privacy instead? [Start on your own repo below](#4-start-using-it-on-your-r
 
 <details markdown="1"><summary>Show how</summary>
 
-**Use the included &#36;15 credit to evaluate one bounded real task on your own codebase before paying.** **Larger tasks should be scoped first; the credit does not guarantee every task costs &#36;15 or less.** **Further usage is prepaid: contact us for a secure payment link when you want to add credit.** **Work pauses when your balance runs out.**
+**The included &#36;15 credit covers a typical task — larger work gets scoped with you first. No card required.** **Overage is prepaid: add credit via a secure payment link; work pauses at zero — nothing is ever charged automatically.**
 
 1. **Install the DigitalWorker Agent GitHub App on your repository** from its public install link: `https://github.com/apps/digitalworker-agent/installations/new` (~1 minute).
-   - Permissions granted: `Contents: Read & write`, `Pull requests: Read & write`, `Issues: Read & write`.
+   - Permissions granted: `Contents: Read & write`, `Pull requests: Read & write`, `Issues: Read & write`. **DigitalWorker always works in its own Git worktree and delivers all changes as a pull request — your code is never edited directly; you decide what merges.**
+   - Not ready to grant access to your repo? The Agent is already installed on the [public demo repo](https://github.com/grandua/Digital-Worker-Demo/issues) — open an issue there instead.
    - Accept the updated permissions prompt under GitHub `Settings > Applications > Installed GitHub Apps > digitalworker-agent > Review permissions` if prompted.
 2. **Open an issue** with your task requirements, context, and acceptance criteria. The `digital-worker` trigger label and runtime status labels are provisioned automatically on installation.
 3. **Trigger DigitalWorker:**
@@ -334,7 +336,7 @@ Want privacy instead? [Start on your own repo below](#4-start-using-it-on-your-r
 
 **No Trello account, no local install, terminal, or per-developer setup required.**
 
-**Or start even smaller: ask DigitalWorker to review a slice of your codebase.** It marks architecture and code-smell issues as `//TODO` comments — without touching your code. Count how much it finds. The issues it surfaces are the same disorganization that makes AI-written code plateau and eat your attention.
+**Or start even smaller: ask DigitalWorker to review a slice of your codebase.** All found architecture and code-smell issues land as PR comments — it has no write access and never touches your code. Count how much it finds. The issues it surfaces are the same disorganization that makes AI-written code plateau and eat your attention.
 
 </details>
 
@@ -346,12 +348,28 @@ Want privacy instead? [Start on your own repo below](#4-start-using-it-on-your-r
 
 If your team prefers managing tasks via a dedicated Kanban board:
 
-1. <a href="mailto:info@agiledigitalworker.com" data-cta="request_board" data-location="pricing"><strong>Email your preferred Trello board name</strong></a>. The first 20 early adopters get personal setup help from the founder, including a private board, usually within 24 hours.
+1. <a href="mailto:info@agiledigitalworker.com" data-cta="request_board" data-location="pricing"><strong>Email your preferred Trello board name</strong></a> — the founder sets up your private board personally, usually same day.
 2. On the private board, follow the 2-question onboarding steps: install the **DigitalWorker Agent** GitHub App on your repository, then answer the 2 onboarding questions on the first card — repository HTTPS clone URL and default branch. No tokens to create or paste.
 3. **Add a bounded task and acceptance criteria in `To Implement`**, or draft in `Triage` and move it when ready.
 4. **Receive the tested/reviewed PR and design package**, spot-check, and merge.
 
 **Requires a Trello account and a GitHub repository you can authorize.**
+
+</details>
+
+<a id="3-try-a-task-on-our-demo-repo--github-issues-email-or-trello"></a>
+
+##### Or watch it on our public demo repo — the Agent is already installed there
+
+<details markdown="1"><summary>Show how</summary>
+
+**Open an issue on the [public demo repository](https://github.com/grandua/Digital-Worker-Demo/issues)** describing a bounded task with acceptance criteria, and include `@digitalworker` in the description — DigitalWorker delivers a tested PR right there in public. **The Agent is already installed on it — only a GitHub account is needed: no Trello, no LLM key, no access to your repos.** **Use a public-safe task on this shared repo.**
+
+Prefer Trello? <a href="https://trello.com/invite/b/6a03d01d53cf7bb95f8325dd/ATTI3f3561b96a9f5663247cbafaa06b71b7DBE19FF1/digital-worker-demo" data-cta="view_example" data-location="pricing"><strong>Join the public demo board</strong></a> with a free Trello account — or if that doesn't work, <a href="mailto:info@agiledigitalworker.com" data-cta="request_board" data-location="pricing"><strong>email your Trello username</strong></a>. **Create a bounded task in `To Implement`, or draft it in `Triage` and move it when ready.**
+
+**No GitHub account? Prefer email?** <a href="mailto:info@agiledigitalworker.com" data-cta="request_board" data-location="pricing"><strong>Send us a public-safe task</strong></a> — we run it on our repo and send you the link to follow the resulting PR.
+
+Want privacy instead? [Start on your own repo above](#4-start-using-it-on-your-repo--github-issues) — GitHub Issues or a private Trello board.
 
 </details>
 
@@ -366,9 +384,11 @@ Browse the <a href="https://github.com/grandua/Digital-Worker-Demo" data-cta="vi
 - **[Scientific Calculator](https://github.com/grandua/Digital-Worker-Demo/tree/main/Calculator): 230 domain unit tests**, a Rich Domain Model, and explicit edge-case behavior. **External review found issues, followed by autonomous remediation through a fix card.**
 - **[URL Shortener API](https://github.com/grandua/Digital-Worker-Demo/tree/main/UrlShortener): 40 unit tests**, Clean Architecture, Entity Framework data access, and requirements traceability.
 
+**Demo tasks are deliberately small so the whole ticket→PR→review→fix cycle is traceable in minutes — the same engine built DigitalWorker itself. Want real-scale proof? <a href="mailto:info@agiledigitalworker.com" data-cta="email_founder" data-location="pricing"><strong>Book a live walkthrough</strong></a> — we drive our private 50K+ line codebase on the video call.**
+
 If you read the code like a senior dev, you'll find: methods are short, parameters few, state and behavior live in the same classes, Domain depends on nothing, and coverage is near-complete.
 
-[Inspect the recorded coverage, execution times, human involvement, and recovery](https://agiledigitalworker.com/Engineering-Deep-Dive#recorded-demo-results-and-recovery). **The examples demonstrate the work delivered, not a guaranteed result for every task.** **Initial internal review did not catch every Calculator issue; the fix history shows what happened next.**
+[Inspect the recorded coverage, execution times, human involvement, and recovery](https://agiledigitalworker.com/Engineering-Deep-Dive#recorded-demo-results-and-recovery). **Everything on this page is founder-observed in production use — not an independent benchmark; judge it against the repo. External review found Calculator issues our internal review missed — the autonomous fix history is part of the evidence.**
 
 To run the domain/API tests yourself, install the .NET 10 SDK and use:
 
@@ -385,7 +405,18 @@ The Calculator domain/test solution needs no MAUI workloads. The [full app solut
 
 </details>
 
+### Quick answers
 
+- **Does DigitalWorker modify my code directly?** No. The Reviewer is read-only — it has no write access. The Agent works in its own Git worktree and delivers every change as a pull request — **you decide what merges; uninstall in one click.**
+- **What if it produces slop or misses the task?** You see the plan and pivotal decisions before implementation, and its ~100-item checklist review runs before the PR reaches you. The public demo even shows a real miss and the autonomous fix — [judge it there](#2-verify-our-claims--no-account-or-setup-needed).
+- **What does it cost after the free trial or the &#36;15 credit?** Nothing automatically — usage beyond that is prepaid: add credit via a secure payment link; **work pauses at zero, nothing is ever charged automatically.**
+- **Do I need local setup, tokens, API key or Trello?** No — a GitHub App install and an issue are enough; Trello is optional.
+- **What's the smallest way to try it?** Ask it to review a slice of your codebase — findings arrive as PR comments; your code is never touched. Or run a task on the [public demo repo](https://github.com/grandua/Digital-Worker-Demo/issues) — the Agent is already installed.
+- **No GitHub account — can I still see it work?** Yes — [email us a public-safe task](mailto:info@agiledigitalworker.com) or [book a live walkthrough](mailto:info@agiledigitalworker.com) — we drive our private 50K+ line codebase on the video call.
+
+---
+
+**Ready when you are:** <a href="https://github.com/apps/digitalworker-reviewer/installations/new" data-cta="install_app" data-location="bottom_page"><strong>Install the Reviewer — ~1 min, free trial</strong></a> · <a href="#4-start-using-it-on-your-repo--github-issues" data-cta="install_app" data-location="bottom_page"><strong>Install the Agent — ~2 min, &#36;15 credit, no card</strong></a> · <a href="https://github.com/grandua/Digital-Worker-Demo/issues" data-cta="view_example" data-location="bottom_page"><strong>See it work — no install</strong></a>
 
 ---
 
@@ -406,20 +437,30 @@ The Calculator domain/test solution needs no MAUI workloads. The [full app solut
 
 <a href="https://www.linkedin.com/in/grand" data-cta="email_founder" data-location="pricing"><strong>Message on LinkedIn</strong></a> · <a href="mailto:info@agiledigitalworker.com" data-cta="email_founder" data-location="pricing"><strong>Email us</strong></a> · [agiledigitalworker.com](https://agiledigitalworker.com) · [User Guide](https://agiledigitalworker.com/user-guide)
 
+Follow us: <a href="https://www.linkedin.com/company/2330043" data-cta="social_follow" data-location="footer">LinkedIn</a> · <a href="https://www.linkedin.com/groups/40979011/" data-cta="social_follow" data-location="footer">LinkedIn Group</a> · <a href="https://www.facebook.com/pages/Agile-Design-LLC/194844307249816" data-cta="social_follow" data-location="footer">Facebook</a> · <a href="https://twitter.com/AgileDesignLLC" data-cta="social_follow" data-location="footer">X/Twitter</a>
+
 © 2026 Agile Design LLC. DigitalWorker and its workflow materials are proprietary.
 
-<!-- Analytics: privacy-conscious PostHog instrumentation (no cookies, no autocapture, no session recording). -->
+<!-- Analytics: PostHog instrumentation — localStorage persistence (new vs returning), session replay with input masking, no cookies. Self-exclusion: visit /?no_track once per browser (sets localStorage dw_no_track). -->
 <script>
 !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]);t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+". (stub)"},o="init capture register register_once unregister identify reset get_distinct_id alias set_config".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+var __dwNoTrack = false;
+try {
+  if (new URLSearchParams(window.location.search).has('no_track')) localStorage.setItem('dw_no_track', '1');
+  __dwNoTrack = localStorage.getItem('dw_no_track') === '1';
+} catch (e) {}
+if (!__dwNoTrack) {
 window.posthog.init('phc_t38qtiviVF5hykpwcEWfMZrZiew4rfy688wjamNQ5mCt', {
   api_host: 'https://us.i.posthog.com',
-  autocapture: false,
-  disable_session_recording: true,
+  autocapture: true,
+  disable_session_recording: false,
+  session_recording: { maskAllInputs: true },
   capture_pageview: true,
   capture_pageleave: true,
-  persistence: 'memory',
+  persistence: 'localStorage',
   person_profiles: 'identified_only'
 });
+}
 
 (function () {
   function track(name, props) {
@@ -438,15 +479,18 @@ window.posthog.init('phc_t38qtiviVF5hykpwcEWfMZrZiew4rfy688wjamNQ5mCt', {
     });
   }, true);
 
-  var scrollFired = false;
+  var scrollThresholds = [25, 50, 75];
+  var scrollFired = {};
   window.addEventListener('scroll', function () {
-    if (scrollFired) return;
     var h = document.documentElement;
     if (h.scrollHeight <= 0) return;
-    if ((h.scrollTop + window.innerHeight) / h.scrollHeight >= 0.75) {
-      scrollFired = true;
-      track('scroll_milestone', { depth: 75 });
-    }
+    var pct = ((h.scrollTop + window.innerHeight) / h.scrollHeight) * 100;
+    scrollThresholds.forEach(function (t) {
+      if (pct >= t && !scrollFired[t]) {
+        scrollFired[t] = true;
+        track('scroll_milestone', { depth: t });
+      }
+    });
   }, { passive: true });
 
   function injectUtms() {

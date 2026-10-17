@@ -408,6 +408,35 @@ The Calculator domain/test solution needs no MAUI workloads. The <a href="https:
 
 </details>
 
+<script>
+(() => {
+  const anchorId = '2-verify-our-claims--no-account-or-setup-needed';
+
+  const openVerificationDetails = () => {
+    if (window.location.hash !== `#${anchorId}`) return;
+
+    const anchor = document.getElementById(anchorId);
+    let heading = anchor?.parentElement?.tagName === 'P' ? anchor.parentElement : anchor;
+
+    while (heading && !/^H[1-6]$/.test(heading.tagName)) {
+      heading = heading.nextElementSibling;
+    }
+
+    const details = heading?.nextElementSibling;
+
+    if (details instanceof HTMLDetailsElement) details.open = true;
+  };
+
+  openVerificationDetails();
+  window.addEventListener('hashchange', openVerificationDetails);
+  document.addEventListener('click', (event) => {
+    if (event.defaultPrevented || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+    const link = event.target instanceof Element ? event.target.closest(`a[href="#${anchorId}"]`) : null;
+    if (link) openVerificationDetails();
+  });
+})();
+</script>
+
 ### Quick answers
 
 - **Does DigitalWorker modify my code directly?** No. The Reviewer is read-only — it has no write access. The Agent works in its own Git worktree and delivers every change as a pull request — **you decide what merges; uninstall in one click.**

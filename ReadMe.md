@@ -1,6 +1,6 @@
 # Why DigitalWorker?
 
-**Fast read:** read the headings and **bold** text for the main message. Written for: developers, non-developer builders, and business owners.
+**Fast read:** read the headings and **bold** text for the main message. Written for: developers who already run AI coding agents — and everyone tired of babysitting them.
 
 <p align="right"><a href="https://github.com/apps/digitalworker-reviewer/installations/new" target="_blank" data-cta="install_app" data-location="header"><strong>Install the Reviewer — ~1 min, free trial</strong></a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="https://github.com/grandua/Digital-Worker-Demo/issues" target="_blank" data-cta="view_example" data-location="header"><strong>See it work — no install</strong></a></p>
 
@@ -28,6 +28,8 @@ No iterative prompting. No babysitting. No cleaning up after the AI.[^agent]
 - **[DigitalWorker Agent](#try-digitalworker-agent) — delegate the whole task.**
 
 ## Imagine…
+
+**Copilot and Claude Code promise autonomy too — unguarded autonomy just prints slop overnight.** Imagine an agent you'd actually trust while you sleep:
 
 - **AI solves your most complex business problems — and grows your solution without complexity limits, without slowing down** (the same pace at month 11 and 50K+ lines as in week 1).
 - You tell AI what to do — not how — and it goes and does it. **No hand-holding through every step.**

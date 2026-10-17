@@ -43,13 +43,14 @@ DigitalWorker PR Reviewer is the simplest, risk-free way to start: it is read-on
 
 ## Trial Credit and Paid Conversion
 
-Both products share the same trial and billing policy — one credit allowance per customer, whichever way you started:
+Reviewer and Agent follow the same trial and prepaid pricing policy. Credit is allocated to the customer account identified for that purchase:
 
 - **You pay from a prepaid credit balance.** Usage draws down your balance. When it runs out, work pauses until you add credit.
 - **Every new customer gets a bounded amount of free usage credit.** It makes no difference whether you installed the PR Reviewer GitHub App or onboarded a full DigitalWorker Trello board — the same credit policy applies to you as a customer.
 - **When the credit runs out, we tell you in place.** For PR Reviewer, DigitalWorker posts a comment on the pull request explaining the trial credit is exhausted and how to continue. For full DigitalWorker, the active card is moved to **Blocked** with a comment explaining the same, and new cards are held until credit is added.
-- **Converting to paid is one message.** Contact <a href="mailto:info@agiledigitalworker.com">info@agiledigitalworker.com</a> — we'll reply with a secure payment link. Your setup is untouched — no reinstall, no new onboarding, no lost history — and service resumes as soon as credit is added.
-- **Using both products?** Tell us your GitHub account and Trello username when you contact us and we'll link them under a single credit balance.
+- **To add paid credit, choose the appropriate payment link.** Choose **Business Use** for work, commercial or organizational purposes, or **Personal Use** for a personal project. Both links serve **Reviewer and Agent with the same pricing**: you choose your USD prepayment, and usage is priced at model cost plus 20%. Applicable tax does not buy usage; for example, $60 before tax buys $50 of model usage. Live payment collection is pending Stripe activation; sandbox links are for testing only.
+- **Your purchase tops up your balance.** Once payment succeeds, our team adds the purchased credit to the customer account identified by your billing reference and notifies you when it is ready. Then request a fresh Reviewer review or GitHub Issues Agent run; for Trello Agent, return the card to its work queue. Payment does not restart work automatically. No reinstall or new onboarding is needed.
+- **Using both products?** Reviewer and GitHub Issues Agent share the **same prepaid credit pool** when used under the same GitHub customer account: one top-up funds either product, with no separate product balances. Trello credit is allocated separately; GitHub and Trello balances are not automatically merged. Make sure the payment identifies the account you want to credit.
 
 ---
 ## How to Use DigitalWorker PR Reviewer — read-only reviews without Trello

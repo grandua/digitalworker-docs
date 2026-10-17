@@ -306,7 +306,7 @@ DigitalWorker is the first reviewer we know of that enforces full and proper Agi
 
 <a href="https://github.com/apps/digitalworker-reviewer/installations/new" target="_blank" data-cta="install_app" data-location="pricing"><strong>Install the DigitalWorker PR Reviewer GitHub App</strong></a> on a repository you choose. **From then on every pull request — and every push to it — gets an automatic read-only review** posted by `digitalworker-reviewer[bot]`: a scored summary, detected architectural issues, code smells and key risks, and inline comments on specific lines. You can also post `@digitalworker review` on any PR to trigger it on demand.
 
-**No Trello account, no personal access token, no code changes — and it uninstalls in one click from GitHub Settings > Applications.** **Free trial included; usage beyond it is prepaid — nothing is ever charged automatically.** The Reviewer uses the same review engine the full DigitalWorker Agent uses on its own work: a ~100-item engineering checklist covering correctness, architecture and standards, code-smell detection, and requirements audit — on your real diffs.
+**No Trello account, no personal access token, no code changes — and it uninstalls in one click from GitHub Settings > Applications.** **Free trial included; usage beyond it is prepaid — nothing is ever charged automatically.** The same Business Use and Personal Use payment options serve both Reviewer and Agent, with identical pricing and one shared prepaid pool for the same GitHub customer account; see [payment details](#payment-options). The Reviewer uses the same review engine the full DigitalWorker Agent uses on its own work: a ~100-item engineering checklist covering correctness, architecture and standards, code-smell detection, and requirements audit — on your real diffs.
 
 Want to try it on a repo you own? Install it there directly. For a work repo, share the install link with your repository administrator or organization owner.
 
@@ -322,7 +322,7 @@ Want to try it on a repo you own? Install it there directly. For a work repo, sh
 
 <details markdown="1"><summary>Show how</summary>
 
-**The included &#36;15 credit covers a typical task — larger work gets scoped with you first. No card required.** **Overage is prepaid: add credit via a secure payment link; work pauses at zero — nothing is ever charged automatically.**
+**The included &#36;15 credit covers a typical task — larger work gets scoped with you first. No card required.** **Overage is prepaid: work pauses at zero — nothing is ever charged automatically.** Choose Business Use or Personal Use for your purchase; both payment options serve Reviewer and Agent at the same pricing, drawing from one prepaid pool for the same GitHub customer account. See [payment details](#payment-options).
 
 1. **Install the DigitalWorker Agent GitHub App on your repository** from its public install link: `https://github.com/apps/digitalworker-agent/installations/new` (~1 minute).
    - Permissions granted: `Contents: Read & write`, `Pull requests: Read & write`, `Issues: Read & write`. **DigitalWorker always works in its own Git worktree and delivers all changes as a pull request — your code is never edited directly; you decide what merges.**
@@ -437,11 +437,21 @@ The Calculator domain/test solution needs no MAUI workloads. The <a href="https:
 })();
 </script>
 
+<a id="payment-options"></a>
+
+### Payment options
+
+Choose **Business Use** for work, commercial or organizational purposes, or **Personal Use** for a personal project. **Both links serve Reviewer and Agent with the same pricing:** choose your USD prepayment; usage costs model cost plus 20%, with applicable tax separate. Open-source status alone does not determine intended use or tax exemption.
+
+**One prepaid pool across both products:** Reviewer and GitHub Issues Agent share the same prepaid credit balance under the same GitHub customer account. A single top-up funds either product; no separate product balance is required. Trello uses a separate customer balance and is not automatically pooled with GitHub.
+
+Once payment succeeds, we add your purchased credit to the balance identified by your billing reference and let you know when it is ready. Then request fresh work; payment does not restart a paused job automatically. **Live payment collection is pending Stripe activation; current sandbox links are for testing only.**
+
 ### Quick answers
 
 - **Does DigitalWorker modify my code directly?** No. The Reviewer is read-only — it has no write access. The Agent works in its own Git worktree and delivers every change as a pull request — **you decide what merges; uninstall in one click.**
 - **What if it produces slop or misses the task?** You see the plan and pivotal decisions before implementation, and its ~100-item checklist review runs before the PR reaches you. The public demo even shows a real miss and the autonomous fix — [judge it there](#2-verify-our-claims--no-account-or-setup-needed).
-- **What does it cost after the free trial or the &#36;15 credit?** Nothing automatically — usage beyond that is prepaid: add credit via a secure payment link; **work pauses at zero, nothing is ever charged automatically.**
+- **What does it cost after the free trial or the &#36;15 credit?** Usage beyond that is prepaid at model cost plus 20%, with applicable tax separate. Business Use and Personal Use links each serve Reviewer and Agent at identical pricing; see [payment options](#payment-options) for availability and balance top-ups. **Work pauses at zero, nothing is ever charged automatically.**
 - **Do I need local setup, tokens, API key or Trello?** No — a GitHub App install and an issue are enough; Trello is optional.
 - **What's the smallest way to try it?** Ask it to review a slice of your codebase (comment `@digitalworker review` on any PR) — findings arrive as PR comments; your code is never touched. Or run a task on the <a href="https://github.com/grandua/Digital-Worker-Demo/issues" target="_blank">public demo repo</a> — the Agent is already installed.
 - **No GitHub account — can I still see it work?** Yes — [email us a public-safe task](mailto:info@agiledigitalworker.com) or [book a live walkthrough](mailto:info@agiledigitalworker.com) — we drive our private 50K+ line codebase on the video call.

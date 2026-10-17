@@ -31,12 +31,12 @@
 
 **Copilot and Claude Code** look great on a 200-line task — **even when you ask them for clean code and tests, they ignore half your rules and print slop at scale.** Try shipping **50K+ lines and 3,000+ tests to prod** with them without drowning in rewrites. **Now imagine an agent you can actually trust while you sleep:**
 
+- AI does ~80% of your work — **you're 4-6x more productive than developers using Copilot or Claude Code: 53K lines shipped on a side project in under 6 months; ~3K unit tests generated in under 3 months.**
 - **AI solves your most complex business problems — and grows your solution without complexity limits, without slowing down: the same pace at month 11 and 50K+ lines as in week 1.**
 - You tell AI *what* to do — *not how* — and it actually follows your engineering rules through to the end. **No hand-holding through every step.**
 - **You see where the AI is about to go wrong** before it writes a line — **and steer its design decisions upfront before confusion turns into wrong dependencies.**
 - **You never open a debugger (2+ years without attaching one once)** — the code is so modular and well-tested that AI isolates and fixes 100% of bugs for you.
 - **Writing code by hand becomes purely optional (~1 hand-written line a month)** — even if you love coding, telling AI what to change is faster than finding the file yourself.
-- AI does ~80% of your work — **you're 4-6x more productive than developers using Copilot or Claude Code: 53K lines shipped on a side project in under 6 months; ~3K unit tests generated in under 3 months.**
 - **Code and architecture so clean that even AI can understand and change them without breaking things.**
 - **Test coverage so high that even AI can't break what was working before.**
 - **You do the work of an architect and a product manager — never a babysitter.**

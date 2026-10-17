@@ -1,6 +1,6 @@
 # Why DigitalWorker?
 
-**Fast read:** read the headings and **bold** text for the main message. Written for: developers who already run AI coding agents — and everyone tired of babysitting them.
+**Fast read:** read the headings and **bold** text. **Written for: developers who already use Copilot or Claude Code — and are tired of babysitting them and cleaning up their slop.**
 
 <p align="right"><a href="https://github.com/apps/digitalworker-reviewer/installations/new" target="_blank" data-cta="install_app" data-location="header"><strong>Install the Reviewer — ~1 min, free trial</strong></a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="https://github.com/grandua/Digital-Worker-Demo/issues" target="_blank" data-cta="view_example" data-location="header"><strong>See it work — no install</strong></a></p>
 
@@ -19,9 +19,9 @@
 ---
 *Saving the world from spaghetti code.*
 
-**You make the decisions that matter.** **DigitalWorker turns a ticket into a tested, reviewed, production-ready[^4] <abbr title="a proposed change, packaged for review">pull request</abbr>** — professional-developer output, not AI intern drafts. **It's like assigning a top-10%[^2] developer to a well-scoped task — at AI cost.**
+**You make the decisions that matter.** DigitalWorker turns a ticket into a tested, reviewed, production-ready[^4] <abbr title="a proposed change, packaged for review">pull request</abbr> — **senior-engineered code that scales past 50K+ lines at week-1 speed, where Copilot and Claude Code collapse into slop.** **It's like assigning a top-10%[^2] developer to a well-scoped task — at AI cost.**
 
-No iterative prompting. No babysitting. No cleaning up after the AI.[^agent]
+**No iterative prompting. No babysitting. No cleaning up after the AI.**[^agent]
 
 **Two products:**
 - **[DigitalWorker Reviewer](#get-digitalworker-reviewer) — review your existing pull requests.**
@@ -29,17 +29,17 @@ No iterative prompting. No babysitting. No cleaning up after the AI.[^agent]
 
 ## Imagine…
 
-**Copilot and Claude Code promise autonomy too — unguarded autonomy just prints slop overnight.** Imagine an agent you'd actually trust while you sleep:
+**Copilot and Claude Code** look great on a 200-line task — **even when you ask them for clean code and tests, they ignore half your rules and print slop at scale.** Try shipping **50K+ lines and 3,000+ tests to prod** with them without drowning in rewrites. **Now imagine an agent you can actually trust while you sleep:**
 
-- **AI solves your most complex business problems — and grows your solution without complexity limits, without slowing down** (the same pace at month 11 and 50K+ lines as in week 1).
-- You tell AI what to do — not how — and it goes and does it. **No hand-holding through every step.**
-- **You see where the AI is about to go wrong** before it writes a line — **and steer it before its confusion turns into a codebase of wrong dependencies.**
-- **You never open a debugger** — the code is so modular and well-tested that AI tracks down and fixes 100% of bugs for you (2+ years without attaching a debugger once).
-- **Writing code by hand becomes purely optional** — even if you love coding, telling AI what to change is faster than finding the file yourself (~1 hand-written line a month).
-- AI does ~80% of your work — **you're 4-6x more productive than developers using current AI agents**. (53K lines on a side project under 6 months; ~3K generated unit tests in under 3 months.)
+- **AI solves your most complex business problems — and grows your solution without complexity limits, without slowing down: the same pace at month 11 and 50K+ lines as in week 1.**
+- You tell AI *what* to do — *not how* — and it actually follows your engineering rules through to the end. **No hand-holding through every step.**
+- **You see where the AI is about to go wrong** before it writes a line — **and steer its design decisions upfront before confusion turns into wrong dependencies.**
+- **You never open a debugger (2+ years without attaching one once)** — the code is so modular and well-tested that AI isolates and fixes 100% of bugs for you.
+- **Writing code by hand becomes purely optional (~1 hand-written line a month)** — even if you love coding, telling AI what to change is faster than finding the file yourself.
+- AI does ~80% of your work — **you're 4-6x more productive than developers using Copilot or Claude Code: 53K lines shipped on a side project in under 6 months; ~3K unit tests generated in under 3 months.**
 - **Code and architecture so clean that even AI can understand and change them without breaking things.**
 - **Test coverage so high that even AI can't break what was working before.**
-- You do the work of an architect and a product manager — never a babysitter.
+- **You do the work of an architect and a product manager — never a babysitter.**
 - **No bloated AI slop — beautiful, well-architected code, minimal duplication, above-80% test coverage.**
 - **You create a ticket even for a complex feature — and get it back <abbr title="a ticket in, production-ready code out is known as a Software Factory">solved, tested, and reviewed</abbr>**, close enough to done that you ship to production in a day or two.
 
@@ -49,7 +49,7 @@ No iterative prompting. No babysitting. No cleaning up after the AI.[^agent]
 ***Why raw AI agents hit a wall — and the assumptions behind DigitalWorker:***
 
 - **Current AI generates average code and architecture — sloppy, disorganized, badly engineered** — because it was trained on median human code — and most human code, public or private, ignores <abbr title="a design discipline where each part of the code carries its data and the rules that act on it together">object-oriented design</abbr> discipline, layering, and automated test coverage
-- Without **working** architectural guardrails, **AI prints technical debt at machine speed** — reliably enforcing an engineering process on AI is a difficult, unsolved problem
+- Without **working** architectural guardrails, **AI prints technical debt at machine speed** — **even when you give Copilot or Claude Code explicit rules (`CLAUDE.md`, skills, TDD prompts), they drop instructions mid-task and drift back to slop**
 - **Guiding AI to convert its spaghetti code and broken architecture takes a lot of hard manual labor, technical knowledge, and skill** — reviewing, fixing, re-prompting — not just more AI usage. This is the main reason AI agents improve shipping speed only marginally — **controlled research puts real-world gains at ~25% at best, not manifold[^3]**
 
 <details markdown="1"><summary>See all</summary>

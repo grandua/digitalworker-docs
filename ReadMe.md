@@ -100,9 +100,9 @@ Your engineering competence sets the standard. DigitalWorker carries it through 
 
 [**Verify our claims — no account or setup needed**](#2-verify-our-claims--no-account-or-setup-needed)
 
-<a href="https://agiledigitalworker.com/Engineering-Deep-Dive" target="_blank" data-cta="view_example" data-location="hero"><strong>See the engineering behind the result</strong></a> — the method, concrete code examples, comparison criteria, and economics. No signup required.
+<a href="https://agiledigitalworker.com/Engineering-Deep-Dive#digitalworker--see-the-engineering-behind-the-result" target="_blank" data-cta="view_example" data-location="hero"><strong>See the engineering behind the result</strong></a> — the method, concrete code examples, comparison criteria, and economics. No signup required.
 
-*Developers: jump straight to the [recorded evidence](#2-verify-our-claims--no-account-or-setup-needed) or the <a href="https://agiledigitalworker.com/Engineering-Deep-Dive" target="_blank">engineering deep dive</a>. For the engineering details, open the technical blocks below.*
+*Developers: jump straight to the [recorded evidence](#2-verify-our-claims--no-account-or-setup-needed) or the <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#digitalworker--see-the-engineering-behind-the-result" target="_blank">engineering deep dive</a>. For the engineering details, open the technical blocks below.*
 
 ---
 
@@ -319,7 +319,7 @@ DigitalWorker is the first reviewer we know of that enforces full and proper Agi
 
 <a href="https://github.com/apps/digitalworker-reviewer/installations/new" target="_blank" data-cta="install_app" data-location="pricing"><strong>Install the DigitalWorker PR Reviewer GitHub App</strong></a> — every pull request gets an automatic read-only review by `digitalworker-reviewer[bot]` (architecture issues, code smells, inline comments); you can also post `@digitalworker review` on any PR. **Nothing to configure except installing the GitHub App itself — uninstalls in one click. Free trial included; usage beyond it is prepaid — nothing is ever charged automatically.**
 
-Onboarding steps, org-wide install, and billing details: <a href="https://agiledigitalworker.com/user-guide" target="_blank">User Guide</a>.
+Onboarding steps, org-wide install, and billing details: <a href="https://agiledigitalworker.com/user-guide#onboarding---installing-the-pr-reviewer-on-your-repository" target="_blank">User Guide</a>.
 
 #### Try DigitalWorker Agent
 
@@ -331,7 +331,7 @@ Onboarding steps, org-wide install, and billing details: <a href="https://agiled
 
 <a href="https://github.com/apps/digitalworker-agent/installations/new" target="_blank" data-cta="install_app" data-location="pricing"><strong>Install the DigitalWorker Agent GitHub App</strong></a> on your repository, open an issue with your task and acceptance criteria, and mention `@digitalworker` — it delivers a tested, reviewed PR from its own worktree; **you decide what merges.** **The included &#36;15 credit covers a typical task — no card required; nothing is ever charged automatically.** **No Trello account, no local install, terminal, or per-developer setup required.**
 
-Step-by-step onboarding, permissions, and trigger options: <a href="https://agiledigitalworker.com/user-guide" target="_blank">User Guide</a>. Not ready to grant repo access? Watch it work on the <a href="https://github.com/grandua/Digital-Worker-Demo/issues" target="_blank">public demo repo</a>.
+Step-by-step onboarding, permissions, and trigger options: <a href="https://agiledigitalworker.com/user-guide#option-a-using-digitalworker-via-github-issues-recommended" target="_blank">User Guide</a>. Not ready to grant repo access? Watch it work on the <a href="https://github.com/grandua/Digital-Worker-Demo/issues" target="_blank">public demo repo</a>.
 
 **Or start even smaller:** comment `@digitalworker review` on an existing PR — findings land as comments; it has no write access and never touches your code.
 
@@ -339,13 +339,13 @@ Step-by-step onboarding, permissions, and trigger options: <a href="https://agil
 
 ###### Trello Board (Alternative)
 
-Prefer a Kanban board? <a href="mailto:info@agiledigitalworker.com" data-cta="request_board" data-location="pricing"><strong>Email your preferred Trello board name</strong></a> — a private board is set up personally, usually same day. Requires a Trello account and a GitHub repository you can authorize. Steps: <a href="https://agiledigitalworker.com/user-guide" target="_blank">User Guide</a>.
+Prefer a Kanban board? <a href="mailto:info@agiledigitalworker.com" data-cta="request_board" data-location="pricing"><strong>Email your preferred Trello board name</strong></a> — a private board is set up personally, usually same day. Requires a Trello account and a GitHub repository you can authorize. Steps: <a href="https://agiledigitalworker.com/user-guide#1-onboarding-digitalworker-trello" target="_blank">User Guide</a>.
 
 <a id="3-try-a-task-on-our-demo-repo--github-issues-email-or-trello"></a>
 
 ##### Or watch it on our public demo repo — the Agent is already installed there
 
-**Open an issue on the <a href="https://github.com/grandua/Digital-Worker-Demo/issues" target="_blank">public demo repository</a> with a bounded task, acceptance criteria, and `@digitalworker` in the description** — DigitalWorker delivers a tested PR right there in public. **Only a GitHub account needed: no Trello, no LLM key, no access to your repos.** Prefer Trello or email? <a href="https://agiledigitalworker.com/user-guide" target="_blank">Details in the User Guide</a>.
+**Open an issue on the <a href="https://github.com/grandua/Digital-Worker-Demo/issues" target="_blank">public demo repository</a> with a bounded task, acceptance criteria, and `@digitalworker` in the description** — DigitalWorker delivers a tested PR right there in public. **Only a GitHub account needed: no Trello, no LLM key, no access to your repos.** Prefer Trello or email? <a href="https://agiledigitalworker.com/user-guide#option-b-using-digitalworker-via-trello-board" target="_blank">Details in the User Guide</a>.
 
 <a id="2-verify-our-claims--no-account-or-setup-needed"></a>
 
@@ -394,7 +394,7 @@ If you read the code like a senior dev, you'll find: methods are short, paramete
 
 ### Payment options
 
-One payment link covers every purchase: <a href="https://buy.stripe.com/6oUaEPcAcaw2dbTbzk5J602" target="_blank">top up your balance</a>. Usage costs model cost plus 20%, prepaid — **nothing is ever charged automatically; work pauses at zero.** One prepaid pool serves both Reviewer and Agent under the same GitHub customer account. Full mechanics — business fields, personalized links, Trello balance: <a href="https://agiledigitalworker.com/user-guide" target="_blank">User Guide</a>.
+One payment link covers every purchase: <a href="https://buy.stripe.com/6oUaEPcAcaw2dbTbzk5J602" target="_blank">top up your balance</a>. Usage costs model cost plus 20%, prepaid — **nothing is ever charged automatically; work pauses at zero.** One prepaid pool serves both Reviewer and Agent under the same GitHub customer account. Full mechanics — business fields, personalized links, Trello balance: <a href="https://agiledigitalworker.com/user-guide#trial-credit-and-paid-conversion" target="_blank">User Guide</a>.
 
 ### Quick answers
 
@@ -418,7 +418,7 @@ One payment link covers every purchase: <a href="https://buy.stripe.com/6oUaEPcA
 
 ---
 
-*Internals, method, and economics: <a href="https://agiledigitalworker.com/Engineering-Deep-Dive" target="_blank">engineering deep dive</a>.* <!-- audience: dev, non-dev builder, business · ceiling: T1 narrative everywhere; T2/T3 in labeled technical compartments -->
+*Internals, method, and economics: <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#digitalworker--see-the-engineering-behind-the-result" target="_blank">engineering deep dive</a>.* <!-- audience: dev, non-dev builder, business · ceiling: T1 narrative everywhere; T2/T3 in labeled technical compartments -->
 
 
 [^2]: **Founder-observed expectation based on 20 years of development experience and production use — not an independently benchmarked ranking.**
@@ -433,7 +433,7 @@ One payment link covers every purchase: <a href="https://buy.stripe.com/6oUaEPcA
 
 **Agile Design llc · New York, NY**
 
-<a href="https://www.linkedin.com/in/grand" target="_blank" data-cta="email_founder" data-location="pricing"><strong>Message on LinkedIn</strong></a> · <a href="mailto:info@agiledigitalworker.com" data-cta="email_founder" data-location="pricing"><strong>Email us</strong></a> · <a href="https://agiledigitalworker.com" target="_blank">agiledigitalworker.com</a> · <a href="https://agiledigitalworker.com/user-guide" target="_blank">User Guide</a>
+<a href="https://www.linkedin.com/in/grand" target="_blank" data-cta="email_founder" data-location="pricing"><strong>Message on LinkedIn</strong></a> · <a href="mailto:info@agiledigitalworker.com" data-cta="email_founder" data-location="pricing"><strong>Email us</strong></a> · <a href="https://agiledigitalworker.com" target="_blank">agiledigitalworker.com</a> · <a href="https://agiledigitalworker.com/user-guide#digital-worker-user-guide" target="_blank">User Guide</a>
 
 Follow us: <a href="https://www.linkedin.com/company/2330043" target="_blank" data-cta="social_follow" data-location="footer">LinkedIn</a> · <a href="https://www.linkedin.com/groups/40979011/" target="_blank" data-cta="social_follow" data-location="footer">LinkedIn Group</a> · <a href="https://www.facebook.com/pages/Agile-Design-LLC/194844307249816" target="_blank" data-cta="social_follow" data-location="footer">Facebook</a> · <a href="https://twitter.com/AgileDesignLLC" target="_blank" data-cta="social_follow" data-location="footer">X/Twitter</a>
 

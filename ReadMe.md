@@ -7,9 +7,9 @@
 <table>
   <tr><th colspan="3">Gallery — click to enlarge</th></tr>
   <tr>
-    <td><a href="./Sells-Sheet-Images/domain-logic-complexity-chart.svg" aria-label="Enlarge: Domain logic patterns — effort vs complexity"><img src="./Sells-Sheet-Images/domain-logic-complexity-chart.svg" width="281" alt="Effort to enhance vs complexity of domain logic: procedural styles spike exponentially while a domain model stays near-linear"></a></td>
-    <td><a href="./Sells-Sheet-Images/Sells-Sheet-top-image-Trello-with-popups.png" aria-label="Enlarge: Illustrative typical run"><img src="./Sells-Sheet-Images/Sells-Sheet-top-image-Trello-with-popups.png" width="281" alt="Trello board view of a typical DigitalWorker run"></a></td>
-    <td><a href="https://raw.githubusercontent.com/grandua/digitalworker-docs/main/Sells-Sheet-Images/plan-for-first-citizens-parsing.md.png" target="_blank" aria-label="Enlarge: Real life plan example"><img src="https://raw.githubusercontent.com/grandua/digitalworker-docs/main/Sells-Sheet-Images/plan-for-first-citizens-parsing.md.png" width="281" alt="Plan generated for a real production repository task"></a></td>
+    <td width="33%"><a href="./Sells-Sheet-Images/domain-logic-complexity-chart.svg" aria-label="Enlarge: Domain logic patterns — effort vs complexity"><img src="./Sells-Sheet-Images/domain-logic-complexity-chart.svg" width="100%" alt="Effort to enhance vs complexity of domain logic: procedural styles spike exponentially while a domain model stays near-linear"></a></td>
+    <td width="33%"><a href="./Sells-Sheet-Images/Sells-Sheet-top-image-Trello-with-popups.png" aria-label="Enlarge: Illustrative typical run"><img src="./Sells-Sheet-Images/Sells-Sheet-top-image-Trello-with-popups.png" width="100%" alt="Trello board view of a typical DigitalWorker run"></a></td>
+    <td width="34%"><a href="https://raw.githubusercontent.com/grandua/digitalworker-docs/main/Sells-Sheet-Images/plan-for-first-citizens-parsing.md.png" target="_blank" aria-label="Enlarge: Real life plan example"><img src="https://raw.githubusercontent.com/grandua/digitalworker-docs/main/Sells-Sheet-Images/plan-for-first-citizens-parsing.md.png" width="100%" alt="Plan generated for a real production repository task"></a></td>
   </tr>
   <tr>
     <td><strong>Why Structure Decides Scale</strong><br><sub>Scattered procedures spike in effort; keeping data &amp; rules together (Domain Model) stays flat</sub><br><sub>DigitalWorker Agent — the only AI agent we know that outputs a real Domain Model</sub><br><sub>Redrawn after M. Fowler, PoEAA</sub></td>

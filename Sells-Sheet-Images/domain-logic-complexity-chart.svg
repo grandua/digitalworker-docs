@@ -6,18 +6,23 @@
   <line x1="70" y1="395" x2="70" y2="25" stroke="#333" stroke-width="2"/>
 
   <!-- Domain Model: high start, gentle nearly-linear rise -->
-  <path d="M 70 250 C 260 218 430 175 620 118" fill="none" stroke="#2e7d32" stroke-width="3"/>
+  <path d="M 70 250 C 260 218 440 175 645 128" fill="none" stroke="#2e7d32" stroke-width="3"/>
 
   <!-- Transaction Script: low start, steep exponential, crosses DM early -->
-  <path d="M 70 345 C 200 335 300 300 340 240 C 375 180 410 90 445 28" fill="none" stroke="#c62828" stroke-width="3"/>
+  <path d="M 70 345 C 175 335 250 300 285 240 C 315 180 340 115 365 62" fill="none" stroke="#c62828" stroke-width="3"/>
 
   <!-- Table Module: lowest start, exponential, crosses DM later -->
-  <path d="M 70 365 C 220 360 360 330 430 270 C 500 210 545 110 580 30" fill="none" stroke="#1565c0" stroke-width="3"/>
+  <path d="M 70 365 C 200 360 320 330 385 270 C 435 210 465 125 490 62" fill="none" stroke="#1565c0" stroke-width="3"/>
 
   <!-- Curve labels -->
-  <text x="345" y="50" font-size="15" fill="#c62828" font-weight="600" text-anchor="middle" transform="rotate(-8 345 50)">Transaction Script</text>
-  <text x="545" y="55" font-size="15" fill="#1565c0" font-weight="600" text-anchor="middle">Table Module</text>
-  <text x="620" y="108" font-size="15" fill="#2e7d32" font-weight="600" text-anchor="end">Domain Model</text>
+  <text x="275" y="32" font-size="15" fill="#c62828" font-weight="600" text-anchor="middle">Transaction Script</text>
+  <text x="275" y="49" font-size="12" fill="#c62828" font-style="italic" text-anchor="middle">(step-by-step procedures / spaghetti)</text>
+
+  <text x="530" y="32" font-size="15" fill="#1565c0" font-weight="600" text-anchor="middle">Table Module</text>
+  <text x="530" y="49" font-size="12" fill="#1565c0" font-style="italic" text-anchor="middle">(data &amp; logic split / "anemic" services)</text>
+
+  <text x="648" y="152" font-size="15" fill="#2e7d32" font-weight="600" text-anchor="end">Domain Model (DigitalWorker)</text>
+  <text x="648" y="170" font-size="12" fill="#2e7d32" font-style="italic" text-anchor="end">(data + rules kept together)</text>
 
   <!-- Axis labels -->
   <text x="360" y="432" font-size="16" fill="#333" font-weight="600" text-anchor="middle">Complexity of Domain Logic</text>

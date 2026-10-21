@@ -124,4 +124,4 @@ Double-check the findings; your existing AI-agent costs may apply. For your own 
 
 *Saving the world from spaghetti code.*
 
-© 2026 Agile Design LLC. DigitalWorker and its workflow materials are proprietary.
+© 2026 Agile Design llc. DigitalWorker and its workflow materials are proprietary.

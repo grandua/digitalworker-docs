@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 460" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="680" height="460" fill="#ffffff"/>
+
+  <!-- Axes -->
+  <line x1="70" y1="395" x2="650" y2="395" stroke="#333" stroke-width="2"/>
+  <line x1="70" y1="395" x2="70" y2="25" stroke="#333" stroke-width="2"/>
+
+  <!-- Domain Model: high start, gentle nearly-linear rise -->
+  <path d="M 70 250 C 260 218 430 175 620 118" fill="none" stroke="#2e7d32" stroke-width="3"/>
+
+  <!-- Transaction Script: low start, steep exponential, crosses DM early -->
+  <path d="M 70 345 C 200 335 300 300 340 240 C 375 180 410 90 445 28" fill="none" stroke="#c62828" stroke-width="3"/>
+
+  <!-- Table Module: lowest start, exponential, crosses DM later -->
+  <path d="M 70 365 C 220 360 360 330 430 270 C 500 210 545 110 580 30" fill="none" stroke="#1565c0" stroke-width="3"/>
+
+  <!-- Curve labels -->
+  <text x="345" y="50" font-size="15" fill="#c62828" font-weight="600" text-anchor="middle" transform="rotate(-8 345 50)">Transaction Script</text>
+  <text x="545" y="55" font-size="15" fill="#1565c0" font-weight="600" text-anchor="middle">Table Module</text>
+  <text x="620" y="108" font-size="15" fill="#2e7d32" font-weight="600" text-anchor="end">Domain Model</text>
+
+  <!-- Axis labels -->
+  <text x="360" y="432" font-size="16" fill="#333" font-weight="600" text-anchor="middle">Complexity of Domain Logic</text>
+  <text x="30" y="210" font-size="16" fill="#333" font-weight="600" text-anchor="middle" transform="rotate(-90 30 210)">Effort to Enhance</text>
+
+  <!-- Attribution -->
+  <text x="650" y="455" font-size="11" fill="#888" text-anchor="end">Redrawn after M. Fowler, Patterns of Enterprise Application Architecture (2002)</text>
+</svg>

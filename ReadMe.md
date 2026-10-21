@@ -5,12 +5,14 @@
 <p align="right"><a href="https://github.com/apps/digitalworker-reviewer/installations/new" target="_blank" data-cta="install_app" data-location="header"><strong>Install the Reviewer — ~1 min, free trial</strong></a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="https://github.com/grandua/Digital-Worker-Demo/issues" target="_blank" data-cta="view_example" data-location="header"><strong>See it work — no install</strong></a></p>
 
 <table>
-  <tr><th colspan="2">Gallery — click to enlarge</th></tr>
+  <tr><th colspan="3">Gallery — click to enlarge</th></tr>
   <tr>
+    <td><a href="./Sells-Sheet-Images/domain-logic-complexity-chart.svg" aria-label="Enlarge: Domain logic patterns — effort vs complexity"><img src="./Sells-Sheet-Images/domain-logic-complexity-chart.svg" width="281" alt="Effort to enhance vs complexity of domain logic: procedural styles spike exponentially while a domain model stays near-linear"></a></td>
     <td><a href="./Sells-Sheet-Images/Sells-Sheet-top-image-Trello-with-popups.png" aria-label="Enlarge: Illustrative typical run"><img src="./Sells-Sheet-Images/Sells-Sheet-top-image-Trello-with-popups.png" width="281" alt="Trello board view of a typical DigitalWorker run"></a></td>
     <td><a href="https://raw.githubusercontent.com/grandua/digitalworker-docs/main/Sells-Sheet-Images/plan-for-first-citizens-parsing.md.png" target="_blank" aria-label="Enlarge: Real life plan example"><img src="https://raw.githubusercontent.com/grandua/digitalworker-docs/main/Sells-Sheet-Images/plan-for-first-citizens-parsing.md.png" width="281" alt="Plan generated for a real production repository task"></a></td>
   </tr>
   <tr>
+    <td><strong>Why Structure Decides Scale</strong><br><sub>Procedural styles spike; Domain Model stays near-linear</sub><br><sub>DigitalWorker Agent — the only AI agent we know that outputs a Domain Model</sub><br><sub>Redrawn after M. Fowler, PoEAA</sub></td>
     <td><strong>Illustrative Typical Run</strong><br><sub>Actual results vary by task</sub><br><sub>GitHub Issues works the same way</sub></td>
     <td><strong>Real Life Plan Example</strong><br><sub>From a real prod repo</sub></td>
   </tr>
@@ -72,6 +74,7 @@
 
 ## What we claim as possible
 - Nevertheless, the problem above has a better solution and current AI can be asked to run checklists with hundreds of items and **produce much better structured code that is actually easy to follow, easy to change**, with pretty good <abbr title="the tests catch any defect introduced into the covered code">mutation test coverage</abbr>, and that scales almost linearly with complexity.
+- **That flat line is not just our claim — the theory is twenty years old.** Martin Fowler's *Patterns of Enterprise Application Architecture* (2002) charted this trade-off long before agents: procedural styles — Transaction Script, Table Module — start cheap and go exponential as logic grows; a Domain Model costs more upfront but stays near-linear (first image in the gallery above). Most code — human and AI-generated — lands on the rising curves. **DigitalWorker Agent is the only AI agent we know of that produces a real Rich Domain Model — behavior encapsulated with data — so its output lands on the flat line, in theory and in two years of measured production use.** A popular misconception worth naming: the *Anemic Domain Model* — objects that hold data while services hold the logic — sounds like "domain model" but tracks the procedural curves, not the flat one; Fowler himself debunks it as an anti-pattern — ["a fundamental horror... contrary to the basic idea of object-oriented design"](https://martinfowler.com/bliki/AnemicDomainModel.html).
 - The catch is that AI will not follow such huge checklists if they are given to it as pure text and in a generic fashion. However, **checklists coupled with a smart, adjustable Instruction Engine can make AI follow every instruction**.
 - **That is how impaired AI judgment still solves complex problems:** DigitalWorker forces AI to surface its product and class-design decisions upfront in a <abbr title="practice-run">dry-run</abbr> before writing a line of code — **so you override bad or lackluster decisions in minutes, and the Instruction Engine enforces the rest.**
 
@@ -401,6 +404,7 @@ One payment link covers every purchase: <a href="https://buy.stripe.com/6oUaEPcA
 - **No GitHub account — can I still see it work?** Yes — [email us a public-safe task](mailto:info@agiledigitalworker.com) or [book a live walkthrough](mailto:info@agiledigitalworker.com) — we drive our private 50K+ line codebase on the video call.
 - **What does DigitalWorker replace or augment?** Any AI coding agents and copilots at any autonomy level; code review tools — local, CI, AI-driven or not; and operational procedures or checklists where AI automation kept skipping instructions. **Not replaced:** light human oversight on large or prompt-heavy work, and deterministic quality tools — static analysis, linters, security checks, NDepend/SonarQube.
 - **Engineers don't read code anymore — why does code quality still matter?** **Your AI is the reader now.** Clean, encapsulated code is what lets the agent navigate, reuse, and extend without breaking things — slop confuses AI even faster than it confuses humans.
+- **Isn't an Anemic Domain Model still a domain model?** In name only. Objects that hold data while services hold all the behavior is a Transaction Script/Table Module in OOP clothing — on Fowler's chart it tracks the rising curves, not the flat Domain Model line. Fowler himself lists it as an anti-pattern.
 - **AI cheats on my tests and instructions — how do you handle that?** We had to fix exactly that to make AI follow true OOP and test-first TDD — anti-gaming is built into our instruction sets and Instruction Engine.
 - **Our process is custom — does this fit?** DigitalWorker isn't a prescribed process; the Instruction Engine carries your own checklists and engineering rules with the same precision.
 - **What testing is covered?** Out of the box: test-first development, pre-merge evidence, and run-time verification in DigitalWorker Agent's own local environment for most stacks. Production or environment-specific verification is a scoped add-on — tell us what you need and we'll quote it.
@@ -431,7 +435,7 @@ One payment link covers every purchase: <a href="https://buy.stripe.com/6oUaEPcA
 
 Follow us: <a href="https://www.linkedin.com/company/2330043" target="_blank" data-cta="social_follow" data-location="footer">LinkedIn</a> · <a href="https://www.linkedin.com/groups/40979011/" target="_blank" data-cta="social_follow" data-location="footer">LinkedIn Group</a> · <a href="https://www.facebook.com/pages/Agile-Design-LLC/194844307249816" target="_blank" data-cta="social_follow" data-location="footer">Facebook</a> · <a href="https://twitter.com/AgileDesignLLC" target="_blank" data-cta="social_follow" data-location="footer">X/Twitter</a>
 
-© 2026 Agile Design LLC. DigitalWorker and its workflow materials are proprietary.
+© 2026 Agile Design llc. DigitalWorker and its workflow materials are proprietary.
 
 <!-- Analytics: PostHog instrumentation — localStorage persistence (new vs returning), session replay with input masking, no cookies. Self-exclusion: visit /?no_track once per browser (sets localStorage dw_no_track). -->
 <script>

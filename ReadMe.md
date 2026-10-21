@@ -29,6 +29,8 @@
 - **[DigitalWorker Reviewer](#get-digitalworker-reviewer) — review your existing pull requests.**
 - **[DigitalWorker Agent](#try-digitalworker-agent) — delegate the whole task.**
 
+*The AI was magic in week one. By month three, your codebase fights every change.*
+
 ## Imagine…
 
 **Copilot and Claude Code** look great on a 200-line task — **even when you ask them for clean code and tests, they ignore half your rules and print slop at scale.** Try shipping **50K+ lines and 3,000+ tests to prod** with them without drowning in rewrites. **Now imagine an agent you can actually trust while you sleep:**
@@ -47,7 +49,7 @@
 
 **It's not imagination anymore — it's reality.** DigitalWorker itself was built this way — [see the receipts](#2-verify-our-claims--no-account-or-setup-needed).
 
-## You're Doing AI Coding Slow!
+## Problem: You're Doing AI Coding Slow!
 ***Why raw AI agents hit a wall — and the assumptions behind DigitalWorker:***
 
 - **Current AI generates average code and architecture — sloppy, disorganized, badly engineered** — because it was trained on median human code — and most human code, public or private, ignores <abbr title="a design discipline where each part of the code carries its data and the rules that act on it together">object-oriented design</abbr> discipline, layering, and automated test coverage
@@ -72,7 +74,7 @@
 
 [^3]: The strongest controlled evidence brackets the gain narrowly: three field RCTs across 4,867 developers at Microsoft, Accenture, and a Fortune 100 company found a 26% increase in completed tasks with an AI assistant (Cui et al., Management Science, 2025) — while a 2025 METR RCT found experienced open-source developers were actually ~19% *slower* with AI tools on their own mature repositories, even though they believed they had been ~20% faster. Our founder's own measured experience before adopting AI-checklist-driven workflows matched the ~25% figure.
 
-## What we claim as possible
+## The Solution: What we claim as possible
 - Nevertheless, the problem above has a better solution and current AI can be asked to run checklists with hundreds of items and **produce much better structured code that is actually easy to follow, easy to change**, with pretty good <abbr title="the tests catch any defect introduced into the covered code">mutation test coverage</abbr>, and that scales almost linearly with complexity.
 - **That flat line is not just our claim — the theory is twenty years old.** Martin Fowler's *Patterns of Enterprise Application Architecture* (2002) charted this trade-off long before agents: procedural styles — Transaction Script, Table Module — start cheap and go exponential as logic grows; a Domain Model costs more upfront but stays near-linear (first image in the gallery above). Most code — human and AI-generated — lands on the rising curves. **DigitalWorker Agent is the only AI agent we know of that produces a real Rich Domain Model — behavior encapsulated with data — so its output lands on the flat line, in theory and in two years of measured production use.** A popular misconception worth naming: the *Anemic Domain Model* — objects that hold data while services hold the logic — sounds like "domain model" but tracks the procedural curves, not the flat one; Fowler himself debunks it as an anti-pattern — <a href="https://martinfowler.com/bliki/AnemicDomainModel.html" target="_blank">"a fundamental horror... contrary to the basic idea of object-oriented design"</a>.
 - The catch is that AI will not follow such huge checklists if they are given to it as pure text and in a generic fashion. However, **checklists coupled with a smart, adjustable Instruction Engine can make AI follow every instruction**.

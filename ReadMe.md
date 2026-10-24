@@ -441,6 +441,9 @@ One payment link covers every purchase: <a href="https://buy.stripe.com/6oUaEPcA
 
 [^agent]: **These benefits describe the full DigitalWorker Agent. The Reviewer reviews existing pull requests; it does not implement changes.**
 
+
+**<big>Index</big>:** [Imagine](#imagine) · [The Problem](#problem-youre-doing-ai-coding-slow) · [The Solution](#the-solution-what-we-claim-as-possible) · [Two products](#two-products-one-engineering-standard) · [Why it's different](#why-its-different) · [Founder Experience](#founder-experience) · [Getting Started](#getting-started) · [Payment](#payment-options) · [Quick answers](#quick-answers)
+
 ---
 
 **Agile Design llc · New York, NY**

@@ -31,6 +31,18 @@
 
 **<big>Index</big>:** [Imagine](#imagine) · [The Problem](#problem-youre-doing-ai-coding-slow) · [The Solution](#the-solution-what-we-claim-as-possible) · [Two products](#two-products-one-engineering-standard) · [Why it's different](#why-its-different) · [Founder Experience](#founder-experience) · [Getting Started](#getting-started) · [Payment](#payment-options) · [Quick answers](#quick-answers)
 
+## Self-filter: Do NOT use DigitalWorker If
+- You do not write, review, or pay for software
+- You have never used GitHub — and you plan to keep it that way
+- You and your business never need more than 2K lines of code — about a day of AI work, then the product is finished
+- You and your business need more than 2K lines — and you need them as spaghetti, because a codebase only you can navigate is your pension
+- You love babysitting Copilot and Claude Code — a ticket that comes back as a pull request would spoil the hobby
+- You love lots of defects after every change — the debugger is where you actually work
+- You believe AI is coming for your job — and you would never forgive it for promoting you to be its boss
+- You have sunk too many evenings into tuning Copilot, prompt tricks, and CLAUDE.md to admit it is not working
+- You do not really like the rich — and a 4-6x productivity advantage is how people accidentally become one
+
+
 *The AI was magic in week one. By month three, your codebase fights every change.*
 
 ## Imagine…

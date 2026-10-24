@@ -56,7 +56,7 @@
   - Most code out there is procedural, not object-oriented. **Developers love using clean object-oriented APIs like .NET's when someone else builds them — but building that structure by hand under deadline pressure takes rare, expensive design skill, and raw AI actively resists doing so.**
 - Without **working** architectural guardrails, **AI prints technical debt at machine speed** — **even when you give Copilot or Claude Code explicit rules (`CLAUDE.md`, skills, TDD prompts), they drop instructions mid-task and drift back to slop**
 - **Guiding AI to convert its spaghetti code and broken architecture takes a lot of hard manual labor, technical knowledge, and skill** — reviewing, fixing, re-prompting — not just more AI usage. This is the main reason AI agents improve shipping speed only marginally — **controlled research puts real-world gains at ~25% at best, not manifold[^3]**
-- **Your AI reads every line now:** even if engineers no longer read code, the agent does — **clean, encapsulated code is what lets AI navigate, reuse, and extend without breaking things; slop confuses AI even faster than it confuses humans**
+- <u><big>**Slop hurts your AI more than it hurts you:** AI reads every line now — **clean, encapsulated code is what lets it navigate, reuse, and extend without breaking things; its smaller context window and lower complexity ceiling mean it chokes on mess faster than any human**[^6]</big></u>
 
 <details markdown="1"><summary>See all</summary>
 
@@ -434,6 +434,8 @@ One payment link covers every purchase: <a href="https://buy.stripe.com/6oUaEPcA
 [^4]: **“Production-ready” means the implementation has completed the engineering process and is ready for your final hands-on check.** **Founder-observed results are not an independent benchmark or a defect-free guarantee for every codebase.**
 
 [^5]: Tornhill & Borg, *Code Red: The Business Impact of Code Quality* (IEEE/ACM TechDebt 2022) — peer-reviewed analysis of 39 proprietary production codebases (30,737 files): low-quality code contained 15× more defects, took 124% more development time to resolve issues, and showed 9× longer maximum cycle times. Independently, Stripe's Developer Coefficient survey (2018) found developers spend ~42% of the work week on technical debt and bad code. In founder experience AI-generated code falls under the same math: trained on average human code, it reproduces average professional quality at best, so the codebase-scale penalties apply unchanged.
+
+[^6]: SlopCodeBench (arXiv:2603.24755) — benchmarking 15 coding agents on long-horizon iterative tasks where agents repeatedly extend their own solutions: quality degraded across checkpoints, with structural erosion rising in 77% of trajectories and verbosity in 75.5%. Compared to 473 open-source Python repositories, agent code was 2.3× more verbose and 2.0× more structurally eroded, and the human repositories degraded less often and by smaller margins across their git histories. https://www.arxiv.org/abs/2603.24755
 
 [^agent]: **These benefits describe the full DigitalWorker Agent. The Reviewer reviews existing pull requests; it does not implement changes.**
 

@@ -56,7 +56,7 @@
   - Most code out there is procedural, not object-oriented. **Developers love using clean object-oriented APIs like .NET's when someone else builds them — but building that structure by hand under deadline pressure takes rare, expensive design skill, and raw AI actively resists doing so.**
 - Without **working** architectural guardrails, **AI prints technical debt at machine speed** — **even when you give Copilot or Claude Code explicit rules (`CLAUDE.md`, skills, TDD prompts), they drop instructions mid-task and drift back to slop**
 - **Guiding AI to convert its spaghetti code and broken architecture takes a lot of hard manual labor, technical knowledge, and skill** — reviewing, fixing, re-prompting — not just more AI usage. This is the main reason AI agents improve shipping speed only marginally — **controlled research puts real-world gains at ~25% at best, not manifold[^3]**
-- <u><big>**Slop hurts your AI more than it hurts you:** AI reads every line now — **clean, encapsulated code is what lets it navigate, reuse, and extend without breaking things; its smaller context window and lower complexity ceiling mean it chokes on mess faster than any human**[^6]</big></u>
+- <u><big>**Slop hurts your AI more than it hurts you:** AI reads every line now — **clean, encapsulated code is what lets it navigate, reuse, and extend without breaking things; its smaller context window and lower complexity ceiling mean it chokes on mess faster than any human**</big></u>[^6]
 
 <details markdown="1"><summary>See all</summary>
 

@@ -424,11 +424,9 @@ One payment link covers every purchase: <a href="https://buy.stripe.com/6oUaEPcA
 
 ---
 
-**Ready when you are:** <a href="https://github.com/apps/digitalworker-reviewer/installations/new" target="_blank" data-cta="install_app" data-location="bottom_page"><strong>Install the Reviewer — ~1 min, free trial</strong></a> · <a href="#4-start-using-it-on-your-repo--github-issues" data-cta="install_app" data-location="bottom_page"><strong>Install the Agent — ~2 min, &#36;15 credit, no card</strong></a> · <a href="https://github.com/grandua/Digital-Worker-Demo/issues" target="_blank" data-cta="view_example" data-location="bottom_page"><strong>See it work — no install</strong></a>
-
----
-
 *Internals, method, and economics: <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#digitalworker--see-the-engineering-behind-the-result" target="_blank">engineering deep dive</a>.* <!-- audience: dev, non-dev builder, business · ceiling: T1 narrative everywhere; T2/T3 in labeled technical compartments -->
+
+**Ready when you are:** <a href="https://github.com/apps/digitalworker-reviewer/installations/new" target="_blank" data-cta="install_app" data-location="bottom_page"><strong>Install the Reviewer — ~1 min, free trial</strong></a> · <a href="#4-start-using-it-on-your-repo--github-issues" data-cta="install_app" data-location="bottom_page"><strong>Install the Agent — ~2 min, &#36;15 credit, no card</strong></a> · <a href="https://github.com/grandua/Digital-Worker-Demo/issues" target="_blank" data-cta="view_example" data-location="bottom_page"><strong>See it work — no install</strong></a>
 
 
 [^2]: **Founder-observed expectation based on 20 years of development experience and production use — not an independently benchmarked ranking.**

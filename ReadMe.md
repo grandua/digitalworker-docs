@@ -38,12 +38,13 @@
 - You need well past 2K lines, all of it as spaghetti: the only retirement plan that compounds with every merge
 - You genuinely enjoy babysitting Copilot and Claude Code — a ticket that quietly comes back as a finished pull request would ruin your evening plans
 - You love lots of defects after every change — the debugger is the work
-- You would miss the month-three slowdown: at 50K+ lines and still at week-1 speed, your retros would run out of material
+- You would miss the month-three slowdown — at a steady pace your retros would run out of material
 - You are a proud practitioner of the Anemic Domain Model — Martin Fowler called it "a fundamental horror," and you took that as a challenge
 - You are sure AI is coming for your job, and you would never forgive it for making you its boss
 - You have sunk too many weekends into tuning Copilot, prompt tricks, and CLAUDE.md to admit the AI ignores half of it.
 - You disapprove of the rich — and shipping 4–6x faster than the market makes it awkward at tax time
 
+*None of you? Then imagine this instead:*
 
 *The AI was magic in week one. By month three, your codebase fights every change.*
 

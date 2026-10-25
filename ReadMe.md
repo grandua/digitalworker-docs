@@ -34,13 +34,14 @@
 ## Self-filter: Do NOT use DigitalWorker If
 - You do not write, review, or pay for software
 - You have never used GitHub — and you plan to keep it that way
-- You and your business never need more than 2K lines of code — about a day of AI work, then the product is finished
-- You and your business need more than 2K lines — and you need them as spaghetti, because a codebase only you can navigate is your pension
-- You love babysitting Copilot and Claude Code — a ticket that comes back as a pull request would spoil the hobby
-- You love lots of defects after every change — the debugger is where you actually work
-- You believe AI is coming for your job — and you would never forgive it for promoting you to be its boss
-- You have sunk too many evenings into tuning Copilot, prompt tricks, and CLAUDE.md to admit it is not working
-- You do not really like the rich — and a 4-6x productivity advantage is how people accidentally become one
+- Your entire business fits under 2K lines of code — one afternoon of raw AI, and the company is feature-complete forever
+- You need well past 2K lines — and you need them as spaghetti, because a codebase nobody else can decipher is your pension
+- You genuinely enjoy babysitting Copilot and Claude Code — a ticket that quietly comes back as a finished pull request would ruin your evening plans
+- You count on a fresh batch of regressions after every merge — if you went years without opening a debugger, you would miss the suspense
+- You are a proud practitioner of the Anemic Domain Model — Martin Fowler called it "a fundamental horror," and you took that as a challenge
+- You are convinced AI is coming for your job — and you would never forgive it for promoting you to be its boss
+- You have sunk too many evenings into tuning Copilot, prompt tricks, and CLAUDE.md to admit the AI stops reading around line 12
+- You disapprove of the rich — and shipping 4–6x faster than the market makes it awkward at tax time
 
 
 *The AI was magic in week one. By month three, your codebase fights every change.*

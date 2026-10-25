@@ -34,14 +34,14 @@
 ## Self-filter: Do NOT use DigitalWorker If
 - You do not write, review, or pay for software
 - You have never used GitHub — and you plan to keep it that way
-- Your entire business fits under 2K lines of code — one afternoon of raw AI, and the company is feature-complete forever
-- You need well past 2K lines — and you need them as spaghetti, because a codebase only you can decipher is your pension
+- Your whole company fits in 2K lines of code. One afternoon of raw AI, and it is feature-complete forever
+- You need well past 2K lines, all of it as spaghetti: the only retirement plan that compounds with every merge
 - You genuinely enjoy babysitting Copilot and Claude Code — a ticket that quietly comes back as a finished pull request would ruin your evening plans
-- You count on a fresh batch of regressions after every merge — if you went years without opening a debugger, you would miss the suspense
+- You love lots of defects after every change — the debugger is the work
+- You would miss the month-three slowdown: at 50K+ lines and still at week-1 speed, your retros would run out of material
 - You are a proud practitioner of the Anemic Domain Model — Martin Fowler called it "a fundamental horror," and you took that as a challenge
-- You are convinced AI is coming for your job — and you would never forgive it for promoting you to be its boss
-- You have sunk too many weekends into tuning Copilot, prompt tricks, and CLAUDE.md to admit the AI stops reading around line 12
-- You believe code only counts if you watched it being written — an overnight pull request would feel like cheating
+- You are sure AI is coming for your job, and you would never forgive it for making you its boss
+- You have sunk too many weekends into tuning Copilot, prompt tricks, and CLAUDE.md to admit the AI ignores half of it.
 - You disapprove of the rich — and shipping 4–6x faster than the market makes it awkward at tax time
 
 

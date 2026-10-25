@@ -52,7 +52,7 @@
 
 **Copilot and Claude Code** look great on a 200-line task — **even when you ask them for clean code and tests, they ignore half your rules and print slop at scale.** Try shipping **50K+ lines and 3,000+ tests to prod** with them without drowning in rewrites. **Now imagine an agent you can actually trust while you sleep:**
 
-- **You get the ultimate competitive advantage: you're 4-6x more productive than developers using Copilot or Claude Code**, because AI does ~80% of your work: **53K lines shipped on a side project in under 6 months; ~3K unit tests generated in under 3 months.**
+- **You get the ultimate competitive advantage: you're 4-6x more productive than developers using Copilot or Claude Code**, because AI does ~80% of your work: **53K lines shipped to production in 5 months; ~3K unit tests generated in under 3 months.**
 - **AI solves your most complex business problems — and grows your solution without complexity limits, without slowing down: the same pace at month 11 and 50K+ lines as in week 1.**
 - You tell AI *what* to do — *not how* — and it actually follows your engineering rules through to the end. **No hand-holding through every step.**
 - **You see where the AI is about to go wrong** before it writes a line — **and steer its design decisions upfront before confusion turns into wrong dependencies.**
@@ -364,7 +364,7 @@ Step-by-step onboarding, permissions, and trigger options: <a href="https://agil
 
 ###### Trello Board (Alternative)
 
-Prefer a Kanban board? <a href="mailto:info@agiledigitalworker.com" data-cta="request_board" data-location="pricing"><strong>Email your preferred Trello board name</strong></a> — a private board is set up personally, usually same day. Requires a Trello account and a GitHub repository you can authorize. Steps: <a href="https://agiledigitalworker.com/user-guide#1-onboarding-digitalworker-trello" target="_blank">User Guide</a>.
+Prefer a Kanban board? DigitalWorker also runs on a private Trello board — usually connected the same day. Requires a Trello account and a GitHub repository you can authorize. Steps: <a href="https://agiledigitalworker.com/user-guide#1-onboarding-digitalworker-trello" target="_blank">User Guide</a>.
 
 <a id="3-try-a-task-on-our-demo-repo--github-issues-email-or-trello"></a>
 
@@ -383,7 +383,7 @@ Browse the <a href="https://github.com/grandua/Digital-Worker-Demo" target="_bla
 - **<a href="https://github.com/grandua/Digital-Worker-Demo/tree/main/Calculator" target="_blank">Scientific Calculator</a>: 230 domain unit tests**, a Rich Domain Model, and explicit edge-case behavior. **External review found issues, followed by autonomous remediation through a fix card.**
 - **<a href="https://github.com/grandua/Digital-Worker-Demo/tree/main/UrlShortener" target="_blank">URL Shortener API</a>: 40 unit tests**, Clean Architecture, Entity Framework data access, and requirements traceability.
 
-**Demo tasks are deliberately small so the whole ticket→PR→review→fix cycle is traceable in minutes — the same engine built DigitalWorker itself. Want real-scale proof? <a href="mailto:info@agiledigitalworker.com" data-cta="email_founder" data-location="pricing"><strong>Book a live walkthrough</strong></a> — we drive our private 50K+ line codebase on the video call.**
+**Demo tasks are intentionally compact so the whole ticket→PR→review→fix cycle is traceable in minutes — the same engine built DigitalWorker itself. Want real-scale proof? <a href="mailto:info@agiledigitalworker.com" data-cta="email_founder" data-location="pricing"><strong>Book a live walkthrough</strong></a> — we drive our private 50K+ line codebase on the video call.**
 
 If you read the code like a senior dev, you'll find: methods are short, parameters few, state and behavior live in the same classes, Domain depends on nothing, and coverage is near-complete.
 
@@ -434,7 +434,7 @@ One payment link covers every purchase: <a href="https://buy.stripe.com/6oUaEPcA
 - **What if our code has domain objects that hold data while "service" classes hold the logic (an Anemic Domain Model)?** That's a domain model in name only. Splitting data into passive objects while procedures in services do all the work — what Fowler calls the *Anemic Domain Model* (a *Transaction Script / Table Module* in OOP clothing) — still rides the steep rising curves on his chart, not the flat Domain Model line. Fowler himself lists it as an <a href="https://martinfowler.com/bliki/AnemicDomainModel.html" target="_blank">anti-pattern</a>.
 - **AI cheats on my tests and instructions — how do you handle that?** We had to fix exactly that to make AI follow true OOP and test-first TDD — anti-gaming is built into our instruction sets and Instruction Engine.
 - **Our process is custom — does this fit?** DigitalWorker isn't a prescribed process; the Instruction Engine carries your own checklists and engineering rules with the same precision.
-- **What testing is covered?** Out of the box: test-first development, pre-merge evidence, and run-time verification in DigitalWorker Agent's own local environment for most stacks. Production or environment-specific verification is a scoped add-on — tell us what you need and we'll quote it.
+- **What testing is covered?** Out of the box: test-first development, pre-merge evidence, and run-time verification in DigitalWorker Agent's own local environment for most stacks. Production or environment-specific verification is available — describe your environment and we'll scope it.
 - **Do you cover in-prod diagnostics and feedback loops?** Not out of the box — but the DigitalWorker Instruction Engine can carry your custom operational instructions out of the box, and Agile Design llc can be engaged for the most stubborn cases, when AI escapes or cheats instead of following your instructions.
 
 ---

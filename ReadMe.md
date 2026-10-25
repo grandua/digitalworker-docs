@@ -110,7 +110,7 @@
 
 **Substantially fewer defects. Far less cleanup. More uninterrupted attention for the product you want to build.**
 
-Your engineering competence sets the standard. DigitalWorker carries it through the work: turning a ticket into a tested, reviewed, production-ready[^4] pull request. **You shape the pivotal decisions and perform the final behavior check; DigitalWorker handles implementation, testing, review, and fixes.**
+Your engineering competence sets the standard. DigitalWorker carries it through the work: carrying your ticket to a fully finished[^4] PR. **You shape the pivotal decisions and perform the final behavior check; DigitalWorker handles implementation, testing, review, and fixes.**
 
 **Take pride in maintainable and beautiful work:** clear intent, <abbr title="cohesive objects">well-organized parts</abbr>, and code you can confidently extend.
 
@@ -232,7 +232,7 @@ Your engineering competence sets the standard. DigitalWorker carries it through 
 
   Direct your judgment toward the product while DigitalWorker handles routine implementation and quality work. **The current usage model is model cost plus around 20% markup;** <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#economics-pay-for-execution-keep-your-judgment" target="_blank">see the economics and how to evaluate total effort</a>.
 
-  Enforced discipline is not overhead—it is why velocity does not slow down as the codebase grows. **In founder production use, a greenfield system with 4,000 automated tests and 53,000 lines of code reached production in 5 months.** **A parallel 51,000-line commercial codebase sustained ~85 commits per month for nearly a year without throughput degradation.**
+  Enforced discipline is not overhead—it is why velocity does not slow down as the codebase grows. **In founder production use, a greenfield system reached production in 5 months and a commercial codebase held pace for nearly a year** — numbers in [Founder Experience](#founder-experience).
 
   Experienced developers can take on more design work, product decisions, and quality leadership while retaining the parts of engineering they enjoy. **Non-developers can turn clear requirements into working software and bring in experienced judgment for consequential design choices.** The opportunity is to build more of what matters to you, with competence visible in the result.
 

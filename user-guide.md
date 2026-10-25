@@ -111,11 +111,6 @@ Digital Worker supports two task-management workflows:
    In your repository (`Issues > Labels`), ensure the following labels are created:
    - **Trigger label:** `digital-worker`
    - **Lifecycle status labels:** `dw-in-progress`, `dw-done`, `dw-blocked`.
-4. **Webhook & Infrastructure Settings (Operator / Production):**
-   - **Webhook URL:** `https://<host>/webhooks/github/issues` (served over Tailscale Funnel)
-   - **Webhook secret:** `GitHubAgentWebhookSecret`
-   - **Subscribed events:** `Issues` and `Issue comment`
-   - **Tailscale key expiry:** Set **"Disable key expiry"** for the webhook host machine in the Tailscale Admin Console so background Funnel mappings never drop unexpectedly.
 
 #### 2. Submitting a Task via GitHub Issues
 
@@ -129,7 +124,7 @@ Digital Worker supports two task-management workflows:
    Reopening alone never starts another run, even with a retained description mention. Post a fresh mention comment or reapply `digital-worker` to request another run. To prepare an issue for later, omit the opening mention.
 
 3. **Tracking Progress & Receiving Results:**
-   Digital Worker receives the webhook delivery at `POST /webhooks/github/issues` and manages progress labels:
+   Digital Worker receives the issue event and manages progress labels:
    - `dw-in-progress` — task claimed and currently executing.
    - `dw-done` — task completed successfully; summary and pull request link posted in a comment.
    - `dw-blocked` — task denied, failed, or blocked; reason posted where publication is possible. Hard security blocks apply this label after a delay without a comment.

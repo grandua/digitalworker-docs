@@ -435,7 +435,7 @@ One payment link covers every purchase: <a href="https://buy.stripe.com/6oUaEPcA
 - **AI cheats on my tests and instructions — how do you handle that?** We had to fix exactly that to make AI follow true OOP and test-first TDD — anti-gaming is built into our instruction sets and Instruction Engine.
 - **Our process is custom — does this fit?** DigitalWorker isn't a prescribed process; the Instruction Engine carries your own checklists and engineering rules with the same precision.
 - **What testing is covered?** Out of the box: test-first development, pre-merge evidence, and run-time verification in DigitalWorker Agent's own local environment for most stacks. Production or environment-specific verification is available — describe your environment and we'll scope it.
-- **Do you cover in-prod diagnostics and feedback loops?** Not out of the box — but the DigitalWorker Instruction Engine can carry your custom operational instructions out of the box, and Agile Design llc can be engaged for the most stubborn cases, when AI escapes or cheats instead of following your instructions.
+- **Do you cover in-prod diagnostics and feedback loops?** Not out of the box — but the DigitalWorker Instruction Engine can carry your custom operational instructions out of the box, and Agile Design llc can be engaged for stubborn cases in *your own* instruction sets — AI ignoring or gaming instructions it was never engineered to follow.
 
 ---
 

@@ -1,19 +1,19 @@
 # Digital Worker User Guide
 
-**Audience:** human users who submit tasks to Digital Worker via Trello on their own connected board <!-- ceiling: T1 intro → T2 operations -->
+**Audience:** human users who submit tasks to Digital Worker via GitHub Issues or a connected Trello board <!-- ceiling: T1 intro → T2 operations -->
 **Purpose:** explain what Digital Worker is, how to use it, what it can and cannot do, and what actions are prohibited.
 
-**TL;DR:** DigitalWorker turns a task card on your Trello board into a tested, reviewed pull request on your GitHub repository. You decide what matters; it does the engineering work — implementation, tests, review, and fixes.
+**TL;DR:** DigitalWorker turns a GitHub issue — or a card on your Trello board — into a tested, reviewed pull request on your GitHub repository. You decide what matters; it does the engineering work — implementation, tests, review, and fixes.
 
-> **This guide covers using DigitalWorker on your own Trello board connected to your own GitHub repository.** That requires a Trello account and a GitHub repository. If you are not yet at this stage, there are two earlier ways to engage:
+> **This guide covers using DigitalWorker on your own GitHub repository — via GitHub Issues (simplest, recommended) or a private Trello board for a nicer Kanban view.** GitHub Issues needs only a GitHub account and a repository you can authorize; the Trello path also needs a Trello account. If you are not yet at this stage, there are two earlier ways to engage:
 > - **Verify our claims** — clone the public demo repo, run the tests, view the public Trello board. No accounts needed. See the [Sell Sheet](../../Docs/Sales/Sell-Sheet.md) § Getting Started.
-> - **Try it on the demo board** — request access to the demo Trello board, submit a task card, watch DigitalWorker produce a pull request. Trello account only. See the [Sell Sheet](../../Docs/Sales/Sell-Sheet.md) § Getting Started.
+> - **Try it on the demo repo** — open an issue on the public demo repository mentioning `@digitalworker`, watch DigitalWorker produce a pull request. GitHub account only. See the [Sell Sheet](../../Docs/Sales/Sell-Sheet.md) § Getting Started.
 
 ---
 
 ## What Is Digital Worker?
 
-Digital Worker is a fully autonomous, non-interactive AI coding agent. It reads software-development tasks from task cards on your Trello board, executes them using an AI coding agent, and publishes results back to Trello. You never interact with it directly in a chat or terminal — all communication happens through Trello cards.
+Digital Worker is a fully autonomous, non-interactive AI coding agent. It reads software-development tasks from GitHub issues or task cards on your Trello board, executes them using an AI coding agent, and publishes results back to the issue or card. You never interact with it directly in a chat or terminal — all communication happens through GitHub comments or Trello cards.
 
 Execution is autonomous, but pivotal product and architecture decisions remain yours. You no longer review its work for logic — AI reviews and checklists handle that. Your review is judgment: connection to the physical world, prioritization, architecture decisions, new classes and their relationships, and important trade-offs — placed early, before implementation. For complex or high-impact work, use planning mode first so you can spot-review and correct selected sections of the AI-drafted research, planning, architecture, and class-design document package before implementation.
 
@@ -34,8 +34,8 @@ That creates a compounding business advantage. A disciplined codebase can suppor
 | **What it does** | Reviews your pull requests and posts feedback as GitHub reviews — Agile architecture violations such as incorrect layer dependencies and Anemic Domain Model anti-pattern, testability issues, test coverage gaps, and most code smells including code and class duplication | Every part of the software development lifecycle (SDLC): plans, architects, designs classes and UX, implements and tests features, reviews code, fixes issues |
 | **How you use it** | Always-on — every PR and every push is reviewed automatically; optional `@digitalworker review` comment | Create and move Trello cards on your board, or trigger directly via GitHub Issues (`@digitalworker` mention or `digital-worker` label) |
 | **Trello account** | Not needed | Optional when using GitHub Issues; required for Trello board workflow                                                        |
-| **GitHub access token (PAT)** | Not needed — GitHub App permissions only | Not needed — the Agent app covers it; a PAT exists only for legacy configurations |
-| **Onboarding effort** | Install the app on your repos (~1 minute) | Board provisioning + repository onboarding (~7 minutes)                                                                      |
+| **GitHub access token (PAT)** | Not needed — GitHub App permissions only | Not needed — the Agent app covers it |
+| **Onboarding effort** | Install the app on your repos (~1 minute) | Install the app + first issue (~2 minutes); optional Trello board adds ~7 minutes of your time — invite typically arrives the same day                                                                      |
 
 DigitalWorker PR Reviewer is the simplest, risk-free way to start: it is read-only and always-on, so you see review quality on real PRs immediately. DigitalWorker is the full-featured agent you graduate to when you want it doing the work, not just reviewing it.
 
@@ -48,9 +48,9 @@ Reviewer and Agent follow the same trial and prepaid pricing policy. Credit is a
 - **You pay from a prepaid credit balance.** Usage draws down your balance. When it runs out, work pauses until you add credit.
 - **Every new customer gets a bounded amount of free usage credit.** It makes no difference whether you installed the PR Reviewer GitHub App or onboarded a full DigitalWorker Trello board — the same credit policy applies to you as a customer.
 - **When the credit runs out, we tell you in place.** For PR Reviewer, DigitalWorker posts a comment on the pull request explaining the trial credit is exhausted and how to continue. For full DigitalWorker, the active card is moved to **Blocked** with a comment explaining the same, and new cards are held until credit is added.
-- **To add paid credit, use the personalized link in your exhaustion notice.** It already carries your billing reference (`?client_reference_id=`). The generic link is `https://buy.stripe.com/6oUaEPcAcaw2dbTbzk5J602`. One link serves **Reviewer and Agent with the same pricing**: you choose your USD prepayment ($5.00 minimum), and usage is priced at model cost plus 20%. Applicable tax does not buy usage; for example, $60 before tax buys $50 of model usage. For **Business Use** (work, commercial or organizational purposes), fill in the business-name field at checkout — you can also add a tax ID; leave them blank for **Personal Use**. If you use the generic link, enter your DigitalWorker billing reference in the optional checkout field and contact support for manual reconciliation; that field does not enable automatic crediting.
-- **Your purchase tops up your balance automatically.** Once payment succeeds, credit is applied to the customer account identified by your billing reference — no email or manual step is needed for a personalized link. Then request a fresh Reviewer review or GitHub Issues Agent run; for Trello Agent, return the card to its work queue. Payment does not restart work automatically. No reinstall or new onboarding is needed. If a payment arrives without a usable reference it is parked for the operator to assign; contact <a href="mailto:info@agiledigitalworker.com">info@agiledigitalworker.com</a> if that happens.
-- **Using both products?** Reviewer and GitHub Issues Agent share the **same prepaid credit pool** when used under the same GitHub customer account: one top-up funds either product, with no separate product balances. Trello credit is allocated separately; GitHub and Trello balances are not automatically merged. Make sure the payment identifies the account you want to credit.
+- **To add paid credit, use the personalized link in your exhaustion notice.** It already carries your billing reference (`?client_reference_id=`). The generic link is `https://buy.stripe.com/6oUaEPcAcaw2dbTbzk5J602`. One link serves **Reviewer and Agent with the same pricing**: you choose your USD prepayment ($5.00 minimum), and usage is priced at model cost plus 20%. Applicable tax does not buy usage; for example, $60 before tax buys $50 of model usage. For **Business Use** (work, commercial or organizational purposes), fill in the business-name field at checkout — you can also add a tax ID; leave them blank for **Personal Use**. If you use the generic link, enter your DigitalWorker billing reference in the optional checkout field so the payment can be matched to your account.
+- **Your purchase tops up your balance automatically.** Once payment succeeds, credit is applied to the customer account identified by your billing reference — no email or manual step is needed for a personalized link. Then request a fresh Reviewer review or GitHub Issues Agent run; for Trello Agent, return the card to its work queue. Payment does not restart work automatically. No reinstall or new onboarding is needed. If a payment arrives without a usable reference, contact <a href="mailto:info@agiledigitalworker.com">info@agiledigitalworker.com</a> so we can credit it to your account.
+- **Using both products?** Reviewer and GitHub Issues Agent share the **same prepaid credit pool** when used under the same GitHub customer account: one top-up funds either product, with no separate product balances. Trello credit is allocated separately; GitHub and Trello balances are separate. Make sure the payment identifies the account you want to credit.
 
 ---
 ## How to Use DigitalWorker PR Reviewer — read-only reviews without Trello
@@ -127,7 +127,7 @@ Digital Worker supports two task-management workflows:
    Digital Worker receives the issue event and manages progress labels:
    - `dw-in-progress` — task claimed and currently executing.
    - `dw-done` — task completed successfully; summary and pull request link posted in a comment.
-   - `dw-blocked` — task denied, failed, or blocked; reason posted where publication is possible. Hard security blocks apply this label after a delay without a comment.
+   - `dw-blocked` — task denied, failed, or blocked; reason posted where publication is possible.
 
 ---
 
@@ -140,12 +140,12 @@ Digital Worker supports two task-management workflows:
 
    Install the Agent app on your repository from its public install link: `https://github.com/apps/digitalworker-agent/installations/new` — select the repository you named in your onboarding answer. Installing the app on that repository plus your board's onboarding answers is the complete authorization act — no tokens, no approval step on our side.
 
-   **Legacy PAT mode:** a personal-access-token flow still exists for rare cases where the Agent app cannot be installed; it is arranged directly with your operator and is never part of standard onboarding.
+   **Legacy PAT mode:** a personal-access-token flow still exists for rare cases where the Agent app cannot be installed; it is arranged directly with your operator, never part of standard onboarding — if a token was ever posted, delete that comment once confirmed.
 
    The card title can be anything (e.g., `Onboard me`).
-3. **Use a private Trello board.** Agent onboarding never asks you to post a token (legacy PAT mode only — if a token was ever posted, delete that comment once confirmed).
-4. Digital Worker saves the repository configuration and requests a service restart automatically. You do not install software, run terminal commands, or configure each developer's machine.
-5. **Delete/archive the onboarding card in "Blocked"** and create a new card for your first task, or rerun the first card if it already has a real task. Agent onboarding has no token-deletion step — in legacy PAT mode only, also delete the comment that held the token.
+3. **Use a private Trello board.** Agent onboarding never asks you to post a token.
+4. Digital Worker saves the repository configuration and activates it automatically. You do not install software, run terminal commands, or configure each developer's machine.
+5. **Delete/archive the onboarding card in "Blocked"** and create a new card for your first task, or rerun the first card if it already has a real task. Agent onboarding has no token-deletion step.
 
 #### 2. Submitting a Task (Trello)
 
@@ -246,7 +246,7 @@ When Digital Worker finishes a card:
 
 ## Current limitations
 
-- **Visual UX improvements are not supported at this stage.** Tasks that require rendering or visually verifying a UI are not supported; the agent works from code, tests, and text, not from rendered screenshots. You can still request UX/design planning (layout, interaction copy, information architecture) and code-level UI changes, but the agent cannot visually verify the rendered result.
+- **Visual UX verification by AI using screenshots is not currently supported.** Tasks that require rendering or visually verifying a UI are not supported; the agent works from code, tests, and text, not from rendered screenshots. You can still request UX/design planning (layout, interaction copy, information architecture) and code-level UI changes, but the agent cannot visually verify the rendered result.
 
 ---
 
@@ -338,7 +338,7 @@ For complex or high-impact work, review the decision-heavy sections of the plann
 
 ### How long does a task take?
 
-Digital Worker has an overall timeout (typically 20–30 minutes). Simple tasks may complete in a few minutes; complex tasks may take longer. If the agent does not engage within the startup timeout, it is restarted with a backup model.
+Digital Worker has an overall timeout (typically 40 minutes). Simple tasks may complete in a few minutes; complex tasks may take longer. If the agent does not engage within the startup timeout, it is retried automatically on a different model.
 
 ### Can I stop or cancel a running task?
 

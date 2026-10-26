@@ -461,7 +461,7 @@ One payment link covers every purchase: <a href="https://buy.stripe.com/6oUaEPcA
 
 **Agile Design llc · New York, NY**
 
-<a href="https://www.linkedin.com/in/grand" target="_blank" data-cta="email_founder" data-location="pricing"><strong>Message on LinkedIn</strong></a> · <a href="mailto:info@agiledigitalworker.com" data-cta="email_founder" data-location="pricing"><strong>Email us</strong></a> · <a href="https://agiledigitalworker.com" target="_blank">agiledigitalworker.com</a> · <a href="https://agiledigitalworker.com/user-guide#digital-worker-user-guide" target="_blank">User Guide</a>
+<a href="https://www.linkedin.com/company/agile-design-llc/" target="_blank" data-cta="email_founder" data-location="pricing"><strong>Message on LinkedIn</strong></a> · <a href="mailto:info@agiledigitalworker.com" data-cta="email_founder" data-location="pricing"><strong>Email us</strong></a> · <a href="https://agiledigitalworker.com" target="_blank">agiledigitalworker.com</a> · <a href="https://agiledigitalworker.com/user-guide#digital-worker-user-guide" target="_blank">User Guide</a>
 
 Follow us: <a href="https://www.linkedin.com/company/2330043" target="_blank" data-cta="social_follow" data-location="footer">LinkedIn</a> · <a href="https://www.linkedin.com/groups/40979011/" target="_blank" data-cta="social_follow" data-location="footer">LinkedIn Group</a> · <a href="https://www.facebook.com/pages/Agile-Design-LLC/194844307249816" target="_blank" data-cta="social_follow" data-location="footer">Facebook</a> · <a href="https://twitter.com/AgileDesignLLC" target="_blank" data-cta="social_follow" data-location="footer">X/Twitter</a>
 

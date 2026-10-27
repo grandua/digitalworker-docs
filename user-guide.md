@@ -75,6 +75,14 @@ DigitalWorker PR Reviewer is a great way to start simple and in a risk-free way 
 - **On demand:** post a comment whose entire text is exactly `@digitalworker review` on the pull request. The command must be the whole comment — adding extra words or sentences means it is not recognized and nothing happens.
 - Reviews of the same pull request are deduplicated: pushing a new commit while a review is still queued replaces the stale request, and repeated deliveries are ignored, so you never get duplicate reviews for the same head.
 
+### Free public review — no install (mirror review)
+
+You don't have to install anything to see a real review. Open an issue at `https://github.com/grandua/dw-public-reviews/issues/new` whose body contains exactly one public pull-request URL, nothing else:
+
+    https://github.com/{owner}/{repo}/pull/{N}
+
+The bot mirrors the PR into `grandua/dw-public-reviews` and posts the same full review there publicly under `digitalworker-reviewer[bot]`. Free mirror reviews are capped — $15 lifetime per GitHub account and $15 per day across all requesters — and private repositories can't be mirrored (they need the app installed).
+
 ### What you get back
 
 A GitHub review from `digitalworker-reviewer[bot]` (state: `COMMENTED`, pinned to the commit that was reviewed) containing:

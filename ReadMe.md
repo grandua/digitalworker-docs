@@ -344,6 +344,8 @@ DigitalWorker is the first reviewer we know of that enforces full and proper Agi
 
 <a href="https://github.com/apps/digitalworker-reviewer/installations/new" target="_blank" data-cta="install_app" data-location="pricing"><strong>Install the DigitalWorker PR Reviewer GitHub App</strong></a> — every pull request gets an automatic read-only review by `digitalworker-reviewer[bot]` (architecture issues, code smells, inline comments); you can also post `@digitalworker review` on any PR. **Nothing to configure except installing the GitHub App itself — uninstalls in one click. Free trial included; usage beyond it is prepaid — nothing is ever charged automatically.**
 
+**Zero-install preview:** see it review any public PR for free — open an issue at <a href="https://github.com/grandua/dw-public-reviews/issues/new" target="_blank" data-cta="view_example" data-location="pricing">grandua/dw-public-reviews</a> with exactly one public PR URL (`https://github.com/{owner}/{repo}/pull/{N}`) in the body; the Reviewer mirrors the PR and posts the same full review publicly.
+
 Onboarding steps, org-wide install, and billing details: <a href="https://agiledigitalworker.com/user-guide#onboarding---installing-the-pr-reviewer-on-your-repository" target="_blank">User Guide</a>.
 
 #### Try DigitalWorker Agent

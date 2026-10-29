@@ -40,6 +40,7 @@
 - You love lots of defects after every change — the debugger is the work
 - You would miss the month-three slowdown — at a steady pace your retros would run out of material
 - You are a proud practitioner of the Anemic Domain Model — Martin Fowler called it "a fundamental horror," and you took that as a challenge
+  - *Fair's fair: our built-in instructions are replaceable presets, and we won't stop you from liking what you like.*
 - You are sure AI is coming for your job, and you would never forgive it for making you its boss
 - You have sunk too many weekends into tuning Copilot, prompt tricks, and CLAUDE.md to admit the AI ignores half of it.
 - You disapprove of the rich — and shipping 4–6x faster than the market makes it awkward at tax time

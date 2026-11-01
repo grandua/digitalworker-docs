@@ -21,7 +21,7 @@
 ---
 *Saving the world from instant legacy code.*
 
-**Fast to ship, expensive to own — raw AI writes instant legacy code you end up renting from the AI. We remove the expensive part.** DigitalWorker turns a ticket into a tested, reviewed, production-ready[^4] <abbr title="a proposed change, packaged for review">pull request</abbr> — **clean domain objects you can actually read and explain, scaling past 50K+ lines at week-1 speed**, where Copilot and Claude Code collapse into slop. It's like assigning a top-10%[^2] developer to a well-scoped task — at AI cost.
+**Fast to ship, expensive to own — raw AI writes instant legacy code you end up renting from the model. We remove the expensive part.** DigitalWorker turns a ticket into a tested, reviewed, production-ready[^4] <abbr title="a proposed change, packaged for review">pull request</abbr> — **clean, encapsulated domain objects you can actually read and explain, scaling past 50K+ lines at week-1 speed**, where Copilot and Claude Code collapse into slop. It's like assigning a top-10%[^2] developer to a well-scoped task — at AI cost.
 
 **Every AI output is a first draft — ours becomes real code.** In ~8 of 10 runs, nothing structural slips through; the rest takes a 2-minute upfront design check, not a cleanup weekend. **No iterative prompting. No babysitting. No cleaning up after the AI.**[^agent]
 
@@ -61,7 +61,7 @@
 - **You never open a debugger (2+ years without attaching one once)** — the code is so modular and well-tested that AI isolates and fixes 100% of bugs for you.
 - **Writing code by hand becomes purely optional (~1 hand-written line a month)** — even if you love coding, telling AI what to change is faster than finding the file yourself.
 - **Code and architecture so clean that even AI can understand and change them without breaking things.**
-- **You can explain every line you ship** — the codebase carries a model you can read, not a ball of mud only the AI understands.
+- **You can explain every line you ship** — the codebase carries a domain model you can read, not a ball of mud only the AI understands.
 - **Test coverage so high that even AI can't break what was working before.**
 - **You do the work of an architect and a product manager — never a babysitter.**
 - **No bloated AI slop — beautiful, well-architected code, minimal duplication, above-80% test coverage.**
@@ -73,7 +73,7 @@
 ***Why raw AI agents hit a wall — and the assumptions behind DigitalWorker:***
 
 - **Current AI generates average code and architecture — sloppy, disorganized, badly engineered** — because it was trained on median human code — and most human code, public or private, ignores <abbr title="a design discipline where each part of the code carries its data and the rules that act on it together">object-oriented design</abbr> discipline, layering, and automated test coverage
-  - Most code out there is procedural, not object-oriented. **Developers love using clean object-oriented APIs like .NET's when someone else builds them — but building that structure by hand under deadline pressure takes rare, expensive design skill, and raw AI actively resists doing so.**
+  - Most code out there is procedural, even when written in `class` files: data in one place, giant service procedures in another. **True object-oriented design — encapsulating data and the behavior that acts on it in the same object — takes rare, expensive design skill under deadline pressure, and raw AI actively resists doing so.**
 - Without **working** architectural guardrails, **AI prints technical debt at machine speed** — **even when you give Copilot or Claude Code explicit rules (rules files like `AGENTS.md`/`CLAUDE.md`, skills, TDD prompts), they drop instructions mid-task and drift back to slop**
 - **Guiding AI to convert its spaghetti code and broken architecture takes a lot of hard manual labor, technical knowledge, and skill** — reviewing, fixing, re-prompting — not just more AI usage. This is the main reason AI agents improve shipping speed only marginally — **controlled research puts real-world gains at ~25% at best, not manifold[^3]**
 - **<u><big>Slop hurts your AI more than it hurts you: AI reads every line now — clean, encapsulated code is what lets it navigate, reuse, and extend without breaking things; its smaller context window and lower complexity ceiling mean it chokes on mess faster than any human</big></u>**[^6]
@@ -98,14 +98,15 @@
 
 ## The Solution: What we claim as possible
 - Nevertheless, the problem above has a better solution and current AI can be asked to run checklists with hundreds of items and **produce much better structured code that is actually easy to follow, easy to change**, with pretty good <abbr title="the tests catch any defect introduced into the covered code">mutation test coverage</abbr>, and that scales almost linearly with complexity.
-- **That flat line is not just our claim — the theory is 20 years old.** In 2002 Martin Fowler charted the trade-off (first image in the gallery above): **code organized as *procedures* starts cheap but spikes exponentially as business logic grows; a *domain model*** — objects that keep their data and the rules that act on it together — **costs more upfront but stays near-linear.** Most code — human and AI-generated — lands on the rising curves. **DigitalWorker Agent is the only AI agent we know of that produces a real domain model — objects keeping their data and rules together — so its output lands on the flat line, in theory and in 2 years of measured production use.**
-  - A common trap worth naming: **objects that merely hold data while all the logic lives in services *look* like a domain model, but ride the rising curves** — Fowler calls that shape an anti-pattern: <a href="https://martinfowler.com/bliki/AnemicDomainModel.html" target="_blank">"a fundamental horror... contrary to the basic idea of object-oriented design"</a>.
+- **That flat line is not just our claim — the theory is 20 years old.** In 2002 Martin Fowler charted the trade-off (first image in the gallery above): **code organized as *procedures* starts cheap but spikes exponentially as complexity grows; a *domain model* — proper OOP where objects encapsulate both their data and the behavior that acts on it — costs more upfront but stays near-linear.** Most code — human and AI-generated — lands on the rising curves. **DigitalWorker Agent is the only AI agent we know of that produces proper OOP and a real domain model — so its output lands on the flat line, in theory and in 2 years of measured production use.**
+  - A common trap worth naming: **classes that merely hold data while all the logic lives in service procedures *look* object-oriented, but ride the rising curves** — Fowler calls that shape the *Anemic Domain Model*: <a href="https://martinfowler.com/bliki/AnemicDomainModel.html" target="_blank">"a fundamental horror... contrary to the basic idea of object-oriented design"</a>.
   - We believe that **the crossover point is just ~2K LOC, far earlier than often assumed** — still a hypothesis, but now that DigitalWorker can generate 2K LOC a day cheaply we are collecting proof daily.
   - <details markdown="1"><summary>Technical version</summary>
 
     Fowler's *Patterns of Enterprise Application Architecture* (2002) names the patterns explicitly: **Transaction Script** — logic organized as a procedure per request — and **Table Module** — one object holding the logic for all rows of a table — are the two rising curves. **Domain Model** — a *Rich* Domain Model, objects carrying their own data and behavior — is the flat one. The data-only trap above is the **Anemic Domain Model**: it borrows the name but tracks the procedural curves, which is why Fowler lists it as an anti-pattern. DigitalWorker Agent produces the Rich Domain Model.
 
     </details>
+- **Most developers have never seen proper OOP or a real domain model from the inside** — they've only enjoyed calling **clean object-oriented APIs like .NET's** from the outside. **DigitalWorker removes the admission price — you don't have to spend years learning how to build a domain model to own one.**
 - The catch is that AI will not follow huge checklists if they are given to it as pure text in a generic fashion. However, **checklists coupled with a smart, adjustable Instruction Engine make AI follow instructions as if they were code**.
 - **That is how impaired AI judgment still solves complex problems:** DigitalWorker forces AI to surface its product and class-design decisions upfront in a <abbr title="practice-run">dry-run</abbr> before writing a line of code — **so you override bad or lackluster decisions in minutes, and the Instruction Engine enforces the rest.**
 

@@ -19,11 +19,11 @@
 </table>
 
 ---
-*Saving the world from spaghetti code.*
+*Saving the world from instant legacy code.*
 
-**You make the decisions that matter.** DigitalWorker turns a ticket into a tested, reviewed, production-ready[^4] <abbr title="a proposed change, packaged for review">pull request</abbr> — **senior-engineered code that scales past 50K+ lines at week-1 speed, where Copilot and Claude Code collapse into slop.** **It's like assigning a top-10%[^2] developer to a well-scoped task — at AI cost.**
+**Fast to ship, expensive to own — raw AI writes instant legacy code you end up renting from the AI. We remove the expensive part.** DigitalWorker turns a ticket into a tested, reviewed, production-ready[^4] <abbr title="a proposed change, packaged for review">pull request</abbr> — **clean domain objects you can actually read and explain, scaling past 50K+ lines at week-1 speed**, where Copilot and Claude Code collapse into slop. It's like assigning a top-10%[^2] developer to a well-scoped task — at AI cost.
 
-**No iterative prompting. No babysitting. No cleaning up after the AI.**[^agent]
+**Every AI output is a first draft — ours becomes real code.** In ~8 of 10 runs, nothing structural slips through; the rest takes a 2-minute upfront design check, not a cleanup weekend. **No iterative prompting. No babysitting. No cleaning up after the AI.**[^agent]
 
 **Two products:**
 - **[DigitalWorker Reviewer](#get-digitalworker-reviewer) — review your existing pull requests.**
@@ -43,6 +43,7 @@
   - *Fair's fair: our built-in instructions are replaceable presets, and we won't stop you from liking what you like.*
 - You are sure AI is coming for your job, and you would never forgive it for making you its boss
 - You have sunk too many weekends into tuning Copilot, prompt tricks, and CLAUDE.md to admit the AI ignores half of it.
+- You are comfortable renting your codebase from the model — you cannot explain most of it anyway, and ownership is overrated
 - You disapprove of the rich — and shipping 4–6x faster than the market makes it awkward at tax time
 
 *None of you? Then imagine this instead:*
@@ -60,6 +61,7 @@
 - **You never open a debugger (2+ years without attaching one once)** — the code is so modular and well-tested that AI isolates and fixes 100% of bugs for you.
 - **Writing code by hand becomes purely optional (~1 hand-written line a month)** — even if you love coding, telling AI what to change is faster than finding the file yourself.
 - **Code and architecture so clean that even AI can understand and change them without breaking things.**
+- **You can explain every line you ship** — the codebase carries a model you can read, not a ball of mud only the AI understands.
 - **Test coverage so high that even AI can't break what was working before.**
 - **You do the work of an architect and a product manager — never a babysitter.**
 - **No bloated AI slop — beautiful, well-architected code, minimal duplication, above-80% test coverage.**
@@ -72,9 +74,10 @@
 
 - **Current AI generates average code and architecture — sloppy, disorganized, badly engineered** — because it was trained on median human code — and most human code, public or private, ignores <abbr title="a design discipline where each part of the code carries its data and the rules that act on it together">object-oriented design</abbr> discipline, layering, and automated test coverage
   - Most code out there is procedural, not object-oriented. **Developers love using clean object-oriented APIs like .NET's when someone else builds them — but building that structure by hand under deadline pressure takes rare, expensive design skill, and raw AI actively resists doing so.**
-- Without **working** architectural guardrails, **AI prints technical debt at machine speed** — **even when you give Copilot or Claude Code explicit rules (`CLAUDE.md`, skills, TDD prompts), they drop instructions mid-task and drift back to slop**
+- Without **working** architectural guardrails, **AI prints technical debt at machine speed** — **even when you give Copilot or Claude Code explicit rules (rules files like `AGENTS.md`/`CLAUDE.md`, skills, TDD prompts), they drop instructions mid-task and drift back to slop**
 - **Guiding AI to convert its spaghetti code and broken architecture takes a lot of hard manual labor, technical knowledge, and skill** — reviewing, fixing, re-prompting — not just more AI usage. This is the main reason AI agents improve shipping speed only marginally — **controlled research puts real-world gains at ~25% at best, not manifold[^3]**
 - **<u><big>Slop hurts your AI more than it hurts you: AI reads every line now — clean, encapsulated code is what lets it navigate, reuse, and extend without breaking things; its smaller context window and lower complexity ceiling mean it chokes on mess faster than any human</big></u>**[^6]
+- **AI output stays a first draft forever on its own:** each edit looks consistent in isolation while the whole grows model-less — files without boundaries, dependencies nobody designed — until **you cannot explain your own codebase. You did not write it, you cannot read it: you are renting it from the model**
 
 <details markdown="1"><summary>See all</summary>
 

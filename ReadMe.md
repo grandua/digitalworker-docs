@@ -97,10 +97,10 @@
 [^3]: The strongest controlled evidence brackets the gain narrowly: three field RCTs across 4,867 developers at Microsoft, Accenture, and a Fortune 100 company found a 26% increase in completed tasks with an AI assistant (Cui et al., Management Science, 2025) — while a 2025 METR RCT found experienced open-source developers were actually ~19% *slower* with AI tools on their own mature repositories, even though they believed they had been ~20% faster. Our own measured experience before adopting AI-checklist-driven workflows matched the ~25% figure.
 
 ## The Solution: What we claim as possible
-- Nevertheless, the problem above has a better solution and current AI can be asked to run checklists with hundreds of items and **produce much better structured code that is actually easy to follow, easy to change**, with pretty good <abbr title="the tests catch any defect introduced into the covered code">mutation test coverage</abbr>, and that scales almost linearly with complexity.
+- Nevertheless, the problem above has a better solution and current AI can be asked to run checklists with hundreds of items and **produce much better structured code that is actually easy to follow, easy to change**, with ~80% <abbr title="the tests catch any defect introduced into the covered code">mutation test coverage</abbr>, and that scales close to linearly with complexity.
 - **That flat line is not just our claim — the theory is 20 years old.** In 2002 Martin Fowler charted the trade-off (first image in the gallery above): **code organized as *procedures* starts cheap but spikes exponentially as complexity grows; a *domain model* — proper OOP where objects encapsulate both their data and the behavior that acts on it — costs more upfront but stays near-linear.** Most code — human and AI-generated — lands on the rising curves. **DigitalWorker Agent is the only AI agent we know of that produces proper OOP and a real domain model — so its output lands on the flat line, in theory and in 2 years of measured production use.**
   - A common trap worth naming: **classes that merely hold data while all the logic lives in service procedures *look* object-oriented, but ride the rising curves** — Fowler calls that shape the *Anemic Domain Model*: <a href="https://martinfowler.com/bliki/AnemicDomainModel.html" target="_blank">"a fundamental horror... contrary to the basic idea of object-oriented design"</a>.
-  - We believe that **the crossover point is just ~2K LOC, far earlier than often assumed** — still a hypothesis, but now that DigitalWorker can generate 2K LOC a day cheaply we are collecting proof daily.
+  - We believe that **the crossover point is just ~2K LOC, far earlier than often assumed**.
   - <details markdown="1"><summary>Technical version</summary>
 
     Fowler's *Patterns of Enterprise Application Architecture* (2002) names the patterns explicitly: **Transaction Script** — logic organized as a procedure per request — and **Table Module** — one object holding the logic for all rows of a table — are the two rising curves. **Domain Model** — a *Rich* Domain Model, objects carrying their own data and behavior — is the flat one. The data-only trap above is the **Anemic Domain Model**: it borrows the name but tracks the procedural curves, which is why Fowler lists it as an anti-pattern. DigitalWorker Agent produces the Rich Domain Model.
@@ -145,7 +145,7 @@ Your engineering competence sets the standard. DigitalWorker carries it through 
    <a href="https://github.com/apps/digitalworker-reviewer/installations/new" target="_blank" data-cta="install_app" data-location="mid_page"><strong>Install the Reviewer — ~1 minute, free trial.</strong></a> Then comment `@digitalworker review` on any existing PR — first result in minutes.
 2. **DigitalWorker Agent — Hand off the task. Get code implemented, reviewed, and refactored against the same architecture and maintainability standards.**
 
-   <a href="#4-start-using-it-on-your-repo--github-issues" data-cta="install_app" data-location="mid_page"><strong>Install the Agent on your repo — ~2 minutes, private, &#36;15 credit included, no card required.</strong></a> Or watch it work first: the Agent is already installed on the <a href="https://github.com/grandua/Digital-Worker-Demo/issues" target="_blank" data-cta="view_example" data-location="mid_page">public demo repo</a> — open an issue mentioning `@digitalworker`, no permissions needed on your repos.
+   <a href="#4-start-using-it-on-your-repo--github-issues" data-cta="install_app" data-location="mid_page"><strong>Install the Agent on your repo — ~2 minutes, private, free trial included, no card required.</strong></a> Or watch it work first: the Agent is already installed on the <a href="https://github.com/grandua/Digital-Worker-Demo/issues" target="_blank" data-cta="view_example" data-location="mid_page">public demo repo</a> — open an issue mentioning `@digitalworker`, no permissions needed on your repos.
 
 
 **The Reviewer uses the same review engine the full Agent uses on its own work. Use either product on its own.**
@@ -159,7 +159,7 @@ Your engineering competence sets the standard. DigitalWorker carries it through 
 
   <details markdown="1"><summary>The technical version</summary>
 
-  **You asked for TDD and OOP. Your AI drifted anyway.** DigitalWorker makes those disciplines part of delivery: test-first implementation, architecture review, refactoring, and fixes, carried by its proprietary instruction engine. A ticket becomes a tested, reviewed PR for your final behavior check. **You keep the decisions that matter. Try one real task—&#36;15 credit included.**
+  **You asked for TDD and OOP. Your AI drifted anyway.** DigitalWorker makes those disciplines part of delivery: test-first implementation, architecture review, refactoring, and fixes, carried by its proprietary instruction engine. A ticket becomes a tested, reviewed PR for your final behavior check. **You keep the decisions that matter. Try one real task—free trial included.**
 
   **A combination found nowhere else that we know of:** high-precision instruction enforcement plus this depth of Agile, OOP, test-first TDD, review, and anti-duplication class design. Other agents can code, test, review, and open PRs; **DigitalWorker carries the complete engineering method through delivery.** <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#why-this-combination-matters" target="_blank" data-cta="view_example" data-location="mid_page">Inspect the difference</a>.
 
@@ -235,7 +235,7 @@ Your engineering competence sets the standard. DigitalWorker carries it through 
 
   **Top 10% professional-developer output[^2] at AI execution cost.**
 
-  Direct your judgment toward the product while DigitalWorker handles routine implementation and quality work. **The current usage model is model cost plus around 20% markup;** <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#economics-pay-for-execution-keep-your-judgment" target="_blank">see the economics and how to evaluate total effort</a>.
+  Direct your judgment toward the product while DigitalWorker handles routine implementation and quality work. **The current usage model is model cost plus 20% markup;** <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#economics-pay-for-execution-keep-your-judgment" target="_blank">see the economics and how to evaluate total effort</a>.
 
   Enforced discipline is not overhead—it is why velocity does not slow down as the codebase grows. **In our production use, a greenfield system reached production in 5 months and a commercial codebase held pace for nearly a year** — numbers in [Our Production Experience](#our-production-experience).
 
@@ -363,7 +363,7 @@ Onboarding steps, org-wide install, and billing details: <a href="https://agiled
 
 ###### GitHub Issues (Recommended for simpler onboarding)
 
-<a href="https://github.com/apps/digitalworker-agent/installations/new" target="_blank" data-cta="install_app" data-location="pricing"><strong>Install the DigitalWorker Agent GitHub App</strong></a> on your repository, open an issue with your task and acceptance criteria, and mention `@digitalworker` — it delivers a tested, reviewed PR from its own worktree; **you decide what merges.** **The included &#36;15 credit covers a typical task — no card required; nothing is ever charged automatically.** **No Trello account, no local install, terminal, or per-developer setup required.**
+<a href="https://github.com/apps/digitalworker-agent/installations/new" target="_blank" data-cta="install_app" data-location="pricing"><strong>Install the DigitalWorker Agent GitHub App</strong></a> on your repository, open an issue with your task and acceptance criteria, and mention `@digitalworker` — it delivers a tested, reviewed PR from its own worktree; **you decide what merges.** **The free trial covers a typical task — no card required; nothing is ever charged automatically.** **No Trello account, no local install, terminal, or per-developer setup required.**
 
 Step-by-step onboarding, permissions, and trigger options: <a href="https://agiledigitalworker.com/user-guide#option-a-using-digitalworker-via-github-issues-recommended" target="_blank">User Guide</a>. Not ready to grant repo access? Watch it work on the <a href="https://github.com/grandua/Digital-Worker-Demo/issues" target="_blank">public demo repo</a>.
 
@@ -373,7 +373,7 @@ Step-by-step onboarding, permissions, and trigger options: <a href="https://agil
 
 ###### Trello Board (Alternative)
 
-Prefer a Kanban board? DigitalWorker also runs on a private Trello board — usually connected the same day. Requires a Trello account and a GitHub repository you can authorize. Steps: <a href="https://agiledigitalworker.com/user-guide#1-onboarding-digitalworker-trello" target="_blank">User Guide</a>.
+Prefer a Kanban board? DigitalWorker also runs on a private Trello board — typically connected the same day. Requires a Trello account and a GitHub repository you can authorize. Steps: <a href="https://agiledigitalworker.com/user-guide#1-onboarding-digitalworker-trello" target="_blank">User Guide</a>.
 
 <a id="3-try-a-task-on-our-demo-repo--github-issues-email-or-trello"></a>
 
@@ -450,7 +450,7 @@ One payment link covers every purchase: <a href="https://buy.stripe.com/6oUaEPcA
 
 *Internals, method, and economics: <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#digitalworker--see-the-engineering-behind-the-result" target="_blank">engineering deep dive</a>.* <!-- audience: dev, non-dev builder, business · ceiling: T1 narrative everywhere; T2/T3 in labeled technical compartments -->
 
-**Ready when you are:** <a href="https://github.com/apps/digitalworker-reviewer/installations/new" target="_blank" data-cta="install_app" data-location="bottom_page"><strong>Install the Reviewer — ~1 min, free trial</strong></a> · <a href="#4-start-using-it-on-your-repo--github-issues" data-cta="install_app" data-location="bottom_page"><strong>Install the Agent — ~2 min, &#36;15 credit, no card</strong></a> · <a href="https://github.com/grandua/Digital-Worker-Demo/issues" target="_blank" data-cta="view_example" data-location="bottom_page"><strong>See it work — no install</strong></a>
+**Ready when you are:** <a href="https://github.com/apps/digitalworker-reviewer/installations/new" target="_blank" data-cta="install_app" data-location="bottom_page"><strong>Install the Reviewer — ~1 min, free trial</strong></a> · <a href="#4-start-using-it-on-your-repo--github-issues" data-cta="install_app" data-location="bottom_page"><strong>Install the Agent — ~2 min, free trial, no card</strong></a> · <a href="https://github.com/grandua/Digital-Worker-Demo/issues" target="_blank" data-cta="view_example" data-location="bottom_page"><strong>See it work — no install</strong></a>
 
 
 [^2]: **Our expectation based on 20 years of development experience and production use — not an independently benchmarked ranking.**

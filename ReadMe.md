@@ -140,7 +140,7 @@ Your engineering competence sets the standard. DigitalWorker carries it through 
 
 1. **DigitalWorker Reviewer — Keep your coding tools. Catch the AI slop before merge.**
 
-   You asked for TDD, OOP and proper testable layers. Your AI drifted to bloated, disorganized slop anyway. DigitalWorker Reviewer detects Agile architecture violations such as incorrect layer dependencies and Anemic Domain Model anti-pattern, testability issues, test coverage gaps, and most code smells including code and class duplication. **The Reviewer comments; it does not change your code.** No Trello required.
+   You asked for TDD, OOP and proper testable layers. Your AI drifted to bloated, disorganized slop anyway. DigitalWorker Reviewer detects Agile architecture violations such as incorrect layer dependencies and Anemic Domain Model anti-pattern, testability issues, test coverage gaps, and almost all code smells including code and class duplication. **The Reviewer comments; it does not change your code.** No Trello required.
 
    <a href="https://github.com/apps/digitalworker-reviewer/installations/new" target="_blank" data-cta="install_app" data-location="mid_page"><strong>Install the Reviewer — ~1 minute, free trial.</strong></a> Then comment `@digitalworker review` on any existing PR — first result in minutes.
 2. **DigitalWorker Agent — Hand off the task. Get code implemented, reviewed, and refactored against the same architecture and maintainability standards.**
@@ -194,13 +194,13 @@ Your engineering competence sets the standard. DigitalWorker carries it through 
 
   **You choose what to build, what "done" means, and the trade-offs you can live with.** You no longer review for defects — DigitalWorker's own reviews and checklists handle that; your review is judgment, placed early, before implementation. **Review the proposed plan, assumptions, and pivotal design decisions.** Before new parts of the code are created, inspect their proposed responsibilities and how they relate; correct the design where needed. DigitalWorker executes the engineering work through its proprietary Instruction Engine.
 
-  For non-developers, the starting point is the plan and a plain description of what "done" looks like. You can delegate implementation and routine design; **novel or complex design still benefits from an experienced developer's judgment.** **You keep the final check that the software behaves as intended before the change is combined with your existing code.**
+  **For non-developers**, the starting point is the plan and a plain description of what "done" looks like. You can delegate implementation and routine design; **novel or complex design still benefits from an experienced developer's judgment.** **You keep the final check that the software behaves as intended before the change is combined with your existing code.**
 
   <details markdown="1"><summary>The technical version</summary>
 
   **You choose what to build, the acceptance criteria, and the trade-offs you can live with.** You no longer review for defects — AI reviews and checklists handle that; your review is judgment, placed early, before implementation. **Review the proposed plan, assumptions, and pivotal architecture decisions.** Before new classes are scaffolded, inspect their proposed responsibilities and relationships; correct the design where needed. DigitalWorker executes the engineering work through the proprietary Instruction Engine.
 
-  For non-developers, the starting point is the plan and acceptance criteria. You can delegate implementation and routine design; **novel or complex architecture still benefits from an experienced developer's judgment.** **You keep the final behavior check before merge.**
+  **For non-developers**, the starting point is the plan and acceptance criteria. You can delegate implementation and routine design; **novel or complex architecture still benefits from an experienced developer's judgment.** **You keep the final behavior check before merge.**
 
   </details>
 

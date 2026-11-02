@@ -81,7 +81,7 @@ You don't have to install anything to see a real review. Open an issue at `https
 
     https://github.com/{owner}/{repo}/pull/{N}
 
-The bot mirrors the PR into `grandua/dw-public-reviews` and posts the same full review there publicly under `digitalworker-reviewer[bot]`. Free mirror reviews are capped — $15 lifetime per GitHub account and $15 per day across all requesters — and private repositories can't be mirrored (they need the app installed).
+The bot mirrors the PR into `grandua/dw-public-reviews` and posts the same full review there publicly under `digitalworker-reviewer[bot]`. Private repositories can't be mirrored (they need the app installed).
 
 ### What you get back
 

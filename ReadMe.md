@@ -2,7 +2,7 @@
 
 **Fast read:** read the headings and **bold** text. **Written for: developers and engineering teams who already use Copilot or Claude Code — and are tired of babysitting them and cleaning up their slop.**
 
-<p align="right"><a href="https://github.com/apps/digitalworker-reviewer/installations/new" target="_blank" data-cta="install_app" data-location="header"><strong>Install the Reviewer — ~1 min, free trial</strong></a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="https://github.com/grandua/Digital-Worker-Demo/issues" target="_blank" data-cta="view_example" data-location="header"><strong>See it work — no install</strong></a></p>
+<p align="right"><a href="https://github.com/apps/digitalworker-reviewer/installations/new" target="_blank" data-cta="install_app" data-location="header"><strong>Install the Reviewer - ~1 min, free trial</strong></a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="#get-digitalworker-agent" data-cta="install_app" data-location="header"><strong>Install the Agent - ~2 min, free trial</strong></a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="https://github.com/grandua/Digital-Worker-Demo/issues" target="_blank" data-cta="view_example" data-location="header"><strong>See it work - no install</strong></a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="https://agiledigitalworker.com/user-guide#free-public-review--no-install-mirror-review" target="_blank" data-cta="view_example" data-location="header"><strong>Get a free review - no install</strong></a></p>
 
 <table>
   <tr><th colspan="3">Gallery — click to enlarge</th></tr>
@@ -27,7 +27,7 @@
 
 **Two products:**
 - **[DigitalWorker Reviewer](#get-digitalworker-reviewer) — review your existing pull requests.**
-- **[DigitalWorker Agent](#try-digitalworker-agent) — delegate the whole task.**
+- **[DigitalWorker Agent](#get-digitalworker-agent) — delegate the whole task.**
 
 **<big>Index</big>:** [Imagine](#imagine) · [The Problem](#problem-youre-doing-ai-coding-slow) · [The Solution](#the-solution-what-we-claim-as-possible) · [Two products](#two-products-one-engineering-standard) · [Why it's different](#why-its-different) · [Our Production Experience](#our-production-experience) · [Getting Started](#getting-started) · [Payment](#payment-options) · [Quick answers](#quick-answers)
 
@@ -353,7 +353,9 @@ DigitalWorker is the first reviewer we know of that enforces full and proper Agi
 
 Onboarding steps, org-wide install, and billing details: <a href="https://agiledigitalworker.com/user-guide#onboarding---installing-the-pr-reviewer-on-your-repository" target="_blank">User Guide</a>.
 
-#### Try DigitalWorker Agent
+#### Get DigitalWorker Agent
+
+<a id="get-digitalworker-agent"></a>
 
 <a id="4-start-using-it-on-your-repo--github-issues"></a>
 
@@ -365,7 +367,7 @@ Onboarding steps, org-wide install, and billing details: <a href="https://agiled
 
 Step-by-step onboarding, permissions, and trigger options: <a href="https://agiledigitalworker.com/user-guide#option-a-using-digitalworker-via-github-issues-recommended" target="_blank">User Guide</a>. Not ready to grant repo access? Watch it work on the <a href="https://github.com/grandua/Digital-Worker-Demo/issues" target="_blank">public demo repo</a>.
 
-**Or start even smaller:** comment `@digitalworker review` on an existing PR — findings land as comments; it has no write access and never touches your code.
+***Or start even smaller:** <a href="https://github.com/apps/digitalworker-reviewer/installations/new" target="_blank" data-cta="install_app" data-location="pricing">install the Reviewer</a> (~1 min, free trial), then comment `@digitalworker review` on an existing PR — findings land as comments; it has no write access and never touches your code.*
 
 <a id="5-start-using-it-on-your-repo--trello--github"></a>
 
@@ -434,7 +436,7 @@ One payment link covers every purchase: <a href="https://buy.stripe.com/6oUaEPcA
 - **What if it produces slop or misses the task?** You see the plan and pivotal decisions before implementation, and its ~100-item checklist review runs before the PR reaches you. The public demo even shows a real miss and the autonomous fix — [judge it there](#2-verify-our-claims--no-account-or-setup-needed).
 - **What does it cost after the free trial or the &#36;15 credit?** Usage beyond that is prepaid at model cost plus 20%, with applicable tax separate. One payment link serves Reviewer and Agent at identical pricing — fill in the business-name field at checkout for a business purchase, leave it blank for personal; see [payment options](#payment-options) for balance top-ups. **Work pauses at zero, nothing is ever charged automatically.**
 - **Do I need local setup, tokens, API key or Trello?** No — a GitHub App install and an issue are enough; Trello is optional.
-- **What's the smallest way to try it?** Ask it to review a slice of your codebase (comment `@digitalworker review` on any PR) — findings arrive as PR comments; your code is never touched. Or run a task on the <a href="https://github.com/grandua/Digital-Worker-Demo/issues" target="_blank">public demo repo</a> — the Agent is already installed.
+- **What's the smallest way to try it?** Get a <a href="https://agiledigitalworker.com/user-guide#free-public-review--no-install-mirror-review" target="_blank" data-cta="view_example">free review of any public PR</a> — nothing to install. Or run a task on the <a href="https://github.com/grandua/Digital-Worker-Demo/issues" target="_blank">public demo repo</a> — the Agent is already installed.
 - **No GitHub account — can I still see it work?** Yes — [email us a public-safe task](mailto:info@agiledigitalworker.com) or [book a live walkthrough](mailto:info@agiledigitalworker.com) — we drive our private 50K+ line codebase on the video call.
 - **What does DigitalWorker replace or augment?** Any AI coding agents and copilots at any autonomy level; code review tools — local, CI, AI-driven or not; and operational procedures or checklists where AI automation kept skipping instructions. **Not replaced:** light human oversight on large or prompt-heavy work, and deterministic quality tools — static analysis, linters, security checks, NDepend/SonarQube.
 - **Engineers don't read code anymore — why does code quality still matter?** **Your AI is the reader now.** Clean, encapsulated code is what lets the agent navigate, reuse, and extend without breaking things — slop confuses AI even faster than it confuses humans.

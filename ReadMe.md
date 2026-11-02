@@ -29,7 +29,7 @@
 - **[DigitalWorker Reviewer](#get-digitalworker-reviewer) — review your existing pull requests.**
 - **[DigitalWorker Agent](#get-digitalworker-agent) — delegate the whole task.**
 
-**<big>Index</big>:** [Imagine](#imagine) · [The Problem](#problem-youre-doing-ai-coding-slow) · [The Solution](#the-solution-what-we-claim-as-possible) · [Two products](#two-products-one-engineering-standard) · [Why it's different](#why-its-different) · [Our Production Experience](#our-production-experience) · [Getting Started](#getting-started) · [Payment](#payment-options) · [Quick answers](#quick-answers)
+**<big>Index</big>:** [Self-filter](#self-filter-do-not-use-digitalworker-if) · [Imagine](#imagine) · [The Problem](#problem-youre-doing-ai-coding-slow) · [The Solution](#the-solution-what-we-claim-as-possible) · [Two products](#two-products-one-engineering-standard) · [Why it's different](#why-its-different) · [Our Production Experience](#our-production-experience) · [Getting Started](#getting-started) · [Payment](#payment-options) · [Quick answers](#quick-answers)
 
 ## Self-filter: Do NOT use DigitalWorker If
 - You do not write, review, or pay for software
@@ -450,7 +450,7 @@ One payment link covers every purchase: <a href="https://buy.stripe.com/6oUaEPcA
 
 *Internals, method, and economics: <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#digitalworker--see-the-engineering-behind-the-result" target="_blank">engineering deep dive</a>.* <!-- audience: dev, non-dev builder, business · ceiling: T1 narrative everywhere; T2/T3 in labeled technical compartments -->
 
-**Ready when you are:** <a href="https://github.com/apps/digitalworker-reviewer/installations/new" target="_blank" data-cta="install_app" data-location="bottom_page"><strong>Install the Reviewer — ~1 min, free trial</strong></a> · <a href="#4-start-using-it-on-your-repo--github-issues" data-cta="install_app" data-location="bottom_page"><strong>Install the Agent — ~2 min, free trial, no card</strong></a> · <a href="https://github.com/grandua/Digital-Worker-Demo/issues" target="_blank" data-cta="view_example" data-location="bottom_page"><strong>See it work — no install</strong></a>
+**Ready when you are:** <a href="https://github.com/apps/digitalworker-reviewer/installations/new" target="_blank" data-cta="install_app" data-location="bottom_page"><strong>Install the Reviewer - ~1 min, free trial</strong></a> · <a href="#get-digitalworker-agent" data-cta="install_app" data-location="bottom_page"><strong>Install the Agent - ~2 min, free trial</strong></a> · <a href="https://github.com/grandua/Digital-Worker-Demo/issues" target="_blank" data-cta="view_example" data-location="bottom_page"><strong>See it work - no install</strong></a> · <a href="https://agiledigitalworker.com/user-guide#free-public-review--no-install-mirror-review" target="_blank" data-cta="view_example" data-location="bottom_page"><strong>Get a free review - no install</strong></a>
 
 
 [^2]: **Our expectation based on 20 years of development experience and production use — not an independently benchmarked ranking.**
@@ -464,7 +464,7 @@ One payment link covers every purchase: <a href="https://buy.stripe.com/6oUaEPcA
 [^agent]: **These benefits describe the full DigitalWorker Agent. The Reviewer reviews existing pull requests; it does not implement changes.**
 
 
-**<big>Index</big>:** [Imagine](#imagine) · [The Problem](#problem-youre-doing-ai-coding-slow) · [The Solution](#the-solution-what-we-claim-as-possible) · [Two products](#two-products-one-engineering-standard) · [Why it's different](#why-its-different) · [Our Production Experience](#our-production-experience) · [Getting Started](#getting-started) · [Payment](#payment-options) · [Quick answers](#quick-answers)
+**<big>Index</big>:** [Self-filter](#self-filter-do-not-use-digitalworker-if) · [Imagine](#imagine) · [The Problem](#problem-youre-doing-ai-coding-slow) · [The Solution](#the-solution-what-we-claim-as-possible) · [Two products](#two-products-one-engineering-standard) · [Why it's different](#why-its-different) · [Our Production Experience](#our-production-experience) · [Getting Started](#getting-started) · [Payment](#payment-options) · [Quick answers](#quick-answers)
 
 ---
 

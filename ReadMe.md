@@ -133,7 +133,7 @@ Your engineering competence sets the standard. DigitalWorker carries it through 
 
 <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#digitalworker--see-the-engineering-behind-the-result" target="_blank" data-cta="view_example" data-location="hero"><strong>See the engineering behind the result</strong></a> — the method, concrete code examples, comparison criteria, and economics. No signup required.
 
-*Developers: jump straight to the [recorded evidence](#2-verify-our-claims--no-account-or-setup-needed) or the <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#digitalworker--see-the-engineering-behind-the-result" target="_blank">engineering deep dive</a>. For the engineering details, open the technical blocks below.*
+*Developers: jump straight to the [recorded evidence](#2-verify-our-claims--no-account-or-setup-needed) or the <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#digitalworker--see-the-engineering-behind-the-result" target="_blank" data-cta="view_example" data-location="hero">engineering deep dive</a>. For the engineering details, open the technical blocks below.*
 
 ---
 
@@ -172,7 +172,7 @@ Your engineering competence sets the standard. DigitalWorker carries it through 
 
   Fast generation helps only when the result moves your product forward. DigitalWorker makes quality work part of delivery: it writes the <abbr title="unit tests">checks</abbr> before the code, reviews its own work against a ~100-item engineering checklist, then cleans up and fixes before handing you the change. **You receive the code, the tests, and the reasoning behind the decisions together.**
 
-  The sequence is explicit: **a <abbr title="unit tests">check</abbr> of the intended behavior that fails first → the smallest change to pass it → review, cleanup, fixes, and re-checks**. <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#from-a-requirement-to-a-checked-implementation" target="_blank">See how the method earns the outcome</a>.
+  The sequence is explicit: **a <abbr title="unit tests">check</abbr> of the intended behavior that fails first → the smallest change to pass it → review, cleanup, fixes, and re-checks**. <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#from-a-requirement-to-a-checked-implementation" target="_blank" data-cta="view_example" data-location="mid_page">See how the method earns the outcome</a>.
 
   **Stop paying the AI bug tax.** **We observe substantially fewer defects and far less cleanup than AI coding without this enforced process.** **In our production use, hands-on oversight is dramatically lower:** make a fast human check of decisions and trade-offs, inspect the key code that implements your business rules, then check the final behavior. **Routine code does not need line-by-line review in that operating experience.**
 
@@ -180,7 +180,7 @@ Your engineering competence sets the standard. DigitalWorker carries it through 
 
   Fast generation helps only when the result moves your product forward. DigitalWorker makes quality work part of delivery: enforced test-first TDD, a dedicated ~100-step checklist-driven review (correctness, architecture and standards, code-smell detection, requirements audit), refactoring, and fixes before the PR. **You receive the code, tests, and design decisions together.**
 
-  The sequence is explicit: **a failing behavior test → the minimum implementation to pass → review, refactoring, fixes, and re-checks.** <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#from-a-requirement-to-a-checked-implementation" target="_blank">See how the workflow earns the outcome</a>.
+  The sequence is explicit: **a failing behavior test → the minimum implementation to pass → review, refactoring, fixes, and re-checks.** <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#from-a-requirement-to-a-checked-implementation" target="_blank" data-cta="view_example" data-location="mid_page">See how the workflow earns the outcome</a>.
 
   **Stop paying the AI bug tax.** **We observe substantially fewer defects and far less cleanup than AI coding without this enforced pipeline.** **In our production use, hands-on oversight is dramatically lower:** spot-review the decisions and key domain code, then check the final behavior. **Routine code does not need line-by-line review in that operating experience.**
 
@@ -236,7 +236,7 @@ Your engineering competence sets the standard. DigitalWorker carries it through 
 
   **Top 10% professional-developer output[^2] at AI execution cost.**
 
-  Direct your judgment toward the product while DigitalWorker handles routine implementation and quality work. **The current usage model is model cost plus 20% markup — and in our production use, total token spend is significantly lower than raw AI coding (we generated >100K lines of production code with <5% duplication in a year on three &#36;20/month plans without overages);** <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#economics-pay-for-execution-keep-your-judgment" target="_blank">see the economics and how to evaluate total effort</a>.
+  Direct your judgment toward the product while DigitalWorker handles routine implementation and quality work. **The current usage model is model cost plus 20% markup — and in our production use, total token spend is significantly lower than raw AI coding (we generated >100K lines of production code with <5% duplication in a year on three &#36;20/month plans without overages);** <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#economics-pay-for-execution-keep-your-judgment" target="_blank" data-cta="view_example" data-location="mid_page">see the economics and how to evaluate total effort</a>.
 
   Enforced discipline is not overhead—it is why velocity does not slow down as the codebase grows. **In our production use, a greenfield system reached production in 5 months and a commercial codebase held pace for nearly a year** — numbers in [Our Production Experience](#our-production-experience).
 
@@ -328,7 +328,7 @@ Your engineering competence sets the standard. DigitalWorker carries it through 
 
 In our own production work, **we delivered a greenfield system with approximately 53,000 lines of code and 4,000 automated tests to production in 5 months.** In parallel, **we sustained approximately 85 commits per month for nearly a year on a commercial codebase of approximately 51,000 lines, at constant effort, without throughput degradation.**
 
-**The engineering results described here come from that daily production use.** See the process in action in the <a href="https://github.com/grandua/Digital-Worker-Demo" target="_blank">public demo repo</a>, including the tests, pull requests, and fix history.
+**The engineering results described here come from that daily production use.** See the process in action in the <a href="https://github.com/grandua/Digital-Worker-Demo" target="_blank" data-cta="view_example" data-location="mid_page">public demo repo</a>, including the tests, pull requests, and fix history.
 
 <a id="getting-started--four-ways-in"></a>
 
@@ -366,7 +366,7 @@ Onboarding steps, org-wide install, and billing details: <a href="https://agiled
 
 <a href="https://github.com/apps/digitalworker-agent/installations/new" target="_blank" data-cta="install_app" data-location="pricing"><strong>Install the DigitalWorker Agent GitHub App</strong></a> on your repository, open an issue with your task and acceptance criteria, and mention `@digitalworker` — it delivers a tested, reviewed PR from its own worktree; **you decide what merges.** **The free trial covers a typical task — no card required; nothing is ever charged automatically.** **No Trello account, no local install, terminal, or per-developer setup required.**
 
-Step-by-step onboarding, permissions, and trigger options: <a href="https://agiledigitalworker.com/user-guide#option-a-using-digitalworker-via-github-issues-recommended" target="_blank">User Guide</a>. Not ready to grant repo access? Watch it work on the <a href="https://github.com/grandua/Digital-Worker-Demo/issues" target="_blank">public demo repo</a>.
+Step-by-step onboarding, permissions, and trigger options: <a href="https://agiledigitalworker.com/user-guide#option-a-using-digitalworker-via-github-issues-recommended" target="_blank">User Guide</a>. Not ready to grant repo access? Watch it work on the <a href="https://github.com/grandua/Digital-Worker-Demo/issues" target="_blank" data-cta="view_example" data-location="pricing">public demo repo</a>.
 
 ***Or start even smaller:** <a href="https://github.com/apps/digitalworker-reviewer/installations/new" target="_blank" data-cta="install_app" data-location="pricing">install the Reviewer</a> (~1 min, free trial), then comment `@digitalworker review` on an existing PR — findings land as comments; it has no write access and never touches your code.*
 
@@ -380,7 +380,7 @@ Prefer a Kanban board? DigitalWorker also runs on a private Trello board — typ
 
 ##### Or watch it on our public demo repo — the Agent is already installed there
 
-**Open an issue on the <a href="https://github.com/grandua/Digital-Worker-Demo/issues" target="_blank">public demo repository</a> with a bounded task, acceptance criteria, and `@digitalworker` in the description** — DigitalWorker delivers a tested PR right there in public. **Only a GitHub account needed: no Trello, no LLM key, no access to your repos.** Prefer Trello or email? <a href="https://agiledigitalworker.com/user-guide#option-b-using-digitalworker-via-trello-board" target="_blank">Details in the User Guide</a>.
+**Open an issue on the <a href="https://github.com/grandua/Digital-Worker-Demo/issues" target="_blank" data-cta="view_example" data-location="pricing">public demo repository</a> with a bounded task, acceptance criteria, and `@digitalworker` in the description** — DigitalWorker delivers a tested PR right there in public. **Only a GitHub account needed: no Trello, no LLM key, no access to your repos.** Prefer Trello or email? <a href="https://agiledigitalworker.com/user-guide#option-b-using-digitalworker-via-trello-board" target="_blank">Details in the User Guide</a>.
 
 <a id="2-verify-our-claims--no-account-or-setup-needed"></a>
 
@@ -390,16 +390,16 @@ Prefer a Kanban board? DigitalWorker also runs on a private Trello board — typ
 
 Browse the <a href="https://github.com/grandua/Digital-Worker-Demo" target="_blank" data-cta="view_example" data-location="pricing">public source</a>, <a href="https://trello.com/b/6a03d01d53cf7bb95f8325dd/digital-worker-demo" target="_blank" data-cta="view_example" data-location="pricing"><strong>source task cards</strong></a>, and <a href="https://github.com/grandua/Digital-Worker-Demo/pulls?q=is%3Apr+is%3Aclosed" target="_blank" data-cta="view_example" data-location="pricing">PR history</a>. **Both applications were 100% generated by DigitalWorker from task cards on the Trello demo board** — the same flow runs from GitHub Issues on your repo. **Human involvement consisted of fast spot-reviews and, for the Calculator, passing external review feedback into a fix card for autonomous remediation.**
 
-- **<a href="https://github.com/grandua/Digital-Worker-Demo/tree/main/Calculator" target="_blank">Scientific Calculator</a>: 230 domain unit tests**, a Rich Domain Model, and explicit edge-case behavior. **External review found issues, followed by autonomous remediation through a fix card.**
-- **<a href="https://github.com/grandua/Digital-Worker-Demo/tree/main/UrlShortener" target="_blank">URL Shortener API</a>: 40 unit tests**, Clean Architecture, Entity Framework data access, and requirements traceability.
+- **<a href="https://github.com/grandua/Digital-Worker-Demo/tree/main/Calculator" target="_blank" data-cta="view_example" data-location="mid_page">Scientific Calculator</a>: 230 domain unit tests**, a Rich Domain Model, and explicit edge-case behavior. **External review found issues, followed by autonomous remediation through a fix card.**
+- **<a href="https://github.com/grandua/Digital-Worker-Demo/tree/main/UrlShortener" target="_blank" data-cta="view_example" data-location="mid_page">URL Shortener API</a>: 40 unit tests**, Clean Architecture, Entity Framework data access, and requirements traceability.
 
 **Demo tasks are intentionally compact so the whole ticket→PR→review→fix cycle is traceable in minutes — the same engine built DigitalWorker itself. Want real-scale proof? <a href="mailto:info@agiledigitalworker.com" data-cta="email_founder" data-location="pricing"><strong>Book a live walkthrough</strong></a> — we drive our private 50K+ line codebase on the video call.**
 
 If you read the code like a senior dev, you'll find: methods are short, parameters few, state and behavior live in the same classes, Domain depends on nothing, and coverage is near-complete.
 
-<a href="https://agiledigitalworker.com/Engineering-Deep-Dive#recorded-demo-results-and-recovery" target="_blank">Inspect the recorded coverage, execution times, human involvement, and recovery</a>. **Everything on this page is observed in our production use — not an independent benchmark; judge it against the repo. External review found Calculator issues our internal review missed — the autonomous fix history is part of the evidence.**
+<a href="https://agiledigitalworker.com/Engineering-Deep-Dive#recorded-demo-results-and-recovery" target="_blank" data-cta="view_example" data-location="mid_page">Inspect the recorded coverage, execution times, human involvement, and recovery</a>. **Everything on this page is observed in our production use — not an independent benchmark; judge it against the repo. External review found Calculator issues our internal review missed — the autonomous fix history is part of the evidence.**
 
-**Use your own judgment and your own AI coding agent.** The deep dive includes the <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#evaluate-it-against-your-own-standard" target="_blank">balanced inspection prompt and evaluation method</a>, plus the commands to run the demo test suites yourself. **Choose your acceptance criteria first and judge the result, remaining cleanup, and hands-on time.** Your existing AI-agent costs may apply.
+**Use your own judgment and your own AI coding agent.** The deep dive includes the <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#evaluate-it-against-your-own-standard" target="_blank" data-cta="view_example" data-location="mid_page">balanced inspection prompt and evaluation method</a>, plus the commands to run the demo test suites yourself. **Choose your acceptance criteria first and judge the result, remaining cleanup, and hands-on time.** Your existing AI-agent costs may apply.
 
 </details>
 
@@ -429,7 +429,7 @@ If you read the code like a senior dev, you'll find: methods are short, paramete
 
 ### Payment options
 
-One payment link covers every purchase: <a href="https://buy.stripe.com/6oUaEPcAcaw2dbTbzk5J602" target="_blank">top up your balance</a>. Usage costs model cost plus 20%, prepaid — **nothing is ever charged automatically; work pauses at zero.** One prepaid pool serves both Reviewer and Agent under the same GitHub customer account. Full mechanics — business fields, personalized links, Trello balance: <a href="https://agiledigitalworker.com/user-guide#trial-credit-and-paid-conversion" target="_blank">User Guide</a>.
+One payment link covers every purchase: <a href="https://buy.stripe.com/6oUaEPcAcaw2dbTbzk5J602" target="_blank" data-cta="payment_link" data-location="pricing">top up your balance</a>. Usage costs model cost plus 20%, prepaid — **nothing is ever charged automatically; work pauses at zero.** One prepaid pool serves both Reviewer and Agent under the same GitHub customer account. Full mechanics — business fields, personalized links, Trello balance: <a href="https://agiledigitalworker.com/user-guide#trial-credit-and-paid-conversion" target="_blank">User Guide</a>.
 
 ### Quick answers
 
@@ -437,12 +437,12 @@ One payment link covers every purchase: <a href="https://buy.stripe.com/6oUaEPcA
 - **What if it produces slop or misses the task?** You see the plan and pivotal decisions before implementation, and its ~100-item checklist review runs before the PR reaches you. The public demo even shows a real miss and the autonomous fix — [judge it there](#2-verify-our-claims--no-account-or-setup-needed).
 - **What does it cost after the free trial or the &#36;15 credit?** Usage beyond that is prepaid at model cost plus 20%, with applicable tax separate. One payment link serves Reviewer and Agent at identical pricing — fill in the business-name field at checkout for a business purchase, leave it blank for personal; see [payment options](#payment-options) for balance top-ups. **Work pauses at zero, nothing is ever charged automatically.**
 - **Do I need local setup, tokens, API key or Trello?** No — a GitHub App install and an issue are enough; Trello is optional.
-- **What's the smallest way to try it?** Get a <a href="https://agiledigitalworker.com/user-guide#free-public-review--no-install-mirror-review" target="_blank" data-cta="view_example">free review of any public PR</a> — nothing to install. Or run a task on the <a href="https://github.com/grandua/Digital-Worker-Demo/issues" target="_blank">public demo repo</a> — the Agent is already installed.
+- **What's the smallest way to try it?** Get a <a href="https://agiledigitalworker.com/user-guide#free-public-review--no-install-mirror-review" target="_blank" data-cta="view_example" data-location="quick_answers">free review of any public PR</a> — nothing to install. Or run a task on the <a href="https://github.com/grandua/Digital-Worker-Demo/issues" target="_blank" data-cta="view_example" data-location="quick_answers">public demo repo</a> — the Agent is already installed.
 - **No GitHub account — can I still see it work?** Yes — [email us a public-safe task](mailto:info@agiledigitalworker.com) or [book a live walkthrough](mailto:info@agiledigitalworker.com) — we drive our private 50K+ line codebase on the video call.
 - **What does DigitalWorker replace or augment?** Any AI coding agents and copilots at any autonomy level; code review tools — local, CI, AI-driven or not; and operational procedures or checklists where AI automation kept skipping instructions. **Not replaced:** light human oversight on large or prompt-heavy work, and deterministic quality tools — static analysis, linters, security checks, NDepend/SonarQube.
 - **Engineers don't read code anymore — why does code quality still matter?** **Your AI is the reader now.** Clean, encapsulated code is what lets the agent navigate, reuse, and extend without breaking things — slop confuses AI even faster than it confuses humans.
 - **What if our code has domain objects that hold data while "service" classes hold the logic (an Anemic Domain Model)?** That's a domain model in name only. Splitting data into passive objects while procedures in services do all the work — what Fowler calls the *Anemic Domain Model* (a *Transaction Script / Table Module* in OOP clothing) — still rides the steep rising curves on his chart, not the flat Domain Model line. Fowler himself lists it as an <a href="https://martinfowler.com/bliki/AnemicDomainModel.html" target="_blank">anti-pattern</a>.
-- **AI cheats on my tests and instructions — how do your guardrails stop that?** LLMs are inventive at bypassing static rules: a rules file (`CLAUDE.md`, `AGENTS.md`) is read once and dropped mid-task, tests get weakened to pass, and steps get skipped. Instead of relying on a rules file, our Instruction Engine runs lots of targeted prompts across multiple SDLC stages to enforce test-first TDD and Clean Architecture before publishing a pull request — coupled with compiler, test-runner, code quality tools, and coverage gates at each stage, plus built-in anti-gaming checks. You can inspect the upfront architecture and class-design Markdown docs before code is written, or [see the review stage on any public PR with zero install](https://github.com/grandua/dw-public-reviews/issues/).
+- **AI cheats on my tests and instructions — how do your guardrails stop that?** LLMs are inventive at bypassing static rules: a rules file (`CLAUDE.md`, `AGENTS.md`) is read once and dropped mid-task, tests get weakened to pass, and steps get skipped. Instead of relying on a rules file, our Instruction Engine runs lots of targeted prompts across multiple SDLC stages to enforce test-first TDD and Clean Architecture before publishing a pull request — coupled with compiler, test-runner, code quality tools, and coverage gates at each stage, plus built-in anti-gaming checks. You can inspect the upfront architecture and class-design Markdown docs before code is written, or <a href="https://github.com/grandua/dw-public-reviews/issues/" target="_blank" data-cta="view_example" data-location="quick_answers">see the review stage on any public PR with zero install</a>.
 <!-- TODO(founders): possible oversharing of engine internals ("lots of targeted prompts ... coupled with compiler, test-runner, code quality tools, and coverage gates at each stage"). Founder confirmed accurate 2026-11-04; revisit trimming once we have ~20-30 users. -->
 - **Won't running lots of prompts across multiple SDLC stages burn way more tokens and cost a fortune?** In our 2 years of production use, it actually costs *significantly less* than raw AI coding — we generated >100K lines of production code in a year on three &#36;20/month plans without overages. Four reasons: (1) our adaptive engine adjusts how much work each prompt carries based on change size and complexity; (2) cost-effective models handle routine steps while frontier models are used sparingly and strategically; (3) upfront design and test-first TDD eliminate the expensive rework and re-prompting loops that burn most tokens; and (4) keeping duplication under 5% with small, cohesive classes avoids the massive code bloat that blows up context windows on every subsequent prompt.
 - **What if my existing codebase is already legacy or anemic — does it copy our bad patterns?** It integrates with your existing modules and boundaries rather than duplicating them, while holding new and touched domain logic to clean encapsulation and test-first standards — or to your own custom rules if you replace the preset.
@@ -452,7 +452,7 @@ One payment link covers every purchase: <a href="https://buy.stripe.com/6oUaEPcA
 
 ---
 
-*Internals, method, and economics: <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#digitalworker--see-the-engineering-behind-the-result" target="_blank">engineering deep dive</a>.* <!-- audience: dev, non-dev builder, business · ceiling: T1 narrative everywhere; T2/T3 in labeled technical compartments -->
+*Internals, method, and economics: <a href="https://agiledigitalworker.com/Engineering-Deep-Dive#digitalworker--see-the-engineering-behind-the-result" target="_blank" data-cta="view_example" data-location="bottom_page">engineering deep dive</a>.* <!-- audience: dev, non-dev builder, business · ceiling: T1 narrative everywhere; T2/T3 in labeled technical compartments -->
 
 **Ready when you are:** <a href="https://github.com/apps/digitalworker-reviewer/installations/new" target="_blank" data-cta="install_app" data-location="bottom_page"><strong>Install the Reviewer - ~1 min, free trial</strong></a> · <a href="#get-digitalworker-agent" data-cta="install_app" data-location="bottom_page"><strong>Install the Agent - ~2 min, free trial</strong></a> · <a href="https://github.com/grandua/Digital-Worker-Demo/issues" target="_blank" data-cta="view_example" data-location="bottom_page"><strong>See it work - no install</strong></a> · <a href="https://agiledigitalworker.com/user-guide#free-public-review--no-install-mirror-review" target="_blank" data-cta="view_example" data-location="bottom_page"><strong>Get a free review - no install</strong></a>
 
@@ -503,22 +503,24 @@ window.posthog.init('phc_t38qtiviVF5hykpwcEWfMZrZiew4rfy688wjamNQ5mCt', {
 
 (function () {
   function track(name, props) {
+    if (window.__dwNoTrack) return;
     if (window.posthog && typeof window.posthog.capture === 'function') {
       window.posthog.capture(name, props);
     }
   }
 
   document.addEventListener('click', function (e) {
+    if (e.button !== 0 || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return;
     var el = e.target && e.target.closest ? e.target.closest('[data-cta]') : null;
     if (!el) return;
     track('cta_clicked', {
       cta_name: el.getAttribute('data-cta'),
       cta_location: el.getAttribute('data-location'),
-      target_url: el.href
+      target_url: el.href || el.getAttribute('href') || ''
     });
   }, true);
 
-  var scrollThresholds = [25, 50, 75];
+  var scrollThresholds = [25, 50, 75, 100];
   var scrollFired = {};
   window.addEventListener('scroll', function () {
     var h = document.documentElement;

@@ -47,6 +47,14 @@ The feature workflow turns engineering discipline into part of delivery:
 
 The workflow targets near-complete conventional test coverage, with C# having the deepest tooling today. Because the tests are behavior-focused and boundary-exact, the suite targets near-complete mutation coverage — mutants get killed, not merely lines executed. Coverage identifies unexercised code; it does not establish that every assertion is meaningful or every possible defect has been found. The benefit is fewer cycles of finding a problem, explaining it to the AI, and driving another implementation attempt. “Production-ready” means ready for that final hands-on check after the engineering workflow; it does not mean mathematically defect-free.
 
+## Working inside inherited and legacy code
+
+The same ticket-driven workflow applies to code it did not write. For incremental legacy modernization and technical-debt reduction, each ticket targets a bounded piece: characterization tests pin the existing behavior first — including behavior that is currently wrong — so the old code becomes safe to change. The workflow then rewrites that piece to the same test-first and Clean Architecture standards and returns it as a tested, reviewed pull request. Repeated across tickets, this is the strangler-fig approach — the risky parts shrink merge by merge rather than in one big-bang rewrite, and the system keeps working throughout.
+
+The mechanism treats human-era and AI-era code identically: procedural sprawl and anemic domain models are cleaned by the same process whether a developer wrote them years ago or a model produced them last week. Applied at larger scope, the same piece-by-piece mechanism supports monolith decomposition — extracting cohesive domain capabilities behind clean boundaries one bounded slice at a time.
+
+Both systems in our recorded demos were clean builds, not inherited rescues — the capability claim here is the method applied to legacy code, and the honest evaluation is a bounded ticket on your own worst file. Depth is greatest for C# today; other stacks are scoped case by case.
+
 ## What beautiful, maintainable code looks like
 
 Beauty here is concrete: intent is legible, responsibilities are cohesive, and implementation details stay behind the concepts that own them. That makes future changes easier to reason about.

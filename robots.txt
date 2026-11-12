@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://agiledigitalworker.com/sitemap.xml

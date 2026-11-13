@@ -3,3 +3,4 @@ description: DigitalWorker is an AI coding agent and PR reviewer — GitHub issu
 url: https://agiledigitalworker.com
 plugins:
   - jekyll-sitemap
+  - jekyll-redirect-from

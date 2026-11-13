@@ -1,3 +1,8 @@
+---
+permalink: /user-guide/
+redirect_from: /user-guide.html
+---
+
 # Digital Worker User Guide
 
 **Audience:** human users who submit tasks to Digital Worker via GitHub Issues or a connected Trello board <!-- ceiling: T1 intro → T2 operations -->

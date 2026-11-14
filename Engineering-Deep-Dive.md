@@ -1,3 +1,8 @@
+---
+permalink: /Engineering-Deep-Dive/
+redirect_from: /Engineering-Deep-Dive.html
+---
+
 # DigitalWorker — See the engineering behind the result
 
 **Audience:** developers and technical evaluators — the engineering evidence behind the claims. <!-- audience: dev/evaluator · ceiling: T2 main → T3 deep sections -->

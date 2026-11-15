@@ -21,7 +21,7 @@
 ---
 *Saving the world from instant legacy code.*
 
-**Fast to ship, expensive to own — raw AI writes instant legacy code you end up renting from the model. We remove the expensive part.** DigitalWorker turns a ticket into a tested, reviewed, production-ready[^4] <abbr title="a proposed change, packaged for review">pull request</abbr> — **clean, encapsulated domain objects you can actually read and explain, scaling past 50K+ lines at week-1 speed**, where Copilot and Claude Code collapse into slop. It's like assigning a top-10%[^2] developer to a well-scoped task — at AI cost.
+**A ticket becomes a tested, reviewed, production-ready[^4] <abbr title="a proposed change, packaged for review">pull request</abbr> — clean, encapsulated domain objects you can actually read and explain, scaling past 50K+ lines at week-1 speed — where Copilot and Claude Code collapse into slop.** Fast to ship, expensive to own: raw AI writes instant legacy code you end up renting from the model. We remove the expensive part. It's like assigning a top-10%[^2] developer to a well-scoped task — at AI cost.
 
 **Every AI output is a first draft — ours becomes real code.** In ~8 of 10 runs, nothing structural slips through; the rest takes a 2-minute upfront design check, not a cleanup weekend. **No iterative prompting. No babysitting. No cleaning up after the AI.**[^agent]
 

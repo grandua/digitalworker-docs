@@ -1,0 +1,72 @@
+<!-- DigitalWorker entity schema for AI-search/GEO: Organization + products.
+     sameAs URLs verified live 2026-11-15 (curl) + Listings/listings-log.md.
+     Excluded: saashub.com/digitalworker-reviewer (404), alternativeto reviewer
+     (pending review, 404), github.com/marketplace/* (in review, 404).
+     Agile Design LLC socials scoped under parentOrganization (entity match). -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://agiledigitalworker.com/#organization",
+      "name": "DigitalWorker",
+      "alternateName": "Agile DigitalWorker",
+      "url": "https://agiledigitalworker.com/",
+      "sameAs": [
+        "https://www.saashub.com/digitalworker",
+        "https://github.com/grandua"
+      ],
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Agile Design LLC",
+        "url": "https://www.linkedin.com/company/agile-design-llc/",
+        "sameAs": [
+          "https://www.linkedin.com/company/agile-design-llc/",
+          "https://twitter.com/AgileDesignLLC",
+          "https://www.facebook.com/pages/Agile-Design-LLC/194844307249816"
+        ]
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://agiledigitalworker.com/#reviewer",
+      "name": "DigitalWorker Reviewer",
+      "description": "GitHub App that reviews pull requests for architectural problems — letter-grade scores, severity tags, and specific violations such as anemic domain models, layer leaks, and testability gaps.",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Web",
+      "url": "https://github.com/apps/digitalworker-reviewer",
+      "featureList": [
+        "Letter-grade PR scores (A-F) with severity tags",
+        "Detects anemic domain models, layer leaks, testability gaps",
+        "GitHub App install; reviews PRs automatically"
+      ],
+      "sameAs": [
+        "https://www.producthunt.com/products/digitalworker-reviewer",
+        "https://www.saashub.com/digitalworker",
+        "https://stackshare.io/agile-pr-review-that-catches-ai-slop-before-merge"
+      ],
+      "provider": { "@id": "https://agiledigitalworker.com/#organization" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://agiledigitalworker.com/#agent",
+      "name": "DigitalWorker Agent",
+      "description": "AI coding agent that turns GitHub issues into tested, reviewed, production-ready pull requests with clean-architecture domain models — where raw AI code generation collapses into slop.",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Web",
+      "url": "https://github.com/apps/digitalworker-agent",
+      "featureList": [
+        "Turns GitHub issues into tested pull requests",
+        "Clean-architecture domain models, not AI slop",
+        "GitHub App install"
+      ],
+      "sameAs": [
+        "https://www.saashub.com/digitalworker-agent",
+        "https://stackshare.io/digitalworker-agent"
+      ],
+      "provider": { "@id": "https://agiledigitalworker.com/#organization" }
+    }
+  ]
+}
+</script>

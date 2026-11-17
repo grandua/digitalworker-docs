@@ -71,7 +71,7 @@ _Auto-generated from Sell-Sheet.md by sync-docs.yml — do not edit._
 - **You stop fearing the legacy codebase everyone's afraid to touch** — ticket by ticket, the worst tangle comes back as clean, tested architecture that's actually fun to work on, **without breaking what works — 200–500 lines modernized a day at AI execution cost.**
 - **Test coverage so high that even AI can't break what was working before.**
 - **You do the work of an architect and a product manager — never a babysitter.**
-- **No bloated AI slop — beautiful, well-architected code, minimal duplication, above-80% test coverage.**
+- **No bloated AI slop — beautiful, well-architected code, minimal duplication, close to 100% test coverage.**
 - **You create a ticket even for a complex feature — and get it back <abbr title="a ticket in, production-ready code out is known as a Software Factory">solved, tested, and reviewed</abbr>**, close enough to done that you ship to production in a day or two.
 
 **It's not imagination anymore — it's reality.** DigitalWorker itself was built this way — [see the receipts](#2-verify-our-claims--no-account-or-setup-needed).
@@ -140,7 +140,7 @@ Your engineering competence sets the standard. DigitalWorker carries it through 
 
 <a href="https://agiledigitalworker.com/Engineering-Deep-Dive/#digitalworker--see-the-engineering-behind-the-result" target="_blank" data-cta="view_example" data-location="hero"><strong>See the engineering behind the result</strong></a> — the method, concrete code examples, comparison criteria, and economics. No signup required.
 
-*Developers: jump straight to the [recorded evidence](#2-verify-our-claims--no-account-or-setup-needed) or the <a href="https://agiledigitalworker.com/Engineering-Deep-Dive/#digitalworker--see-the-engineering-behind-the-result" target="_blank" data-cta="view_example" data-location="hero">engineering deep dive</a>. For the engineering details, open the technical blocks below.*
+*Developers: jump straight to the [recorded evidence](#2-verify-our-claims--no-account-or-setup-needed) or the <a href="https://agiledigitalworker.com/Engineering-Deep-Dive/#digitalworker--see-the-engineering-behind-the-result" target="_blank" data-cta="view_example" data-location="hero">engineering deep dive</a>. For the engineering details, open the technical blocks below or visit the [Engineering Blog](https://agiledigitalworker.com/blog/).*
 
 ---
 
@@ -467,7 +467,7 @@ One payment link covers every purchase: <a href="https://buy.stripe.com/6oUaEPcA
 
 **Agile Design llc · New York, NY**
 
-<a href="https://www.linkedin.com/company/agile-design-llc/" target="_blank" data-cta="email_founder" data-location="pricing"><strong>Message on LinkedIn</strong></a> · <a href="mailto:info@agiledigitalworker.com" data-cta="email_founder" data-location="pricing"><strong>Email us</strong></a> · <a href="https://agiledigitalworker.com" target="_blank">agiledigitalworker.com</a> · <a href="https://agiledigitalworker.com/user-guide/#digital-worker-user-guide" target="_blank">User Guide</a>
+<a href="https://www.linkedin.com/company/agile-design-llc/" target="_blank" data-cta="email_founder" data-location="pricing"><strong>Message on LinkedIn</strong></a> · <a href="mailto:info@agiledigitalworker.com" data-cta="email_founder" data-location="pricing"><strong>Email us</strong></a> · <a href="https://agiledigitalworker.com" target="_blank">agiledigitalworker.com</a> · <a href="https://agiledigitalworker.com/user-guide/#digital-worker-user-guide" target="_blank">User Guide</a> · [Engineering Blog](https://agiledigitalworker.com/blog/)
 
 Follow us: <a href="https://www.linkedin.com/company/2330043" target="_blank" data-cta="social_follow" data-location="footer">LinkedIn</a> · <a href="https://www.linkedin.com/groups/40979011/" target="_blank" data-cta="social_follow" data-location="footer">LinkedIn Group</a> · <a href="https://www.facebook.com/pages/Agile-Design-LLC/194844307249816" target="_blank" data-cta="social_follow" data-location="footer">Facebook</a> · <a href="https://twitter.com/AgileDesignLLC" target="_blank" data-cta="social_follow" data-location="footer">X/Twitter</a>
 

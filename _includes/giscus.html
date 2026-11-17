@@ -1,0 +1,27 @@
+<hr>
+<section id="comments" aria-label="Discussion and feedback">
+  <h2>Discussion &amp; Feedback</h2>
+  <p>Comment below with a GitHub account (backed by <a href="https://github.com/grandua/Digital-Worker-Demo/discussions" target="_blank" rel="noopener">Digital-Worker-Demo Discussions</a>).
+  {% if site.tally_feedback_url != "" and site.tally_feedback_url != nil %}
+    Prefer not to sign in with GitHub? <a href="{{ site.tally_feedback_url | escape }}" target="_blank" rel="noopener">Share feedback or project inquiries via Tally</a>.
+  {% else %}
+    Prefer not to sign in with GitHub? <a href="mailto:info@agiledigitalworker.com?subject=Feedback%20on%20{{ page.title | default: page.url | url_encode | replace: '+', '%20' }}">Email feedback or project questions</a>.
+  {% endif %}
+  </p>
+  <script src="https://giscus.app/client.js"
+          data-repo="grandua/Digital-Worker-Demo"
+          data-repo-id="R_kgDOSb5ZCA"
+          data-category="General"
+          data-category-id="DIC_kwDOSb5ZCM4DLXaZ"
+          data-mapping="pathname"
+          data-strict="0"
+          data-reactions-enabled="1"
+          data-emit-metadata="0"
+          data-input-position="top"
+          data-theme="preferred_color_scheme"
+          data-lang="en"
+          data-loading="lazy"
+          crossorigin="anonymous"
+          async>
+  </script>
+</section>

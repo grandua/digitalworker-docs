@@ -1,6 +1,22 @@
 title: DigitalWorker
 description: DigitalWorker is an AI coding agent and PR reviewer — GitHub issues in, tested Clean-Architecture pull requests out, with architectural review on every PR.
 url: https://agiledigitalworker.com
+# Optional: paste your Tally.so feedback form URL (e.g. https://tally.so/r/yourFormId) for non-GitHub commenters.
+# When blank, _includes/giscus.html falls back cleanly to mailto:info@agiledigitalworker.com.
+tally_feedback_url: ""
 plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: "/blog/:year/:month/:day/:title/"
+      comments: true
+  - scope:
+      path: "Engineering-Deep-Dive.md"
+      type: "pages"
+    values:
+      comments: true

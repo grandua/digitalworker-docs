@@ -9,7 +9,7 @@ redirect_from: /Engineering-Deep-Dive.html
 
 You should be able to explain why the code deserves your confidence. DigitalWorker combines a high-precision Instruction Engine with an engineering method that carries a task through design, test-first implementation, review, and repair. The result is work you can inspect, understand, and extend—and less of the repeated prompting and cleanup that consumes your attention.
 
-[Back to the product overview](https://agiledigitalworker.com/) · [Inspect the public demo](https://github.com/grandua/Digital-Worker-Demo) · [User Guide](https://agiledigitalworker.com/user-guide/)
+[Back to the product overview](https://agiledigitalworker.com/) · [Inspect the public demo](https://github.com/grandua/Digital-Worker-Demo) · [User Guide](https://agiledigitalworker.com/user-guide/) · [Engineering Blog](https://agiledigitalworker.com/blog/)
 
 ## Why this combination matters
 

@@ -19,7 +19,10 @@
 </table>
 
 ---
-*Saving the world from instant legacy code.*
+*Saving the world from spaghetti code.*
+
+**AI types code ~100× faster than your best developer. So why does everyone ship only ~26% faster — at best?**[^3]
+**Where did the other 99× go?** Confiscated — at review, in debugging, on the rewrite. **Shipping software was never a typing contest.** The speed is real; without working guardrails, it expires at the first draft. *Here's how to collect the rest.*
 
 **A ticket becomes a tested, reviewed, production-ready[^4] <abbr title="a proposed change, packaged for review">pull request</abbr> — clean, encapsulated domain objects you can actually read and explain, scaling past 50K+ lines at week-1 speed — where Copilot and Claude Code collapse into slop.** Fast to ship, expensive to own: raw AI writes instant legacy code you end up renting from the model. We remove the expensive part. It's like assigning a top-10%[^2] developer to a well-scoped task — at AI cost.
 

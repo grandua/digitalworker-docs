@@ -21,8 +21,9 @@
 ---
 *Saving the world from spaghetti code.*
 
-**AI types code ~100× faster than your best developer. So why does everyone ship only ~26% faster — at best?**[^3]
-**Where did the other 99× go?** Confiscated — at review, in debugging, on the rewrite. **Shipping software was never a typing or algorithm contest, or shipping compiling code fast. It was always about architecture and making decisions.** The speed is real; without working guardrails, it expires at the first draft. *Here's how to collect the rest.*
+**AI types code ~100× faster than your best developer. Teams ship 1.26× faster at best — and 19% slower on mature codebases.[^3] Congratulations on automating the only part that wasn't the bottleneck.**
+
+**Where did the other ~99× go?** Confiscated — at review, in debugging, on the rewrite. **Shipping software was never a typing, compiling, or algorithm contest. It was always about architecture, design, and judgment.** The speed is real; without working guardrails, it expires at the first draft. *Here's how to collect the rest.*
 
 **A ticket becomes a tested, reviewed, production-ready[^4] <abbr title="a proposed change, packaged for review">pull request</abbr> — clean, encapsulated domain objects you can actually read and explain, scaling past 50K+ lines at week-1 speed — where Copilot and Claude Code collapse into slop.** Fast to ship, expensive to own: raw AI writes instant legacy code you end up renting from the model. We remove the expensive part. It's like assigning a top-10%[^2] developer to a well-scoped task — at AI cost.
 
@@ -436,17 +437,16 @@ If you read the code like a senior dev, you'll find: methods are short, paramete
 
 <a id="done-for-you-delivery"></a>
 
-#### Done-for-you Architectural Diagnostic & Engineering Delivery
+### Done-for-You Diagnostic & Delivery
 
-Prefer to have an engineer run the DigitalWorker pipeline on your codebase instead of adopting a new tool yourself? We take on diverse kinds of engagements:
+Want an engineer running the DigitalWorker pipeline on your codebase instead of adopting a new tool yourself? We take on a few kinds of engagements, such as:
 
-- **Greenfield build with ambitious scale?** We move fast on day one—and stay just as fast past 50,000+ lines.
-- **Velocity stalled:** Even if prior cleanup attempts failed—provided leadership is ready for a real architectural fix—we isolate the highest-pain modules and defects first, align on the remediation plan, and get your pain solved by delivering well-tested, high-quality incremental changes through a milestone-gated engagement.
+- **Greenfield at scale:** You get the same fast delivery on day 1 and past 50K+ lines.
+- **Stalled velocity:** Your codebase fights every change, even after prior cleanup attempts. If leadership is ready for a real architectural fix, we isolate the highest-pain modules first, agree on a remediation plan, and ship tested, modular slices you can actually maintain.
 
-**How engagements start:** We begin with a bounded architectural diagnostic and review — never an open-ended hourly retainer — then deliver fixes or new features slice by slice you inspect and approve at every milestone. <a href="mailto:info@agiledigitalworker.com?subject=Done-for-you%20Diagnostic%20%2F%20Delivery" data-cta="email_services" data-location="pricing"><strong>Email us (info@agiledigitalworker.com) to scope a diagnostic or pilot</strong></a>.
+**How it starts:** A bounded architectural diagnostic — never an open-ended hourly retainer — leaving you with a prioritized findings report and remediation plan. From there, we deliver fixes or features in milestone slices you inspect and approve one by one (the same pipeline that shipped our 53K-line production system in 5 months). <a href="mailto:info@agiledigitalworker.com?subject=Done-for-you%20Diagnostic%20%2F%20Delivery" data-cta="email_services" data-location="pricing"><strong>Email info@agiledigitalworker.com</strong></a> with your stack and biggest bottleneck to scope a diagnostic or pilot.
 
 <a id="payment-options"></a>
-
 ### Payment options
 
 One payment link covers every purchase: <a href="https://buy.stripe.com/6oUaEPcAcaw2dbTbzk5J602" target="_blank" data-cta="payment_link" data-location="pricing">top up your balance</a>. Usage costs model cost plus 20%, prepaid — **nothing is ever charged automatically; work pauses at zero.** One prepaid pool serves both Reviewer and Agent under the same GitHub customer account. Full mechanics — business fields, personalized links, Trello balance: <a href="https://agiledigitalworker.com/user-guide/#trial-credit-and-paid-conversion" target="_blank">User Guide</a>.

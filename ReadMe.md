@@ -2,21 +2,13 @@
 
 **Fast read:** read the headings and **bold** text. **Written for: developers and engineering teams who already use Copilot or Claude Code — and are tired of babysitting them and cleaning up their slop.**
 
-<p align="right"><a href="https://github.com/apps/digitalworker-reviewer/installations/new" target="_blank" data-cta="install_app" data-location="header"><strong>Install the Reviewer - ~1 min, free trial</strong></a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="#get-digitalworker-agent" data-cta="install_app" data-location="header"><strong>Install the Agent - ~2 min, free trial</strong></a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="https://github.com/grandua/Digital-Worker-Demo/issues" target="_blank" data-cta="view_example" data-location="header"><strong>See it work - no install</strong></a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="https://agiledigitalworker.com/user-guide/#free-public-review--no-install-mirror-review" target="_blank" data-cta="view_example" data-location="header"><strong>Get a free review - no install</strong></a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="#done-for-you-delivery" data-cta="view_services" data-location="header"><strong>Done-for-you delivery</strong></a></p>
-
-<table>
-  <tr><th colspan="3">Gallery — click to enlarge</th></tr>
-  <tr>
-    <td width="33%"><a href="./Sells-Sheet-Images/domain-logic-complexity-chart.svg" aria-label="Enlarge: Domain logic patterns — effort vs complexity"><img src="./Sells-Sheet-Images/domain-logic-complexity-chart.svg" width="100%" alt="Effort to enhance vs complexity of domain logic: procedural styles spike exponentially while a domain model stays near-linear"></a></td>
-    <td width="33%"><a href="./Sells-Sheet-Images/Sells-Sheet-top-image-Trello-with-popups.png" aria-label="Enlarge: Typical run"><img src="./Sells-Sheet-Images/Sells-Sheet-top-image-Trello-with-popups.png" width="100%" alt="Trello board view of a typical DigitalWorker run"></a></td>
-    <td width="34%"><a href="https://raw.githubusercontent.com/grandua/digitalworker-docs/main/Sells-Sheet-Images/plan-for-first-citizens-parsing.md.png" target="_blank" aria-label="Enlarge: Real life plan example"><img src="https://raw.githubusercontent.com/grandua/digitalworker-docs/main/Sells-Sheet-Images/plan-for-first-citizens-parsing.md.png" width="100%" alt="Plan generated for a real production repository task"></a></td>
-  </tr>
-  <tr>
-    <td><strong>Why Structure Decides Scale</strong><br><sub>Scattered procedures spike in effort; keeping data &amp; rules together (Domain Model) stays flat</sub><br><sub>DigitalWorker Agent — the only AI agent we know that outputs a real Domain Model</sub><br><sub>Redrawn after M. Fowler, PoEAA</sub></td>
-    <td><strong>Typical run</strong><br><sub>Actual results vary by task</sub><br><sub>GitHub Issues works the same way</sub></td>
-    <td><strong>Real Life Plan Example</strong><br><sub>From a real prod repo</sub></td>
-  </tr>
-</table>
+<!--CTA bar:-->
+<div align="right" class="mb-3">
+  <p class="mb-2"><a href="https://agiledigitalworker.com/user-guide/#free-public-review--no-install-mirror-review" target="_blank" class="d-inline-block bg-blue text-white text-bold px-3 py-2 rounded-2 no-underline f4" data-cta="view_example" data-location="header"><strong>Get a free review — no install</strong></a></p>
+  <p class="mb-1"><sub>Zero install · Any public PR · No card required · Nothing charged automatically</sub></p>
+  <p class="mb-1"><a href="#get-digitalworker-agent" class="d-inline-block border border-blue text-blue bg-white text-bold px-2 py-1 rounded-2 no-underline f5 mr-1 mb-1" data-cta="install_app" data-location="header"><strong>Install DW Agent — ~2 min, free trial</strong></a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="https://github.com/apps/digitalworker-reviewer/installations/new" target="_blank" class="d-inline-block border border-blue text-blue bg-white text-bold px-2 py-1 rounded-2 no-underline f5 mb-1" data-cta="install_app" data-location="header"><strong>Install DW Reviewer — ~1 min, free trial</strong></a></p>
+  <p class="mb-0"><sub><a href="https://github.com/grandua/Digital-Worker-Demo/issues" target="_blank" class="link-gray" data-cta="view_example" data-location="header">See it work — no install</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="#done-for-you-delivery" class="link-gray" data-cta="view_services" data-location="header">Done-for-you delivery</a></sub></p>
+</div>
 
 ---
 *Saving the world from spaghetti code.*
@@ -36,13 +28,29 @@
 **Or let us deliver it for you:**
 - **[Done-for-you Architectural Diagnostic & Engineering Delivery](#done-for-you-delivery) — greenfield builds or stalled-codebase rescue, delivered by an engineer using the same pipeline.**
 
-**<big>Index</big>:** [Self-filter](#self-filter-do-not-use-digitalworker-if) · [Imagine](#imagine) · [The Problem](#problem-youre-doing-ai-coding-slow) · [The Solution](#the-solution-what-we-claim-as-possible) · [Two products](#two-products-one-engineering-standard) · [Why it's different](#why-its-different) · [Our Production Experience](#our-production-experience) · [Getting Started](#getting-started) · [Done-for-You Delivery](#done-for-you-delivery) · [Payment](#payment-options) · [Quick answers](#quick-answers)
+<!--Gallary:-->
+<table>
+  <tr><th colspan="3">Gallery — click to enlarge</th></tr>
+  <tr>
+    <td width="33%"><a href="./Sells-Sheet-Images/domain-logic-complexity-chart.svg" aria-label="Enlarge: Domain logic patterns — effort vs complexity"><img src="./Sells-Sheet-Images/domain-logic-complexity-chart.svg" width="100%" alt="Effort to enhance vs complexity of domain logic: procedural styles spike exponentially while a domain model stays near-linear"></a></td>
+    <td width="33%"><a href="./Sells-Sheet-Images/Sells-Sheet-top-image-Trello-with-popups.png" aria-label="Enlarge: Typical run"><img src="./Sells-Sheet-Images/Sells-Sheet-top-image-Trello-with-popups.png" width="100%" alt="Trello board view of a typical DigitalWorker run"></a></td>
+    <td width="34%"><a href="https://raw.githubusercontent.com/grandua/digitalworker-docs/main/Sells-Sheet-Images/plan-for-first-citizens-parsing.md.png" target="_blank" aria-label="Enlarge: Real life plan example"><img src="https://raw.githubusercontent.com/grandua/digitalworker-docs/main/Sells-Sheet-Images/plan-for-first-citizens-parsing.md.png" width="100%" alt="Plan generated for a real production repository task"></a></td>
+  </tr>
+  <tr>
+    <td><strong>Why Structure Decides Scale</strong><br><sub>Scattered procedures spike in effort; keeping data &amp; rules together (Domain Model) stays flat</sub><br><sub>DigitalWorker Agent — the only AI agent we know that outputs a real Domain Model</sub><br><sub>Redrawn after M. Fowler, PoEAA</sub></td>
+    <td><strong>Typical run</strong><br><sub>Actual results vary by task</sub><br><sub>GitHub Issues works the same way</sub></td>
+    <td><strong>Real Life Plan Example</strong><br><sub>From a real prod repo</sub></td>
+  </tr>
+</table>
 
 ## Self-filter: Do NOT use DigitalWorker If
 - You do not write, review, or pay for software
 - You have never used GitHub — and you plan to keep it that way
 - Your whole company fits in 2K lines of code. One afternoon of raw AI, and it is feature-complete forever
 - You need well past 2K lines, all of it as spaghetti: the only retirement plan that compounds with every merge
+
+<details markdown="1"><summary>More reasons not to use it (babysitting AI, debugging, Anemic Domain Models…)</summary>
+
 - You genuinely enjoy babysitting Copilot and Claude Code — a ticket that quietly comes back as a finished pull request would ruin your evening plans
 - You love lots of defects after every change — the debugger is the work
 - You would miss the month-three slowdown — at a steady pace your retros would run out of material
@@ -52,6 +60,8 @@
 - You have sunk too many weekends into tuning Copilot, prompt tricks, and CLAUDE.md to admit the AI ignores half of it.
 - You are comfortable renting your codebase from the model — you cannot explain most of it anyway, and ownership is overrated
 - You disapprove of the rich — and shipping 4–6x faster than the market makes it awkward at tax time
+
+</details>
 
 *None of you? Then imagine this instead:*
 
@@ -142,6 +152,12 @@ Your engineering competence sets the standard. DigitalWorker carries it through 
 <a href="https://agiledigitalworker.com/Engineering-Deep-Dive/#digitalworker--see-the-engineering-behind-the-result" target="_blank" data-cta="view_example" data-location="hero"><strong>See the engineering behind the result</strong></a> — the method, concrete code examples, comparison criteria, and economics. No signup required.
 
 *Developers: jump straight to the [recorded evidence](#2-verify-our-claims--no-account-or-setup-needed) or the <a href="https://agiledigitalworker.com/Engineering-Deep-Dive/#digitalworker--see-the-engineering-behind-the-result" target="_blank" data-cta="view_example" data-location="hero">engineering deep dive</a>. For the engineering details, open the technical blocks below or visit the [Engineering Blog](https://agiledigitalworker.com/blog/).*
+
+<details markdown="1"><summary>Jump to section</summary>
+
+[Self-filter](#self-filter-do-not-use-digitalworker-if) · [Imagine](#imagine) · [The Problem](#problem-youre-doing-ai-coding-slow) · [The Solution](#the-solution-what-we-claim-as-possible) · [Two products](#two-products-one-engineering-standard) · [Why it's different](#why-its-different) · [Our Production Experience](#our-production-experience) · [Getting Started](#getting-started) · [Done-for-You Delivery](#done-for-you-delivery) · [Payment](#payment-options) · [Quick answers](#quick-answers)
+
+</details>
 
 ---
 
@@ -479,7 +495,14 @@ One payment link covers every purchase: <a href="https://buy.stripe.com/6oUaEPcA
 
 *Internals, method, and economics: <a href="https://agiledigitalworker.com/Engineering-Deep-Dive/#digitalworker--see-the-engineering-behind-the-result" target="_blank" data-cta="view_example" data-location="bottom_page">engineering deep dive</a>.* <!-- audience: dev, non-dev builder, business · ceiling: T1 narrative everywhere; T2/T3 in labeled technical compartments -->
 
-**Ready when you are:** <a href="https://github.com/apps/digitalworker-reviewer/installations/new" target="_blank" data-cta="install_app" data-location="bottom_page"><strong>Install the Reviewer - ~1 min, free trial</strong></a> · <a href="#get-digitalworker-agent" data-cta="install_app" data-location="bottom_page"><strong>Install the Agent - ~2 min, free trial</strong></a> · <a href="https://github.com/grandua/Digital-Worker-Demo/issues" target="_blank" data-cta="view_example" data-location="bottom_page"><strong>See it work - no install</strong></a> · <a href="https://agiledigitalworker.com/user-guide/#free-public-review--no-install-mirror-review" target="_blank" data-cta="view_example" data-location="bottom_page"><strong>Get a free review - no install</strong></a> · <a href="#done-for-you-delivery" data-cta="view_services" data-location="bottom_page"><strong>Done-for-you delivery</strong></a>
+**Ready when you are:**
+
+<div class="my-3">
+  <p class="mb-2"><a href="https://agiledigitalworker.com/user-guide/#free-public-review--no-install-mirror-review" target="_blank" class="d-inline-block bg-blue text-white text-bold px-3 py-2 rounded-2 no-underline f4" data-cta="view_example" data-location="bottom_page"><strong>Get a free review — no install</strong></a></p>
+  <p class="mb-1"><sub>Zero install · Any public PR · No card required · Nothing charged automatically</sub></p>
+  <p class="mb-1"><a href="#get-digitalworker-agent" class="d-inline-block border border-blue text-blue bg-white text-bold px-2 py-1 rounded-2 no-underline f5 mr-1 mb-1" data-cta="install_app" data-location="bottom_page"><strong>Install DW Agent — ~2 min, free trial</strong></a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="https://github.com/apps/digitalworker-reviewer/installations/new" target="_blank" class="d-inline-block border border-blue text-blue bg-white text-bold px-2 py-1 rounded-2 no-underline f5 mb-1" data-cta="install_app" data-location="bottom_page"><strong>Install DW Reviewer — ~1 min, free trial</strong></a></p>
+  <p class="mb-0"><sub><a href="https://github.com/grandua/Digital-Worker-Demo/issues" target="_blank" class="link-gray" data-cta="view_example" data-location="bottom_page">See it work — no install</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="#done-for-you-delivery" class="link-gray" data-cta="view_services" data-location="bottom_page">Done-for-you delivery</a></sub></p>
+</div>
 
 
 [^2]: **Our expectation based on 20 years of development experience and production use — not an independently benchmarked ranking.**
@@ -499,7 +522,7 @@ One payment link covers every purchase: <a href="https://buy.stripe.com/6oUaEPcA
 
 **Agile Design llc · New York, NY**
 
-<a href="https://www.linkedin.com/company/agile-design-llc/" target="_blank" data-cta="email_founder" data-location="pricing"><strong>Message on LinkedIn</strong></a> · <a href="mailto:info@agiledigitalworker.com" data-cta="email_founder" data-location="pricing"><strong>Email us</strong></a> · <a href="https://agiledigitalworker.com" target="_blank">agiledigitalworker.com</a> · <a href="https://agiledigitalworker.com/user-guide/#digital-worker-user-guide" target="_blank">User Guide</a> · [Engineering Blog](https://agiledigitalworker.com/blog/)
+<a href="#done-for-you-delivery" data-cta="view_services" data-location="footer"><strong>Done-for-you delivery</strong></a> · <a href="https://www.linkedin.com/company/agile-design-llc/" target="_blank" data-cta="email_founder" data-location="pricing"><strong>Message on LinkedIn</strong></a> · <a href="mailto:info@agiledigitalworker.com" data-cta="email_founder" data-location="pricing"><strong>Email us</strong></a> · <a href="https://agiledigitalworker.com" target="_blank">agiledigitalworker.com</a> · <a href="https://agiledigitalworker.com/user-guide/#digital-worker-user-guide" target="_blank">User Guide</a> · [Engineering Blog](https://agiledigitalworker.com/blog/)
 
 Follow us: <a href="https://www.linkedin.com/company/2330043" target="_blank" data-cta="social_follow" data-location="footer">LinkedIn</a> · <a href="https://www.linkedin.com/groups/40979011/" target="_blank" data-cta="social_follow" data-location="footer">LinkedIn Group</a> · <a href="https://www.facebook.com/pages/Agile-Design-LLC/194844307249816" target="_blank" data-cta="social_follow" data-location="footer">Facebook</a> · <a href="https://twitter.com/AgileDesignLLC" target="_blank" data-cta="social_follow" data-location="footer">X/Twitter</a>
 

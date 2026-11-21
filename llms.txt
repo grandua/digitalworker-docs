@@ -28,8 +28,8 @@ _Auto-generated from Sell-Sheet.md by sync-docs.yml — do not edit._
 **Every AI output is a first draft — ours becomes real code.** In ~8 of 10 runs, nothing structural slips through; the rest takes a 2-minute upfront design check, not a cleanup weekend. **No iterative prompting. No babysitting. No cleaning up after the AI.**[^agent]
 
 **Two products:**
-- **[DigitalWorker Reviewer](#get-digitalworker-reviewer) — review your existing pull requests.**
 - **[DigitalWorker Agent](#get-digitalworker-agent) — delegate the whole task.**
+- **[DigitalWorker Reviewer](#get-digitalworker-reviewer) — review your existing pull requests.**
 
 **Or let us deliver it for you:**
 - **[Done-for-you Architectural Diagnostic & Engineering Delivery](#done-for-you-delivery) — greenfield builds or stalled-codebase rescue, delivered by an engineer using the same pipeline.**

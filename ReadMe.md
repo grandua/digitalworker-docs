@@ -1,6 +1,6 @@
 # Why DigitalWorker?
 
-**Fast read:** read the headings and **bold** text. **Written for: developers and engineering teams who already use Copilot or Claude Code — and are tired of babysitting them and cleaning up their slop.**
+<p class="f5"><small><strong>Fast read:</strong> read the headings and <strong>bold</strong> text. <strong>Written for: developers and engineering teams who already use Copilot or Claude Code — and are tired of babysitting them and cleaning up their slop.</strong></small></p>
 
 <!--CTA bar:-->
 <div class="d-flex flex-wrap flex-items-start mb-0">

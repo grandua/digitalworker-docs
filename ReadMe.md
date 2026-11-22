@@ -1,4 +1,5 @@
 # Why DigitalWorker?
+DigitalWorker is an AI coding agent and PR reviewer — GitHub issues in, tested Clean-Architecture pull requests out, with architectural review on every PR.
 
 <p class="f5"><small><strong>Fast read:</strong> read the headings and <strong>bold</strong> text. <strong>Written for: developers and engineering teams who already use Copilot or Claude Code — and are tired of babysitting them and cleaning up their slop.</strong></small></p>
 
@@ -13,20 +14,27 @@
 ---
 *Saving the world from spaghetti code.*
 
-**AI types code ~100× faster than your best developer. Teams ship 1.26× faster at best — and 19% slower on mature codebases.[^3] Congratulations on automating the only part that wasn't the bottleneck.**
-
-**Where did the other ~99× go?** -Lost at review, in debugging, on the rewrite. **Shipping software was never a typing, compiling, or algorithm contest. It was always about architecture, design, and judgment.** The speed is real; without working guardrails, it expires at the first draft. *Here's how to collect the rest.*
-
-**A ticket becomes a tested, reviewed, production-ready[^4] <abbr title="a proposed change, packaged for review">pull request</abbr> — clean, encapsulated domain objects you can actually read and explain, scaling past 50K+ lines at week-1 speed — where Copilot and Claude Code collapse into slop.** Fast to ship, expensive to own: raw AI writes instant legacy code you end up renting from the model. We remove the expensive part. It's like assigning a top-10%[^2] developer to a well-scoped task — at AI cost.
-
-**Every AI output is a first draft — ours becomes real code.** In ~8 of 10 runs, nothing structural slips through; the rest takes a 2-minute upfront design check, not a cleanup weekend. **No iterative prompting. No babysitting. No cleaning up after the AI.**[^agent]
-
 **Two products:**
-- **[DigitalWorker Agent](#get-digitalworker-agent) — delegate the whole task.**
-- **[DigitalWorker Reviewer](#get-digitalworker-reviewer) — review your existing pull requests.**
+- **[DigitalWorker Agent](#get-digitalworker-agent) — delegate the whole task and get clean, modular code instead of tangled AI slop, keeping AI speed for real delivery past 2,000 lines.**
+- **[DigitalWorker Reviewer](#get-digitalworker-reviewer) — review your existing pull requests to ensure your code is clean, scalable and ready for delivery instead of the usual AI spaghetti code.**
 
 **Or let us deliver it for you:**
-- **[Done-for-you Architectural Diagnostic & Engineering Delivery](#done-for-you-delivery) — greenfield builds or stalled-codebase rescue, delivered by an engineer using the same pipeline.**
+- **[Done-for-you Architectural Diagnostic & Engineering Delivery](#done-for-you-delivery) — greenfield builds or stalled-codebase rescue, delivered by an engineer using the same DigitalWorker pipeline.**
+
+---
+**AI types code ~100× faster than your best developer. Teams ship 1.26× faster at best — and 19% slower on mature codebases.[^3] Congratulations on automating the only part that wasn't the bottleneck.**
+
+**Where did the other ~99× go?** Lost at review, in debugging, on the rewrite. **Shipping software was never a typing, compiling, or algorithm contest. It was always about architecture, design, and judgment.** The speed is real; without working guardrails, it expires at the first draft. *Here's how to collect the rest.*
+
+**DigitalWorker Agent takes a ticket and converts it into a clean, tested, reviewed, production-ready[^4] <abbr title="a proposed change, packaged for review">pull request</abbr> — encapsulated domain objects you can actually read and explain, scaling past 50K+ lines at week-1 speed — where Copilot and Claude Code collapse into slop.** Fast to ship, expensive to own: raw AI writes instant legacy code you end up renting from the model. We remove the expensive part. It's like assigning a top-10%[^2] developer to a well-scoped task — at AI cost.
+
+**DigitalWorker Reviewer uses the same process as DigitalWorker Agent to review your pull requests.** 
+
+**Every AI output is a first draft — ours becomes real code.** In ~8 of 10 runs, nothing structural slips through; the rest takes a 2-minute upfront design check, not a cleanup weekend. 
+
+**No iterative prompting. No babysitting. No cleaning up after the AI.**[^agent]
+
+
 
 <!--Gallary:-->
 <table>
@@ -155,25 +163,24 @@ Your engineering competence sets the standard. DigitalWorker carries it through 
 
 <details markdown="1"><summary>Jump to section</summary>
 
-[Self-filter](#self-filter-do-not-use-digitalworker-if) · [Imagine](#imagine) · [The Problem](#problem-youre-doing-ai-coding-slow) · [The Solution](#the-solution-what-we-claim-as-possible) · [Two products](#two-products-one-engineering-standard) · [Why it's different](#why-its-different) · [Our Production Experience](#our-production-experience) · [Getting Started](#getting-started) · [Done-for-You Delivery](#done-for-you-delivery) · [Payment](#payment-options) · [Quick answers](#quick-answers)
+[Self-filter](#self-filter-do-not-use-digitalworker-if) · [Imagine](#imagine) · [The Problem](#problem-youre-doing-ai-coding-slow) · [The Solution](#the-solution-what-we-claim-as-possible) · [How Reviewer & Agent differ](#two-products-one-engineering-standard) · [Why it's different](#why-its-different) · [Our Production Experience](#our-production-experience) · [Getting Started](#getting-started) · [Done-for-You Delivery](#done-for-you-delivery) · [Payment](#payment-options) · [Quick answers](#quick-answers)
 
 </details>
 
 ---
+<a id="two-products-one-engineering-standard"></a>
 
-### Two products. One engineering standard.
+### How Reviewer and Agent differ (and work together)
 
-1. **DigitalWorker Reviewer — Keep your coding tools. Catch the AI slop before merge.**
+**Both share the same review engine — use either on its own:** **DigitalWorker Reviewer** audits pull requests you already created (with Copilot, Claude Code, or by hand), while **DigitalWorker Agent** writes and tests the code first, then runs that same review engine on its own work and fixes findings before opening the PR.
 
-   You asked for TDD, OOP and proper testable layers. Your AI drifted to bloated, disorganized slop anyway. DigitalWorker Reviewer detects Agile architecture violations such as incorrect layer dependencies and Anemic Domain Model anti-pattern, testability issues, test coverage gaps, and almost all code smells including code and class duplication. **The Reviewer comments; it does not change your code.** No Trello required.
+- **DigitalWorker Agent (end-to-end implementation + review):** Takes the ticket, builds and tests in its own Git worktree, runs the same architecture and code-smell review, and refactors before handing you the PR.
 
-   <a href="https://github.com/apps/digitalworker-reviewer/installations/new" target="_blank" data-cta="install_app" data-location="mid_page"><strong>Install the Reviewer — ~1 minute, free trial.</strong></a> Then comment `@digitalworker review` on any existing PR — first result in minutes.
-2. **DigitalWorker Agent — Hand off the task. Get code implemented, reviewed, and refactored against the same architecture and maintainability standards.**
+  <a href="#4-start-using-it-on-your-repo--github-issues" data-cta="install_app" data-location="mid_page"><strong>Install the Agent on your repo — ~2 minutes, private, free trial included, no card required.</strong></a> Or watch it work first on the <a href="https://github.com/grandua/Digital-Worker-Demo/issues" target="_blank" data-cta="view_example" data-location="mid_page">public demo repo</a> — open an issue mentioning `@digitalworker`, no permissions needed on your repos.
 
-   <a href="#4-start-using-it-on-your-repo--github-issues" data-cta="install_app" data-location="mid_page"><strong>Install the Agent on your repo — ~2 minutes, private, free trial included, no card required.</strong></a> Or watch it work first: the Agent is already installed on the <a href="https://github.com/grandua/Digital-Worker-Demo/issues" target="_blank" data-cta="view_example" data-location="mid_page">public demo repo</a> — open an issue mentioning `@digitalworker`, no permissions needed on your repos.
+- **DigitalWorker Reviewer (read-only PR audit):** Detects Agile architecture violations (incorrect layer dependencies, Anemic Domain Model anti-pattern), testability issues, test coverage gaps, and code or class duplication. **The Reviewer comments; it does not change your code.** No Trello required.
 
-
-**The Reviewer uses the same review engine the full Agent uses on its own work. Use either product on its own.**
+  <a href="https://github.com/apps/digitalworker-reviewer/installations/new" target="_blank" data-cta="install_app" data-location="mid_page"><strong>Install the Reviewer — ~1 minute, free trial.</strong></a> Then comment `@digitalworker review` on any existing PR — first result in minutes.
 
 **Prefer done-for-you delivery?** An engineer can run DigitalWorker end-to-end on your greenfield roadmap, AI-code cleanup, or legacy modernization — <a href="#done-for-you-delivery" data-cta="view_services" data-location="mid_page"><strong>see diagnostic &amp; delivery options</strong></a> or <a href="mailto:info@agiledigitalworker.com?subject=Done-for-you%20delivery" data-cta="email_services" data-location="mid_page"><strong>scope a pilot slice</strong></a>.
 
@@ -516,7 +523,7 @@ One payment link covers every purchase: <a href="https://buy.stripe.com/6oUaEPcA
 [^agent]: **These benefits describe the full DigitalWorker Agent. The Reviewer reviews existing pull requests; it does not implement changes.**
 
 
-**<big>Index</big>:** [Self-filter](#self-filter-do-not-use-digitalworker-if) · [Imagine](#imagine) · [The Problem](#problem-youre-doing-ai-coding-slow) · [The Solution](#the-solution-what-we-claim-as-possible) · [Two products](#two-products-one-engineering-standard) · [Why it's different](#why-its-different) · [Our Production Experience](#our-production-experience) · [Getting Started](#getting-started) · [Done-for-You Delivery](#done-for-you-delivery) · [Payment](#payment-options) · [Quick answers](#quick-answers)
+**<big>Index</big>:** [Self-filter](#self-filter-do-not-use-digitalworker-if) · [Imagine](#imagine) · [The Problem](#problem-youre-doing-ai-coding-slow) · [The Solution](#the-solution-what-we-claim-as-possible) · [How Reviewer & Agent differ](#two-products-one-engineering-standard) · [Why it's different](#why-its-different) · [Our Production Experience](#our-production-experience) · [Getting Started](#getting-started) · [Done-for-You Delivery](#done-for-you-delivery) · [Payment](#payment-options) · [Quick answers](#quick-answers)
 
 ---
 

@@ -93,7 +93,9 @@ Clean blocks don't stop every bug. Two blocks that each work fine can still clas
 
 None of this is new. Teams forget it under deadline pressure. Raw AI forgets it on every task and at 100× the speed.
 
-In 1972, David Parnas published [a classic paper on software modules](https://doi.org/10.1145/361598.361623), showing with a worked example that grouping code around separate jobs, each hiding its own details, makes software far easier to change than one long step-by-step flowchart. Thirty years later, Martin Fowler sketched the curve below: step-by-step scripts feel cheaper in week one, then climb steeply in cost as features grow, while self-contained blocks rise gently. Fowler also warned against the fake version (passive data buckets bossed around by giant outside scripts), which he named the *Anemic Domain Model*, and wrote about ["the fundamental horror"](https://martinfowler.com/bliki/AnemicDomainModel.html) of that pattern.
+- In 1972, David Parnas published [a classic paper on software modules](https://doi.org/10.1145/361598.361623), showing with a worked example that grouping code around separate jobs, each hiding its own details, makes software far easier to change than one long step-by-step flowchart. 
+
+- Thirty years later, Martin Fowler sketched the curve below: step-by-step scripts feel cheaper in week one, then climb steeply in cost as features grow, while self-contained blocks rise gently. Fowler also warned against the fake version (passive data buckets bossed around by giant outside scripts), which he named the *Anemic Domain Model*, and wrote about ["the fundamental horror"](https://martinfowler.com/bliki/AnemicDomainModel.html) of that pattern.
 
 ![Effort to enhance vs complexity of domain logic: procedural styles climb steeply while a domain model rises gently](/Sells-Sheet-Images/domain-logic-complexity-chart.svg)
 *Redrawn after Martin Fowler, Patterns of Enterprise Application Architecture (2002). Fowler drew it as a sketch of the trend, not measured data. Tangled step-by-step scripts get harder with every feature, while self-contained building blocks keep effort steady.*

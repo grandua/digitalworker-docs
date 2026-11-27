@@ -1,8 +1,10 @@
 ﻿---
 title: "Clean Code Almost Fixes Itself (And Today's AI Needs It More Than Humans Do)"
-description: "Why waiting for smarter AI models will not fix buggy software, how clean building blocks give defects very few places to hide, and how to ship reliable AI-built software today."
+description: "Why we think AI labs are digging in the wrong direction now — clean code structure, not smarter models, is what makes AI-built software reliable past month three."
 excerpt_separator: <!--more-->
 ---
+
+> **Why we think AI labs are digging in the wrong direction now.**
 
 <p class="f5"><small><strong>Fast read:</strong> read the headings, <strong>bold</strong>, and <em>italic</em> parts only. <strong>Written for:</strong> founders, vibe coders, product leaders, and developers tired of AI-built software breaking past month three — no coding background required.</small></p>
 
